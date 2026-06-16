@@ -24,7 +24,11 @@ Total:
 
 ## Cell Diagram
 
-> Insert: `assets/images/6t_sram_cell.png`
+## 6T SRAM Cell Structure
+
+![6T SRAM Cell](../assets/images/6t_sram_cell.png)
+
+Figure 1: Transistor-level schematic of a 6T SRAM bitcell consisting of two cross-coupled inverters and two access transistors.
 
 ---
 

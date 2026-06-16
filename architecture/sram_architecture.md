@@ -20,7 +20,11 @@ The SRAM macro consists of several functional blocks that work together to perfo
 
 ### Architecture Diagram
 
-> Insert: `assets/images/sram_architecture.png`
+## SRAM Macro Architecture
+
+![SRAM Architecture](../assets/images/sram_architecture.png)
+
+Figure 1: High-level SRAM macro architecture showing the row decoder, wordline driver, bitcell array, precharge circuitry, column multiplexer, write drivers, sense amplifiers, and control logic.
 
 ---
 
