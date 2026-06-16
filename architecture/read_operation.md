@@ -21,6 +21,13 @@ Precharge Circuit
 → Sense Amplifier
 → Output Data
 
+## Read Operation Diagram
+
+![SRAM Read Operation](../assets/images/sram_read.png)
+
+*Figure 1: Block-level SRAM read operation showing precharge, bitline differential development, and sense amplification.*
+
+
 ---
 
 ## Step 1: Precharge Phase
