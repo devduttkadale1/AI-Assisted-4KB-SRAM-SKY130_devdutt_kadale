@@ -8,6 +8,12 @@ The sense amplifier detects this small differential voltage and amplifies it int
 
 ---
 
+## Sense Amplifier Diagram
+
+![Sense Amplifier](../assets/images/sense_amplifier.png)
+
+*Figure 1: Sense amplifier used to detect and amplify small differential voltages developed on BL and BLB during SRAM read operations.*
+
 ## Why a Sense Amplifier is Required
 
 During a read operation:
