@@ -157,3 +157,47 @@ Each output serves a different stage of the ASIC design flow.
 * Study row decoder architecture.
 * Study column multiplexer architecture.
 * Continue documenting OpenRAM flow and memory compiler concepts.
+
+## Day 4 – Row Decoder, Column Multiplexer and SKY130 PDK
+
+### Activities
+
+* Studied row decoder architecture.
+* Learned how binary addresses are converted into one-hot wordline signals.
+* Studied column multiplexing in SRAM arrays.
+* Learned how OpenRAM organizes a 1024 × 32 SRAM into a 128 × 256 physical array with 8 words per row.
+* Studied the SKY130 PDK and its role in OpenRAM SRAM generation.
+* Analyzed technology files, custom cells, transistor models, and design rules used during SRAM compilation.
+
+### Key Learnings
+
+#### Row Decoder
+
+* Converts row address bits into one-hot wordline signals.
+* Selects exactly one row in the SRAM array.
+* Works together with wordline drivers to activate SRAM cells.
+
+#### Column Multiplexer
+
+* Selects one word from multiple words stored in the same physical row.
+* Reduces bitline count and improves memory organization.
+* Uses column address bits to select the required data path.
+
+#### SKY130 PDK
+
+* Provides design rules, transistor models, and technology layers.
+* Enables OpenRAM to generate manufacturable SRAM layouts.
+* Supplies process-specific information for timing and power characterization.
+
+### Challenges Faced
+
+* Understanding the difference between logical and physical memory organization.
+* Understanding how OpenRAM uses column multiplexing to reduce array dimensions.
+* Understanding the interaction between OpenRAM and SKY130 technology files.
+
+### Next Steps
+
+* Document AI-assisted workflow.
+* Study SRAM design tradeoffs.
+* Prepare Week 1 IEEE report.
+* Finalize repository documentation.
