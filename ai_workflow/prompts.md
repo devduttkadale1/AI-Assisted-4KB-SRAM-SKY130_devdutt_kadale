@@ -223,3 +223,117 @@ Reviewed sky130A directory structure, technology files and custom cell libraries
 
 Outcome:
 Created docs/sky130_pdk.md and improved understanding of technology-dependent SRAM generation.
+
+
+## Entry 08
+
+Date: 18 June 2026
+
+Tool: Codex
+
+Objective:
+Understand SRAM row decoding and address selection mechanisms.
+
+Prompt:
+Act as a senior SRAM compiler engineer.
+
+Using the SRAM_SKY130 repository as context, explain the Row Decoder used in the generated 1024 × 32 SRAM macro.
+
+Explain:
+
+* Why row decoding is required
+* Address division
+* One-hot wordline generation
+* Wordline drivers
+* Decoder interaction during read and write operations
+* Impact on SRAM performance
+
+Key Findings:
+
+* The row decoder converts address bits into one-hot wordline signals.
+* OpenRAM organizes the memory into a physical array requiring row and column address partitioning.
+* Only one row is activated during each access cycle.
+* Wordline drivers are required to drive the large capacitive load of SRAM rows.
+* Decoder delay contributes directly to memory access time.
+
+Verification:
+Cross-checked decoder concepts against SRAM architecture diagrams and OpenRAM memory organization.
+
+Outcome:
+Created architecture/row_decoder.md and documented row selection mechanisms used in the 4 KB SRAM macro.
+
+---
+
+## Entry 09
+
+Date: 18 June 2026
+
+Tool: Codex
+
+Objective:
+Understand column multiplexing and physical memory organization.
+
+Prompt:
+Act as a senior SRAM compiler engineer.
+
+Using the SRAM_SKY130 repository as context, explain the Column Multiplexer used in the generated 1024 × 32 SRAM macro.
+
+Explain:
+
+* Why column multiplexing is needed
+* Meaning of 8 words per row
+* Physical organization of 128 rows × 256 columns
+* Column address selection
+* Relationship between column muxes and bitlines
+* Impact on area and performance
+
+Key Findings:
+
+* OpenRAM physically organizes the SRAM as 128 rows × 256 columns.
+* Each physical row stores eight logical 32-bit words.
+* Three address bits are used for column selection.
+* Column multiplexing reduces bitline length and improves memory density.
+* Physical organization differs significantly from logical memory organization.
+
+Verification:
+Cross-checked calculations using OpenRAM configuration parameters and generated memory organization reports.
+
+Outcome:
+Created architecture/column_mux.md and documented logical-to-physical memory mapping concepts.
+
+---
+
+## Entry 10
+
+Date: 18 June 2026
+
+Tool: Codex
+
+Objective:
+Understand the SKY130 technology package used by OpenRAM.
+
+Prompt:
+Using the SRAM_SKY130 repository as context, explain the SKY130 technology files, custom cells, transistor models, and design rules used during SRAM generation.
+
+Explain:
+
+* SKY130 directory structure
+* Technology files
+* Custom SRAM cells
+* Process corners
+* Transistor models
+* OpenRAM interaction with SKY130
+
+Key Findings:
+
+* SKY130 provides design rules, transistor models, routing information, and technology definitions.
+* OpenRAM uses custom SRAM cells such as bitcells, sense amplifiers, write drivers, and replica cells.
+* Process corners (TT, SS, FF, FS, SF) support timing and power characterization.
+* Technology files guide layout generation and verification.
+* OpenRAM combines configuration files, SKY130 technology data, and custom cells to generate the final SRAM macro.
+
+Verification:
+Reviewed sky130A technology directory, custom cell libraries, transistor models, and OpenRAM documentation.
+
+Outcome:
+Enhanced docs/sky130_pdk.md and developed a deeper understanding of technology-aware SRAM generation.
