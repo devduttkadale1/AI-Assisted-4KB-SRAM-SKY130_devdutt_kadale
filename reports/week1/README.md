@@ -31,4 +31,4 @@ Deliverable:
 
 ### Report Download
 
-[Week 1 IEEE Report](Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)
+📄 **[Download Week 1 IEEE Report](Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)**
