@@ -22,6 +22,35 @@ The focus of Week 1 is understanding SRAM fundamentals, OpenRAM architecture, SK
 
 ---
 
+## Week 1 Deliverable
+
+### IEEE Technical Report
+
+**Title:**
+Architecture Exploration of a 4KB SRAM Macro Using OpenRAM and SKY130 in an AI-Assisted Design Workflow
+
+**Deliverables Completed**
+
+* SRAM Architecture Study
+* 6T SRAM Cell Analysis
+* Read and Write Operations
+* Precharge Circuit
+* Sense Amplifier
+* Row Decoder
+* Column Multiplexer
+* OpenRAM Configuration Study
+* OpenRAM Flow Analysis
+* SKY130 PDK Integration
+* OpenRAM Output Analysis
+* AI-Assisted Engineering Workflow Documentation
+
+**Report Location**
+
+```text
+report/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf
+```
+
+
 ## Reference Design
 
 Reference Repository:
@@ -81,6 +110,11 @@ Generated Outputs
 ![OpenRAM Flow](assets/images/sky130_openram_flow.png)
 
 ---
+
+## Week 1 Report Preview
+
+![Week1 Report](assets/images/week1_report_preview.png)
+
 
 ## Repository Structure
 
@@ -172,17 +206,13 @@ All findings were verified against repository files and technical references bef
 
 ---
 
-## Current Status
+## Current focus:
 
-Week 1 research and documentation phase completed.
-
-Current focus:
-
-* Repository documentation
-* IEEE report preparation
-* OpenRAM setup and experimentation
-
----
+* Week 1 documentation completed
+* IEEE report submitted
+* OpenRAM installation and execution
+* OpenRAM output analysis
+* Week 2 experimentation
 
 ## Future Work
 
@@ -194,6 +224,24 @@ Current focus:
 * Final project report
 
 ---
+
+## Week 1 Repository Metrics
+
+Documentation Created:
+
+* 8 Architecture Documents
+* 5 Technical Documents
+* AI Prompt Log
+* Engineering Journal
+* IEEE Technical Report
+
+Topics Covered:
+
+* SRAM Fundamentals
+* OpenRAM Flow
+* SKY130 Integration
+* Memory Organization
+* ASIC Output Views
 
 ## Acknowledgements
 

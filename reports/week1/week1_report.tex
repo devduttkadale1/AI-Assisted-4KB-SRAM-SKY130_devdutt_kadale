@@ -1,0 +1,72 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\usepackage{balance}
+\begin{document}
+
+\title{\vspace{-0.8cm}
+Architecture Exploration of a 4 KB SRAM Macro Using OpenRAM and SKY130
+\vspace{-0.5cm}}
+
+\author{\IEEEauthorblockN{Devdutt Bajirao Kadale}
+\IEEEauthorblockA{\textit{Week 1 Task Report -- 4KB SRAM Design}}
+}
+
+
+\maketitle
+
+\begin{abstract}
+Static Random Access Memory (SRAM) is a fundamental component of modern digital systems, widely used in processor caches, register files, and on-chip memory subsystems. This work presents a Week 1 architectural exploration of a 4 KB SRAM macro using OpenRAM and the SKY130 PDK. The study focuses on SRAM architecture, 6T cell operation, peripheral circuits, OpenRAM configuration, and technology integration. An AI-assisted workflow was used to analyze the SRAM\_SKY130 repository and document the OpenRAM-based memory generation flow.
+\end{abstract}
+
+\begin{IEEEkeywords}
+SRAM, OpenRAM, SKY130, Memory Compiler, 6T SRAM Cell, VLSI, ASIC Design
+\end{IEEEkeywords}
+
+\section{Introduction}
+SRAM is a high-speed memory technology used extensively in modern processors due to its low access latency and ability to retain data without refresh. Unlike DRAM, SRAM uses bistable storage elements built from cross-coupled inverters, enabling rapid read and write operations.
+
+This study investigates the architecture of a 1024 $\times$ 32 SRAM macro (4 KB) implemented using OpenRAM and SKY130 technology, based on the SRAM\_SKY130 reference repository, with focus on the underlying memory architecture, OpenRAM configuration flow, technology dependencies, and generated ASIC design views.
+
+\section{SRAM Architecture Study}
+The studied SRAM macro stores 1024 words of 32 bits each (32768 bits, 4 KB). The architecture consists of a bitcell array and supporting peripheral circuits, including row decoders, wordline drivers, precharge circuits, sense amplifiers, write drivers, and column multiplexers. The fundamental storage element is the 6T SRAM bitcell, composed of two cross-coupled CMOS inverters and two access transistors, storing data at complementary internal nodes Q and QB accessed through differential bitlines BL and BLB.
+
+Read operations involve bitline precharging, wordline activation, differential voltage development, and sense amplification; write operations use dedicated write drivers to force new values onto the bitlines while the selected wordline is enabled.
+
+\section{OpenRAM and SKY130 Flow}
+OpenRAM converts a high-level memory specification into multiple ASIC-ready views through a configuration-driven flow, beginning with parameters such as word size, number of words, process corners, and supply voltage specified in the OpenRAM configuration file. The SKY130 technology package provides transistor models, design rules, layer definitions, and custom SRAM support cells including bitcells, sense amplifiers, and write drivers, which OpenRAM combines with the memory specification to generate the SRAM macro.
+
+The studied design corresponds logically to a 1024 $\times$ 32 memory. Internally, OpenRAM reorganizes the array into 128 rows and 256 columns with eight words per row, improving organization and reducing bitline loading.
+
+Potential setup issues include incorrect technology paths, missing custom-cell views, and technology-version mismatches. Practical debugging begins by validating SKY130 technology availability, checking OpenRAM configuration parameters, and verifying custom-cell consistency before generating larger SRAM macros.
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.85\columnwidth]{sky130_openram_flow.png}
+\caption{OpenRAM-based SRAM generation flow using SKY130 technology.}
+\label{fig:openram_flow}
+\end{figure}
+
+\section{Key OBSERVATIONS}
+
+OpenRAM transforms high-level memory specifications into complete SRAM macros using technology-specific resources provided by SKY130. The study highlighted the difference between logical and physical memory organization, the importance of peripheral circuits, and the role of generated outputs such as Verilog, SPICE, LEF, LIB, and GDS in the ASIC design flow.
+
+\section{Conclusion}
+This work established a foundational understanding of SRAM architecture and the OpenRAM-based memory generation flow using SKY130 technology. Key building blocks, memory organization concepts, configuration parameters, and technology dependencies were studied, supporting future OpenRAM execution, SRAM generation, characterization, debugging, and verification activities in subsequent internship stages.
+
+\balance
+\begin{thebibliography}{00}
+\bibitem{b1} M. Guthaus et al., "OpenRAM: An Open-Source Memory Compiler".
+\bibitem{b2} SkyWater Technology Foundry, ``SKY130 Open Source PDK.''
+\bibitem{b3} S. Taware, ``SRAM\_SKY130 Repository,'' GitHub.
+\bibitem{b4} N. H. E. Weste and D. Harris, \textit{CMOS VLSI Design : A Circuits and Systems Perspective}, 4th ed.
+\end{thebibliography}
+
+\end{document}
