@@ -27,7 +27,7 @@ Deliverable:
 
 ## Week 1 Report Preview
 
-**![Week1 Report](week1_report_preview.png)**
+**![Week1 Report](assets/images/week1_report_preview.png)**
 
 ### Report Download
 
