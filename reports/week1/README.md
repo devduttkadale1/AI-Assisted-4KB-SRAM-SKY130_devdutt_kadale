@@ -1,20 +1,34 @@
 ## Week 1 Deliverable
 
-### Title
-
+Title:
 Architecture Exploration of a 4KB SRAM Macro Using OpenRAM and SKY130 in an AI-Assisted Design Workflow
 
-### Deliverables
+Objectives Completed:
 
-* IEEE One-Page Technical Report
-* Repository Documentation
-* AI Prompt Log
-* Engineering Journal
+- SRAM Architecture Study
+- 6T SRAM Cell Study
+- Read Operation
+- Write Operation
+- Sense Amplifier
+- Precharge Circuit
+- Row Decoder
+- Column Multiplexer
+- OpenRAM Flow
+- SKY130 PDK Integration
+- OpenRAM Outputs Analysis
+- AI-Assisted Workflow Documentation
 
-### Report Preview
+Deliverable:
 
-<img src="assets/images/week1_report_preview.png" width="600">
+- IEEE One-Page Technical Report
+- Repository Documentation
+- AI Prompt Log
+- Engineering Journal
+
+## Week 1 Report Preview
+
+![Week1 Report](week1_report_preview.png)
 
 ### Report Download
 
-<a href="reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf">📄 Download Week 1 IEEE Report</a>
+[Week 1 IEEE Report](Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)
