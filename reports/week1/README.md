@@ -32,4 +32,4 @@ Deliverable:
 
 Report Location:
 
-report/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf
+reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf
