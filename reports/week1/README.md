@@ -25,10 +25,10 @@ Deliverable:
 - AI Prompt Log
 - Engineering Journal
 
-## Week 1 Report Preview
+## Week 1 Technical Report Preview
 
-![Week1 Report](assets/images/week1_report_preview.png)
+![Week1 Report](./assets/images/week1_report_preview.png)
 
 ### Report Download
 
-[Week 1 IEEE Report](reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)
+[📄 Download Week 1 IEEE Report](./reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)
