@@ -29,6 +29,6 @@ Deliverable:
 
 ![Week1 Report](assets/images/week1_report_preview.png)
 
-Report Location:
+### Report Download
 
-reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf 
+[Week 1 IEEE Report](reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)
