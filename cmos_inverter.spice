@@ -1,0 +1,21 @@
+* CMOS Inverter - SKY130
+* Author: Devdutt Kadale | VSD Internship Task 2
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice" tt
+
+XM2 Vout VIN VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM1 Vout VIN GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+
+Vvdd VDD 0 DC 1.8
+VIN VIN 0 PULSE(0 1.8 1n 100p 100p 5n 10n)
+
+.tran 10p 30n
+
+.control
+  run
+  set xbrushwidth=2
+  hardcopy cmos_waveform.ps V(VIN) V(Vout)
+  write cmos_inverter.raw
+.endc
+
+.end
