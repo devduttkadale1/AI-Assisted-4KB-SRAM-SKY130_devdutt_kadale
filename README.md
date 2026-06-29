@@ -1,251 +1,271 @@
-# AI-Assisted 4KB SRAM Design using OpenRAM and SKY130
+# AI-Assisted 4KB SRAM Design — SKY130 PDK
 
-## Internship Information
+> **VSD Internship | Cohort 1.2 | Devdutt Bajirao Kadale**  
+> AI-Assisted Analog, Mixed-Signal and FPGA Internship
 
-**Program:** AI-Assisted Analog, Mixed-Signal and FPGA Internship (Cohort 1.2)
-
-**Organization:** VLSI System Design (VSD)
-
-**Project:** 4KB SRAM Design using OpenRAM and SKY130
-
-**Intern:** Devdutt Bajirao Kadale
+[![Week 1](https://img.shields.io/badge/Week%201-Complete-brightgreen)](reports/week1/)
+[![Week 2](https://img.shields.io/badge/Week%202-Complete-brightgreen)](reports/week2/)
+[![Simulations](https://img.shields.io/badge/Simulations-6%20Circuits-blue)](verification/spice/)
+[![PDK](https://img.shields.io/badge/PDK-SKY130-orange)](https://skywater-pdk.readthedocs.io/)
+[![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 ---
 
 ## Project Overview
 
-This repository documents my learning journey during the AI-Assisted Analog, Mixed-Signal and FPGA Internship.
+This repository documents the complete learning and design journey for building a **4KB SRAM macro** using:
 
-The objective is to understand how a 4KB SRAM macro can be generated using OpenRAM and the SKY130 Process Design Kit (PDK), while documenting the complete learning process through an AI-assisted engineering workflow.
+- **SKY130 PDK** — open-source 130nm CMOS process by SkyWater + Google
+- **ngspice** — transistor-level SPICE simulation
+- **OpenRAM** — open-source SRAM compiler (Week 3+)
+- **AI-Assisted Workflow** — every design decision logged with prompts and verification
 
-The focus of Week 1 is understanding SRAM fundamentals, OpenRAM architecture, SKY130 integration, and SRAM compiler outputs rather than generating a complete SRAM macro.
-
----
-
-## Week 1 Deliverable
-
-### IEEE Technical Report
-
-**Title:**
-Architecture Exploration of a 4KB SRAM Macro Using OpenRAM and SKY130 in an AI-Assisted Design Workflow
-
-**Deliverables Completed**
-
-* SRAM Architecture Study
-* 6T SRAM Cell Analysis
-* Read and Write Operations
-* Precharge Circuit
-* Sense Amplifier
-* Row Decoder
-* Column Multiplexer
-* OpenRAM Configuration Study
-* OpenRAM Flow Analysis
-* SKY130 PDK Integration
-* OpenRAM Output Analysis
-* AI-Assisted Engineering Workflow Documentation
-
-**Report Location**
-
-```text
-report/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf
-```
-
-
-## Reference Design
-
-Reference Repository:
-
-SRAM_SKY130
-
-Target SRAM:
-
-```text
-1024 Words × 32 Bits
-=
-32768 Bits
-=
-4096 Bytes
-=
-4 KB
-```
-
-Operating Voltage:
-
-```text
-1.8 V
-```
-
-Target Access Time:
-
-```text
-< 2.5 ns
-```
-
-Technology:
-
-```text
-SKY130A
-```
+The project covers everything from first principles of SRAM theory (Week 1) through full circuit simulation (Week 2) to SRAM macro generation (Week 3+).
 
 ---
 
-## OpenRAM Flow
+## SRAM Architecture
 
-```text
-Memory Specification
-        ↓
-OpenRAM Configuration
-        ↓
-SKY130 Technology Files
-        ↓
-Custom Cells
-        ↓
-OpenRAM Compiler
-        ↓
-Characterization
-        ↓
-Generated Outputs
-```
+![SRAM Architecture](assets/images/sram_architecture.png)
+
+A 4KB SRAM macro consists of several key blocks working together:
+
+| Block | Function |
+|---|---|
+| **6T Bitcell Array** | Stores bits using cross-coupled inverter latches |
+| **Row Decoder** | Converts address bits → one-hot wordline signal |
+| **Precharge Circuit** | Charges BL and BLB to VDD before every read |
+| **Sense Amplifier** | Amplifies small differential voltage → full logic swing |
+| **Write Driver** | Forces BL/BLB to desired data during write |
+| **Column Mux** | Selects one word from multiple words per physical row |
+
+---
+
+## 6T SRAM Cell
+
+![6T SRAM Cell](assets/images/6t_sram_cell.png)
+
+The fundamental storage unit is a **6-transistor (6T) SRAM cell**:
+
+- **M1, M2** — PMOS pull-up transistors (form cross-coupled inverters)
+- **M3, M4** — NMOS pull-down transistors (form cross-coupled inverters)
+- **M5, M6** — NMOS access transistors (connect cell to BL and BLB)
+- **WL** — Word line: gates of M5 and M6
+- **Q, QB** — Storage nodes (complementary)
+
+The two cross-coupled inverters hold one bit indefinitely as long as power is supplied — no refresh needed, unlike DRAM.
+
+---
+
+## Read and Write Operations
+
+### Read Operation
+
+![SRAM Read](assets/images/sram_read.png)
+
+1. **Precharge** — BL and BLB both charged to VDD=1.8V
+2. **Access** — WL asserted, M5 and M6 turn ON
+3. **Discharge** — One bitline discharges slightly (ΔV ≈ 50–100mV)
+4. **Sense** — Sense amplifier detects differential and snaps to full swing
+
+> **Key constraint:** Cell Ratio (CR) = W_pulldown / W_access must be > 1.5 to prevent read disturb.
+
+### Write Operation
+
+![SRAM Write](assets/images/sram_write.png)
+
+1. **Drive** — Write driver forces BL=0, BLB=VDD (or vice versa)
+2. **Access** — WL asserted, M5 and M6 turn ON
+3. **Overwrite** — Write driver overpowers PMOS pull-up → Q flips
+
+> **Key constraint:** Write Ratio (WR) = W_access / W_pullup must be > 1 to successfully overwrite cell.
+
+---
+
+## Peripheral Circuits
+
+### Precharge Circuit
+
+![Precharge Circuit](assets/images/precharge_circuit.png)
+
+Three-PMOS topology:
+- **PC1** — Pulls BL to VDD when PCB=0
+- **PC2** — Pulls BLB to VDD when PCB=0
+- **PC3** — Equalizer: ensures BL = BLB before sense amp fires
+
+### Sense Amplifier
+
+![Sense Amplifier](assets/images/sense_amplifier.png)
+
+Cross-coupled CMOS latch triggered by SAE (sense amp enable):
+- Input NMOS connected to BL and BLB
+- Regenerative action amplifies ΔV to full logic swing in < 200ps
+- SAE must fire only after sufficient ΔV has developed (≥ 50mV)
+
+### Row Decoder
+
+![Row Decoder](assets/images/row_decoder.png)
+
+- Converts N-bit row address into 2^N one-hot wordline signals
+- For 1024-row array: 10-bit address → 1024 wordlines
+- Only one WL is HIGH at any time — selects exactly one row
+
+### Column Multiplexer
+
+![Column Mux](assets/images/column_mux.png)
+
+- Physical array has more columns than logical words
+- Column address selects one word out of multiple words sharing the same bitlines
+- Example: 128 rows × 256 columns → 8 words/row → 1024 words logical
+
+---
+
+## OpenRAM Flow (Week 3)
 
 ![OpenRAM Flow](assets/images/sky130_openram_flow.png)
 
+```
+Memory Specification (word_size, num_words)
+        ↓
+  Configuration File (.py)
+        ↓
+  SKY130 Technology Files + Custom Cells
+        ↓
+     OpenRAM Compiler
+        ↓
+      Characterization
+        ↓
+  Generated Outputs: GDS | LEF | LIB | Verilog | SPICE
+```
+
+**4KB SRAM Physical Organization:**
+- Logical: 1024 words × 32 bits
+- Physical: 128 rows × 256 columns, 8 words/row
+- Benefit: shorter bitlines → lower capacitance → faster access
+
 ---
-
-## Week 1 Report Preview
-
-![Week1 Report](assets/images/week1_report_preview.png)
-
 
 ## Repository Structure
 
-```text
-architecture/
-├── sram_architecture.md
-├── bitcell_6t.md
-├── read_operation.md
-├── write_operation.md
-├── precharge_circuit.md
-├── sense_amplifier.md
-├── row_decoder.md
-└── column_mux.md
-
-docs/
-├── openram_flow.md
-├── sky130_pdk.md
-├── design_tradeoffs.md
-├── validation_strategy.md
-└── decision_log.md
-
-ai_workflow/
-├── prompts.md
-├── workflow.md
-├── verified_answers.md
-└── mistakes_found.md
-
-journal/
-└── week1.md
-
-assets/
-└── images/
+```
+AI-Assisted-4KB-SRAM-SKY130/
+│
+├── verification/              ← All simulation work
+│   ├── spice/                 ← .spice netlists (7 circuits)
+│   ├── simulations/           ← .raw output files from ngspice
+│   ├── waveforms/             ← .png waveform screenshots
+│   └── xschem/                ← Schematic files (.sch)
+│
+├── architecture/              ← SRAM theory documentation (8 topics)
+├── docs/                      ← Design decisions, tradeoffs, PDK notes
+├── ai_workflow/               ← AI prompt log, verified answers, mistakes
+├── journal/                   ← Week-by-week learning diary
+├── reports/                   ← Reports per week
+│   ├── week1/                 ← IEEE report PDF + LaTeX + preview
+│   └── week2/                 ← Week 2 summary report
+├── assets/images/             ← Architecture diagrams
+└── openram/                   ← OpenRAM configs (Week 3+)
 ```
 
 ---
 
-## Week 1 Progress
+## Progress by Week
 
-### Completed Topics
+### ✅ Week 1 — SRAM Theory & Fundamentals
 
-* SRAM Memory Hierarchy
-* SRAM Macro Architecture
-* 6T SRAM Cell
-* Read Operation
-* Write Operation
-* Precharge Circuit
-* Sense Amplifier
-* Row Decoder
-* Column Multiplexer
-* OpenRAM Configuration Files
-* OpenRAM Generation Flow
-* SKY130 Technology Integration
-* OpenRAM Output Files
-* Logical vs Physical Memory Organization
+> Full report: [`reports/week1/`](reports/week1/)  
+> Preview: [`week1_report_preview.png`](reports/week1/week1_report_preview.png)  
+> 📄 [Download IEEE PDF](reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)
+
+![Week 1 Report Preview](reports/week1/week1_report_preview.png)
+
+**Completed:**
+- Studied 6T SRAM cell, read/write operation, SNM, OpenRAM architecture
+- CMOS inverter simulated with SKY130 PDK (baseline)
+- Documented 8 architecture topics in `architecture/`
+- Wrote IEEE one-page technical report
 
 ---
 
-## Key Learnings
+### ✅ Week 2 — Circuit Simulations (ngspice + SKY130)
 
-### SRAM Architecture
+> Full report: [`reports/week2/week2_summary_report.md`](reports/week2/week2_summary_report.md)  
+> Journal: [`journal/week2.md`](journal/week2.md)
 
-* SRAM uses 6T bitcells for data storage.
-* Differential bitlines improve read reliability.
-* Peripheral circuits enable read and write operations.
+All 6 SRAM circuits simulated successfully:
 
-### OpenRAM
+| # | Circuit | Spice File | Sim Points | Waveform |
+|---|---|---|---|---|
+| 1 | 6T SRAM READ | [6T_cell_read.spice](verification/spice/6T_cell_read.spice) | 2020 | [PNG](verification/waveforms/6T_read_waveform.png) |
+| 2 | 6T SRAM WRITE | [6T_cell_write.spice](verification/spice/6T_cell_write.spice) | 2020 | [PNG](verification/waveforms/6T_write_waveform.png) |
+| 3 | Precharge | [precharge.spice](verification/spice/precharge.spice) | 1520 | [PNG](verification/waveforms/precharge_waveform.png) |
+| 4 | Write Driver | [write_driver.spice](verification/spice/write_driver.spice) | 2024 | [PNG](verification/waveforms/write_driver_waveform.png) |
+| 5 | Sense Amplifier | [sense_amplifier.spice](verification/spice/sense_amplifier.spice) | 1526 | [PNG](verification/waveforms/sense_amp_waveform.png) |
+| 6 | **1-bit Full SRAM** | [1bit_sram_full.spice](verification/spice/1bit_sram_full.spice) | **3050** | [PNG](verification/waveforms/1bit_sram_full_waveform.png) |
 
-* Configuration-driven memory generation.
-* Automatic creation of memory arrays and peripheral circuitry.
-* Generation of ASIC-ready output views.
+**Full 1-bit SRAM waveform (WRITE→READ cycle verified):**
 
-### SKY130
+![1-bit Full SRAM Waveform](verification/waveforms/1bit_sram_full_waveform.png)
 
-* Provides transistor models and design rules.
-* Enables technology-aware SRAM generation.
+**6T READ waveform:**
 
----
+![6T Read Waveform](verification/waveforms/6T_read_waveform.png)
 
-## AI-Assisted Workflow
+**6T WRITE waveform:**
 
-AI tools such as ChatGPT and Codex were used to:
-
-* Break complex SRAM concepts into smaller learning tasks.
-* Analyze repository structure.
-* Investigate OpenRAM configuration and flow.
-* Generate study guides and documentation drafts.
-
-All findings were verified against repository files and technical references before inclusion.
+![6T Write Waveform](verification/waveforms/6T_write_waveform.png)
 
 ---
 
-## Current focus:
+### 🔲 Week 3 — OpenRAM Setup & Macro Generation
+- Install and configure OpenRAM for SKY130
+- Generate 4KB SRAM macro
+- Verify outputs: GDS, LEF, LIB, Verilog
 
-* Week 1 documentation completed
-* IEEE report submitted
-* OpenRAM installation and execution
-* OpenRAM output analysis
-* Week 2 experimentation
-
-## Future Work
-
-* OpenRAM installation and execution
-* SRAM macro generation
-* Timing characterization
-* Verification studies
-* Memory optimization
-* Final project report
+### 🔲 Week 4 — Post-Layout Verification & Final Report
+- DRC / LVS checks
+- Parasitic extraction and post-layout simulation
+- Final report and presentation
 
 ---
 
-## Week 1 Repository Metrics
+## How to Run Simulations
 
-Documentation Created:
+```bash
+# Clone the repo
+git clone https://github.com/devdutt-kadale/AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale.git
+cd AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale
 
-* 8 Architecture Documents
-* 5 Technical Documents
-* AI Prompt Log
-* Engineering Journal
-* IEEE Technical Report
+# Run any circuit (example: full 1-bit SRAM)
+cd verification/spice
+ngspice -b 1bit_sram_full.spice
+```
 
-Topics Covered:
+**Prerequisite:** SKY130 PDK installed at `/usr/local/share/pdk/sky130A/`
 
-* SRAM Fundamentals
-* OpenRAM Flow
-* SKY130 Integration
-* Memory Organization
-* ASIC Output Views
+---
 
-## Acknowledgements
+## Tools & Environment
 
-* VLSI System Design (VSD)
-* OpenRAM Project
-* SKY130 Open PDK
-* SRAM_SKY130 Reference Repository
+| Tool | Version | Purpose |
+|---|---|---|
+| ngspice | 42 | SPICE simulation |
+| SKY130 PDK | Combined lib, TT corner | 130nm transistor models |
+| xschem | latest | Schematic capture |
+| OpenRAM | latest | SRAM compiler (Week 3+) |
+
+---
+
+## AI Workflow
+
+Every AI interaction is logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md) with the exact prompt, key findings, verification method, and mistakes caught.  
+See [`ai_workflow/workflow.md`](ai_workflow/workflow.md) for the full methodology.
+
+---
+
+## Intern Information
+
+**Name:** Devdutt Bajirao Kadale  
+**Program:** VSD AI-Assisted Analog, Mixed-Signal and FPGA Internship (Cohort 1.2)  
+**Duration:** June – August 2026  
+**Contact:** [GitHub](https://github.com/devdutt-kadale)
