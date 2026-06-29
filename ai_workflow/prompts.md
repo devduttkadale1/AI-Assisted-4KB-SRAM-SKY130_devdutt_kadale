@@ -337,3 +337,19 @@ Reviewed sky130A technology directory, custom cell libraries, transistor models,
 
 Outcome:
 Enhanced docs/sky130_pdk.md and developed a deeper understanding of technology-aware SRAM generation.
+
+## Entry 11 — 6T SRAM READ Simulation Debug (June 29, 2026)
+
+**Prompt:** Help fix ngspice SKY130 model errors for 6T SRAM READ simulation
+
+**AI Response:** Identified 3 root causes:
+1. Missing ~/.spiceinit with SKY130 compatibility flags
+2. Wrong PDK lib path (ngspice/ vs combined/)
+3. Model parameter conflicts with BSIM4
+
+**Fix Applied:**
+- Created ~/.spiceinit with `set ngbehavior=hsa`, `set ng_nomodcheck`
+- Used `.lib "combined/sky130.lib.spice" tt`
+- Matched exact syntax from working cmos_inverter.spice
+
+**Result:** 2020 data rows, simulation successful ✅
