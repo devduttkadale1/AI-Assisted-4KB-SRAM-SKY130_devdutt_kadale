@@ -1,0 +1,57 @@
+* Sense Amplifier - SRAM
+* Author: Devdutt Kadale | VSD Internship Week 2
+* Type: Cross-coupled latch (standard SRAM SA)
+* Function: Amplifies small BL-BLB voltage diff to full swing
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice" tt
+
+*------------------------------------------------------
+* SENSE AMPLIFIER SUBCIRCUIT
+* SAE = Sense Amp Enable (active HIGH)
+* OUT = Amplified output (= stored bit)
+*------------------------------------------------------
+.subckt sense_amp BL BLB OUT OUTB SAE VDD GND
+
+* Cross-coupled PMOS latch
+XSP1 OUT  OUTB VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XSP2 OUTB OUT  VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+
+* Cross-coupled NMOS latch
+XSN1 OUT  OUTB GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XSN2 OUTB OUT  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+
+* Enable NMOS - connects latch to BL/BLB when SAE=HIGH
+XSEN1 OUT  BL  SAE GND sky130_fd_pr__nfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XSEN2 OUTB BLB SAE GND sky130_fd_pr__nfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+
+.ends sense_amp
+
+*------------------------------------------------------
+* TESTBENCH
+* BL slightly lower than BLB (simulates stored 0 being read)
+* Small 50mV differential — SA must amplify to full swing
+* SAE goes HIGH at 3ns to trigger sensing
+*------------------------------------------------------
+Vvdd VDD 0 DC 1.8
+
+* BL precharged to 1.8V then slightly discharged (read disturb)
+VBL  BL  0 PWL(0n 1.8 2n 1.8 2.5n 1.75)
+
+* BLB stays at full VDD (cell stored 1 on QB side)
+VBLB BLB 0 PWL(0n 1.8 2n 1.8)
+
+* SAE fires at 3ns
+VSAE SAE 0 PULSE(0 1.8 3n 100p 100p 8n 20n)
+
+X1 BL BLB OUT OUTB SAE VDD 0 sense_amp
+
+.tran 10p 15n
+
+.control
+  run
+  hardcopy ../waveforms/sense_amp_waveform.ps V(BL) V(BLB) V(SAE) V(OUT) V(OUTB)
+  write ../simulations/sense_amp.raw
+  echo "*** SENSE AMP SIMULATION COMPLETE ***"
+.endc
+
+.end

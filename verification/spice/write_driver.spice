@@ -1,0 +1,30 @@
+* Write Driver Circuit - SRAM
+* Author: Devdutt Kadale | VSD Internship Week 2
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice" tt
+
+.subckt write_driver BL BLB DIN WE VDD GND
+XINVn DINB DIN  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XINVp DINB DIN  VDD VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XWD1 BL  DIN  WE GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XWD2 BLB DINB WE GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+.ends write_driver
+
+Vvdd VDD 0 DC 1.8
+VWE  WE  0 PULSE(0 1.8 2n 100p 100p 12n 30n)
+VDIN DIN 0 PWL(0n 0 2n 0 8n 1.8)
+VBL_pre  BL  0 PWL(0n 1.8)
+VBLB_pre BLB 0 PWL(0n 1.8)
+
+X1 BL BLB DIN WE VDD 0 write_driver
+
+.tran 10p 20n
+
+.control
+  run
+  hardcopy ../waveforms/write_driver_waveform.ps V(WE) V(DIN) V(BL) V(BLB)
+  write ../simulations/write_driver.raw
+  echo "*** WRITE DRIVER SIMULATION COMPLETE ***"
+.endc
+
+.end
