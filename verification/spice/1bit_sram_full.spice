@@ -1,0 +1,61 @@
+* 1-Bit SRAM Full Integration
+* Author: Devdutt Kadale | VSD Internship Week 2
+* PDK: SKY130 | VDD=1.8V
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice" tt
+
+.subckt precharge BL BLB VDD PCB
+XPC1 VDD PCB BL  VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XPC2 VDD PCB BLB VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XPC3 BL  PCB BLB VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+.ends precharge
+
+.subckt sram_6t BL BLB WL VDD GND
+XM1 Q  QB  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM2 Q  QB  VDD VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM3 QB Q   GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM4 QB Q   VDD VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM5 BL  Q  WL GND sky130_fd_pr__nfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM6 BLB QB WL GND sky130_fd_pr__nfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+.ends sram_6t
+
+.subckt write_driver BL BLB DIN WE VDD GND
+XINVn DINB DIN  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XINVp DINB DIN  VDD VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XWD1 BL  DIN  WE GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XWD2 BLB DINB WE GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+.ends write_driver
+
+.subckt sense_amp BL BLB OUT OUTB SAE VDD GND
+XSP1 OUT  OUTB VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XSP2 OUTB OUT  VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XSN1 OUT  OUTB GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XSN2 OUTB OUT  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XSEN1 OUT  BL  SAE GND sky130_fd_pr__nfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XSEN2 OUTB BLB SAE GND sky130_fd_pr__nfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+.ends sense_amp
+
+XPRE  BL BLB VDD PCB             precharge
+XCELL BL BLB WL VDD 0            sram_6t
+XWD   BL BLB DIN WE VDD 0        write_driver
+XSA   BL BLB OUT OUTB SAE VDD 0  sense_amp
+
+Vvdd VDD 0 DC 1.8
+VPCB PCB 0 PWL(0n 0 3n 0 3.1n 1.8 13n 1.8 13.1n 0 16n 0 16.1n 1.8 30n 1.8)
+VWL  WL  0 PWL(0n 0 5n 0 5.1n 1.8 13n 1.8 13.1n 0 18n 0 18.1n 1.8 26n 1.8 26.1n 0)
+VWE  WE  0 PWL(0n 0 5n 0 5.1n 1.8 13n 1.8 13.1n 0 30n 0)
+VDIN DIN 0 PWL(0n 0 30n 0)
+VSAE SAE 0 PWL(0n 0 20n 0 20.1n 1.8 26n 1.8 26.1n 0 30n 0)
+
+.ic V(XCELL.Q)=1.8 V(XCELL.QB)=0
+
+.tran 10p 30n
+
+.control
+  run
+  hardcopy ../waveforms/1bit_sram_full_waveform.ps V(PCB) V(WL) V(WE) V(BL) V(BLB) V(XCELL.Q) V(SAE) V(OUT)
+  write ../simulations/1bit_sram_full.raw
+  echo "*** 1-BIT FULL SRAM INTEGRATION COMPLETE ***"
+.endc
+
+.end
