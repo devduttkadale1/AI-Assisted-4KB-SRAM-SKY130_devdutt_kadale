@@ -23,3 +23,6 @@ __pycache__/
 
 # ngspice
 *.log
+openram/openram_env/
+openram/logs/
+openram/outputs/
