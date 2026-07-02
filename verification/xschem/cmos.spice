@@ -1,0 +1,12 @@
+** sch_path: /mnt/c/Users/devka/Semiconductor/AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale/cmos.sch
+**.subckt cmos
+M1 Vout net1 GND M2N7002 m=1
+M2 Vout net1 VDD DMP2035U m=1
+V1 net1 GND 3
+**** begin user architecture code
+vout
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end
