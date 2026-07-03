@@ -225,23 +225,23 @@ All 6 SRAM circuits simulated successfully:
 
 **CMOS Design Waveform (Baseline):**
 
-![CMOS Design Waveform](assets/images/cmos_design_waveform.png)
+![CMOS Design Waveform](verification/waveforms/cmos_design_waveform.png)
 
 **6T SRAM Bitcell Schematic:**
 
-![6T SRAM Bitcell](assets/images/6t_sram_bitcell.png)
+![6T SRAM Bitcell](verification/waveforms/6t_sram_bitcell.png)
 
 **SNM Butterfly Curve:**
 
-![SNM Butterfly Curve](assets/images/snm_butterfly_curve.png)
+![SNM Butterfly Curve](verification/waveforms/snm_butterfly_curve.png)
 
 **Read Disturb Analysis:**
 
-![Read Disturb Analysis](assets/images/read_disturb_analysis.png)
+![Read Disturb Analysis](verification/waveforms/read_disturb_analysis.png)
 
 **Write Margin Analysis:**
 
-![Write Margin Analysis](assets/images/write_margin_analysis.png)
+![Write Margin Analysis](verification/waveforms/write_margin_analysis.png)
 
 ---
 
