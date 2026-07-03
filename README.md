@@ -215,6 +215,34 @@ All 6 SRAM circuits simulated successfully:
 
 ![6T Write Waveform](verification/waveforms/6T_write_waveform.png)
 
+**6T WRITE waveform:**
+
+![6T Write Waveform](verification/waveforms/6T_write_waveform.png)
+
+---
+
+### 📊 Simulation Analysis Results
+
+**CMOS Design Waveform (Baseline):**
+
+![CMOS Design Waveform](assets/images/cmos_design_waveform.png)
+
+**6T SRAM Bitcell Schematic:**
+
+![6T SRAM Bitcell](assets/images/6t_sram_bitcell.png)
+
+**SNM Butterfly Curve:**
+
+![SNM Butterfly Curve](assets/images/snm_butterfly_curve.png)
+
+**Read Disturb Analysis:**
+
+![Read Disturb Analysis](assets/images/read_disturb_analysis.png)
+
+**Write Margin Analysis:**
+
+![Write Margin Analysis](assets/images/write_margin_analysis.png)
+
 ---
 
 ### 🔲 Week 3 — OpenRAM Setup & Macro Generation
