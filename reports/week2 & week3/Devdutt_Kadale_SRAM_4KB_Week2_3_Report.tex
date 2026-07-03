@@ -8,6 +8,7 @@
 \usepackage{xcolor}
 \usepackage{listings}
 \usepackage{hyperref}
+\usepackage{float}
 \def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \usepackage{balance}
@@ -53,6 +54,17 @@ The AI-assisted workflow consisted of four steps per circuit block:
     \item \textbf{Observation and Debugging:} Waveforms were captured, errors documented, and the AI tool queried again for fixes where needed.
 \end{enumerate}
 
+\section{CMOS Baseline Verification}
+
+Before simulating SRAM-specific blocks, a CMOS inverter was simulated as a baseline to verify correct SKY130 PDK model integration and ngspice setup. The inverter transient response confirmed proper device switching behavior at VDD~=~1.8~V with the TT corner models.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\columnwidth]{../../verification/waveforms/cmos_design_waveform.png}
+  \caption{CMOS Inverter Transient Waveform -- SKY130 PDK Baseline Verification}
+  \label{fig:cmos_waveform}
+\end{figure}
+
 \section{6T SRAM Bitcell: Operation and Stability}
 
 \subsection{Circuit Description}
@@ -67,13 +79,56 @@ transient simulation with ngspice commands."
 \end{lstlisting}
 \textit{Tool used: ChatGPT GPT-4o, June 2026}
 
+\subsection{Simulated Read and Write Waveforms}
+
+Fig.~\ref{fig:sram_read} shows the READ operation waveform, capturing the differential voltage development on BL and BLB after WL assertion. Fig.~\ref{fig:sram_write} shows the WRITE operation, where the write driver overrides the stored latch value.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\columnwidth]{../../verification/waveforms/sram_read.png}
+  \caption{6T SRAM Bitcell READ Operation -- BL/BLB Differential Development}
+  \label{fig:sram_read}
+\end{figure}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\columnwidth]{../../verification/waveforms/sram_write.png}
+  \caption{6T SRAM Bitcell WRITE Operation -- Latch Overwrite via Write Driver}
+  \label{fig:sram_write}
+\end{figure}
+
 \subsection{Read Stability: Static Noise Margin}
 The Static Noise Margin (SNM) quantifies read stability and is extracted from the butterfly curve---the superposition of the two inverter voltage transfer characteristics (VTCs). A larger SNM indicates greater immunity to noise during read. For the SKY130 bitcell at TT corner and 1.8~V supply, the simulated SNM was approximately 280--320~mV, consistent with published values for the \texttt{sky130\_fd\_bd\_sram\_\_sram\_sp\_cell\_opt1} cell.
 
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\columnwidth]{../../verification/waveforms/snm_butterfly_curve.png}
+  \caption{Static Noise Margin -- Butterfly Curve (VTC Superposition, TT Corner, 1.8~V)}
+  \label{fig:snm}
+\end{figure}
+
 Read disturb arises because WL assertion partially pulls node Q toward ground through the access transistor. The cell ratio $\beta = (W/L)_{\text{pull-down}} / (W/L)_{\text{access}}$ must be $>1$ (typically 1.5--2) to ensure the latch is not flipped during read.
+
+\subsection{Read Disturb Analysis}
+
+Fig.~\ref{fig:read_disturb} shows the read disturb simulation result. The internal node Q voltage rises during WL assertion but recovers to its stable state, confirming that the cell ratio sizing is sufficient to prevent data corruption.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\columnwidth]{../../verification/waveforms/read_disturb_analysis.png}
+  \caption{Read Disturb Analysis -- Q Node Voltage During WL Assertion}
+  \label{fig:read_disturb}
+\end{figure}
 
 \subsection{Write Margin}
 The write margin is determined by the pull-up ratio $\gamma = (W/L)_{\text{access}} / (W/L)_{\text{pull-up}}$. A larger $\gamma$ makes it easier for the write driver to overpower the latch. Typical SKY130 bitcell sizing targets $\gamma \approx 1$--$1.2$ for balanced read/write margin.
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.85\columnwidth]{../../verification/waveforms/write_margin_analysis.png}
+  \caption{Write Margin Analysis -- Latch Flip Threshold vs. BL Drive Strength}
+  \label{fig:write_margin}
+\end{figure}
 
 \section{Precharge Circuit}
 The precharge circuit equalizes BL and BLB to VDD before every read operation, reducing sense amplifier offset sensitivity. It consists of three PMOS transistors: two precharging BL and BLB to VDD individually, and one equalizer transistor shorting BL to BLB. All three are controlled by an active-low precharge signal $\overline{\text{PC}}$.
@@ -132,12 +187,13 @@ The bug is traced to the interaction between \texttt{sky130\_internal.py}, \text
 \begin{itemize}
     \item AI tools are effective at generating correct SPICE netlist templates for standard SRAM circuit blocks when given precise, low-token prompts specifying device primitives and operating conditions.
     \item ngspice with SKY130 TT-corner models successfully simulates individual circuit blocks; the main challenge is correct \texttt{.lib} path specification and model binning.
-    \item The 6T bitcell SNM and write margin tradeoff is governed by cell/pull-up ratios and is clearly observable in butterfly curve simulations.
+    \item The 6T bitcell SNM and write margin tradeoff is governed by cell/pull-up ratios and is clearly observable in butterfly curve simulations. The simulated SNM of 280--320~mV confirms adequate read stability at 1.8~V.
+    \item Read disturb simulations confirm that the standard SKY130 cell ratio of $\beta > 1.5$ prevents data corruption during read access.
     \item The OpenRAM \texttt{wlstrapa\_p} bug reveals a naming convention inconsistency between factory-generated module names and technology cell names---a structural issue in the sky130 custom module layer.
 \end{itemize}
 
 \section{Conclusion}
-Weeks~2 and~3 achieved the targeted goal of AI-assisted circuit-level understanding and simulation of SRAM building blocks on SKY130. Individual circuit blocks---bitcell, precharge, sense amplifier, write driver, decoder, and wordline control---were studied, simulated, and documented using AI-generated SPICE netlists and ngspice. The OpenRAM compilation effort surfaced a deep factory/naming bug that is actively being debugged. All prompts, netlists, waveforms, and observations are committed to the project GitHub repository for reproducibility.
+Weeks~2 and~3 achieved the targeted goal of AI-assisted circuit-level understanding and simulation of SRAM building blocks on SKY130. Individual circuit blocks---bitcell, precharge, sense amplifier, write driver, decoder, and wordline control---were studied, simulated, and documented using AI-generated SPICE netlists and ngspice. Simulation waveforms for the CMOS baseline, 6T bitcell read/write operations, SNM butterfly curve, read disturb, and write margin analyses have been captured and are included in this report. The OpenRAM compilation effort surfaced a deep factory/naming bug that is actively being debugged. All prompts, netlists, waveforms, and observations are committed to the project GitHub repository for reproducibility.
 
 \balance
 \begin{thebibliography}{00}
