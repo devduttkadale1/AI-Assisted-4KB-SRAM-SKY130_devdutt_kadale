@@ -145,33 +145,19 @@ Memory Specification (word_size, num_words)
 
 ## Repository Structure
 
-AI-Assisted-4KB-SRAM-SKY130/
-│
-├── verification/
-│   ├── spice/                  ← SPICE netlists
-│   ├── waveforms/              ← Simulation waveform screenshots
-│   └── xschem/                 ← Schematic files (.sch)
-│
-├── architecture/               ← SRAM theory docs (10 topics)
-│   ├── 6T_bitcell.md
-│   ├── sense_amplifier.md
-│   ├── precharge_circuit.md
-│   ├── write_driver.md
-│   ├── row_decoder.md
-│   ├── column_mux.md
-│   ├── wordline_control.md
-│   ├── bitline_behaviour.md
-│   └── sram_timing_sequence.md
-│
-├── docs/                       ← Design decisions, tradeoffs, PDK notes
-├── ai_workflow/                ← AI prompt log, verified answers, mistakes
-├── journal/                    ← Week-by-week learning diary
-├── reports/
-│   ├── week1/                  ← IEEE PDF + LaTeX + preview
-│   └── week2 & week3/          ← IEEE PDF + LaTeX with waveforms
-├── assets/images/              ← Architecture diagrams
-└── openram/                    ← OpenRAM configs (Week 4+)
-
+| Folder | Contents |
+|---|---|
+| `verification/spice/` | SPICE netlists for all circuit blocks |
+| `verification/waveforms/` | Simulation waveform screenshots (PNG) |
+| `verification/xschem/` | Schematic files (.sch) |
+| `architecture/` | SRAM theory docs — 10 topics (bitcell, SA, precharge, decoder, timing...) |
+| `docs/` | Design decisions, tradeoffs, PDK notes |
+| `ai_workflow/` | AI prompt log, verified answers, mistakes caught |
+| `journal/` | Week-by-week learning diary |
+| `reports/week1/` | Week 1 IEEE PDF + LaTeX source |
+| `reports/week2 & week3/` | Week 2&3 IEEE PDF + LaTeX with all waveforms |
+| `assets/images/` | Architecture diagrams |
+| `openram/` | OpenRAM configuration files (Week 4+) |
 ---
 
 ## Progress by Week
