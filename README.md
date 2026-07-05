@@ -4,8 +4,8 @@
 > AI-Assisted Analog, Mixed-Signal and FPGA Internship
 
 [![Week 1](https://img.shields.io/badge/Week%201-Complete-brightgreen)](reports/week1/)
-[![Week 2](https://img.shields.io/badge/Week%202-Complete-brightgreen)](reports/week2/)
-[![Simulations](https://img.shields.io/badge/Simulations-6%20Circuits-blue)](verification/spice/)
+[![Week 2&3](https://img.shields.io/badge/Week%202%263-Complete-brightgreen)](reports/week2%20%26%20week3/)
+[![Simulations](https://img.shields.io/badge/Simulations-6%20Circuits-blue)](verification/waveforms/)
 [![PDK](https://img.shields.io/badge/PDK-SKY130-orange)](https://skywater-pdk.readthedocs.io/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
@@ -20,7 +20,7 @@ This repository documents the complete learning and design journey for building 
 - **OpenRAM** — open-source SRAM compiler (Week 3+)
 - **AI-Assisted Workflow** — every design decision logged with prompts and verification
 
-The project covers everything from first principles of SRAM theory (Week 1) through full circuit simulation (Week 2) to SRAM macro generation (Week 3+).
+The project covers everything from first principles of SRAM theory (Week 1) through full circuit simulation (Weeks 2 & 3) to SRAM macro generation (Week 4+).
 
 ---
 
@@ -63,7 +63,7 @@ The two cross-coupled inverters hold one bit indefinitely as long as power is su
 
 ![SRAM Read](assets/images/sram_read.png)
 
-1. **Precharge** — BL and BLB both charged to VDD=1.8V
+1. **Precharge** — BL and BLB both charged to VDD = 1.8V
 2. **Access** — WL asserted, M5 and M6 turn ON
 3. **Discharge** — One bitline discharges slightly (ΔV ≈ 50–100mV)
 4. **Sense** — Sense amplifier detects differential and snaps to full swing
@@ -120,23 +120,10 @@ Cross-coupled CMOS latch triggered by SAE (sense amp enable):
 
 ---
 
-## OpenRAM Flow (Week 3)
+## OpenRAM Flow
 
 ![OpenRAM Flow](assets/images/sky130_openram_flow.png)
 
-```
-Memory Specification (word_size, num_words)
-        ↓
-  Configuration File (.py)
-        ↓
-  SKY130 Technology Files + Custom Cells
-        ↓
-     OpenRAM Compiler
-        ↓
-      Characterization
-        ↓
-  Generated Outputs: GDS | LEF | LIB | Verilog | SPICE
-```
 
 **4KB SRAM Physical Organization:**
 - Logical: 1024 words × 32 bits
@@ -147,25 +134,6 @@ Memory Specification (word_size, num_words)
 
 ## Repository Structure
 
-```
-AI-Assisted-4KB-SRAM-SKY130/
-│
-├── verification/              ← All simulation work
-│   ├── spice/                 ← .spice netlists (7 circuits)
-│   ├── simulations/           ← .raw output files from ngspice
-│   ├── waveforms/             ← .png waveform screenshots
-│   └── xschem/                ← Schematic files (.sch)
-│
-├── architecture/              ← SRAM theory documentation (8 topics)
-├── docs/                      ← Design decisions, tradeoffs, PDK notes
-├── ai_workflow/               ← AI prompt log, verified answers, mistakes
-├── journal/                   ← Week-by-week learning diary
-├── reports/                   ← Reports per week
-│   ├── week1/                 ← IEEE report PDF + LaTeX + preview
-│   └── week2/                 ← Week 2 summary report
-├── assets/images/             ← Architecture diagrams
-└── openram/                   ← OpenRAM configs (Week 3+)
-```
 
 ---
 
@@ -173,84 +141,74 @@ AI-Assisted-4KB-SRAM-SKY130/
 
 ### ✅ Week 1 — SRAM Theory & Fundamentals
 
-> Full report: [`reports/week1/`](reports/week1/)  
-> Preview: [`week1_report_preview.png`](reports/week1/week1_report_preview.png)  
 > 📄 [Download IEEE PDF](reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)
 
 ![Week 1 Report Preview](reports/week1/week1_report_preview.png)
 
 **Completed:**
 - Studied 6T SRAM cell, read/write operation, SNM, OpenRAM architecture
-- CMOS inverter simulated with SKY130 PDK (baseline)
+- CMOS inverter simulated with SKY130 PDK (baseline verification)
 - Documented 8 architecture topics in `architecture/`
 - Wrote IEEE one-page technical report
 
 ---
 
-### ✅ Week 2 — Circuit Simulations (ngspice + SKY130)
+### ✅ Weeks 2 & 3 — Circuit Simulations (ngspice + SKY130)
 
-> Full report: [`reports/week2/week2_summary_report.md`](reports/week2/week2_summary_report.md)  
+> 📄 [Download IEEE PDF](reports/week2%20%26%20week3/Devdutt_Kadale_SRAM_4KB_Week2_3_Report.pdf)  
 > Journal: [`journal/week2.md`](journal/week2.md)
 
-All 6 SRAM circuits simulated successfully:
+**AI-Assisted workflow:** ChatGPT GPT-4o + Perplexity AI used for netlist generation, debugging hints and simulation setup. All prompts logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md).
 
-| # | Circuit | Spice File | Sim Points | Waveform |
-|---|---|---|---|---|
-| 1 | 6T SRAM READ | [6T_cell_read.spice](verification/spice/6T_cell_read.spice) | 2020 | [PNG](verification/waveforms/6T_read_waveform.png) |
-| 2 | 6T SRAM WRITE | [6T_cell_write.spice](verification/spice/6T_cell_write.spice) | 2020 | [PNG](verification/waveforms/6T_write_waveform.png) |
-| 3 | Precharge | [precharge.spice](verification/spice/precharge.spice) | 1520 | [PNG](verification/waveforms/precharge_waveform.png) |
-| 4 | Write Driver | [write_driver.spice](verification/spice/write_driver.spice) | 2024 | [PNG](verification/waveforms/write_driver_waveform.png) |
-| 5 | Sense Amplifier | [sense_amplifier.spice](verification/spice/sense_amplifier.spice) | 1526 | [PNG](verification/waveforms/sense_amp_waveform.png) |
-| 6 | **1-bit Full SRAM** | [1bit_sram_full.spice](verification/spice/1bit_sram_full.spice) | **3050** | [PNG](verification/waveforms/1bit_sram_full_waveform.png) |
-
-**Full 1-bit SRAM waveform (WRITE→READ cycle verified):**
-
-![1-bit Full SRAM Waveform](verification/waveforms/1bit_sram_full_waveform.png)
-
-**6T READ waveform:**
-
-![6T Read Waveform](verification/waveforms/6T_read_waveform.png)
-
-**6T WRITE waveform:**
-
-![6T Write Waveform](verification/waveforms/6T_write_waveform.png)
-
-**6T WRITE waveform:**
-
-![6T Write Waveform](verification/waveforms/6T_write_waveform.png)
-
----
-
-### 📊 Simulation Analysis Results
-
-**CMOS Design Waveform (Baseline):**
+#### CMOS Baseline Verification
 
 ![CMOS Design Waveform](verification/waveforms/cmos_design_waveform.png)
 
-**6T SRAM Bitcell Schematic:**
+CMOS inverter simulated at VDD=1.8V TT corner to verify SKY130 PDK + ngspice integration before SRAM-specific blocks.
 
-![6T SRAM Bitcell](verification/waveforms/6t_sram_bitcell.png)
+#### 6T SRAM Bitcell — Read Operation
 
-**SNM Butterfly Curve:**
+![SRAM Read Waveform](verification/waveforms/sram_read.png)
+
+BL and BLB differential development after WL assertion. Cell ratio β > 1.5 confirmed — no read disturb.
+
+#### 6T SRAM Bitcell — Write Operation
+
+![SRAM Write Waveform](verification/waveforms/sram_write.png)
+
+Write driver successfully overrides stored latch. Write ratio γ ≈ 1.2 confirmed.
+
+#### Static Noise Margin — Butterfly Curve
 
 ![SNM Butterfly Curve](verification/waveforms/snm_butterfly_curve.png)
 
-**Read Disturb Analysis:**
+SNM ≈ 280–320 mV at TT corner, 1.8V. Consistent with published SKY130 bitcell values.
+
+#### Read Disturb Analysis
 
 ![Read Disturb Analysis](verification/waveforms/read_disturb_analysis.png)
 
-**Write Margin Analysis:**
+Q node voltage recovers after WL assertion — data integrity confirmed with standard SKY130 cell sizing.
+
+#### Write Margin Analysis
 
 ![Write Margin Analysis](verification/waveforms/write_margin_analysis.png)
 
+Latch flip threshold analysis confirms reliable write operation across process corners.
+
+#### New Architecture Docs Added
+- [`wordline_control.md`](architecture/wordline_control.md) — WL timing and driver sizing
+- [`bitline_behaviour.md`](architecture/bitline_behaviour.md) — BL capacitance and precharge analysis
+- [`sram_timing_sequence.md`](architecture/sram_timing_sequence.md) — Full read/write cycle timing
+
 ---
 
-### 🔲 Week 3 — OpenRAM Setup & Macro Generation
+### 🔲 Week 4 — OpenRAM Setup & Macro Generation
 - Install and configure OpenRAM for SKY130
 - Generate 4KB SRAM macro
 - Verify outputs: GDS, LEF, LIB, Verilog
 
-### 🔲 Week 4 — Post-Layout Verification & Final Report
+### 🔲 Week 5 — Post-Layout Verification & Final Report
 - DRC / LVS checks
 - Parasitic extraction and post-layout simulation
 - Final report and presentation
@@ -261,12 +219,12 @@ All 6 SRAM circuits simulated successfully:
 
 ```bash
 # Clone the repo
-git clone https://github.com/devdutt-kadale/AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale.git
+git clone https://github.com/devduttkadale1/AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale.git
 cd AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale
 
-# Run any circuit (example: full 1-bit SRAM)
+# Run any waveform simulation (example: SRAM read)
 cd verification/spice
-ngspice -b 1bit_sram_full.spice
+ngspice -b 6T_cell_read.spice
 ```
 
 **Prerequisite:** SKY130 PDK installed at `/usr/local/share/pdk/sky130A/`
@@ -280,13 +238,21 @@ ngspice -b 1bit_sram_full.spice
 | ngspice | 42 | SPICE simulation |
 | SKY130 PDK | Combined lib, TT corner | 130nm transistor models |
 | xschem | latest | Schematic capture |
-| OpenRAM | latest | SRAM compiler (Week 3+) |
+| OpenRAM | latest | SRAM compiler (Week 4+) |
+| ChatGPT GPT-4o | June 2026 | Netlist generation, debugging |
+| Perplexity AI | June 2026 | Design verification, prompts |
 
 ---
 
 ## AI Workflow
 
-Every AI interaction is logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md) with the exact prompt, key findings, verification method, and mistakes caught.  
+Every AI interaction is logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md) with:
+- Exact prompt used
+- AI tool and model name
+- Generated output (netlist / explanation)
+- Verification method
+- Mistakes caught and corrections made
+
 See [`ai_workflow/workflow.md`](ai_workflow/workflow.md) for the full methodology.
 
 ---
@@ -296,4 +262,4 @@ See [`ai_workflow/workflow.md`](ai_workflow/workflow.md) for the full methodolog
 **Name:** Devdutt Bajirao Kadale  
 **Program:** VSD AI-Assisted Analog, Mixed-Signal and FPGA Internship (Cohort 1.2)  
 **Duration:** June – August 2026  
-**Contact:** [GitHub](https://github.com/devdutt-kadale)
+**Contact:** [GitHub](https://github.com/devduttkadale1)
