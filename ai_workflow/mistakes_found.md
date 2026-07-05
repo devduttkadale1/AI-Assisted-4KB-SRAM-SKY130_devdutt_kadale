@@ -62,3 +62,15 @@ Always verify AI recommendations against project requirements.
 ## Key Takeaway
 
 AI can accelerate learning and exploration, but every technical finding must be independently verified before being documented.
+
+## Case 4
+
+### Initial AI Response
+Suggested `.lib "ngspice/sky130.lib.spice" tt` path for SKY130 models
+
+### Correction
+Correct path is `.lib "combined/sky130.lib.spice" tt`
+ngspice/ directory has incomplete model bindings
+
+### Lesson
+Always verify PDK library paths against actual installed directory structure before trusting AI suggestions.

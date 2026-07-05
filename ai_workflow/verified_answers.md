@@ -106,3 +106,46 @@ SKY130 provides:
 Confirmed through SKY130 technology directory structure.
 
 Status: VERIFIED
+
+## Verified Topic 6
+
+### Topic
+SNM Value — SKY130 TT Corner
+
+### AI Finding
+SNM ≈ 280–320 mV at VDD=1.8V, TT process corner
+
+### Verification
+Confirmed via butterfly curve simulation in ngspice
+
+Status: VERIFIED
+
+---
+
+## Verified Topic 7
+
+### Topic
+Cell Ratio for Read Stability
+
+### AI Finding
+CR = W_pulldown / W_access > 1.5 prevents read disturb
+
+### Verification
+Confirmed via read disturb simulation — Q node stable
+
+Status: VERIFIED
+
+---
+
+## Verified Topic 8
+
+### Topic
+Write Ratio for Write Margin
+
+### AI Finding
+WR = W_access / W_pullup > 1 required for successful write
+
+### Verification
+Confirmed via write margin simulation — latch flips reliably at γ ≈ 1.2
+
+Status: VERIFIED

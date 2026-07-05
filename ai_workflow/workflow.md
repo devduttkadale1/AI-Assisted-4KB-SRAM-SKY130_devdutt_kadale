@@ -54,3 +54,11 @@ All AI-generated explanations were verified against:
 ## Key Principle
 
 AI was used as a learning accelerator rather than a replacement for engineering understanding.
+
+### Perplexity AI
+
+Used for:
+- SPICE netlist debugging (SKY130 model path errors)
+- SNM and write margin simulation setup
+- IEEE report LaTeX structuring
+- README and documentation review

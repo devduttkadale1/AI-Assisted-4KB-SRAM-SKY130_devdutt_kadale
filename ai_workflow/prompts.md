@@ -353,3 +353,63 @@ Enhanced docs/sky130_pdk.md and developed a deeper understanding of technology-a
 - Matched exact syntax from working cmos_inverter.spice
 
 **Result:** 2020 data rows, simulation successful ✅
+
+## Entry 12 — SNM Butterfly Curve Simulation (June 30, 2026)
+
+**Tool:** Perplexity AI + ChatGPT GPT-4o
+
+**Objective:** Simulate Static Noise Margin using butterfly curve method
+
+**Prompt:** Generate ngspice netlist for SNM butterfly curve of 6T SRAM cell using SKY130 PDK
+
+**Key Findings:**
+- SNM measured by overlaying two VTCs of cross-coupled inverters
+- Largest inscribed square diagonal = SNM value
+- SKY130 TT corner: SNM ≈ 280–320 mV at VDD=1.8V
+
+**Result:** snm_butterfly_curve.png generated ✅
+
+---
+
+## Entry 13 — Read Disturb Analysis (July 1, 2026)
+
+**Tool:** ChatGPT GPT-4o
+
+**Objective:** Verify Q node stability during read access
+
+**Prompt:** Simulate read disturb in 6T SRAM cell — check if Q node voltage rises above flip threshold
+
+**Key Findings:**
+- Cell ratio β > 1.5 prevents read disturb
+- Q node rises slightly but recovers after WL de-assertion
+- SKY130 standard sizing is sufficient
+
+**Result:** read_disturb_analysis.png generated ✅
+
+---
+
+## Entry 14 — Write Margin Analysis (July 2, 2026)
+
+**Tool:** ChatGPT GPT-4o
+
+**Objective:** Confirm reliable write operation across sizing
+
+**Prompt:** Simulate write margin — find minimum write driver strength to flip latch
+
+**Key Findings:**
+- Write ratio γ = W_access / W_pullup must be > 1
+- SKY130 sizing gives γ ≈ 1.2 — reliable write confirmed
+
+**Result:** write_margin_analysis.png generated ✅
+
+---
+
+## Entry 15 — Week 2&3 Report LaTeX Compilation (July 2, 2026)
+
+**Tool:** Perplexity AI
+
+**Objective:** Compile IEEE-format report with all waveform figures
+
+**Prompt:** Help structure IEEE two-column LaTeX report with 6 simulation results
+
+**Result:** Devdutt_Kadale_SRAM_4KB_Week2_3_Report.pdf generated ✅
