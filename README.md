@@ -124,6 +124,17 @@ Cross-coupled CMOS latch triggered by SAE (sense amp enable):
 
 ![OpenRAM Flow](assets/images/sky130_openram_flow.png)
 
+Memory Specification (word_size, num_words)
+↓
+Configuration File (.py)
+↓
+SKY130 Technology Files + Custom Cells
+↓
+OpenRAM Compiler
+↓
+Characterization
+↓
+Generated Outputs: GDS | LEF | LIB | Verilog | SPICE
 
 **4KB SRAM Physical Organization:**
 - Logical: 1024 words × 32 bits
@@ -134,6 +145,26 @@ Cross-coupled CMOS latch triggered by SAE (sense amp enable):
 
 ## Repository Structure
 
+AI-Assisted-4KB-SRAM-SKY130/
+│
+├── verification/
+│ ├── spice/ ← SPICE netlists
+│ ├── waveforms/ ← Simulation waveform screenshots
+│ └── xschem/ ← Schematic files (.sch)
+│
+├── architecture/ ← SRAM theory docs (10 topics)
+│ ├── wordline_control.md
+│ ├── bitline_behaviour.md
+│ └── sram_timing_sequence.md
+│
+├── docs/ ← Design decisions, tradeoffs
+├── ai_workflow/ ← AI prompt log, verified answers
+├── journal/ ← Week-by-week learning diary
+├── reports/
+│ ├── week1/ ← IEEE PDF + LaTeX
+│ └── week2 & week3/ ← IEEE PDF + LaTeX with waveforms
+├── assets/images/ ← Architecture diagrams
+└── openram/ ← OpenRAM configs (Week 4+)
 
 ---
 
