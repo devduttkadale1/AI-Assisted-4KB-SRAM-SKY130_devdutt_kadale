@@ -1,0 +1,42 @@
+* Sense Amplifier - Latch-type
+.param VDD=1.8
+
+.model nfet_sky130 nmos level=8
++ tox=4.15e-9 toxe=4.15e-9 toxp=2.1e-9 toxref=4.15e-9
++ phi=0.7 vth0=0.49 k1=0.78 k2=0.0 k3=0.0
++ dvt0=1.0 dvt1=2.0 dvt2=-0.032
++ u0=160 ua=2.25e-9 ub=5.87e-19 uc=0.0
++ voff=-0.126 nfactor=2.1 cit=0.0 cdsc=0.0
++ cgso=2.4e-10 cgdo=2.4e-10
++ cj=1.7e-3 mj=0.5 cjsw=3.5e-10 mjsw=0.35
++ pclm=0.04 delta=0.01
+
+.model pfet_sky130 pmos level=8
++ tox=4.15e-9 toxe=4.15e-9 toxp=2.1e-9 toxref=4.15e-9
++ phi=0.7 vth0=-0.50 k1=0.78 k2=0.0 k3=0.0
++ dvt0=1.0 dvt1=2.0 dvt2=-0.032
++ u0=30 ua=2.25e-9 ub=5.87e-19 uc=0.0
++ voff=-0.126 nfactor=2.1 cit=0.0 cdsc=0.0
++ cgso=2.4e-10 cgdo=2.4e-10
++ cj=1.7e-3 mj=0.5 cjsw=3.5e-10 mjsw=0.35
++ pclm=0.04 delta=0.01
+
+VDD VDD GND DC {VDD}
+VSA_EN SA_EN GND PULSE(0 {VDD} 5n 0.1n 0.1n 10n 30n)
+VBL  BL  GND DC 1.70
+VBLB BLB GND DC 1.65
+
+MN1 SAout  SAoutB SEN GND nfet_sky130 W=1.0u L=0.15u
+MN2 SAoutB SAout  SEN GND nfet_sky130 W=1.0u L=0.15u
+MP1 SAout  SAoutB VDD VDD pfet_sky130 W=2.0u L=0.15u
+MP2 SAoutB SAout  VDD VDD pfet_sky130 W=2.0u L=0.15u
+MN3 SAout  BL  SEN GND nfet_sky130 W=1.0u L=0.15u
+MN4 SAoutB BLB SEN GND nfet_sky130 W=1.0u L=0.15u
+MN5 SEN SA_EN GND GND nfet_sky130 W=2.0u L=0.15u
+
+COUT  SAout  GND 10f
+COUTB SAoutB GND 10f
+
+.tran 0.01n 30n
+.print tran v(SAout) v(SAoutB) v(SA_EN)
+.end

@@ -1,0 +1,38 @@
+* Pre-charge Circuit - SKY130 Prelayout
+.param VDD=1.8
+.param W_PC=2.0u
+.param L_PC=0.15u
+
+.model nfet_sky130 nmos level=8
++ tox=4.15e-9 toxe=4.15e-9 toxp=2.1e-9 toxref=4.15e-9
++ phi=0.7 vth0=0.49 k1=0.78 k2=0.0 k3=0.0
++ dvt0=1.0 dvt1=2.0 dvt2=-0.032
++ u0=160 ua=2.25e-9 ub=5.87e-19 uc=0.0
++ voff=-0.126 nfactor=2.1 cit=0.0 cdsc=0.0
++ cgso=2.4e-10 cgdo=2.4e-10
++ cj=1.7e-3 mj=0.5 cjsw=3.5e-10 mjsw=0.35
++ pclm=0.04 delta=0.01
+
+.model pfet_sky130 pmos level=8
++ tox=4.15e-9 toxe=4.15e-9 toxp=2.1e-9 toxref=4.15e-9
++ phi=0.7 vth0=-0.50 k1=0.78 k2=0.0 k3=0.0
++ dvt0=1.0 dvt1=2.0 dvt2=-0.032
++ u0=30 ua=2.25e-9 ub=5.87e-19 uc=0.0
++ voff=-0.126 nfactor=2.1 cit=0.0 cdsc=0.0
++ cgso=2.4e-10 cgdo=2.4e-10
++ cj=1.7e-3 mj=0.5 cjsw=3.5e-10 mjsw=0.35
++ pclm=0.04 delta=0.01
+
+VDD VDD GND DC {VDD}
+VPCL PCL GND PULSE(0 {VDD} 2n 0.1n 0.1n 8n 20n)
+
+MP1 BL  PCL BLB VDD pfet_sky130 W={W_PC} L={L_PC}
+MP2 BL  PCL VDD VDD pfet_sky130 W={W_PC} L={L_PC}
+MP3 BLB PCL VDD VDD pfet_sky130 W={W_PC} L={L_PC}
+
+CBL  BL  GND 50f
+CBLB BLB GND 50f
+
+.tran 0.01n 40n
+.print tran v(BL) v(BLB) v(PCL)
+.end
