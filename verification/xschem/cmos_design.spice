@@ -1,0 +1,13 @@
+** CMOS Inverter - SKY130
+VIN net1 GND pulse(0 1.8 0 100p 100p 5n 10n)
+VDD_SRC net2 GND 1.8
+XM3 Vout net1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Vout net1 net2 net2 sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+.lib /home/devdutt/gf/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.tran 10p 50n
+.control
+run
+plot v(net1) v(vout)
+.endc
+.GLOBAL GND
+.end

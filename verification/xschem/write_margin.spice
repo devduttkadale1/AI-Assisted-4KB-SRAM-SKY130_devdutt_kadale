@@ -1,0 +1,26 @@
+** 6T SRAM Write Margin - SKY130
+** Cell storing Q=1,QB=0. Apply WL=1.8, BL=0, BLB=1.8 to write 0
+
+VDD_SRC VDD GND 1.8
+VWL WL GND pulse(0 1.8 2n 10p 10p 8n 20n)
+VBL BL GND pulse(1.8 0 2n 10p 10p 8n 20n)
+VBLB BLB GND 1.8
+
+XM1 Q QB GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Q QB VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+XM3 QB Q GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+XM4 QB Q VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+XM5 BL WL Q GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+XM6 BLB WL QB GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+
+.lib /home/devdutt/gf/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.ic v(Q)=1.8 v(QB)=0
+.tran 10p 20n
+
+.control
+run
+plot v(Q) v(QB) v(WL) v(BL)
+.endc
+
+.GLOBAL GND
+.end

@@ -1,0 +1,46 @@
+* Precharge Circuit - SRAM Bitline Precharge
+* Author: Devdutt Kadale | VSD Internship Week 2
+* Function: Precharges BL and BLB to VDD before READ
+* Circuit: 3 PMOS transistors (PC1, PC2=pullup, PC3=equalizer)
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice" tt
+
+*------------------------------------------------------
+* PRECHARGE SUBCIRCUIT
+* PCB = Precharge Bar (active LOW — 0 = precharging)
+*------------------------------------------------------
+.subckt precharge BL BLB VDD PCB
+* PC1: Pull BL  up to VDD
+XPC1 VDD PCB BL  VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+* PC2: Pull BLB up to VDD
+XPC2 VDD PCB BLB VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+* PC3: Equalizer — connects BL to BLB (removes small offset)
+XPC3 BL  PCB BLB VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+.ends precharge
+
+*------------------------------------------------------
+* TESTBENCH
+* Phase 1 (0-3ns):  PCB=0 → precharge ON  → BL,BLB → VDD
+* Phase 2 (3-10ns): PCB=1 → precharge OFF → BL,BLB float
+*------------------------------------------------------
+Vvdd VDD 0 DC 1.8
+
+* PCB: LOW=precharging, HIGH=idle
+VPCB PCB 0 PULSE(0 1.8 3n 100p 100p 6n 20n)
+
+* Start BL and BLB at 0V (discharged state)
+VBL_init  BL  0 PWL(0n 0)
+VBLB_init BLB 0 PWL(0n 0)
+
+X1 BL BLB VDD PCB precharge
+
+.tran 10p 15n
+
+.control
+  run
+  hardcopy ../waveforms/precharge_waveform.ps V(PCB) V(BL) V(BLB)
+  write ../simulations/precharge.raw
+  echo "*** PRECHARGE SIMULATION COMPLETE ***"
+.endc
+
+.end

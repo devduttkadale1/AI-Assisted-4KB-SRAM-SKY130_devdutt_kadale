@@ -1,0 +1,28 @@
+** 6T SRAM Bitcell SNM - Butterfly Curve - SKY130
+
+VDD_SRC VDD GND 1.8
+
+* Inverter 1 - sweep Vin1, measure Vout1
+XM1 Vout1 Vin1 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+XM2 Vout1 Vin1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+
+* Inverter 2 - sweep Vin2, measure Vout2
+XM3 Vout2 Vin2 GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.65 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+XM4 Vout2 Vin2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1 m=1
+
+* Voltage sources for sweep
+Vin1 Vin1 GND 0
+Vin2 Vin2 GND 0
+
+.lib /home/devdutt/gf/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+.dc Vin1 0 1.8 0.01 Vin2 0 1.8 0.01
+
+.control
+run
+* Plot butterfly curve - Vout1 vs Vin1 and Vin2 vs Vout2
+plot v(Vout1) vs v(Vin1) v(Vin2) vs v(Vout2)
+.endc
+
+.GLOBAL GND
+.end

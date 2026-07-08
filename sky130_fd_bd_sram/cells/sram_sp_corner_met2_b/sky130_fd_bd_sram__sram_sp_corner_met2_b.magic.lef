@@ -1,0 +1,25 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_fd_bd_sram__sram_sp_corner_met2_b
+  CLASS BLOCK ;
+  FOREIGN sky130_fd_bd_sram__sram_sp_corner_met2_b ;
+  ORIGIN 0.055 -0.020 ;
+  SIZE 1.355 BY 2.035 ;
+  OBS
+      LAYER met1 ;
+        RECT 0.270 1.200 0.530 1.460 ;
+        RECT -0.055 0.745 0.130 1.005 ;
+        RECT 0.800 0.120 1.060 0.380 ;
+      LAYER met2 ;
+        RECT 0.000 1.600 0.560 2.055 ;
+        RECT 0.000 1.180 0.560 1.460 ;
+        RECT 0.000 1.005 1.300 1.030 ;
+        RECT -0.055 0.745 1.300 1.005 ;
+        RECT 0.000 0.580 1.300 0.745 ;
+        RECT 0.000 0.020 1.300 0.405 ;
+  END
+END sky130_fd_bd_sram__sram_sp_corner_met2_b
+END LIBRARY
+

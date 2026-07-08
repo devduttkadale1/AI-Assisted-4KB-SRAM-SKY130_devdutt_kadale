@@ -1,0 +1,18 @@
+VERSION 5.7 ;
+  NOWIREEXTENSIONATPIN ON ;
+  DIVIDERCHAR "/" ;
+  BUSBITCHARS "[]" ;
+MACRO sky130_fd_bd_sram__sram_sp_wlstrap_p_met2
+  CLASS BLOCK ;
+  FOREIGN sky130_fd_bd_sram__sram_sp_wlstrap_p_met2 ;
+  ORIGIN 0.000 -0.295 ;
+  SIZE 1.300 BY 0.990 ;
+  OBS
+      LAYER met2 ;
+        RECT 0.000 1.065 1.300 1.285 ;
+        RECT 0.000 0.635 1.300 0.895 ;
+        RECT 0.000 0.295 1.300 0.465 ;
+  END
+END sky130_fd_bd_sram__sram_sp_wlstrap_p_met2
+END LIBRARY
+
