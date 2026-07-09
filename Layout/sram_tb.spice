@@ -1,0 +1,29 @@
+.title SRAM 6T Cell Testbench - SKY130A
+.lib /usr/local/share/pdk/sky130B/libs.tech/combined/sky130.lib.spice tt
+.include sram_6t_cell.spice
+
+Vvdd VDD 0 DC 1.8
+* BL/BLB precharged via resistor - allows discharge during read
+Rbl  VDD BL  1k
+Rblb VDD BLB 1k
+* Precharge capacitance
+Cbl  BL  0   50f
+Cblb BLB 0   50f
+
+* Word line pulse
+Vwl WL 0 PULSE(0 1.8 2n 0.1n 0.1n 8n 20n)
+
+* Initial conditions - cell holds Q=1, QB=0
+.ic V(X1.Q)=1.8 V(X1.QB)=0
+
+X1 BL BLB 0 VDD WL sram_6t_cell
+
+.tran 0.01n 30n
+.save V(BL) V(BLB) V(WL) V(X1.Q) V(X1.QB)
+
+.measure tran t_access
++ TRIG V(WL)  VAL=0.9 RISE=1
++ TARG V(BLB) VAL=1.7 FALL=1
+
+.print tran V(WL) V(BL) V(BLB)
+.end

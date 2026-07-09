@@ -1,0 +1,11 @@
+* SPICE3 file created from sram_6t_cell.ext - technology: sky130A
+.option scale=10m
+
+.subckt sram_6t_cell BL BLB GND VDD WL
+X0 VDD QB    VDD VDD sky130_fd_pr__pfet_01v8 ad=8.436n pd=0.656m as=8.436n ps=0.656m w=97 l=20
+X1 Q   WL    BL  GND sky130_fd_pr__nfet_01v8 ad=11.264n pd=0.508m as=11.264n ps=0.508m w=20 l=20
+X2 VDD Q     VDD VDD sky130_fd_pr__pfet_01v8 ad=8.436n pd=0.656m as=8.436n ps=0.656m w=97 l=20
+X3 QB  WL    BLB GND sky130_fd_pr__nfet_01v8 ad=11.264n pd=0.508m as=11.264n ps=0.508m w=20 l=20
+X4 QB  QB    GND GND sky130_fd_pr__nfet_01v8 ad=11.264n pd=0.508m as=11.264n ps=0.508m w=20 l=20
+X5 Q   QB    GND GND sky130_fd_pr__nfet_01v8 ad=11.264n pd=0.508m as=11.264n ps=0.508m w=20 l=20
+.ends
