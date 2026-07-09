@@ -1,14 +1,17 @@
 magic
 tech sky130A
-timestamp 1783566000
+timestamp 1783567302
+<< error_p >>
+rect 2 400 58 413
+rect 20 382 40 395
+rect 31 355 40 382
+rect 44 355 67 382
+rect 20 5 40 40
+rect 44 5 67 67
 << nwell >>
 rect 0 250 600 400
 << pwell >>
 rect 0 0 600 249
-<< ntap >>
-rect 20 355 40 395
-<< ptap >>
-rect 20 5 40 40
 << nmos >>
 rect 72 17 88 216
 rect 172 17 188 216
@@ -41,6 +44,10 @@ rect 88 268 116 382
 rect 243 268 357 382
 rect 484 268 512 382
 rect 528 268 556 382
+<< psubdiff >>
+rect 20 5 40 40
+<< nsubdiff >>
+rect 20 355 40 395
 << poly >>
 rect 72 382 88 395
 rect 512 382 528 395
