@@ -1,0 +1,11 @@
+* NGSPICE file created from sram_6t_cell.ext - technology: sky130A
+
+.subckt sram_6t_cell VDD GND_uq1 BL_uq1
+X0 GND a_672_0# a_304_40# GND_uq1 sky130_fd_pr__nfet_01v8 ad=0.336 pd=2.32 as=0.336 ps=2.32 w=0.6 l=0.16
+X1 a_304_40# a_272_0# BL GND_uq1 sky130_fd_pr__nfet_01v8 ad=0.336 pd=2.32 as=0.336 ps=2.32 w=0.6 l=0.16
+X2 a_1056_536# a_1024_510# a_968_536# w_0_500# sky130_fd_pr__pfet_01v8 ad=0.3192 pd=2.84 as=0.3192 ps=2.84 w=1.14 l=0.16
+X3 a_1664_40# a_1632_0# GND_uq0 GND_uq1 sky130_fd_pr__nfet_01v8 ad=0.336 pd=2.32 as=0.336 ps=2.32 w=0.6 l=0.16
+X4 a_176_536# a_144_510# a_88_536# w_0_500# sky130_fd_pr__pfet_01v8 ad=0.3192 pd=2.84 as=0.3192 ps=2.84 w=1.14 l=0.16
+X5 BLB a_2032_0# a_1664_40# GND_uq1 sky130_fd_pr__nfet_01v8 ad=0.336 pd=2.32 as=0.336 ps=2.32 w=0.6 l=0.16
+.ends
+

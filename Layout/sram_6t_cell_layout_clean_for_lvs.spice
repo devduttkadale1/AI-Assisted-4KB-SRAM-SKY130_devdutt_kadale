@@ -1,0 +1,8 @@
+.subckt sram_6t_cell BL BLB WL VDD VSS
+XPU_Q   Q   QB  VDD VDD sky130_fd_pr__pfet_01v8 w=1.14 l=0.16
+XPD_Q   Q   QB  VSS VSS sky130_fd_pr__nfet_01v8 w=0.6  l=0.16
+XACC_Q  Q   WL  BL  VSS sky130_fd_pr__nfet_01v8 w=0.6  l=0.16
+XPU_QB  QB  Q   VDD VDD sky130_fd_pr__pfet_01v8 w=1.14 l=0.16
+XPD_QB  QB  Q   VSS VSS sky130_fd_pr__nfet_01v8 w=0.6  l=0.16
+XACC_QB QB  WL  BLB VSS sky130_fd_pr__nfet_01v8 w=0.6  l=0.16
+.ends sram_6t_cell

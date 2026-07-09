@@ -1,0 +1,4 @@
+.include ../sram_6t_bitcell_schematic.spice
+.subckt sram_6t_bitcell_wrap BL BLB WL VDD VSS
+X0 BL BLB WL VDD VSS Q QB sram_6t_bitcell
+.ends sram_6t_bitcell_wrap
