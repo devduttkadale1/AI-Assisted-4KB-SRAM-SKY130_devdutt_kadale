@@ -1,0 +1,71 @@
+magic
+tech sky130A
+timestamp 1783566082
+<< nwell >>
+rect 0 250 600 400
+<< pwell >>
+rect 0 0 600 249
+<< nmos >>
+rect 72 17 88 216
+rect 172 17 188 216
+rect 412 17 428 216
+rect 512 17 528 216
+<< pmos >>
+rect 72 268 88 382
+rect 512 268 528 382
+<< ndiff >>
+rect 44 17 72 216
+rect 88 17 116 216
+rect 44 2 116 17
+rect 144 17 172 216
+rect 188 17 216 216
+rect 144 2 216 17
+rect 243 2 357 216
+rect 384 17 412 216
+rect 428 17 456 216
+rect 384 2 456 17
+rect 484 17 512 216
+rect 528 17 556 216
+rect 484 2 556 17
+rect 47 -33 113 2
+rect 147 -33 213 2
+rect 387 -33 453 2
+rect 487 -33 553 2
+<< pdiff >>
+rect 44 268 72 382
+rect 88 268 116 382
+rect 243 268 357 382
+rect 484 268 512 382
+rect 528 268 556 382
+<< poly >>
+rect 72 382 88 395
+rect 512 382 528 395
+rect 72 255 88 268
+rect 512 255 528 268
+rect 72 216 88 229
+rect 172 216 188 229
+rect 412 216 428 229
+rect 512 216 528 229
+<< locali >>
+rect 91 230 509 248
+<< metal1 >>
+rect 0 375 130 400
+rect 180 375 420 400
+rect 470 375 600 400
+rect 145 25 165 375
+rect 435 25 455 375
+rect 0 0 130 25
+rect 180 0 420 25
+rect 470 0 600 25
+<< labels >>
+rlabel locali 91 230 509 248 0 WL
+port 1 nsew
+rlabel metal1 170 0 430 25 0 GND
+port 2 nsew
+rlabel metal1 170 375 430 400 0 VDD
+port 3 nsew
+rlabel metal1 145 25 165 375 0 BL
+port 4 nsew
+rlabel metal1 435 25 455 375 0 BLB
+port 5 nsew
+<< end >>
