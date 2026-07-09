@@ -2,7 +2,7 @@
 
 .option scale=10m
 
-.subckt sram_6t_cell WL GND VDD BL BLB
+.subckt sram_6t_cell BL BLB WL VDD GND
 X0 a_44_2# a_72_17# a_44_2# a_20_5# sky130_fd_pr__nfet_01v8 ad=14.534n pd=1.04m as=14.534n ps=1.04m w=199 l=16
 X1 a_484_2# a_512_17# a_484_2# a_20_5# sky130_fd_pr__nfet_01v8 ad=14.534n pd=1.04m as=14.534n ps=1.04m w=199 l=16
 X2 a_528_268# a_512_255# a_484_268# w_0_250# sky130_fd_pr__pfet_01v8 ad=3.192n pd=0.284m as=3.192n ps=0.284m w=114 l=16
