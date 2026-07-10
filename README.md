@@ -286,3 +286,36 @@ See [`ai_workflow/workflow.md`](ai_workflow/workflow.md) for the full methodolog
 **Program:** VSD AI-Assisted Analog, Mixed-Signal and FPGA Internship (Cohort 1.2)  
 **Duration:** June – August 2026  
 **Contact:** [GitHub](https://github.com/devduttkadale1)
+---
+
+## VSD Internship Task Status
+
+This repository is prepared for the assigned **4kB SRAM Design** track.
+
+| Task | Requirement | Status |
+|---|---|---|
+| Task 1 - Week 1 | SRAM fundamentals + reference repo study + IEEE report | Complete |
+| Task 2 - Week 2 & 3 | Circuit-level SRAM blocks using AI-assisted workflow | Complete |
+| Task 3 - Week 4 | Demonstration video and README link | Pending video link |
+
+Detailed task status is available in [`TASK_STATUS.md`](TASK_STATUS.md).
+
+---
+
+## Final 6T Bitcell LVS Status
+
+The 6T SRAM bitcell schematic and layout have been verified using Netgen LVS.
+
+| Item | File |
+|---|---|
+| Layout LVS netlist | `Layout/sram_6t_cell_lvs_clean.spice` |
+| Schematic SPICE | `verification/xschem/schematic/bitcell/sram_6t_bitcell.spice` |
+| LVS report | `lvs_report.txt` |
+
+Final LVS result:
+
+```text
+Number of devices: 6 | Number of devices: 6
+Netlists match uniquely.
+Final result: Circuits match uniquely.
+
