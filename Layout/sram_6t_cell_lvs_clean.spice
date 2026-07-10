@@ -1,0 +1,17 @@
+* 6T SRAM Bitcell - Layout Extracted Netlist (LVS-ready)
+* Devdutt Kadale - AI-Assisted SRAM SKY130 Project
+.subckt sram_6t_cell BL BLB WL VDD VSS Q QB
+
+* PMOS load transistors (cross-coupled inverter)
+MP1 Q    QB   VDD  VDD  sky130_fd_pr__pfet_01v8 W=1.5u L=0.15u
+MP2 QB   Q    VDD  VDD  sky130_fd_pr__pfet_01v8 W=1.5u L=0.15u
+
+* NMOS driver transistors (cross-coupled inverter)
+MN1 Q    QB   VSS  VSS  sky130_fd_pr__nfet_01v8 W=1.0u L=0.15u
+MN2 QB   Q    VSS  VSS  sky130_fd_pr__nfet_01v8 W=1.0u L=0.15u
+
+* NMOS access transistors (pass gates)
+MN3 Q    WL   BL   VSS  sky130_fd_pr__nfet_01v8 W=0.8u L=0.15u
+MN4 QB   WL   BLB  VSS  sky130_fd_pr__nfet_01v8 W=0.8u L=0.15u
+
+.ends sram_6t_cell
