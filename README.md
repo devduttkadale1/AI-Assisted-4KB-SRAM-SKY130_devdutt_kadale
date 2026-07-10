@@ -319,3 +319,61 @@ Number of devices: 6 | Number of devices: 6
 Netlists match uniquely.
 Final result: Circuits match uniquely.
 
+
+---
+
+## VSD Internship Task Status
+
+This repository is prepared for the assigned **4kB SRAM Design** track.
+
+| Task | Requirement | Status |
+|---|---|---|
+| Task 1 - Week 1 | SRAM fundamentals + reference repo study + IEEE report | Complete |
+| Task 2 - Week 2 & 3 | Circuit-level SRAM blocks using AI-assisted workflow | Complete |
+| Task 3 - Week 4 | Demonstration video and README link | Pending video link |
+
+Detailed task status is available in [`TASK_STATUS.md`](TASK_STATUS.md).
+
+---
+
+## Final 6T Bitcell LVS Status
+
+The 6T SRAM bitcell schematic and layout have been verified using Netgen LVS.
+
+| Item | File |
+|---|---|
+| Layout LVS netlist | `Layout/sram_6t_cell_lvs_clean.spice` |
+| Schematic SPICE | `verification/xschem/schematic/bitcell/sram_6t_bitcell.spice` |
+| LVS report | `lvs_report.txt` |
+
+Final LVS result:
+
+```text
+Number of devices: 6 | Number of devices: 6
+Netlists match uniquely.
+Final result: Circuits match uniquely.
+```
+
+---
+
+## Clean Repository Structure
+
+This repository is organized around the assigned VSD internship tasks only.
+
+| Path | Purpose |
+|---|---|
+| `TASK_STATUS.md` | Summary of Task 1, Task 2, and Task 3 status |
+| `reports/week1/` | Week 1 IEEE report |
+| `reports/week2 & week3/` | Week 2 and Week 3 circuit-level SRAM report |
+| `verification/spice/` | SRAM circuit SPICE decks |
+| `verification/xschem/` | Xschem schematic and bitcell SPICE |
+| `verification/waveforms/` | Verified waveform screenshots |
+| `Layout/` | Final 6T bitcell Magic layout and LVS-ready netlist |
+| `Layout/debug_history/` | Old LVS/debug reports kept for transparency |
+| `architecture/` | SRAM architecture notes |
+| `docs/` | Design notes and validation strategy |
+| `ai_workflow/` | AI prompts, workflow, mistakes, and verified answers |
+| `assets/images/` | README/report images |
+| `references/` | External reference repo links |
+
+The cleaned repository intentionally does not store large external SKY130 SRAM library dumps or generated OpenRAM macro outputs, because the assigned Week 1-4 tasks require circuit-level understanding, verification evidence, and a demonstration video rather than a full 4KB macro GDS.
