@@ -118,13 +118,6 @@ Complete functional verification of the integrated 1-bit SRAM showing the intera
 
 ---
 
-## SPI Interface Verification
-
-![SPI Waveforms](SPI_waveforms.png)
-
-Timing waveforms of the SPI interface used for SRAM communication experiments. The results demonstrate correct synchronization between clock, control, and data signals.
-
----
 
 ## Simulation Environment
 
