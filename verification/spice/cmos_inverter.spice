@@ -1,7 +1,7 @@
 * CMOS Inverter - SKY130
 * Author: Devdutt Kadale | VSD Internship Task 2
 
-.lib "/usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice" tt
+.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 
 XM2 Vout VIN VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
 XM1 Vout VIN GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1

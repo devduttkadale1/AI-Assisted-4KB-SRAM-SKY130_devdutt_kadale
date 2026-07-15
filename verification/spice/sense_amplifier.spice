@@ -3,7 +3,7 @@
 * Type: Cross-coupled latch (standard SRAM SA)
 * Function: Amplifies small BL-BLB voltage diff to full swing
 
-.lib "/usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice" tt
+.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 
 *------------------------------------------------------
 * SENSE AMPLIFIER SUBCIRCUIT

@@ -11,51 +11,20 @@ XPC3 BL  PCB BLB VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps
 .ends precharge
 
 .subckt sram_6t BL BLB WL VDD GND
-
-* Internal storage nodes
-.nodeset V(Q)=1.8 V(QB)=0
-
-* Cross-coupled inverter 1
-XM1 Q   QB   GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
-XM2 Q   QB   VDD VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
-
-* Cross-coupled inverter 2
-XM3 QB  Q    GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
-XM4 QB  Q    VDD VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
-
-* Access transistors
-XM5 BL   WL   Q    GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
-XM6 BLB  WL   QB   GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
-
+XM1 Q  QB  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM2 Q  QB  VDD VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM3 QB Q   GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM4 QB Q   VDD VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XM5 BL  Q  WL GND sky130_fd_pr__nfet_01v8 W=2
+XM6 BLB QB WL GND sky130_fd_pr__nfet_01v8 W=2
 .ends sram_6t
 
-.subckt inv IN OUT VDD GND
-MP1 OUT IN VDD VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
-MN1 OUT IN GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
-.ends
-
-.subckt nor2 A B Y VDD GND
-MN1 Y A GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
-MN2 Y B GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
-MP1 Y A N1 VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
-MP2 N1 B VDD VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
-.ends
-
 .subckt write_driver BL BLB DIN WE VDD GND
-
-XINV1 DIN DINB VDD GND inv
-XINV2 DINB DINBB VDD GND inv
-
-XNOR1 WE DINB  OUT1 VDD GND nor2
-XNOR2 WE DINBB OUT2 VDD GND nor2
-
-MNBLB BLB OUT1 GND GND sky130_fd_pr__nfet_01v8 W=1.26 L=0.21
-MNBL  BL  OUT2 GND GND sky130_fd_pr__nfet_01v8 W=1.26 L=0.21
-
-MPBL  BL  WE VDD VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
-MPBLB BLB WE VDD VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
-
-.ends
+XINVn DINB DIN  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XINVp DINB DIN  VDD VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XWD1 BL  DIN  WE GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XWD2 BLB DINB WE GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+.ends write_driver
 
 .subckt sense_amp BL BLB OUT OUTB SAE VDD GND
 XSP1 OUT  OUTB VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1

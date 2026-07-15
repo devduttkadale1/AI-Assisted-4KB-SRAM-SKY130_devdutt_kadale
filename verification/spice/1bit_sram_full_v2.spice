@@ -1,0 +1,185 @@
+*=========================================================
+* 1-Bit SRAM Full Integration (Version 2)
+* Based on validated SRAM_SKY130 reference
+* Designer : Devdutt Kadale
+* Technology : SKY130
+*=========================================================
+
+.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+
+.option scale=1u
+
+******************************************************
+* 6T SRAM CELL
+******************************************************
+
+.subckt sram_6t BL BLB WL VDD GND
+
+* Cross-coupled inverter 1
+XM1 Q    QB   GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
+XM2 Q    QB   VDD VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
+
+* Cross-coupled inverter 2
+XM3 QB   Q    GND GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
+XM4 QB   Q    VDD VDD sky130_fd_pr__pfet_01v8 W=0.84 L=0.21
+
+* Access transistors
+XM5 BL   WL   Q    GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
+XM6 BLB  WL   QB   GND sky130_fd_pr__nfet_01v8 W=0.42 L=0.21
+
+.ends sram_6t
+
+******************************************************
+* WRITE DRIVER
+******************************************************
+
+.subckt write_driver BL BLB DIN WE VDD GND
+
+XINVn DINB DIN  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XINVp DINB DIN  VDD VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+
+XWD1 BL  DIN  WE GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+XWD2 BLB DINB WE GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
+
+.ends write_driver
+
+******************************************************
+* PRECHARGE CIRCUIT
+******************************************************
+
+.subckt precharge BL BLB VDD PCB
+
+* Pull BL to VDD
+XPC1 VDD PCB BL  VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15
+
+* Pull BLB to VDD
+XPC2 VDD PCB BLB VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15
+
+* Equalization transistor
+XPC3 BL PCB BLB VDD sky130_fd_pr__pfet_01v8 W=0.5 L=0.15
+
+.ends precharge
+
+
+******************************************************
+* SENSE AMPLIFIER
+******************************************************
+
+.subckt sense_amp BL BLB OUT OUTB SAE VDD GND
+
+* Cross-coupled PMOS
+XSP1 OUT  OUTB VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15
+XSP2 OUTB OUT  VDD VDD sky130_fd_pr__pfet_01v8 W=1 L=0.15
+
+* Cross-coupled NMOS
+XSN1 OUT  OUTB GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+XSN2 OUTB OUT  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15
+
+* Enable transistors
+XSEN1 OUT  BL  SAE GND sky130_fd_pr__nfet_01v8 W=0.5 L=0.15
+XSEN2 OUTB BLB SAE GND sky130_fd_pr__nfet_01v8 W=0.5 L=0.15
+
+.ends sense_amp
+
+******************************************************
+* TOP LEVEL
+******************************************************
+
+*-----------------------
+* Block Instantiations
+*-----------------------
+
+XPRE   BL BLB VDD PCB             precharge
+XCELL  BL BLB WL VDD GND          sram_6t
+XWD    BL BLB DIN WE VDD GND      write_driver
+XSA    BL BLB OUT OUTB SAE VDD GND sense_amp
+
+*-----------------------
+* Power Supply
+*-----------------------
+
+VVDD VDD GND DC 1.8
+
+*-----------------------
+* Control Signals
+*-----------------------
+
+* Precharge Enable (Active LOW)
+VPCB PCB GND PWL(
++0n   0
++3n   0
++3.1n 1.8
++13n  1.8
++13.1n 0
++16n  0
++16.1n 1.8
++30n  1.8
+)
+
+* Write Enable
+VWE WE GND PWL(
++0n   0
++5n   0
++5.1n 1.8
++13n  1.8
++13.1n 0
++30n  0
+)
+
+* Wordline
+VWL WL GND PWL(
++0n   0
++6n   0
++6.1n 1.8
++12n  1.8
++12.1n 0
++30n  0
+)
+
+* Input Data
+VDIN DIN GND PWL(
++0n    0
++10n   0
++10.1n 1.8
++20n   1.8
++20.1n 0
++30n   0
+)
+
+* Sense Enable
+VSAE SAE GND PWL(
++0n    0
++20n   0
++20.1n 1.8
++26n   1.8
++26.1n 0
++30n   0
+)
+
+*-----------------------
+* Initial Cell State
+*-----------------------
+
+.ic V(XCELL.Q)=1.8 V(XCELL.QB)=0
+
+*-----------------------
+* Simulation
+*-----------------------
+
+.tran 10p 30n
+
+.control
+
+run
+
+plot v(BL) v(BLB)
+
+plot v(XCELL.Q) v(XCELL.QB)
+
+plot v(OUT) v(OUTB)
+
+plot v(PCB) v(WL) v(WE) v(SAE)
+
+.endc
+
+.end
