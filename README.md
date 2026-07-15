@@ -175,21 +175,23 @@ The integrated simulation verifies the interaction between all major SRAM periph
 
 ### Integrated Simulation Flow
 
-Input Data
-      │
-Write Driver
-      │
-BL / BLB
-      │
-6T SRAM Cell
-      │
-Sense Amplifier
-      │
-OUT
+```text
+          DIN
+           │
+     Write Driver
+           │
+      BL / BLB
+           │
+      6T SRAM Cell
+           │
+   Sense Amplifier
+           │
+      OUT / OUTB
 
-Precharge
-      │
-BL BLB
+Precharge Circuit
+        │
+      BL / BLB
+```
 
 ### Bitline Waveforms
 
@@ -210,26 +212,23 @@ BL BLB
 
 ### Results
 
-The integrated simulation successfully demonstrated:
+The integrated verification successfully demonstrates:
 
-- interaction between the write driver and SRAM bitcell
-- precharge operation before memory access
-- wordline controlled access
-- bitline activity during memory operation
-- sense amplifier activation
-- storage node transitions
+- Correct precharge operation before memory access.
+- Proper wordline-controlled access to the SRAM cell.
+- Successful interaction between the write driver and the 6T SRAM bitcell.
+- Differential bitline activity during memory operation.
+- Sense amplifier activation after bitline differential develops.
+- Stable storage-node behaviour throughout the simulation.
 
 Each peripheral circuit was verified independently before system-level integration.
 
 
 ### Current Limitation
 
-The current integrated SRAM simulation demonstrates successful interaction between all major SRAM blocks.
+The integrated 1-bit SRAM simulation successfully demonstrates functional interaction between the SRAM bitcell and the peripheral circuits.
 
-The write-driver implementation is intentionally simplified for educational purposes and therefore does not yet include transistor sizing optimization or write-assist circuitry used in production SRAM compilers.
-
-Future work will optimize the write path and extend the design to a multi-bit SRAM array.
-
+The present implementation uses simplified peripheral circuits intended for educational verification rather than production-quality SRAM design. Additional transistor sizing optimization, write-assist techniques and timing optimization would be required for a fully optimized SRAM macro.
 
 
 ## OpenRAM Flow
@@ -480,24 +479,44 @@ This repository is organized around the assigned VSD internship tasks only.
 | `assets/images/` | README/report images |
 | `references/` | External reference repo links |
 
+---
+
+## Integrated Verification Summary
+
+The final stage of this project focused on integrating the independently verified SRAM peripheral circuits into a complete 1-bit SRAM architecture.
+
+The integrated design includes:
+
+- 6T SRAM Bitcell
+- Write Driver
+- Precharge Circuit
+- Sense Amplifier
+
+The integrated NGSpice simulation verified:
+
+- Control signal sequencing
+- Bitline behaviour
+- Internal storage node transitions
+- Sense amplifier response
+- Overall interaction between the major SRAM building blocks
+
+This integration serves as the functional foundation for extending the design toward a complete multi-bit and 4KB SRAM macro.
+
+---
+
 ## Future Work
 
 The current repository focuses on circuit-level implementation and verification of the 6T SRAM bitcell. Future work includes:
 
-- Row decoder implementation
-- Row Decoder implementation
+- Row Decoder
 - Column Decoder
 - Column Multiplexer
 - Wordline Driver
-- Memory Array Integration
-- Hierarchical 4KB SRAM Macro
-- Post-layout extraction
-- Process Corner Verification
-- Timing Characterization
+- Hierarchical SRAM Array Integration
+- Complete 4KB SRAM Macro
 - OpenRAM Macro Generation
-- Column multiplexer
-- Hierarchical bitcell array
-- Top-level SRAM integration
-- Process, voltage, and temperature corner verification
+- Post-layout Extraction
+- Process, Voltage and Temperature (PVT) Corner Verification
+- Timing Characterization
 
 The cleaned repository intentionally does not store large external SKY130 SRAM library dumps or generated OpenRAM macro outputs, because the assigned Week 1-4 tasks require circuit-level understanding, verification evidence, and a demonstration video rather than a full 4KB macro GDS.
