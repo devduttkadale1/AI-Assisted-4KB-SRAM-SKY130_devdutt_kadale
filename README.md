@@ -31,16 +31,21 @@ The repository currently focuses on the circuit-level design, simulation, layout
 | SRAM Architecture Study | ✅ Complete |
 | CMOS Verification | ✅ Complete |
 | 6T SRAM Bitcell Schematic | ✅ Complete |
-| SPICE Simulations | ✅ Complete |
-| Magic Layout | ✅ Complete |
+| 6T SRAM Bitcell Layout | ✅ Complete |
 | DRC | ✅ Passed |
 | LVS | ✅ Passed |
-| Row Decoder | 🔄 Planned |
-| Sense Amplifier | 🔄 Planned |
-| Write Driver | 🔄 Planned |
-| Precharge Circuit | 🔄 Planned |
-| Bitcell Array | 🔄 Planned |
-| 4KB SRAM Macro | 🔄 Planned |
+| Read Operation | ✅ Verified |
+| Write Operation | ✅ Verified |
+| SNM Analysis | ✅ Verified |
+| Read Disturb | ✅ Verified |
+| Write Margin | ✅ Verified |
+| Precharge Circuit | ✅ Simulated |
+| Write Driver | ✅ Simulated |
+| Sense Amplifier | ✅ Simulated |
+| Integrated 1-bit SRAM | ✅ Integrated |
+| Row Decoder | 🔄 Future Work |
+| Bitcell Array | 🔄 Future Work |
+| 4KB SRAM Macro | 🔄 Future Work |
 
 ---
 
@@ -51,6 +56,12 @@ The repository currently focuses on the circuit-level design, simulation, layout
 - ✅ Verified read, write, SNM, read disturb, and write margin using NGSpice.
 - ✅ Created a Magic layout and achieved DRC-clean implementation.
 - ✅ Successfully passed Netgen LVS between layout and schematic.
+- ✅ Designed and verified the SRAM Precharge Circuit.
+- ✅ Designed and verified the Write Driver.
+- ✅ Designed and verified the Sense Amplifier.
+- ✅ Integrated all peripheral blocks with the 6T SRAM bitcell.
+- ✅ Performed complete 1-bit SRAM integration using NGSpice.
+- ✅ Generated integrated waveform results for control signals, bitlines and storage nodes.
 - ✅ Documented the complete AI-assisted design and verification workflow.
 
 ---
@@ -150,6 +161,76 @@ Cross-coupled CMOS latch triggered by SAE (sense amp enable):
 - Example: 128 rows × 256 columns → 8 words/row → 1024 words logical
 
 ---
+
+## Integrated 1-Bit SRAM Verification
+
+After verifying each peripheral block individually, a complete 1-bit SRAM was constructed by integrating:
+
+- 6T SRAM Cell
+- Precharge Circuit
+- Write Driver
+- Sense Amplifier
+
+The integrated simulation verifies the interaction between all major SRAM peripheral circuits using a common NGSpice testbench.
+
+### Integrated Simulation Flow
+
+Input Data
+      │
+Write Driver
+      │
+BL / BLB
+      │
+6T SRAM Cell
+      │
+Sense Amplifier
+      │
+OUT
+
+Precharge
+      │
+BL BLB
+
+### Bitline Waveforms
+
+![Bitlines](verification/waveforms/1bit_sram_full_v2_bitlines.ps)
+
+### Cell Storage Nodes
+
+![Cell](verification/waveforms/1bit_sram_full_v2_cell.ps)
+
+### Control Signals
+
+![Control](verification/waveforms/1bit_sram_full_v2_control.ps)
+
+### Sense Amplifier Output
+
+![Output](verification/waveforms/1bit_sram_full_v2_output.ps)
+
+
+### Results
+
+The integrated simulation successfully demonstrated:
+
+- interaction between the write driver and SRAM bitcell
+- precharge operation before memory access
+- wordline controlled access
+- bitline activity during memory operation
+- sense amplifier activation
+- storage node transitions
+
+Each peripheral circuit was verified independently before system-level integration.
+
+
+### Current Limitation
+
+The current integrated SRAM simulation demonstrates successful interaction between all major SRAM blocks.
+
+The write-driver implementation is intentionally simplified for educational purposes and therefore does not yet include transistor sizing optimization or write-assist circuitry used in production SRAM compilers.
+
+Future work will optimize the write path and extend the design to a multi-bit SRAM array.
+
+
 
 ## OpenRAM Flow
 
@@ -254,6 +335,19 @@ Latch flip threshold analysis confirms reliable write operation across process c
 - [`wordline_control.md`](architecture/wordline_control.md) — WL timing and driver sizing
 - [`bitline_behaviour.md`](architecture/bitline_behaviour.md) — BL capacitance and precharge analysis
 - [`sram_timing_sequence.md`](architecture/sram_timing_sequence.md) — Full read/write cycle timing
+
+### Additional Integrated Verification
+
+During the final stage of Weeks 2 & 3, the independently verified SRAM building blocks were integrated into a complete 1-bit SRAM testbench.
+
+The integrated design includes:
+
+- 6T SRAM Cell
+- Precharge Circuit
+- Write Driver
+- Sense Amplifier
+
+The complete integrated simulation generated bitline, storage-node, control-signal and output waveforms, demonstrating correct interaction between the major SRAM peripheral circuits.
 
 ---
 
@@ -391,9 +485,16 @@ This repository is organized around the assigned VSD internship tasks only.
 The current repository focuses on circuit-level implementation and verification of the 6T SRAM bitcell. Future work includes:
 
 - Row decoder implementation
-- Precharge circuit
-- Write driver
-- Sense amplifier
+- Row Decoder implementation
+- Column Decoder
+- Column Multiplexer
+- Wordline Driver
+- Memory Array Integration
+- Hierarchical 4KB SRAM Macro
+- Post-layout extraction
+- Process Corner Verification
+- Timing Characterization
+- OpenRAM Macro Generation
 - Column multiplexer
 - Hierarchical bitcell array
 - Top-level SRAM integration
