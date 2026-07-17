@@ -197,25 +197,25 @@ Precharge Circuit
 
 The bitline waveforms illustrate the differential behaviour of BL and BLB during the integrated memory operation after precharge and write access.
 
-![Bitlines](verification/waveforms/1bit_sram_full_v2_bitlines.ps)
+![Bitlines](verification/waveforms/1bit_sram_full_v2_bitlines.png)
 
 ### Cell Storage Nodes
 
 The internal storage nodes (Q and QB) demonstrate stable data retention and successful state transitions during memory access.
 
-![Cell](verification/waveforms/1bit_sram_full_v2_cell.ps)
+![Cell](verification/waveforms/1bit_sram_full_v2_cell.png)
 
 ### Control Signals
 
 The control signals verify the correct sequencing of the precharge enable (PCB), write enable (WE), wordline (WL), and sense amplifier enable (SAE).
 
-![Control](verification/waveforms/1bit_sram_full_v2_control.ps)
+![Control](verification/waveforms/1bit_sram_full_v2_control.png)
 
 ### Sense Amplifier Output
 
 The sense amplifier regenerates the small differential voltage developed on the bitlines into full CMOS logic levels.
 
-![Output](verification/waveforms/1bit_sram_full_v2_output.ps)
+![Output](verification/waveforms/1bit_sram_full_v2_output.png)
 
 
 ### Results
