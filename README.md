@@ -195,17 +195,25 @@ Precharge Circuit
 
 ### Bitline Waveforms
 
+The bitline waveforms illustrate the differential behaviour of BL and BLB during the integrated memory operation after precharge and write access.
+
 ![Bitlines](verification/waveforms/1bit_sram_full_v2_bitlines.ps)
 
 ### Cell Storage Nodes
+
+The internal storage nodes (Q and QB) demonstrate stable data retention and successful state transitions during memory access.
 
 ![Cell](verification/waveforms/1bit_sram_full_v2_cell.ps)
 
 ### Control Signals
 
+The control signals verify the correct sequencing of the precharge enable (PCB), write enable (WE), wordline (WL), and sense amplifier enable (SAE).
+
 ![Control](verification/waveforms/1bit_sram_full_v2_control.ps)
 
 ### Sense Amplifier Output
+
+The sense amplifier regenerates the small differential voltage developed on the bitlines into full CMOS logic levels.
 
 ![Output](verification/waveforms/1bit_sram_full_v2_output.ps)
 
@@ -235,17 +243,19 @@ The present implementation uses simplified peripheral circuits intended for educ
 
 ![OpenRAM Flow](assets/images/sky130_openram_flow.png)
 
-Memory Specification (word_size, num_words)
-        ↓
-  Configuration File (.py)
-        ↓
-  SKY130 Technology Files + Custom Cells
-        ↓
-     OpenRAM Compiler
-        ↓
-      Characterization
-        ↓
-  Generated Outputs: GDS | LEF | LIB | Verilog | SPICE
+```text
+Memory Specification
+        │
+Configuration File
+        │
+SKY130 Technology Files
+        │
+OpenRAM Compiler
+        │
+Characterization
+        │
+Generated Outputs GDS | LEF | LIB | Verilog | SPICE
+```
 
 **4KB SRAM Physical Organization:**
 - Logical: 1024 words × 32 bits
@@ -498,7 +508,7 @@ The integrated NGSpice simulation verified:
 - Bitline behaviour
 - Internal storage node transitions
 - Sense amplifier response
-- Overall interaction between the major SRAM building blocks
+- Functional integration of the major SRAM building blocks
 
 This integration serves as the functional foundation for extending the design toward a complete multi-bit and 4KB SRAM macro.
 
