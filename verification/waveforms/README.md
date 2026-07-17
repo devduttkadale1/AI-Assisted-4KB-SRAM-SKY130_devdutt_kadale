@@ -110,11 +110,47 @@ Simulation of the write driver generating complementary bitline voltages require
 
 ---
 
-## 1-Bit SRAM Integration
+## 1-Bit SRAM Integrated System (Legacy Overview)
 
 ![1-Bit SRAM Full Waveform](1bit_sram_full_waveform.png)
 
 Complete functional verification of the integrated 1-bit SRAM showing the interaction of the bitcell, wordline, bitlines, and peripheral circuitry during read and write operations.
+
+# Integrated 1-Bit SRAM v2 Verification
+
+The integrated SRAM simulation combines the 6T SRAM bitcell with the write driver, precharge circuit, and sense amplifier into a single top-level verification. Separate waveform groups are shown below to illustrate each stage of operation.
+
+---
+
+## Control Signals
+
+![Control Signals](1bit_sram_full_v2_control.png)
+
+The control waveform verifies the correct timing relationship between Precharge Enable (PCB), Write Enable (WE), Wordline (WL), and Sense Amplifier Enable (SAE). Proper sequencing ensures reliable SRAM write and read operations.
+
+---
+
+## Bitline Behaviour
+
+![Bitlines](1bit_sram_full_v2_bitlines.png)
+
+The bitline waveforms show the charging, discharge, equalization, and differential development of BL and BLB throughout the simulation. These transitions demonstrate correct interaction between the precharge circuit, write driver, and SRAM cell.
+
+---
+
+## SRAM Cell Storage Nodes
+
+![SRAM Cell](1bit_sram_full_v2_cell.png)
+
+The internal storage nodes (Q and QB) remain stable during idle periods and correctly preserve the stored data throughout the access cycles. Small transient disturbances recover quickly, indicating stable cell behaviour.
+
+---
+
+## Sense Amplifier Output
+
+![Sense Amplifier Output](1bit_sram_full_v2_output.png)
+
+The sense amplifier converts the small bitline differential into full CMOS logic levels after the Sense Enable signal is asserted. The outputs OUT and OUTB exhibit complementary switching, confirming correct sensing operation.
 
 ---
 
@@ -132,3 +168,9 @@ Complete functional verification of the integrated 1-bit SRAM showing the intera
 ## Purpose
 
 These waveform screenshots provide visual verification evidence for the AI-assisted design and validation of the SRAM circuits. Every waveform shown in this folder was generated using open-source EDA tools and used to validate the expected behaviour before layout implementation.
+
+---
+
+## Overall Verification Summary
+
+The AI-assisted verification successfully demonstrates the functional operation of the major SRAM building blocks, including the CMOS inverter, 6T SRAM bitcell, precharge circuit, write driver, sense amplifier, and the integrated 1-bit SRAM system. All simulations were performed using NGSpice with the SKY130A Open-Source PDK and validated through waveform inspection. The integrated simulation confirms correct control sequencing and interaction between the peripheral circuits and the SRAM cell.
