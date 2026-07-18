@@ -302,7 +302,7 @@ Generated Outputs GDS | LEF | LIB | Verilog | SPICE
 > 📄 [Download IEEE PDF](reports/week2%20%26%20week3/Devdutt_Kadale_SRAM_4KB_Week2_3_Report.pdf)  
 > Journal: [`journal/week2.md`](journal/week2.md)
 
-**AI-Assisted workflow:** ChatGPT GPT-4o + Perplexity AI used for netlist generation, debugging hints and simulation setup. All prompts logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md).
+**AI-Assisted workflow:** ChatGPT (OpenAI) + Perplexity AI used for netlist generation, debugging hints and simulation setup. All prompts logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md).
 
 #### CMOS Baseline Verification
 
@@ -407,8 +407,8 @@ ngspice -b snm_butterfly.spice
 | ngspice | 42 | SPICE simulation |
 | SKY130 PDK | Combined lib, TT corner | 130nm transistor models |
 | xschem | latest | Schematic capture |
-| OpenRAM | latest | SRAM compiler (Week 4+) |
-| ChatGPT GPT-4o | June 2026 | Netlist generation, debugging |
+| OpenRAM | v1.2.49 | SRAM compiler |
+| ChatGPT (OpenAI) | June 2026 | Netlist generation, debugging |
 | Perplexity AI | June 2026 | Design verification, prompts |
 
 ---

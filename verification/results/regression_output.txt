@@ -1,0 +1,16 @@
+======================================
+ OpenRAM SRAM Regression Test Started 
+======================================
+                   0 Writing tb_sram_2_16_sky130A.dut addr0=0011 din0=10
+                   0 Writing tb_sram_2_16_sky130A.dut addr0=0011 din0=10
+                   0 Reading tb_sram_2_16_sky130A.dut addr0=0011 dout0=10
+                   0 Reading tb_sram_2_16_sky130A.dut addr0=0011 dout0=10
+FAIL : Expected 10 Got xx
+                   0 Reading tb_sram_2_16_sky130A.dut addr0=0111 dout0=xx
+                   0 Reading tb_sram_2_16_sky130A.dut addr0=0111 dout0=xx
+FAIL : Expected 01 Got xx
+======================================
+ Regression Completed 
+======================================
+verification/testbench/tb_sram_2_16_sky130A.v:91: $finish called at 85000 (1ps)
+                   0 Reading tb_sram_2_16_sky130A.dut addr0=0111 dout0=xx
