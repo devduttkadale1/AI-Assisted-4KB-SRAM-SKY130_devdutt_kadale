@@ -9,7 +9,10 @@ reg [3:0] addr0;
 reg [1:0] din0;
 wire [1:0] dout0;
 
-// Instantiate DUT
+integer pass_count;
+integer fail_count;
+
+// DUT
 sram_2_16_sky130A dut (
     .clk0(clk0),
     .csb0(csb0),
@@ -19,76 +22,127 @@ sram_2_16_sky130A dut (
     .dout0(dout0)
 );
 
-// Clock generation
+// Clock
 initial begin
     clk0 = 0;
     forever #5 clk0 = ~clk0;
 end
 
-initial begin
-
-    $display("======================================");
-    $display(" OpenRAM SRAM Regression Test Started ");
-    $display("======================================");
-
-    csb0 = 1;
-    web0 = 1;
-    addr0 = 4'b0000;
-    din0 = 2'b00;
-
-    #20;
-
-    // -------------------------
-    // Write 10 to Address 3
-    // -------------------------
+task write_mem;
+input [3:0] addr;
+input [1:0] data;
+begin
     @(posedge clk0);
     csb0 = 0;
     web0 = 0;
-    addr0 = 4'd3;
-    din0 = 2'b10;
-
+    addr0 = addr;
+    din0  = data;
     @(posedge clk0);
+end
+endtask
 
-    // -------------------------
-    // Read Address 3
-    // -------------------------
+task read_mem;
+input [3:0] addr;
+begin
+    @(posedge clk0);
     web0 = 1;
-
+    csb0 = 0;
+    addr0 = addr;
     @(posedge clk0);
-    @(posedge clk0);
+end
+endtask
 
-    if(dout0 == 2'b10)
-        $display("PASS : Read Data = %b", dout0);
-    else
-        $display("FAIL : Expected 10 Got %b", dout0);
+initial begin
 
-    // -------------------------
-    // Write 01 to Address 7
-    // -------------------------
-    web0 = 0;
-    addr0 = 4'd7;
-    din0 = 2'b01;
+pass_count = 0;
+fail_count = 0;
 
-    @(posedge clk0);
+csb0 = 1;
+web0 = 1;
+addr0 = 0;
+din0 = 0;
 
-    // -------------------------
-    // Read Address 7
-    // -------------------------
-    web0 = 1;
+#20;
 
-    @(posedge clk0);
-    @(posedge clk0);
+$display("\n==============================");
+$display(" OpenRAM SRAM Regression");
+$display("==============================");
 
-    if(dout0 == 2'b01)
-        $display("PASS : Read Data = %b", dout0);
-    else
-        $display("FAIL : Expected 01 Got %b", dout0);
+// Test 1
+$display("\nTEST1 : Write 00");
+write_mem(4'd0,2'b00);
+read_mem(4'd0);
 
-    $display("======================================");
-    $display(" Regression Completed ");
-    $display("======================================");
+if(dout0===2'b00) begin
+    $display("PASS");
+    pass_count=pass_count+1;
+end
+else begin
+    $display("FAIL Expected=00 Got=%b",dout0);
+    fail_count=fail_count+1;
+end
 
-    $finish;
+// Test2
+$display("\nTEST2 : Write 11");
+write_mem(4'd1,2'b11);
+read_mem(4'd1);
+
+if(dout0===2'b11) begin
+    $display("PASS");
+    pass_count++;
+end
+else begin
+    $display("FAIL Expected=11 Got=%b",dout0);
+    fail_count++;
+end
+
+// Test3
+$display("\nTEST3 : Alternating Pattern");
+write_mem(4'd2,2'b10);
+write_mem(4'd3,2'b01);
+
+read_mem(4'd2);
+read_mem(4'd3);
+
+$display("Alternating pattern executed");
+
+// Test4
+$display("\nTEST4 : Back-to-back operations");
+write_mem(4'd4,2'b01);
+write_mem(4'd5,2'b10);
+
+read_mem(4'd4);
+read_mem(4'd5);
+
+// Test5
+$display("\nTEST5 : Disabled Cycle");
+
+@(posedge clk0);
+csb0=1;
+web0=1;
+
+@(posedge clk0);
+
+$display("Disabled cycle completed");
+
+// Test6
+$display("\nTEST6 : Data Retention");
+
+write_mem(4'd6,2'b11);
+
+repeat(5)
+@(posedge clk0);
+
+read_mem(4'd6);
+
+$display("Retention test executed");
+
+$display("\n==============================");
+$display("PASS = %0d",pass_count);
+$display("FAIL = %0d",fail_count);
+$display("==============================");
+
+$finish;
 
 end
 
