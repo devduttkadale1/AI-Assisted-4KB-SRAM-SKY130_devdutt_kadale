@@ -5,6 +5,8 @@
 
 [![Week 1](https://img.shields.io/badge/Week%201-Complete-brightgreen)](reports/week1/)
 [![Week 2&3](https://img.shields.io/badge/Week%202%263-Complete-brightgreen)](reports/week2%20%26%20week3/)
+[![OpenRAM](https://img.shields.io/badge/OpenRAM-v1.2.49-success)](openram/)
+[![6T Bitcell LVS](https://img.shields.io/badge/6T%20Bitcell-LVS%20Passed-brightgreen)](Layout/)
 [![Simulations](https://img.shields.io/badge/Simulations-6%20Circuits-blue)](verification/waveforms/)
 [![PDK](https://img.shields.io/badge/PDK-SKY130-orange)](https://skywater-pdk.readthedocs.io/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
@@ -20,7 +22,7 @@ This repository documents the complete learning and design journey for building 
 - **OpenRAM** — open-source SRAM compiler (Week 3+)
 - **AI-Assisted Workflow** — every design decision logged with prompts and verification
 
-The repository currently focuses on the circuit-level design, simulation, layout, and verification of a 6T SRAM bitcell using the SKY130 PDK. It also documents the architecture and planned implementation of the remaining SRAM peripheral blocks required for a complete 4KB SRAM macro.
+The repository documents the circuit-level design, simulation, layout, verification, and OpenRAM-based SRAM macro generation using the SKY130A PDK. It combines transistor-level circuit development with AI-assisted documentation and compiler exploration.
 
 ---
 
@@ -32,8 +34,10 @@ The repository currently focuses on the circuit-level design, simulation, layout
 | CMOS Verification | ✅ Complete |
 | 6T SRAM Bitcell Schematic | ✅ Complete |
 | 6T SRAM Bitcell Layout | ✅ Complete |
-| DRC | ✅ Passed |
-| LVS | ✅ Passed |
+| 6T Bitcell DRC | ✅ Passed |
+| 6T Bitcell LVS | ✅ Passed |
+| OpenRAM Macro DRC | ✅ Executed |
+| OpenRAM Macro LVS | ⚠️ Environment Prepared |
 | Read Operation | ✅ Verified |
 | Write Operation | ✅ Verified |
 | SNM Analysis | ✅ Verified |
@@ -54,8 +58,10 @@ The repository currently focuses on the circuit-level design, simulation, layout
 - ✅ Designed and simulated a CMOS inverter using SKY130A.
 - ✅ Designed a 6T SRAM bitcell in Xschem.
 - ✅ Verified read, write, SNM, read disturb, and write margin using NGSpice.
-- ✅ Created a Magic layout and achieved DRC-clean implementation.
-- ✅ Successfully passed Netgen LVS between layout and schematic.
+- ✅ Created a Magic layout and achieved DRC-clean implementation for the 6T SRAM bitcell.
+- ✅ Successfully passed Netgen LVS for the 6T SRAM bitcell.
+- ✅ Generated an OpenRAM SRAM macro and verified the GDS in Magic.
+- ✅ Executed Magic DRC and documented the physical verification workflow.
 - ✅ Designed and verified the SRAM Precharge Circuit.
 - ✅ Designed and verified the Write Driver.
 - ✅ Designed and verified the Sense Amplifier.
@@ -264,6 +270,52 @@ Generated Outputs GDS | LEF | LIB | Verilog | SPICE
 
 ---
 
+## Week 4 – OpenRAM SRAM Generation
+
+The objective of Week 4 was to install OpenRAM, configure the SKY130 technology, generate an SRAM macro, and document the complete compiler workflow.
+
+### OpenRAM Environment
+
+- OpenRAM Version: **v1.2.49**
+- Technology: **SKY130A**
+- Operating System: **Ubuntu 24.04 (WSL2)**
+- Python: **3.12**
+
+### Generated Outputs
+
+The following generated files are included in this repository:
+
+| Output | Location |
+|---------|----------|
+| GDS | `results/gds/` |
+| LEF | `results/lef/` |
+| Liberty | `results/lib/` |
+| Verilog | `results/verilog/` |
+| SPICE | `results/spice/` |
+| OpenRAM Log | `openram/logs/` |
+| Configuration | `openram/configs/` |
+
+### Documentation
+
+Additional documentation is available in:
+
+- `docs/openram/installation.md`
+- `docs/openram/generated_files.md`
+- `docs/openram/minimum_supported_configuration.md`
+- `ai_workflow/ai_audit.md`
+- `verification/reports/magic_drc_report.md`
+- `verification/reports/lvs_status.md`
+
+### OpenRAM Limitation
+
+The internship task requested a **2-word × 16-bit SRAM**.
+
+During implementation, the OpenRAM version used in this project enforced an internal minimum row constraint, preventing direct generation of the requested memory organization without modifying the compiler.
+
+Following the project mentor's guidance, the repository documents the **minimum specification supported by the OpenRAM version** while preserving the standard compiler flow.
+
+---
+
 ## Repository Structure
 
 | Folder | Contents |
@@ -272,7 +324,8 @@ Generated Outputs GDS | LEF | LIB | Verilog | SPICE
 | `verification/waveforms/` | Simulation waveform screenshots (PNG) |
 | `verification/xschem/` | Schematic files (.sch) |
 | `architecture/` | SRAM theory docs — 10 topics (bitcell, SA, precharge, decoder, timing...) |
-| `docs/` | Design decisions, tradeoffs, PDK notes |
+| `docs/` | Design notes, validation strategy and OpenRAM documentation |
+| `docs/openram/` | Installation guide, generated files and compiler limitations |
 | `ai_workflow/` | AI prompt log, verified answers, mistakes caught |
 | `journal/` | Week-by-week learning diary |
 | `reports/week1/` | Week 1 IEEE PDF + LaTeX source |
@@ -360,20 +413,53 @@ The complete integrated simulation generated bitline, storage-node, control-sign
 
 ---
 
-### ✅ Week 4 — AI-Assisted Demonstration
+### ✅ Week 4 — OpenRAM Setup & Macro Generation
 
-- Demonstrated complete AI-assisted workflow
-- Reproduced simulations from repository
-- Recorded reproducible setup
-- Linked demonstration video
-- Documented commands, prompts and verification
+Completed:
+- Installed OpenRAM v1.2.49 on Ubuntu 24.04 (WSL2)
+- Configured SKY130A technology environment
+- Created OpenRAM SRAM configuration
+- Executed OpenRAM compiler
+- Investigated OpenRAM minimum row constraint
+- Documented minimum supported OpenRAM configuration
+- Generated and archived GDS, LEF, Liberty, Verilog and SPICE outputs
+- Created AI Audit documentation
+- Created regression testbench and simulation log
+- Executed behavioral regression simulation using Icarus Verilog
+
+### Documentation
+
+Additional documentation is available in:
+
+- docs/openram/installation.md
+- docs/openram/generated_files.md
+- docs/openram/minimum_supported_configuration.md
+- ai_workflow/ai_audit.md
+
+### Physical Verification
+
+#### Magic DRC
+
+- Successfully imported the generated SRAM GDS into Magic.
+- Executed DRC using the SKY130A technology file.
+- DRC execution completed successfully.
+- The reported DRC rule categories have been documented in `verification/reports/magic_drc_report.md` for future investigation.
+
+#### Netgen LVS
+
+- Verified Netgen installation and SKY130A LVS setup.
+- Verified the generated OpenRAM SPICE and LVS netlists.
+- Prepared the environment for layout-versus-schematic verification.
+- Current LVS status is documented in `verification/reports/lvs_status.md`.
 
 ---
 
-### 🔲 Week 5 — Post-Layout Verification & Final Report
-- DRC / LVS checks
-- Parasitic extraction and post-layout simulation
-- Final report and presentation
+### 🔲 Week 5 — Final Documentation & Repository Completion
+
+Remaining:
+- Final project report
+- Repository cleanup
+- Final documentation review
 
 ---
 
@@ -524,9 +610,8 @@ The current repository focuses on circuit-level implementation and verification 
 - Wordline Driver
 - Hierarchical SRAM Array Integration
 - Complete 4KB SRAM Macro
-- OpenRAM Macro Generation
 - Post-layout Extraction
 - Process, Voltage and Temperature (PVT) Corner Verification
 - Timing Characterization
 
-The cleaned repository intentionally does not store large external SKY130 SRAM library dumps or generated OpenRAM macro outputs, because the assigned Week 1-4 tasks require circuit-level understanding, verification evidence, and a demonstration video rather than a full 4KB macro GDS.
+The repository stores representative OpenRAM-generated deliverables together with the supporting documentation required for the internship while avoiding unnecessary copies of large external SKY130 PDK libraries and intermediate generated files.
