@@ -355,7 +355,7 @@ Following the project mentor's guidance, the repository documents the **minimum 
 > 📄 [Download IEEE PDF](reports/week2%20%26%20week3/Devdutt_Kadale_SRAM_4KB_Week2_3_Report.pdf)  
 > Journal: [`journal/week2.md`](journal/week2.md)
 
-**AI-Assisted workflow:** ChatGPT GPT-4o + Perplexity AI used for netlist generation, debugging hints and simulation setup. All prompts logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md).
+**AI-Assisted workflow:** ChatGPT (OpenAI) + Perplexity AI used for netlist generation, debugging hints and simulation setup. All prompts logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md).
 
 #### CMOS Baseline Verification
 
@@ -493,8 +493,8 @@ ngspice -b snm_butterfly.spice
 | ngspice | 42 | SPICE simulation |
 | SKY130 PDK | Combined lib, TT corner | 130nm transistor models |
 | xschem | latest | Schematic capture |
-| OpenRAM | latest | SRAM compiler (Week 4+) |
-| ChatGPT GPT-4o | June 2026 | Netlist generation, debugging |
+| OpenRAM | v1.2.49 | SRAM compiler |
+| ChatGPT (OpenAI) | June 2026 | Netlist generation, debugging |
 | Perplexity AI | June 2026 | Design verification, prompts |
 
 ---
@@ -614,4 +614,8 @@ The current repository focuses on circuit-level implementation and verification 
 - Process, Voltage and Temperature (PVT) Corner Verification
 - Timing Characterization
 
+<<<<<<< HEAD
 The repository stores representative OpenRAM-generated deliverables together with the supporting documentation required for the internship while avoiding unnecessary copies of large external SKY130 PDK libraries and intermediate generated files.
+=======
+The cleaned repository intentionally does not store large external SKY130 SRAM library dumps or generated OpenRAM macro outputs, because the assigned Week 1-4 tasks require circuit-level understanding, verification evidence, and a demonstration video rather than a full 4KB macro GDS.
+>>>>>>> dd43a2734b2aa52bcde8699bbbf10ec24ab3e708
