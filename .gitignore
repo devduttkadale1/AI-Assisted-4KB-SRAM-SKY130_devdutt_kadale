@@ -1,28 +1,26 @@
-x# OpenRAM outputs
-openram/outputs/*.gds
-openram/outputs/*.sp
-openram/outputs/*.v
-openram/outputs/*.lib
-openram/outputs/*.lef
-openram/outputs/*.log
-openram/outputs/*.html
-openram/outputs/*.lvs
-openram/outputs/*.py
-openram/logs/*.log
-
-# Simulation raw files
-verification/simulations/*.raw
-verification/simulations/*.txt
-*.raw
-*.ps
+# Python virtual environment
+venv/
+.venv/
 
 # Python cache
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+.pytest_cache/
 
-# ngspice
+# Build artifacts
+*.egg-info/
+build/
+dist/
+
+# OpenRAM generated outputs
+outputs/
+macro/
+
+# Simulation
+*.raw
+*.ps
 *.log
-openram/openram_env/
-openram/logs/
-openram/outputs/
+
+# IDE
+.vscode/
+.idea/
