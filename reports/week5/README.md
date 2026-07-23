@@ -220,4 +220,4 @@ This activity provided practical exposure to the complete SRAM compiler workflow
 - `openram/results/`
 - `assets/images/week5/`
 - `journal/week5.md`
-- `README.md`
+- `README.md`cl
