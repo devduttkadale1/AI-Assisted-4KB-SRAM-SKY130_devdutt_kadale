@@ -614,8 +614,4 @@ The current repository focuses on circuit-level implementation and verification 
 - Process, Voltage and Temperature (PVT) Corner Verification
 - Timing Characterization
 
-<<<<<<< HEAD
-The repository stores representative OpenRAM-generated deliverables together with the supporting documentation required for the internship while avoiding unnecessary copies of large external SKY130 PDK libraries and intermediate generated files.
-=======
-The cleaned repository intentionally does not store large external SKY130 SRAM library dumps or generated OpenRAM macro outputs, because the assigned Week 1-4 tasks require circuit-level understanding, verification evidence, and a demonstration video rather than a full 4KB macro GDS.
->>>>>>> dd43a2734b2aa52bcde8699bbbf10ec24ab3e708
+The repository includes representative OpenRAM-generated deliverables together with the supporting documentation required for the internship while intentionally excluding large external SKY130 PDK libraries and unnecessary intermediate generated files. This keeps the repository focused, reproducible, and easy to navigate.
