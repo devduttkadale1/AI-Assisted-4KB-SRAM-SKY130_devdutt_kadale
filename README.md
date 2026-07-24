@@ -73,11 +73,15 @@ The repository documents the circuit-level design, simulation, layout, verificat
 
 ---
 
+---
+
 ## Prerequisites
 
-Before running the simulations, ensure the following tools are installed:
+Before reproducing this project, ensure the following tools are installed:
 
 - Ubuntu / WSL2
+- Python 3
+- Git
 - NGSpice
 - Xschem
 - Magic VLSI
@@ -85,7 +89,7 @@ Before running the simulations, ensure the following tools are installed:
 - OpenRAM
 - SKY130A Open-Source PDK
 
-### SKY130A PDK
+### Expected SKY130A PDK Location
 
 The SPICE netlists expect the SKY130A PDK to be available at:
 
@@ -93,9 +97,9 @@ The SPICE netlists expect the SKY130A PDK to be available at:
 /usr/local/share/pdk/sky130A
 ```
 
-If your PDK is installed in another location, either:
+If your SKY130A PDK is installed elsewhere, either:
 
-- update the `.lib` path in the SPICE netlists, or
+- update the `.lib` paths in the SPICE netlists, or
 - create a symbolic link pointing your installation to the expected location.
 
 Example:
