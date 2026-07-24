@@ -2,7 +2,7 @@
 * Author: Devdutt Kadale | VSD Internship Week 2
 * PDK: SKY130 | VDD=1.8V
 
-.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.lib "/home/devdutt/VLSI/pdk/ciel/sky130/versions/e8294524e5f67c533c5d0c3afa0bcc5b2a5fa066/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 
 .subckt sram_6t BL BLB WL VDD GND
 * Inverter 1 (Left latch)

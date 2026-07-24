@@ -3,7 +3,7 @@
 * Function: Precharges BL and BLB to VDD before READ
 * Circuit: 3 PMOS transistors (PC1, PC2=pullup, PC3=equalizer)
 
-.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.lib "/home/devdutt/VLSI/pdk/ciel/sky130/versions/e8294524e5f67c533c5d0c3afa0bcc5b2a5fa066/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 
 *------------------------------------------------------
 * PRECHARGE SUBCIRCUIT

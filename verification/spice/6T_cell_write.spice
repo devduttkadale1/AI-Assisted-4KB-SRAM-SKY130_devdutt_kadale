@@ -1,7 +1,7 @@
 * 6T SRAM Cell - WRITE Operation
 * Author: Devdutt Kadale | VSD Internship Week 2
 
-.lib "/usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
+.lib "/home/devdutt/VLSI/pdk/ciel/sky130/versions/e8294524e5f67c533c5d0c3afa0bcc5b2a5fa066/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 
 .subckt sram_6t BL BLB WL VDD GND
 XM1 Q  QB  GND GND sky130_fd_pr__nfet_01v8 W=1 L=0.15 nf=1 ad=0 as=0 pd=0 ps=0 mult=1
