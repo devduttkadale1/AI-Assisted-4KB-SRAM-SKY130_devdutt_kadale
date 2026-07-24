@@ -73,6 +73,41 @@ The repository documents the circuit-level design, simulation, layout, verificat
 
 ---
 
+## Prerequisites
+
+Before running the simulations, ensure the following tools are installed:
+
+- Ubuntu / WSL2
+- NGSpice
+- Xschem
+- Magic VLSI
+- Netgen
+- OpenRAM
+- SKY130A Open-Source PDK
+
+### SKY130A PDK
+
+The SPICE netlists expect the SKY130A PDK to be available at:
+
+```text
+/usr/local/share/pdk/sky130A
+```
+
+If your PDK is installed in another location, either:
+
+- update the `.lib` path in the SPICE netlists, or
+- create a symbolic link pointing your installation to the expected location.
+
+Example:
+
+```bash
+sudo mkdir -p /usr/local/share/pdk
+
+sudo ln -s <path-to-your-sky130A> /usr/local/share/pdk/sky130A
+```
+
+---
+
 ## SRAM Architecture
 
 ![SRAM Architecture](assets/images/sram_architecture.png)
