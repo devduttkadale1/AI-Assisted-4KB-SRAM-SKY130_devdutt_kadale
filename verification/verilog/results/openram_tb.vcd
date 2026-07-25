@@ -1,0 +1,224 @@
+$date
+	Sat Jul 25 17:59:12 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module openram_tb $end
+$var wire 9 ! dout0 [8:0] $end
+$var parameter 32 " ADDR_WIDTH $end
+$var parameter 32 # DATA_WIDTH $end
+$var reg 5 $ addr0 [4:0] $end
+$var reg 1 % clk0 $end
+$var reg 1 & csb0 $end
+$var reg 9 ' din0 [8:0] $end
+$var reg 1 ( spare_wen0 $end
+$var reg 1 ) web0 $end
+$var reg 4 * wmask0 [3:0] $end
+$var integer 32 + fail_count [31:0] $end
+$var integer 32 , pass_count [31:0] $end
+$scope module DUT $end
+$var wire 5 - addr0 [4:0] $end
+$var wire 1 % clk0 $end
+$var wire 1 & csb0 $end
+$var wire 9 . din0 [8:0] $end
+$var wire 1 ( spare_wen0 $end
+$var wire 1 ) web0 $end
+$var wire 4 / wmask0 [3:0] $end
+$var parameter 32 0 ADDR_WIDTH $end
+$var parameter 32 1 DATA_WIDTH $end
+$var parameter 32 2 DELAY $end
+$var parameter 32 3 NUM_WMASKS $end
+$var parameter 37 4 RAM_DEPTH $end
+$var parameter 32 5 T_HOLD $end
+$var parameter 32 6 VERBOSE $end
+$var reg 5 7 addr0_reg [4:0] $end
+$var reg 1 8 csb0_reg $end
+$var reg 9 9 din0_reg [8:0] $end
+$var reg 9 : dout0 [8:0] $end
+$var reg 1 ; spare_wen0_reg $end
+$var reg 1 < web0_reg $end
+$var reg 4 = wmask0_reg [3:0] $end
+$scope begin MEM_READ0 $end
+$upscope $end
+$scope begin MEM_WRITE0 $end
+$upscope $end
+$upscope $end
+$scope task check_data $end
+$var reg 9 > expected [8:0] $end
+$upscope $end
+$scope task read_word $end
+$var reg 5 ? addr [4:0] $end
+$upscope $end
+$scope task write_word $end
+$var reg 5 @ addr [4:0] $end
+$var reg 9 A data [8:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1 6
+b1 5
+b100000 4
+b100 3
+b11 2
+b1001 1
+b101 0
+b1001 #
+b101 "
+$end
+#0
+$dumpvars
+bx A
+bx @
+bx ?
+bx >
+bx =
+x<
+x;
+bx :
+bx 9
+x8
+bx 7
+b1111 /
+b0 .
+b0 -
+b0 ,
+b0 +
+b1111 *
+1)
+1(
+b0 '
+1&
+0%
+b0 $
+bx !
+$end
+#5000
+b0 9
+b0 7
+1;
+b1111 =
+1<
+18
+1%
+#10000
+0%
+#15000
+1%
+#20000
+0%
+0)
+0&
+b0 A
+b0 @
+#25000
+1%
+#30000
+b0 ?
+1)
+0&
+0%
+#35000
+1%
+#40000
+0%
+#44000
+b0 >
+1&
+#45000
+0)
+0&
+b111111111 '
+b111111111 .
+b1 $
+b1 -
+b111111111 A
+b1 @
+b1 +
+1%
+#50000
+0%
+#55000
+1%
+#60000
+b1 ?
+1)
+0&
+0%
+#65000
+1%
+#70000
+0%
+#74000
+b111111111 >
+1&
+#75000
+0)
+0&
+b101010101 '
+b101010101 .
+b10 $
+b10 -
+b101010101 A
+b10 @
+b10 +
+1%
+#80000
+0%
+#85000
+1%
+#90000
+b10 ?
+1)
+0&
+0%
+#95000
+1%
+#100000
+0%
+#104000
+b101010101 >
+1&
+#105000
+0)
+0&
+b10101010 '
+b10101010 .
+b11 $
+b11 -
+b10101010 A
+b11 @
+b11 +
+1%
+#110000
+0%
+#115000
+1%
+#120000
+b11 ?
+1)
+0&
+0%
+#125000
+1%
+#130000
+0%
+#134000
+b10101010 >
+1&
+#135000
+b100 +
+1%
+#140000
+0%
+#145000
+1%
+#150000
+0%
+#155000
+1%
