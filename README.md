@@ -73,8 +73,6 @@ The repository documents the circuit-level design, simulation, layout, verificat
 
 ---
 
----
-
 ## Prerequisites
 
 Before reproducing this project, ensure the following tools are installed:
@@ -390,16 +388,34 @@ The following generated files are included in this repository:
 | OpenRAM Compiler Log | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.log` |
 | LVS Report | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.lvs.report` |
 
+> **Note**
+>
+> This repository contains both legacy OpenRAM experiment outputs (`results/`) and the final validated Week 5 outputs (`openram/results/`).
+>
+> Unless explicitly stated otherwise, all OpenRAM documentation and verification reports refer to the files located in `openram/results/`.
+
 ### Documentation
 
-Additional documentation is available in:
+Additional OpenRAM documentation is available in:
 
 - `docs/openram/installation.md`
 - `docs/openram/generated_files.md`
+- `docs/openram/liberty_analysis.md`
+- `docs/openram/generated_macro_verification.md`
+- `docs/openram/openram_output_audit.md`
+- `docs/openram/openram_commands.md`
 - `docs/openram/minimum_supported_configuration.md`
-- `ai_workflow/ai_audit.md`
+- `docs/openram/output_directory_structure.md`
+
+Additional verification reports:
+
 - `verification/reports/magic_drc_report.md`
 - `verification/reports/lvs_status.md`
+
+AI workflow documentation:
+
+- `ai_workflow/ai_audit.md`
+
 
 ### OpenRAM Limitation
 
@@ -524,15 +540,6 @@ Completed:
 - Created AI Audit documentation
 - Created regression testbench and simulation log
 - Executed behavioral regression simulation using Icarus Verilog
-
-### Documentation
-
-Additional documentation is available in:
-
-- docs/openram/installation.md
-- docs/openram/generated_files.md
-- docs/openram/minimum_supported_configuration.md
-- ai_workflow/ai_audit.md
 
 ### Physical Verification
 
