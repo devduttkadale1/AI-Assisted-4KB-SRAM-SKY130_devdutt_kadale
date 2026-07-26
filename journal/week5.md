@@ -58,7 +58,23 @@ The OpenRAM compiler successfully generated a complete SRAM macro including:
 
 ---
 
-### 4. Physical Layout Inspection
+---
+
+### 4. Static Noise Margin (SNM) Review
+
+The Static Noise Margin (SNM) simulation workflow developed during the previous project stages was revisited to compare SRAM stability under different operating conditions.
+
+The following cases were reviewed:
+
+- Hold SNM
+- Read SNM
+- Write SNM
+
+Butterfly curve analysis confirmed the expected operation of the cross-coupled inverter pair. The project documentation reports an SNM of approximately **280–320 mV** at the TT process corner (1.8 V supply). Separate numerical extraction for Hold, Read, and Write SNM was not performed during this phase; instead, the operating conditions were compared qualitatively.
+
+---
+
+### 5. Physical Layout Inspection
 
 The generated GDS layout was imported into Magic VLSI.
 
@@ -72,7 +88,7 @@ The following observations were made:
 
 ---
 
-### 5. LVS Verification
+### 6. LVS Verification
 
 Netgen LVS was executed.
 
@@ -84,7 +100,7 @@ The issue is related to library implementation differences rather than compiler 
 
 ---
 
-### 6. DRC Verification
+### 7. DRC Verification
 
 Magic DRC was executed on the generated SRAM.
 
@@ -107,6 +123,7 @@ The results were documented instead of manually modifying the generated macro.
 - Compiler Log
 - LVS Report
 - LVS JSON Report
+- OpenRAM Configuration File
 
 ---
 
@@ -121,3 +138,14 @@ The work also highlighted the importance of understanding verification reports, 
 ## Status
 
 Week 5 successfully completed.
+
+Completed activities include:
+
+- OpenRAM installation and configuration
+- SKY130A technology integration
+- SRAM macro generation
+- Physical layout inspection
+- DRC and LVS execution
+- Hold, Read, and Write SNM workflow review
+- Repository organization
+- Documentation of generated design artifacts
