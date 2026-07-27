@@ -1,0 +1,41 @@
+* Post-layout PEX testbench — sram_2_16_sky130A
+* Corner: TT  VDD=1.8V  Temp=27C
+
+.include verification/spice/sram_2_16_pex.spice
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+
+* Power
+VVDD VPWR GND 1.8
+VVSS VGND GND 0
+
+* Clock: 10ns period
+Vclk clk0 GND pulse(0 1.8 2n 0.1n 0.1n 5n 10n)
+
+* Control — write cycle: csb=0 web=0
+Vcsb csb0 GND pwl(0 1.8 5n 0 15n 0 15.1n 1.8 25n 1.8 25.1n 0 35n 0 35.1n 1.8)
+Vweb web0 GND pwl(0 1.8 5n 0  15n 0 15.1n 1.8 25n 1.8 25.1n 1.8 35n 1.8)
+
+* Address: addr=0
+Vaddr0 addr0[0] GND 0
+Vaddr1 addr0[1] GND 0
+
+* Data: write 1 on bit0
+Vdin0 din0[0] GND pwl(0 0 5n 1.8 15.1n 0)
+Vdin1 din0[1] GND 0
+
+* DUT
+Xdut VPWR VGND clk0 csb0 web0 addr0[0] addr0[1] din0[0] din0[1] dout0[0] dout0[1] sram_2_16_sky130A
+
+.tran 0.1n 60n
+
+.measure tran t_access_rise
++  TRIG v(clk0) VAL=0.9 RISE=3
++  TARG v(dout0[0]) VAL=0.9 RISE=1
+
+.control
+run
+plot v(clk0) v(dout0[0]) v(dout0[1]) v(din0[0])
+wrdata verification/results/pex_sim_TT.txt v(dout0[0]) v(dout0[1])
+.endc
+
+.end
