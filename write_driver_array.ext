@@ -1,0 +1,96 @@
+timestamp 1444693063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use contact_21 contact_21_2 1 0 1316 0 1 113
+use contact_22 contact_22_2 1 0 1313 0 1 110
+use contact_21 contact_21_0 1 0 1576 0 1 113
+use contact_22 contact_22_0 1 0 1573 0 1 110
+use contact_21 contact_21_3 1 0 1316 0 1 694
+use contact_22 contact_22_3 1 0 1313 0 1 690
+use contact_21 contact_21_1 1 0 1576 0 1 694
+use contact_22 contact_22_1 1 0 1573 0 1 690
+use write_driver write_driver_0 1 0 870 0 1 0
+use write_driver write_driver_1 1 0 610 0 1 0
+node "gnd_uq0" 0 64.5039 1573 110 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd" 0 64.5039 1313 110 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq0" 0 64.5793 1573 690 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd" 0 64.5793 1313 690 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "en" 20 1867.38 0 368 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 30954 4450 0 0 0 0 0 0 0 0 0 0
+node "bl_1" 13 44.0633 2180 304 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 870 118 0 0 0 0 0 0 0 0 0 0 0 0
+node "bl_0" 13 40.4197 1920 304 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 870 118 0 0 0 0 0 0 0 0 0 0 0 0
+node "data_1" 13 53.1596 997 302 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1089 132 0 0 0 0 0 0 0 0 0 0 0 0
+node "data_0" 13 53.1596 737 302 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1089 132 0 0 0 0 0 0 0 0 0 0 0 0
+node "br_0" 354 497.313 1641 445 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11060 1146 0 0 0 0 0 0 0 0 0 0 0 0
+equiv "br_0" "br_1"
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "bl_0" "bl_1" 3.03074
+cap "bl_0" "en" 4.47655
+cap "vdd" "vdd_uq0" 15.5161
+cap "data_1" "en" 5.51513
+cap "vdd" "en" 0.809798
+cap "vdd" "gnd" 6.77465
+cap "gnd_uq0" "vdd_uq0" 6.77465
+cap "en" "gnd_uq0" 1.44874
+cap "gnd" "gnd_uq0" 15.5161
+cap "en" "data_0" 5.51513
+cap "br_0" "bl_1" 2.83333
+cap "en" "br_0" 36.5737
+cap "en" "vdd_uq0" 0.809798
+cap "en" "bl_1" 4.47655
+cap "en" "gnd" 1.44874
+cap "data_1" "data_0" 3.4917
+cap "bl_0" "br_0" 6.07143
+cap "write_driver_1/din" "write_driver_0/net1" -4.878
+cap "write_driver_0/net5" "write_driver_0/net1" 9.92372
+cap "write_driver_0/bl" "write_driver_0/net1" -1.17027
+cap "write_driver_0/net6" "write_driver_0/net1" 3.87846
+cap "write_driver_0/net3" "write_driver_0/bl" 8.14734
+merge "write_driver_1/bl" "write_driver_1/net4" -10801.9 0 0 0 0 -123372 -2434 0 0 -22310 -2200 -11484 -1318 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1942 -80 0 0 -114392 -9540 -122524 -8696 -8464 -736 -7744 -704 0 0 0 0 0 0
+merge "write_driver_1/net4" "write_driver_1/net6"
+merge "write_driver_1/net6" "write_driver_0/br"
+merge "write_driver_0/br" "write_driver_0/net3"
+merge "write_driver_0/net3" "br_0"
+merge "br_0" "write_driver_0/net4"
+merge "write_driver_0/net4" "contact_22_0/m2_0_0#"
+merge "contact_22_0/m2_0_0#" "gnd_uq0"
+merge "gnd_uq0" "contact_21_0/m1_0_0#"
+merge "contact_21_0/m1_0_0#" "bl_0"
+merge "bl_0" "contact_22_1/SUB"
+merge "contact_22_1/SUB" "contact_22_1/m2_0_0#"
+merge "contact_22_1/m2_0_0#" "vdd_uq0"
+merge "vdd_uq0" "contact_21_1/m1_0_0#"
+merge "contact_21_1/m1_0_0#" "contact_21_1/SUB"
+merge "contact_21_1/SUB" "contact_22_0/SUB"
+merge "contact_22_0/SUB" "contact_21_0/SUB"
+merge "contact_21_0/SUB" "write_driver_1/net3"
+merge "write_driver_1/net3" "write_driver_0/din"
+merge "write_driver_0/din" "data_1"
+merge "data_1" "write_driver_1/br"
+merge "write_driver_1/br" "write_driver_1/gnd"
+merge "write_driver_1/gnd" "write_driver_1/en"
+merge "write_driver_1/en" "write_driver_0/gnd"
+merge "write_driver_0/gnd" "contact_22_2/m2_0_0#"
+merge "contact_22_2/m2_0_0#" "gnd"
+merge "gnd" "contact_21_2/m1_0_0#"
+merge "contact_21_2/m1_0_0#" "contact_22_3/SUB"
+merge "contact_22_3/SUB" "contact_21_3/SUB"
+merge "contact_21_3/SUB" "contact_22_2/SUB"
+merge "contact_22_2/SUB" "contact_21_2/SUB"
+merge "contact_21_2/SUB" "SUB"
+merge "SUB" "write_driver_1/net1"
+merge "write_driver_1/net1" "write_driver_1/net2"
+merge "write_driver_1/net2" "write_driver_0/net2"
+merge "write_driver_0/net2" "write_driver_0/en"
+merge "write_driver_0/en" "en"
+merge "en" "write_driver_1/net5"
+merge "write_driver_1/net5" "write_driver_0/net1"
+merge "write_driver_0/net1" "write_driver_1/vdd"
+merge "write_driver_1/vdd" "write_driver_0/vdd"
+merge "write_driver_0/vdd" "contact_22_3/m2_0_0#"
+merge "contact_22_3/m2_0_0#" "vdd"
+merge "vdd" "contact_21_3/m1_0_0#"
+merge "write_driver_0/bl" "bl_1" -48.7337 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -870 -118 0 0 0 0 0 0 0 0 0 0 0 0
+merge "write_driver_1/din" "data_0" -54.3769 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1089 -132 0 0 0 0 0 0 0 0 0 0 0 0

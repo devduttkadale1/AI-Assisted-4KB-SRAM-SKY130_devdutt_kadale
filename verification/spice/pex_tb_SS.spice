@@ -2,10 +2,10 @@
 * Corner: TT  VDD=1.8V  Temp=27C
 
 .include results/spice/sram_2_16_sky130A.sp
-.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
+.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice ss
 
 * Power
-VVDD VPWR GND 1.8
+VVDD VPWR GND 1.62
 VVSS VGND GND 0
 
 * Clock: 10ns period

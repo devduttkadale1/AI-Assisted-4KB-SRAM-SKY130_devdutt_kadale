@@ -1,0 +1,68 @@
+timestamp 1444693063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use pdriver pdriver_0 1 0 405 0 1 0
+use pnand2_0 pnand2_0_0 1 0 0 0 1 0
+node "gnd" 1074 1041.39 0 -8 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21488 2718 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 13 45.3241 157 136 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1056 130 0 0 0 0 0 0 0 0 0 0 0 0
+node "Z" 14 21.9656 925 180 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 288 68 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_288_180#" 255 225.561 288 180 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5763 712 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 13 43.5615 216 300 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1056 130 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 1074 1041.94 0 398 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21488 2718 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "gnd" "Z" 2.19355
+cap "B" "vdd" 10.5188
+cap "A" "vdd" 3.44877
+cap "gnd" "vdd" 63.5606
+cap "Z" "vdd" 1.90654
+cap "gnd" "li_288_180#" 34.8226
+cap "Z" "li_288_180#" 1.13216
+cap "B" "gnd" 2.75
+cap "gnd" "A" 5.92606
+cap "li_288_180#" "vdd" 31.4439
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" "pnand2_0_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.0787406
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/a_0_0#" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" 0.500545
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" 4.42809
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/G" "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" -5.83394
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/a_210_0#" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" 0.0354027
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/G" -3.44877
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/a_54_0#" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" 0.264116
+cap "pdriver_0/pinv_2_0/nmos_m9_w0_560_sli_dli_da_p_0/a_0_0#" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" 0.132267
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/a_366_0#" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" 0.00652321
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" "pdriver_0/pinv_2_0/nmos_m9_w0_560_sli_dli_da_p_0/a_54_0#" 0.0585345
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pnand2_0_0/pmos_m1_w0_840_sli_dli_0/G" 0.231552
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" -35.4856
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/a_132_0#" 0.0502477
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_0/G" "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" 0.191055
+cap "pnand2_0_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" 0.29381
+cap "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/D" "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" 0.24168
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/a_288_0#" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" 0.026241
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" "pnand2_0_0/pmos_m1_w0_840_sli_dli_0/G" 11.0604
+cap "pnand2_0_0/w_n127_195#" "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" -18.7494
+cap "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.0264827
+cap "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" "pnand2_0_0/w_n127_195#" 74.4761
+cap "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" -43.1733
+cap "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand2_0_0/w_n127_195#" 8.88178e-16
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pnand2_0_0/pmos_m1_w0_840_sli_dli_0/G" 0.0574459
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pnand2_0_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.0351126
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pnand2_0_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0318333
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" 2.52154
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/a_0_0#" -4.44089e-16
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pnand2_0_0/w_n127_195#" -0.231428
+cap "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" -2.19355
+cap "pdriver_0/pinv_2_0/nmos_m9_w0_560_sli_dli_da_p_0/S_uq3" "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/S_uq3" -4.41832
+merge "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/D" "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/G" -1370.19 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -24550 -3184 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/G" "li_288_180#"
+merge "li_288_180#" "B"
+merge "B" "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/S_uq3"
+merge "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/S_uq3" "vdd"
+merge "pnand2_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pdriver_0/pinv_2_0/nmos_m9_w0_560_sli_dli_da_p_0/S_uq3" -1066.89 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -21488 -2750 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pdriver_0/pinv_2_0/nmos_m9_w0_560_sli_dli_da_p_0/S_uq3" "gnd"
+merge "pnand2_0_0/SUB" "pdriver_0/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pdriver_0/SUB" "SUB"
+merge "pnand2_0_0/w_n127_195#" "pdriver_0/w_n127_195#" -1319.78 0 0 0 0 -109982 -1438 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pdriver_0/pinv_2_0/pmos_m9_w1_120_sli_dli_da_p_0/D" "Z" -35.6126 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -288 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pnand2_0_0/pmos_m1_w0_840_sli_dli_1/G" "A" -45.3241 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1056 -130 0 0 0 0 0 0 0 0 0 0 0 0

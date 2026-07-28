@@ -1,0 +1,14 @@
+* SKY130 process parameters
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/critical.spice
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/fast.spice
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/fast_70p.spice
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/invariant.spice
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/lod.spice
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/montecarlo.spice
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/slow.spice
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/slow_70p.spice
+.include /home/devdutt/VLSI/pdk/skywater-pdk/libraries/sky130_fd_pr/latest/models/parameters/typical.spice
+
+* SKY130 TT — patched pm3 with wmin=0
+.include /home/devdutt/AI-Assisted-4KB-SRAM-SKY130/verification/spice/nfet_tt.pm3.spice
+.include /home/devdutt/AI-Assisted-4KB-SRAM-SKY130/verification/spice/pfet_tt.pm3.spice

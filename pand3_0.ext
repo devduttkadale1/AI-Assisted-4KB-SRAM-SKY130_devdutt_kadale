@@ -1,0 +1,85 @@
+timestamp 1444693063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use pdriver_3 pdriver_3_0 1 0 464 0 1 0
+use pnand3_0 pnand3_0_0 1 0 0 0 1 0
+node "gnd" 685 656.651 0 -8 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13696 1744 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 14 45.9082 128 136 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1088 132 0 0 0 0 0 0 0 0 0 0 0 0
+node "Z" 14 17.909 676 184 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 272 66 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_346_184#" 260 219.428 346 184 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5865 724 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 13 37.7339 216 218 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1056 130 0 0 0 0 0 0 0 0 0 0 0 0
+node "C" 13 43.0308 304 300 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1024 128 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 685 654.526 0 398 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13696 1744 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "vdd" "B" 5.19444
+cap "C" "gnd" 2.66667
+cap "vdd" "A" 3.55328
+cap "li_346_184#" "gnd" 34.3579
+cap "Z" "gnd" 2.28158
+cap "B" "gnd" 3.7567
+cap "li_346_184#" "Z" 4.63636
+cap "vdd" "gnd" 30.5495
+cap "li_346_184#" "B" 7.35135
+cap "C" "vdd" 10.2
+cap "vdd" "li_346_184#" 32.4372
+cap "A" "gnd" 6.10563
+cap "vdd" "Z" 2.04481
+cap "pdriver_3_0/pinv_10_0/nmos_m2_w0_420_sli_dli_da_p_0/a_54_0#" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" 0.0248861
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" -4.26333
+cap "pnand3_0_0/w_n127_195#" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" 74.5183
+cap "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/D" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" 8.42323
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" -12.1357
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_1/G" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" -3.7567
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/G" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" -6.10563
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/G" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" 0.0602615
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_1/G" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" -5.19444
+cap "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/a_54_0#" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" 0.140561
+cap "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/D" "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/G" 0.109448
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/G" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" 0.308522
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/G" -3.55328
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_1/G" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" -7.35135
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/G" 6.87926
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/G" 3.55271e-15
+cap "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/a_0_0#" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" 0.320304
+cap "pdriver_3_0/pinv_10_0/nmos_m2_w0_420_sli_dli_da_p_0/a_0_0#" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" 0.0575173
+cap "pnand3_0_0/w_n127_195#" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" -17.4819
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" -28.8453
+cap "pnand3_0_0/w_n127_195#" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" -10.5729
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand3_0_0/pmos_m1_w0_840_sli_dli_1/G" 0.0921181
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" -15.7166
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pnand3_0_0/w_n127_195#" -0.267613
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/D" -2.28158
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" "pnand3_0_0/w_n127_195#" 0.240043
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/D" 0.1771
+cap "pnand3_0_0/w_n127_195#" "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/D" -0.172782
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/G" 3.8515
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/G" 0.228941
+cap "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/D" "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/G" 0.0322611
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" 0.0199748
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand3_0_0/w_n127_195#" -0.720832
+cap "pnand3_0_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" 0.29381
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.0366577
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/G" 0.130793
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/G" 0.0683
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/D" 3.78686
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" -0.595967
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/D" -2.04481
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" "pnand3_0_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.29381
+cap "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pnand3_0_0/nmos_m1_w0_840_sactive_dli_0/S" 0.24168
+cap "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" -1.76965
+merge "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/D" "C" -274.212 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3115 -442 0 0 0 0 0 0 0 0 0 0 0 0
+merge "C" "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/G"
+merge "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/G" "li_346_184#"
+merge "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/G" "A" -45.9082 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1088 -132 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pnand3_0_0/SUB" "pdriver_3_0/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pdriver_3_0/SUB" "SUB"
+merge "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/D" "Z" -40.5829 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -272 -66 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pnand3_0_0/pmos_m1_w0_840_sli_dli_2/S" "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" -687.824 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13696 -1776 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pdriver_3_0/pinv_10_0/pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "vdd"
+merge "pnand3_0_0/nmos_m1_w0_840_sli_dactive_0/S" "pdriver_3_0/pinv_10_0/nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" -680.629 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13696 -1776 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pdriver_3_0/pinv_10_0/nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" "gnd"
+merge "pnand3_0_0/w_n127_195#" "pdriver_3_0/w_n127_195#" -1319.78 0 0 0 0 -109982 -1438 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pnand3_0_0/pmos_m1_w0_840_sli_dli_1/G" "B" -37.7339 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1056 -130 0 0 0 0 0 0 0 0 0 0 0 0

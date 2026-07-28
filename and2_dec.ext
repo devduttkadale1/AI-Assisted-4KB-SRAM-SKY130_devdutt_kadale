@@ -1,0 +1,49 @@
+timestamp 1444693062
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use pnand2 pnand2_0 1 0 0 0 1 0
+use pinv pinv_0 1 0 373 0 1 0
+node "gnd" 550 542.492 0 -8 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10992 1406 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 13 46.5612 157 136 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1056 130 0 0 0 0 0 0 0 0 0 0 0 0
+node "Z" 14 19.2638 575 236 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 288 68 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_288_236#" 267 248.566 288 236 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6035 744 0 0 0 0 0 0 0 0 0 0 0 0
+node "B" 13 36.6203 216 300 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1056 130 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 489 551.28 0 500 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12366 1410 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_288_236#" "Z" 5.16456
+cap "li_288_236#" "vdd" 23.4155
+cap "B" "vdd" 4.62363
+cap "vdd" "A" 2.43208
+cap "B" "li_288_236#" 15.3962
+cap "gnd" "Z" 1.89669
+cap "gnd" "vdd" 19.2006
+cap "li_288_236#" "gnd" 23.3926
+cap "B" "gnd" 2.75
+cap "gnd" "A" 5.92606
+cap "Z" "vdd" 1.75191
+cap "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" 0.597694
+cap "pinv_0/w_n127_244#" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 28.0083
+cap "pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -8.35814
+cap "pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.0226342
+cap "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 28.0162
+cap "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "pinv_0/w_n127_244#" -3.82968
+cap "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.141464
+cap "pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -3.32748
+cap "pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.0956311
+cap "pinv_0/w_n127_244#" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -1.42109e-14
+cap "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -6.23088
+merge "pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "B" -56.2279 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1056 -130 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pinv_0/SUB" "pnand2_0/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pnand2_0/SUB" "SUB"
+merge "pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -1450.15 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -26180 -3284 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G"
+merge "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "pnand2_0/pmos_m1_w0_840_sli_dli_1/D"
+merge "pnand2_0/pmos_m1_w0_840_sli_dli_1/D" "gnd"
+merge "gnd" "li_288_236#"
+merge "li_288_236#" "vdd"
+merge "pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "Z" -56.0872 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -288 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "A" -46.5612 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1056 -130 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pinv_0/w_n127_244#" "pnand2_0/w_n127_244#" -1487.42 0 0 0 0 -123952 -1484 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0

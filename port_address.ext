@@ -1,0 +1,1398 @@
+timestamp 1444693062
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use contact_14 contact_14_2 1 0 3402 0 1 -166
+use contact_6 contact_6_2 1 0 3394 0 1 -175
+use contact_14 contact_14_1 1 0 3228 0 1 -524
+use contact_6 contact_6_1 1 0 3220 0 1 -532
+use contact_7 contact_7_1 1 0 3217 0 1 -535
+use contact_14 contact_14_0 1 0 3281 0 1 -330
+use contact_6 contact_6_0 1 0 3272 0 1 -339
+use contact_7 contact_7_0 1 0 3270 0 1 -342
+use and2_dec_0 and2_dec_0_0 1 0 3243 0 -1 0
+use wordline_driver_array wordline_driver_array_0 1 0 3243 0 1 0
+use hierarchical_decoder hierarchical_decoder_0 1 0 0 0 1 0
+node "vdd_uq0" 0 78.7771 3217 -535 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd" 0 86.1829 3270 -342 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq0" 0 70.9767 3904 -26 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd" 0 60.0541 3217 -26 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq1" 0 71.3018 1228 -26 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq2" 0 70.8146 518 -26 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq1" 0 61.2579 3904 483 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq2" 0 59.7648 3217 483 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq3" 0 61.4749 1228 483 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq4" 0 60.5005 518 483 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq3" 0 61.2579 3904 992 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq4" 0 59.2285 3217 992 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq5" 0 61.4749 1228 992 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq6" 0 60.5005 518 992 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq5" 0 61.2579 3904 1501 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq6" 0 59.7648 3217 1501 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq7" 0 61.4749 1228 1501 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq8" 0 60.5005 518 1501 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq7" 0 61.2579 3904 2010 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq8" 0 59.2285 3217 2010 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq9" 0 71.3018 1228 2010 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq10" 0 70.3274 518 2010 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq9" 0 61.2579 3904 2519 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq10" 0 59.7648 3217 2519 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq11" 0 61.2579 3904 3028 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq12" 0 59.2285 3217 3028 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq13" 0 71.3018 1228 3028 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq14" 0 70.3274 518 3028 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq11" 0 61.2579 3904 3537 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq12" 0 59.7648 3217 3537 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq13" 0 61.4749 1228 3537 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq14" 0 60.5005 518 3537 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq15" 0 61.2579 3904 4046 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq16" 0 59.2285 3217 4046 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq17" 0 61.4749 1228 4046 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq18" 0 60.5005 518 4046 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq15" 0 61.2579 3904 4555 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq16" 0 59.7648 3217 4555 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq17" 0 61.4749 1228 4555 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq18" 0 60.5005 518 4555 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq19" 0 61.2579 3904 5064 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq20" 0 59.2285 3217 5064 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq21" 0 71.3018 1228 5064 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq22" 0 70.8146 518 5064 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq19" 0 61.2579 3904 5573 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq20" 0 59.7648 3217 5573 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq23" 0 61.2579 3904 6082 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq24" 0 59.2285 3217 6082 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq21" 0 61.2579 3904 6591 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq22" 0 59.7648 3217 6591 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq25" 0 61.2579 3904 7100 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq26" 0 59.2285 3217 7100 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq23" 0 61.2579 3904 7609 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq24" 0 59.7648 3217 7609 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq27" 0 71.0848 3904 8118 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd_uq28" 0 70.0693 3217 8118 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "wl_en" 2 173.059 3409 -152 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2933 448 0 0 0 0 0 0 0 0
+node "addr_3" 45 2277.53 214 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71260 10208 0 0 0 0 0 0 0 0
+node "addr_2" 45 575.823 148 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71260 10208 0 0 0 0 0 0 0 0
+node "addr_1" 45 575.823 82 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71260 10208 0 0 0 0 0 0 0 0
+node "addr_0" 45 2277.53 16 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 71260 10208 0 0 0 0 0 0 0 0
+node "li_3296_n324#" 136 163.15 3296 -324 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3060 394 0 0 0 0 0 0 0 0 0 0 0 0
+node "rbl_wl" 14 27.7294 3818 -252 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 288 68 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_0" 15 22.3774 3822 236 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_236#" 276 310.956 3134 236 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_1" 15 22.3774 3822 766 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_766#" 276 291.282 3134 766 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_2" 15 22.3774 3822 1254 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_1254#" 276 291.282 3134 1254 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_3" 15 22.3774 3822 1784 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_1784#" 276 291.282 3134 1784 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_4" 15 22.3774 3822 2272 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_2272#" 276 291.282 3134 2272 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_5" 15 22.3774 3822 2802 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_2802#" 276 291.282 3134 2802 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_6" 15 22.3774 3822 3290 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_3290#" 276 291.282 3134 3290 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_7" 15 22.3774 3822 3820 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_3820#" 276 291.282 3134 3820 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_8" 15 22.3774 3822 4308 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_4308#" 276 291.282 3134 4308 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_9" 15 22.3774 3822 4838 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_4838#" 276 291.282 3134 4838 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_10" 15 22.3774 3822 5326 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_5326#" 276 291.282 3134 5326 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_11" 15 22.3774 3822 5856 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_5856#" 276 291.282 3134 5856 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_12" 15 22.3774 3822 6344 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_6344#" 276 291.282 3134 6344 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_13" 15 22.3774 3822 6874 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_6874#" 276 291.282 3134 6874 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_14" 15 22.3774 3822 7362 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_7362#" 276 291.282 3134 7362 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+node "wl_15" 15 23.3893 3822 7892 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 224 60 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_3134_7892#" 276 319.483 3134 7892 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6239 768 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "vdd_uq11" "vdd_uq12" 5.70074
+cap "gnd_uq0" "wl_en" 0.152973
+cap "gnd_uq22" "addr_2" 0.0695079
+cap "gnd_uq1" "gnd_uq2" 5.51289
+cap "li_3134_766#" "li_3134_236#" 11.0274
+cap "gnd_uq24" "li_3134_6344#" 2.37932
+cap "addr_2" "addr_3" 3103.66
+cap "vdd_uq9" "gnd_uq7" 7.74245
+cap "gnd_uq4" "gnd_uq3" 5.70074
+cap "wl_0" "wl_1" 0.676136
+cap "vdd_uq19" "vdd_uq20" 5.70074
+cap "li_3134_766#" "vdd_uq2" 1.24757
+cap "vdd_uq1" "gnd_uq3" 7.74245
+cap "li_3134_1784#" "wl_3" 0.669951
+cap "wl_10" "wl_9" 0.734568
+cap "vdd_uq4" "gnd_uq2" 7.74245
+cap "vdd_uq13" "vdd_uq14" 5.51289
+cap "wl_13" "wl_14" 0.734568
+cap "gnd_uq8" "gnd_uq7" 5.70074
+cap "vdd_uq6" "gnd_uq8" 7.74245
+cap "li_3134_4308#" "li_3134_4838#" 11.0274
+cap "gnd_uq18" "vdd_uq18" 7.74245
+cap "wl_5" "wl_6" 0.734568
+cap "vdd_uq20" "gnd_uq20" 7.74245
+cap "gnd_uq10" "vdd_uq8" 7.74245
+cap "gnd_uq23" "gnd_uq24" 5.70074
+cap "li_3134_1254#" "wl_2" 0.669951
+cap "vdd_uq21" "gnd_uq25" 7.74245
+cap "gnd_uq4" "li_3134_766#" 2.388
+cap "gnd_uq6" "vdd_uq4" 7.74245
+cap "wl_9" "wl_8" 0.676136
+cap "wl_10" "li_3134_5326#" 0.669951
+cap "li_3134_7362#" "gnd_uq26" 2.37932
+cap "li_3134_7362#" "wl_14" 0.669951
+cap "gnd_uq15" "vdd_uq11" 7.74245
+cap "gnd_uq16" "vdd_uq16" 7.74245
+cap "gnd_uq6" "vdd_uq8" 7.74245
+cap "li_3134_4308#" "li_3134_3820#" 20.8547
+cap "addr_0" "gnd_uq22" 0.0378092
+cap "addr_3" "vdd_uq14" 0.637711
+cap "li_3134_6874#" "li_3134_6344#" 11.0274
+cap "gnd_uq12" "li_3134_2802#" 2.388
+cap "gnd" "li_3134_236#" 2.37932
+cap "wl_3" "wl_2" 0.676136
+cap "vdd_uq10" "li_3134_2272#" 1.25259
+cap "gnd" "vdd_uq2" 7.74245
+cap "gnd_uq23" "vdd_uq21" 7.74245
+cap "vdd" "li_3134_236#" 0.405586
+cap "gnd_uq17" "gnd_uq18" 5.51289
+cap "gnd_uq16" "vdd_uq12" 7.74245
+cap "li_3134_1784#" "gnd_uq8" 2.388
+cap "wl_7" "li_3134_3820#" 0.669951
+cap "gnd_uq11" "vdd_uq9" 7.74245
+cap "li_3296_n324#" "wl_en" 1.50284
+cap "gnd" "gnd_uq0" 5.70074
+cap "gnd_uq5" "vdd_uq7" 7.74245
+cap "gnd_uq14" "gnd_uq13" 5.51289
+cap "addr_1" "vdd_uq18" 0.100231
+cap "wl_12" "li_3134_6344#" 0.669951
+cap "vdd_uq16" "gnd_uq20" 7.74245
+cap "vdd_uq0" "li_3134_236#" 0.129072
+cap "li_3134_1784#" "vdd_uq6" 1.24757
+cap "vdd_uq4" "addr_1" 0.100231
+cap "addr_2" "vdd_uq18" 0.139016
+cap "vdd_uq16" "vdd_uq15" 5.70074
+cap "vdd_uq8" "addr_1" 0.100231
+cap "addr_1" "gnd_uq2" 0.0501157
+cap "vdd_uq22" "gnd_uq24" 7.74245
+cap "vdd_uq4" "addr_2" 0.139016
+cap "vdd_uq8" "addr_2" 0.139016
+cap "gnd_uq27" "gnd_uq28" 5.70074
+cap "gnd_uq22" "addr_3" 0.318855
+cap "vdd_uq22" "li_3134_6344#" 1.25259
+cap "gnd_uq2" "addr_2" 0.0695079
+cap "li_3134_4308#" "wl_8" 0.669951
+cap "gnd_uq21" "vdd_uq17" 7.74245
+cap "gnd_uq10" "addr_1" 0.100231
+cap "li_3134_3290#" "vdd_uq12" 1.25259
+cap "vdd_uq20" "li_3134_5856#" 1.24757
+cap "gnd_uq15" "gnd_uq16" 5.70074
+cap "gnd_uq12" "gnd_uq11" 5.70074
+cap "addr_1" "gnd_uq18" 0.100231
+cap "gnd_uq26" "gnd_uq25" 5.70074
+cap "vdd_uq22" "vdd_uq21" 5.70074
+cap "gnd_uq16" "li_3134_4308#" 2.37932
+cap "gnd_uq10" "addr_2" 0.139016
+cap "li_3134_5326#" "gnd_uq20" 2.37932
+cap "gnd_uq6" "addr_1" 0.100231
+cap "wl_0" "li_3134_236#" 0.669951
+cap "li_3134_7362#" "li_3134_7892#" 11.0274
+cap "gnd_uq18" "addr_2" 0.139016
+cap "gnd_uq11" "vdd_uq11" 7.74245
+cap "wl_7" "wl_8" 0.734568
+cap "gnd_uq6" "addr_2" 0.139016
+cap "vdd_uq8" "vdd_uq7" 5.51289
+cap "vdd_uq10" "vdd_uq9" 5.70074
+cap "addr_0" "vdd_uq18" 0.0756183
+cap "vdd_uq24" "gnd_uq26" 7.74245
+cap "gnd_uq26" "li_3134_6874#" 2.388
+cap "vdd_uq18" "vdd_uq17" 5.51289
+cap "vdd_uq24" "gnd_uq28" 7.74245
+cap "wl_0" "rbl_wl" 0.734568
+cap "wl_11" "li_3134_5856#" 0.669951
+cap "vdd_uq22" "li_3134_6874#" 1.24757
+cap "addr_0" "vdd_uq4" 0.0756183
+cap "vdd_uq20" "li_3134_5326#" 1.25259
+cap "wl_15" "wl_14" 0.676136
+cap "wl_4" "wl_5" 0.676136
+cap "vdd_uq10" "gnd_uq8" 7.74245
+cap "gnd_uq9" "gnd_uq10" 5.51289
+cap "addr_0" "vdd_uq8" 0.0756183
+cap "gnd_uq16" "li_3134_3820#" 2.388
+cap "addr_0" "gnd_uq2" 0.0378092
+cap "vdd_uq19" "gnd_uq19" 7.74245
+cap "gnd" "wl_en" 0.67187
+cap "gnd_uq15" "vdd_uq15" 7.74245
+cap "gnd_uq21" "gnd_uq22" 5.51289
+cap "wl_4" "li_3134_2272#" 0.669951
+cap "vdd" "li_3296_n324#" 4.33636
+cap "wl_7" "wl_6" 0.676136
+cap "gnd_uq14" "addr_1" 0.100231
+cap "li_3134_4838#" "gnd_uq20" 2.388
+cap "vdd_uq13" "gnd_uq13" 7.74245
+cap "gnd_uq23" "vdd_uq19" 7.74245
+cap "addr_0" "gnd_uq10" 0.0756183
+cap "gnd_uq5" "vdd_uq3" 7.74245
+cap "gnd_uq14" "addr_2" 0.139016
+cap "vdd_uq2" "li_3134_236#" 1.25259
+cap "li_3134_2802#" "vdd_uq10" 1.24757
+cap "gnd_uq18" "vdd_uq14" 7.74245
+cap "vdd_uq20" "gnd_uq24" 7.74245
+cap "addr_0" "gnd_uq18" 0.0756183
+cap "gnd_uq19" "gnd_uq20" 5.70074
+cap "gnd_uq12" "vdd_uq10" 7.74245
+cap "li_3134_2802#" "li_3134_3290#" 20.8547
+cap "li_3134_766#" "wl_1" 0.669951
+cap "gnd_uq6" "addr_0" 0.0756183
+cap "gnd_uq17" "vdd_uq17" 7.74245
+cap "gnd_uq12" "li_3134_3290#" 2.37932
+cap "gnd_uq19" "vdd_uq15" 7.74245
+cap "addr_1" "addr_2" 3103.66
+cap "gnd_uq22" "vdd_uq18" 7.74245
+cap "gnd_uq4" "li_3134_1254#" 2.37932
+cap "vdd_uq18" "addr_3" 0.637711
+cap "wl_4" "wl_3" 0.734568
+cap "li_3134_3290#" "li_3134_3820#" 11.0274
+cap "gnd_uq17" "vdd_uq13" 7.74245
+cap "vdd_uq22" "gnd_uq26" 7.74245
+cap "li_3134_2272#" "gnd_uq8" 2.37932
+cap "vdd_uq6" "vdd_uq5" 5.70074
+cap "vdd_uq5" "gnd_uq7" 7.74245
+cap "li_3134_5856#" "li_3134_5326#" 11.0274
+cap "vdd_uq4" "addr_3" 0.637711
+cap "vdd_uq8" "addr_3" 0.637711
+cap "gnd_uq4" "vdd_uq2" 7.74245
+cap "gnd_uq2" "addr_3" 0.318855
+cap "vdd_uq1" "vdd_uq2" 5.70074
+cap "vdd_uq23" "gnd_uq27" 7.74245
+cap "wl_5" "li_3134_2802#" 0.669951
+cap "gnd_uq1" "vdd_uq3" 7.74245
+cap "vdd_uq5" "gnd_uq3" 7.74245
+cap "gnd_uq14" "vdd_uq14" 7.74245
+cap "addr_0" "gnd_uq14" 0.0756183
+cap "vdd_uq24" "li_3134_7892#" 1.24757
+cap "li_3134_2802#" "li_3134_2272#" 11.0274
+cap "vdd_uq4" "vdd_uq3" 5.51289
+cap "gnd_uq10" "addr_3" 0.637711
+cap "wl_2" "wl_1" 0.734568
+cap "addr_1" "vdd_uq14" 0.100231
+cap "li_3134_5856#" "gnd_uq24" 2.388
+cap "vdd_uq23" "gnd_uq25" 7.74245
+cap "addr_0" "addr_1" 3103.66
+cap "vdd_uq1" "gnd_uq0" 7.74245
+cap "wl_15" "li_3134_7892#" 0.669951
+cap "gnd_uq18" "addr_3" 0.637711
+cap "li_3134_4308#" "vdd_uq16" 1.25259
+cap "li_3134_5856#" "li_3134_6344#" 20.8547
+cap "li_3134_1254#" "vdd_uq6" 1.25259
+cap "addr_2" "vdd_uq14" 0.139016
+cap "gnd_uq6" "addr_3" 0.637711
+cap "vdd_uq16" "li_3134_4838#" 1.24757
+cap "vdd_uq23" "vdd_uq24" 5.70074
+cap "wl_9" "li_3134_4838#" 0.669951
+cap "gnd_uq9" "vdd_uq7" 7.74245
+cap "wl_13" "li_3134_6874#" 0.669951
+cap "li_3296_n324#" "li_3134_236#" 6.19677
+cap "gnd" "vdd_uq0" 7.74245
+cap "li_3134_1784#" "li_3134_2272#" 20.8547
+cap "gnd_uq14" "addr_3" 0.637711
+cap "vdd_uq24" "li_3134_7362#" 1.25259
+cap "wl_10" "wl_11" 0.676136
+cap "gnd_uq12" "vdd_uq12" 7.74245
+cap "li_3134_4838#" "li_3134_5326#" 20.8547
+cap "li_3134_7362#" "li_3134_6874#" 20.8547
+cap "gnd_uq6" "gnd_uq5" 5.51289
+cap "wl_11" "wl_12" 0.734568
+cap "wl_6" "li_3134_3290#" 0.669951
+cap "addr_0" "vdd_uq14" 0.0756183
+cap "addr_1" "gnd_uq22" 0.0501157
+cap "li_3134_1254#" "li_3134_766#" 20.8547
+cap "wl_13" "wl_12" 0.676136
+cap "gnd_uq28" "li_3134_7892#" 2.388
+cap "gnd_uq4" "vdd_uq6" 7.74245
+cap "li_3134_1784#" "li_3134_1254#" 11.0274
+cap "li_3134_3820#" "vdd_uq12" 1.24757
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.523837
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" 5.44575
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_15/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 3.15344
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 35.7978
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pinv_0/w_n127_244#" 148.44
+cap "and2_dec_0_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.831455
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" -0.54372
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" -0.177653
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.131979
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 45.0626
+cap "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.31216
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -2.87123
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.224548
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.878137
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" 3.57251
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.912081
+cap "and2_dec_0_0/pinv_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 12.7812
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 2.05158
+cap "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -0.177653
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.390387
+cap "wordline_driver_array_0/wordline_driver_15/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.211038
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.474279
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 27.39
+cap "wordline_driver_array_0/wordline_driver_15/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.33239
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "and2_dec_0_0/pinv_0/w_n127_244#" 89.3572
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 8.45553
+cap "wordline_driver_array_0/wordline_driver_15/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.881383
+cap "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.65231
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 1.05818
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.386349
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" 0.157856
+cap "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.3768
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" 0.155597
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_15/pnand2_0/contact_12_0/a_2_2#" 4.66419e-17
+cap "and2_dec_0_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.219022
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.84139
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0555556
+cap "addr_2" "addr_3" -407.317
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "addr_3" -0.318855
+cap "addr_3" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.637711
+cap "addr_2" "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -407.317
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -0.0501157
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" -407.317
+cap "addr_2" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.0695079
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -0.100231
+cap "addr_2" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.139016
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" -0.0378092
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -7.74245
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" -0.0756183
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -3.87123
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" 0.248281
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/predecode_7" 0.308234
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" -0.0961529
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.0363251
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 0.00452916
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.947806
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" 0.95947
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.789372
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -0.177653
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 106.38
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.787784
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "and2_dec_0_0/pinv_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.547341
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "wordline_driver_array_0/wordline_driver_15/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.562355
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -3.25469
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.00135689
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 18.3762
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "wordline_driver_array_0/wordline_driver_15/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.407542
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "and2_dec_0_0/pinv_0/w_n127_244#" 20.228
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "wordline_driver_array_0/wordline_driver_15/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.13415
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.98914e-17
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "wordline_driver_array_0/wordline_driver_15/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 0.384703
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 12.4827
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.118985
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 0.13415
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.520961
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.18293
+cap "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.442363
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" -36.9107
+cap "wordline_driver_array_0/wordline_driver_15/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 1.94358
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 51.6683
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.126909
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 2.14319
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "wordline_driver_array_0/wordline_driver_15/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.384703
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0691893
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" 55.5553
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 14.0184
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "wordline_driver_array_0/wordline_driver_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 23.0496
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -0.0152737
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_15/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.279752
+cap "hierarchical_decoder_0/and2_dec_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 4.74034
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 1.78454
+cap "wordline_driver_array_0/wordline_driver_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0555556
+cap "wordline_driver_array_0/wordline_driver_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "and2_dec_0_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 0.680825
+cap "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 6.04328
+cap "wordline_driver_array_0/wordline_driver_15/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -2.58039
+cap "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" 0.11257
+cap "wordline_driver_array_0/wordline_driver_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "and2_dec_0_0/pinv_0/w_n127_244#" 20.0934
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -3.87123
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "addr_2" -0.139016
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "addr_2" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -0.100231
+cap "addr_2" "addr_3" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -0.0756183
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "addr_3" -0.637711
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -3.87123
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.308234
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" -0.0961529
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" 0.248281
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.89561
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.00452916
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" -0.0844776
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.00452916
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/predecode_7" 0.308234
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -1.42109e-14
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" 0.248281
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.279752
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" 0.151283
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 87.7396
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" 54.163
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 9.94563
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 88.1039
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 9.94228
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.00135689
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.97828e-17
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_14/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" 0.000191492
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" -0.177653
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_14/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.277752
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" -19.1842
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 25.2534
+cap "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 7.82912
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_14/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.126909
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_14/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.401345
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.606441
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 54.6012
+cap "hierarchical_decoder_0/and2_dec_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.606441
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 1.94358
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_14/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.95924
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_13/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.407542
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -0.177653
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.54223
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -20.8547
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" -19.2018
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_14/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.562355
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_13/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 7.78883
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.562355
+cap "wordline_driver_array_0/wordline_driver_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -2.84217e-14
+cap "wordline_driver_array_0/wordline_driver_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 5.35331
+cap "wordline_driver_array_0/wordline_driver_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_12/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -0.449086
+cap "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.734568
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_15/pinv_0/w_n127_244#" -0.425512
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 5.36245
+cap "hierarchical_decoder_0/addr_2" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.139016
+cap "hierarchical_decoder_0/addr_3" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.637711
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -7.74245
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.100231
+cap "hierarchical_decoder_0/addr_2" "hierarchical_decoder_0/addr_3" -426.829
+cap "hierarchical_decoder_0/addr_2" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.139016
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/addr_2" -426.829
+cap "hierarchical_decoder_0/addr_3" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.637711
+cap "hierarchical_decoder_0/addr_0" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.0756183
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.100231
+cap "hierarchical_decoder_0/addr_0" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.0756183
+cap "hierarchical_decoder_0/addr_0" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -3.87123
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.308234
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" -0.0844776
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.00452916
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.947806
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 7.10543e-15
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" 0.248281
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/predecode_7" -1.42109e-14
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.00962776
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "wordline_driver_array_0/wordline_driver_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.13415
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 39.0576
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" 0.95414
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.789372
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.18293
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" 12.523
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_12/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" 0.000191492
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.150121
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.562355
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.0082525
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -10.4273
+cap "wordline_driver_array_0/wordline_driver_12/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.384703
+cap "wordline_driver_array_0/wordline_driver_12/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.95924
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.7301
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -0.177653
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -36.8931
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.787784
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.277752
+cap "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.13415
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 106.48
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 2.14319
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 20.1693
+cap "wordline_driver_array_0/wordline_driver_12/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" 55.1224
+cap "wordline_driver_array_0/wordline_driver_12/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.384703
+cap "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 18.4325
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -13.4542
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.150121
+cap "hierarchical_decoder_0/and2_dec_12/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_14/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.98914e-17
+cap "wordline_driver_array_0/wordline_driver_12/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -2.55681
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 6.03413
+cap "wordline_driver_array_0/wordline_driver_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.680825
+cap "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/addr_1" -426.829
+cap "hierarchical_decoder_0/addr_0" "hierarchical_decoder_0/addr_1" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/addr_3" -426.829
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/predecode_7" 5.55112e-17
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.244844
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/predecode_7" 0.308234
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" -0.0961529
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" 0.00452916
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0363251
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.89561
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" 0.496562
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.576391
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_11/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.94358
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" 2.94126
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 86.0028
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.126909
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_11/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.407542
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" 0.114738
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 22.6819
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 18.5908
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.384703
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_12/pnand2_0/contact_12_0/a_2_2#" 1.98914e-17
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_10/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" -0.177653
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 26.7288
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.562355
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.279752
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.401345
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.781119
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.7334
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -10.4273
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_11/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0960907
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.576391
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 4.10819
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.126909
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.13415
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" 0.389251
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.48812
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.00135689
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" -23.4565
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.205394
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.232061
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.232061
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_11/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.13415
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_11/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.384703
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.126909
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" 55.5553
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_11/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.150121
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.268028
+cap "wordline_driver_array_0/wordline_driver_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "wordline_driver_array_0/wordline_driver_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" -1.42109e-14
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" 6.04328
+cap "wordline_driver_array_0/wordline_driver_11/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" -2.681
+cap "wordline_driver_array_0/wordline_driver_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" 1.64017
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -0.637711
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/addr_1" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -3.87123
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/addr_0" -0.0756183
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/addr_1" -0.100231
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.139016
+cap "hierarchical_decoder_0/addr_1" "hierarchical_decoder_0/addr_0" -426.829
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.947806
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.0346824
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/predecode_7" 7.10543e-15
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" -0.0844776
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.308234
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.00452916
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/predecode_7" 0.308234
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" 0.248281
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.00452916
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "hierarchical_decoder_0/predecode_7" "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" -0.0961529
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -19.5295
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 94.2197
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.277752
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -20.8547
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 2.26299
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_10/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 55.5606
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0736996
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_9/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" 0.114738
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.272232
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.72103
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.562355
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -19.1842
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 1.95924
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.10732
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 52.1812
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.279752
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_11/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.97828e-17
+cap "wordline_driver_array_0/wordline_driver_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_9/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.562355
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.000191492
+cap "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.090771
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.521343
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.147404
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" 0.224706
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_9/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.94358
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 25.9326
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 6.62187
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.694468
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 83.7982
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.5131
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.3676
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.00135689
+cap "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -0.177653
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0571297
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_9/pinv_0/w_n127_244#" -0.632149
+cap "wordline_driver_array_0/wordline_driver_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "wordline_driver_array_0/wordline_driver_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.734568
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 4.39396
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_11/pinv_0/w_n127_244#" -0.324903
+cap "wordline_driver_array_0/wordline_driver_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -2.84217e-14
+cap "wordline_driver_array_0/wordline_driver_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 6.04328
+cap "wordline_driver_array_0/wordline_driver_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -3.87123
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.139016
+cap "hierarchical_decoder_0/addr_1" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.100231
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/addr_0" -0.0756183
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -7.74245
+cap "hierarchical_decoder_0/addr_1" "hierarchical_decoder_0/addr_0" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.637711
+cap "hierarchical_decoder_0/addr_1" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.100231
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.139016
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/addr_1" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -3.87123
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/addr_0" -0.0756183
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.637711
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.00452916
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.947806
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 1.42109e-14
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" -0.0844776
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.244844
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.308234
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.0346824
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" 0.248281
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.305787
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0949037
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.05935
+cap "wordline_driver_array_0/wordline_driver_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.365828
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.789372
+cap "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.112324
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "hierarchical_decoder_0/and2_dec_10/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.98914e-17
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 11.9524
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 10.7301
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.384703
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 2.06787
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_8/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.384703
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" 0.164545
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 106.48
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" 9.79874
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.112471
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.000191492
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.13415
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" -36.5654
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.02683
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -10.4273
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" -15.8171
+cap "wordline_driver_array_0/wordline_driver_9/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -0.177653
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.0532092
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.0815083
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.0962791
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.112471
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0192181
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0532092
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 39.747
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.428987
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.277752
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 1.95924
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" -0.177653
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.152976
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" -0.00533026
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.463901
+cap "wordline_driver_array_0/wordline_driver_8/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.174931
+cap "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 55.1224
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 24.9012
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "wordline_driver_array_0/wordline_driver_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.00730573
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 6.03413
+cap "wordline_driver_array_0/wordline_driver_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "wordline_driver_array_0/wordline_driver_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "wordline_driver_array_0/wordline_driver_9/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -2.37375
+cap "hierarchical_decoder_0/addr_1" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" -0.100231
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/addr_0" -0.0756183
+cap "hierarchical_decoder_0/addr_1" "hierarchical_decoder_0/addr_0" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -3.87123
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/addr_2" -0.139016
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/addr_2" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -3.87123
+cap "hierarchical_decoder_0/addr_1" "hierarchical_decoder_0/addr_2" -426.829
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -0.637711
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.132812
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.18063
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.496562
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.308234
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" 0.00452916
+cap "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.89561
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 20.3118
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -1.99794
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 26.2964
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.2695
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -10.4273
+cap "wordline_driver_array_0/wordline_driver_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" -21.0936
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 55.5553
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0736996
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" 81.2709
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0955583
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0524175
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.94358
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.272232
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" 0.0768725
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_6/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.13415
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.562355
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.279752
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.326033
+cap "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.356055
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.693093
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" 0.13415
+cap "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.00135689
+cap "hierarchical_decoder_0/and2_dec_8/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.98914e-17
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.000191492
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" "wordline_driver_array_0/wordline_driver_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.562355
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 5.58913
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.48784
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 27.7269
+cap "wordline_driver_array_0/wordline_driver_6/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" -0.177653
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 41.2944
+cap "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -7.76371
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" 3.89518
+cap "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" 6.03597
+cap "wordline_driver_array_0/wordline_driver_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "wordline_driver_array_0/wordline_driver_6/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" -3.0059
+cap "wordline_driver_array_0/wordline_driver_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" 2.84217e-14
+cap "wordline_driver_array_0/wordline_driver_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.676136
+cap "hierarchical_decoder_0/addr_3" "hierarchical_decoder_0/addr_2" -135.366
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -3.87123
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/addr_1" -0.0501157
+cap "hierarchical_decoder_0/addr_3" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.318855
+cap "hierarchical_decoder_0/addr_0" "hierarchical_decoder_0/addr_1" -135.366
+cap "hierarchical_decoder_0/addr_0" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.0378092
+cap "hierarchical_decoder_0/addr_2" "hierarchical_decoder_0/addr_1" -135.366
+cap "hierarchical_decoder_0/addr_2" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" -0.0695079
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.00452916
+cap "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.175422
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.947806
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.0961529
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.244844
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.308234
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.00452916
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" 0.248281
+cap "hierarchical_decoder_0/and2_dec_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.433317
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" 55.5553
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 2.26327
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -22.093
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.782495
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -3.26371
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_6/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.126909
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_6/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.401345
+cap "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.13415
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_6/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.205394
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 95.5536
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.126909
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 11.6187
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -18.8567
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "wordline_driver_array_0/wordline_driver_6/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.0960907
+cap "wordline_driver_array_0/wordline_driver_5/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.94358
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 65.1857
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_5/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.384703
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "wordline_driver_array_0/wordline_driver_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -0.177653
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.00135689
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.277752
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_5/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_6/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.562355
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_6/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" 0.151283
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.7334
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -19.1842
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_6/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.95924
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 26.6235
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" 27.3955
+cap "hierarchical_decoder_0/and2_dec_7/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.97828e-17
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.279752
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 5.14094
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.384703
+cap "wordline_driver_array_0/wordline_driver_6/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 0.407542
+cap "wordline_driver_array_0/wordline_driver_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -1.42109e-14
+cap "wordline_driver_array_0/wordline_driver_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "wordline_driver_array_0/wordline_driver_5/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" -0.632149
+cap "wordline_driver_array_0/wordline_driver_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 2.13895
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" 6.04328
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" 0.248281
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0363251
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.244844
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.00452916
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.947806
+cap "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -0.0844776
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.208455
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.00343591
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0928156
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.308234
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0263108
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.0960907
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.28174
+cap "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.21492
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.277752
+cap "wordline_driver_array_0/wordline_driver_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -0.177653
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 39.0426
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" 55.1224
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.69282
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.96517
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_3/pnand2_0/w_n127_244#" -19.2018
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.126909
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.13415
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "wordline_driver_array_0/wordline_driver_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.789372
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.562355
+cap "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 1.94358
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.384703
+cap "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 1.95924
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 106.48
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" -34.0019
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -18.8567
+cap "hierarchical_decoder_0/and2_dec_6/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.97828e-17
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.00687708
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.000191492
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.7301
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 10.6185
+cap "hierarchical_decoder_0/and2_dec_4/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 8.69317
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.384703
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 52.4147
+cap "wordline_driver_array_0/wordline_driver_4/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 6.03413
+cap "wordline_driver_array_0/wordline_driver_5/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -2.37375
+cap "wordline_driver_array_0/wordline_driver_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.0139473
+cap "wordline_driver_array_0/wordline_driver_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "wordline_driver_array_0/wordline_driver_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.0483427
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.89561
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.315932
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.00956755
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.0083716
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.251743
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.00124942
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.036389
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.00109325
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.257544
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.48766
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -17.7089
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -11.0274
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.515608
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.279752
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.277752
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.150121
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 7.04059
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.576391
+cap "wordline_driver_array_0/wordline_driver_2/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -0.177653
+cap "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -0.177653
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pnand2_0/w_n127_244#" 55.5553
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_3/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.13415
+cap "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.13415
+cap "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -1.99794
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 7.22876
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.507631
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_3/pnand2_0/w_n127_244#" 55.1224
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 53.7574
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.576391
+cap "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.562355
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pnand2_0/w_n127_244#" 20.3118
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.126909
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -1.99794
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 53.8409
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" 0.389251
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" 0.389251
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.126909
+cap "wordline_driver_array_0/wordline_driver_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.562355
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_3/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.232061
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_2/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" 0.000191492
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.00135689
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 25.2577
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 6.02933
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 6.02018
+cap "wordline_driver_array_0/wordline_driver_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.676136
+cap "wordline_driver_array_0/wordline_driver_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_3/pinv_0/w_n127_244#" -3.0059
+cap "wordline_driver_array_0/wordline_driver_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 2.84217e-14
+cap "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.947806
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.244844
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.344559
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.00327974
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.0870146
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.00452916
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0251148
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" 0.152128
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.196502
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.95924
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.00962791
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.576391
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0268679
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.401345
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -34.1376
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -1.77636e-15
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.407542
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.279752
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.00117913
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" 0.00135689
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" -0.177653
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 52.6392
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.150121
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.00367352
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 8.68742
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 39.099
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 1.94358
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.389251
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.50131
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 2.1801
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -19.1842
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 55.5553
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.384703
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 106.172
+cap "hierarchical_decoder_0/and2_dec_3/pnand2_0/contact_12_0/a_2_2#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 3.97828e-17
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.00120213
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_2/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.126909
+cap "wordline_driver_array_0/wordline_driver_2/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.789372
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.114738
+cap "hierarchical_decoder_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.273764
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.13415
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -18.8567
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_2/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.562355
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 10.5879
+cap "wordline_driver_array_0/wordline_driver_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.384703
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.00955583
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_1/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.232061
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.7334
+cap "wordline_driver_array_0/wordline_driver_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.367284
+cap "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.0139473
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -1.42109e-14
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 6.04328
+cap "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "wordline_driver_array_0/wordline_driver_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+cap "wordline_driver_array_0/wordline_driver_1/pinv_0/w_n127_244#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -2.39732
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.344559
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" 0.163803
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.0346824
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.00452916
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 0.244844
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.947806
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_2/pnand2_0/contact_12_0/a_2_2#" 1.98914e-17
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.384703
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.148919
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.12573
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" 0.000191492
+cap "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 11.6244
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.549523
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.277752
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 16.087
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 1.94592
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 1.95924
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" 0.779744
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" 0.401345
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.407542
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_0/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" 0.0960907
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" -21.9572
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/a_0_0#" 0.126909
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.151283
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 10.7301
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/a_0_0#" 0.114738
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 0.13415
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" 55.1224
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.222505
+cap "hierarchical_decoder_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sactive_dli_0/a_54_0#" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" 0.205394
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -5.51371
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.384703
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" 95.8922
+cap "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/a_0_0#" 0.385578
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" 6.03413
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.334975
+cap "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "wordline_driver_array_0/wordline_driver_1/pinv_0/w_n127_244#" -0.608575
+cap "wordline_driver_array_0/wordline_driver_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -0.338068
+merge "hierarchical_decoder_0/addr_0" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -2277.53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -71260 -10208 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" "addr_0"
+merge "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "gnd_uq27" -6655.53 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -13648 -2322 -841 -116 -2116 -184 -93872 -7248 0 0 0 0 0 0
+merge "gnd_uq27" "gnd_uq28"
+merge "gnd_uq28" "gnd_uq25"
+merge "gnd_uq25" "vdd_uq23"
+merge "vdd_uq23" "gnd_uq26"
+merge "gnd_uq26" "vdd_uq24"
+merge "vdd_uq24" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/D"
+merge "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/D" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "vdd_uq21"
+merge "vdd_uq21" "vdd_uq22"
+merge "vdd_uq22" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/D"
+merge "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/D" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "gnd_uq23"
+merge "gnd_uq23" "gnd_uq24"
+merge "gnd_uq24" "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd"
+merge "hierarchical_decoder_0/and2_dec_4/pinv_0/vdd" "gnd_uq19"
+merge "gnd_uq19" "vdd_uq19"
+merge "vdd_uq19" "gnd_uq20"
+merge "gnd_uq20" "vdd_uq20"
+merge "vdd_uq20" "wordline_driver_array_0/wordline_driver_4/pnand2_0/vdd"
+merge "wordline_driver_array_0/wordline_driver_4/pnand2_0/vdd" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "vdd_uq15"
+merge "vdd_uq15" "vdd_uq16"
+merge "vdd_uq16" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/D"
+merge "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/D" "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/and2_dec_7/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "gnd_uq15"
+merge "gnd_uq15" "gnd_uq16"
+merge "gnd_uq16" "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd"
+merge "hierarchical_decoder_0/and2_dec_8/pinv_0/vdd" "gnd_uq11"
+merge "gnd_uq11" "vdd_uq11"
+merge "vdd_uq11" "gnd_uq12"
+merge "gnd_uq12" "vdd_uq12"
+merge "vdd_uq12" "wordline_driver_array_0/wordline_driver_8/pnand2_0/vdd"
+merge "wordline_driver_array_0/wordline_driver_8/pnand2_0/vdd" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "vdd_uq9"
+merge "vdd_uq9" "vdd_uq10"
+merge "vdd_uq10" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/D"
+merge "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/D" "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/and2_dec_11/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "vdd_uq5"
+merge "vdd_uq5" "gnd_uq7"
+merge "gnd_uq7" "vdd_uq6"
+merge "vdd_uq6" "gnd_uq8"
+merge "gnd_uq8" "wordline_driver_array_0/wordline_driver_11/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "wordline_driver_array_0/wordline_driver_11/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "and2_dec_0_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G"
+merge "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "gnd_uq3"
+merge "gnd_uq3" "gnd_uq4"
+merge "gnd_uq4" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/D"
+merge "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/D" "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "gnd_uq0"
+merge "gnd_uq0" "vdd_uq1"
+merge "vdd_uq1" "gnd"
+merge "gnd" "vdd_uq2"
+merge "vdd_uq2" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/D"
+merge "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/D" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/D"
+merge "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/D" "contact_7_1/m2_0_0#"
+merge "contact_7_1/m2_0_0#" "vdd_uq0"
+merge "vdd_uq0" "contact_6_1/m1_0_0#"
+merge "contact_6_1/m1_0_0#" "contact_14_1/li_6_6#"
+merge "wordline_driver_array_0/wordline_driver_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_8" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_2" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_6/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_9"
+merge "hierarchical_decoder_0/addr_1" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -575.823 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -71260 -10208 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "addr_1"
+merge "wordline_driver_array_0/SUB" "and2_dec_0_0/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and2_dec_0_0/SUB" "contact_7_0/SUB"
+merge "contact_7_0/SUB" "contact_6_0/SUB"
+merge "contact_6_0/SUB" "contact_14_0/SUB"
+merge "contact_14_0/SUB" "contact_7_1/SUB"
+merge "contact_7_1/SUB" "contact_6_1/SUB"
+merge "contact_6_1/SUB" "contact_14_1/SUB"
+merge "contact_14_1/SUB" "contact_6_2/SUB"
+merge "contact_6_2/SUB" "contact_14_2/SUB"
+merge "contact_14_2/SUB" "hierarchical_decoder_0/SUB"
+merge "hierarchical_decoder_0/SUB" "SUB"
+merge "hierarchical_decoder_0/and2_dec_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_9/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_3290#"
+merge "hierarchical_decoder_0/and2_dec_15/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_15/pinv_0/w_n127_244#" -1570.92 0 0 0 0 -130910 -1554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/gnd" -649.672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27040 -2080 0 0 0 0 0 0
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/gnd" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "vdd_uq7"
+merge "vdd_uq7" "vdd_uq8"
+merge "vdd_uq8" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "gnd_uq9"
+merge "gnd_uq9" "gnd_uq10"
+merge "gnd_uq10" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "gnd_uq5"
+merge "gnd_uq5" "gnd_uq6"
+merge "gnd_uq6" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "gnd_uq1"
+merge "gnd_uq1" "gnd_uq2"
+merge "gnd_uq2" "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_1/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "vdd_uq3"
+merge "vdd_uq3" "vdd_uq4"
+merge "hierarchical_decoder_0/and2_dec_2/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G" -238.145 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_2/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G" "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D"
+merge "hierarchical_decoder_0/and2_dec_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G"
+merge "wordline_driver_array_0/wordline_driver_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_6874#"
+merge "hierarchical_decoder_0/and2_dec_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_3/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D"
+merge "hierarchical_decoder_0/and2_dec_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G"
+merge "wordline_driver_array_0/wordline_driver_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G" "li_3134_6344#"
+merge "hierarchical_decoder_0/and2_dec_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.145 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_8/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_3820#"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" -729.497 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90412 -12958 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_1/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/addr_2"
+merge "hierarchical_decoder_0/addr_2" "addr_2"
+merge "wordline_driver_array_0/wordline_driver_8/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_7" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_1" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" -2522.05 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -90412 -12958 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/G" "hierarchical_decoder_0/addr_3"
+merge "hierarchical_decoder_0/addr_3" "addr_3"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" -649.672 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27040 -2080 0 0 0 0 0 0
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "gnd_uq21"
+merge "gnd_uq21" "gnd_uq22"
+merge "gnd_uq22" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "vdd_uq17"
+merge "vdd_uq17" "vdd_uq18"
+merge "vdd_uq18" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_1/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "gnd_uq17"
+merge "gnd_uq17" "gnd_uq18"
+merge "gnd_uq18" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/pmos_m1_w0_840_sli_dli_1/S" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/vdd"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pinv_0/vdd" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_3/pnand2_0/nmos_m1_w0_840_sli_dactive_0/S" "gnd_uq13"
+merge "gnd_uq13" "gnd_uq14"
+merge "gnd_uq14" "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/vdd"
+merge "hierarchical_decoder_0/hierarchical_predecode2x4_0/and2_dec_2/pnand2_0/vdd" "vdd_uq13"
+merge "vdd_uq13" "vdd_uq14"
+merge "hierarchical_decoder_0/and2_dec_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_15/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -266.798 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_15/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_236#"
+merge "hierarchical_decoder_0/and2_dec_3/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_3/pinv_0/w_n127_244#" -1570.92 0 0 0 0 -130910 -1554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_15/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_0" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_9/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_6" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "contact_7_0/m2_0_0#" -492.762 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -425 -118 -841 -116 -2116 -184 -1936 -176 0 0 0 0 0 0
+merge "contact_7_0/m2_0_0#" "vdd"
+merge "vdd" "contact_6_0/m1_0_0#"
+merge "contact_6_0/m1_0_0#" "contact_14_0/li_6_6#"
+merge "contact_14_0/li_6_6#" "li_3296_n324#"
+merge "hierarchical_decoder_0/and2_dec_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_1/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_7362#"
+merge "hierarchical_decoder_0/and2_dec_7/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_7/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G"
+merge "wordline_driver_array_0/wordline_driver_7/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G" "li_3134_4308#"
+merge "hierarchical_decoder_0/and2_dec_10/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_10/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G" -238.145 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_10/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G" "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/G"
+merge "wordline_driver_array_0/wordline_driver_10/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D"
+merge "hierarchical_decoder_0/and2_dec_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "li_3134_2802#"
+merge "hierarchical_decoder_0/and2_dec_6/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_6/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G" -238.145 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_6/pnand2_0/nmos_m1_w0_840_sli_dactive_0/G" "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D"
+merge "hierarchical_decoder_0/and2_dec_6/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/G"
+merge "wordline_driver_array_0/wordline_driver_6/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_4838#"
+merge "hierarchical_decoder_0/and2_dec_2/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_2/pinv_0/w_n127_244#" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/and2_dec_9/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_9/pinv_0/w_n127_244#" -1570.92 0 0 0 0 -130910 -1554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -238.145 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/and2_dec_14/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "li_3134_766#"
+merge "hierarchical_decoder_0/and2_dec_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -266.347 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_7892#"
+merge "hierarchical_decoder_0/and2_dec_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_11/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_2272#"
+merge "hierarchical_decoder_0/and2_dec_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_5/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_5326#"
+merge "hierarchical_decoder_0/and2_dec_1/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_1/pinv_0/w_n127_244#" -1570.92 0 0 0 0 -130910 -1554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/and2_dec_5/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_5/pinv_0/w_n127_244#" -1570.92 0 0 0 0 -130910 -1554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/and2_dec_7/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_6/pinv_0/w_n127_244#" -1570.92 0 0 0 0 -130910 -1554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_3" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and2_dec_0_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "rbl_wl" -27.7294 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -288 -68 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_5/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_10" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_11/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_4" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/and2_dec_13/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.364 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_1254#"
+merge "wordline_driver_array_0/wordline_driver_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_11" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/and2_dec_4/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.145 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_4/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_5856#"
+merge "wordline_driver_array_0/wordline_driver_10/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_10/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_5"
+merge "hierarchical_decoder_0/and2_dec_13/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_12/pinv_0/w_n127_244#" -1570.92 0 0 0 0 -130910 -1554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_3/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_3/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" "wl_12"
+merge "wordline_driver_array_0/wordline_driver_2/pinv_0/nmos_m1_w0_420_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_2/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_13"
+merge "wordline_driver_array_0/wordline_driver_1/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_14" -22.3774 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_0/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wl_15" -23.3893 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -224 -60 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_13/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" -398.335 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -289 -68 -841 -116 -427 -118 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_14/pnand2_0/pmos_m1_w0_840_sli_dli_0/G" "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G"
+merge "and2_dec_0_0/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "contact_6_2/m1_0_0#"
+merge "contact_6_2/m1_0_0#" "wl_en"
+merge "wl_en" "contact_14_2/li_6_6#"
+merge "hierarchical_decoder_0/and2_dec_11/pnand2_0/w_n127_244#" "wordline_driver_array_0/wordline_driver_11/pinv_0/w_n127_244#" -1570.92 0 0 0 0 -130910 -1554 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "hierarchical_decoder_0/and2_dec_12/pinv_0/pmos_m1_w0_840_sli_dli_da_p_0/D" "wordline_driver_array_0/wordline_driver_12/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" -238.145 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -281 -100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "wordline_driver_array_0/wordline_driver_12/pnand2_0/pmos_m1_w0_840_sli_dli_1/G" "li_3134_1784#"

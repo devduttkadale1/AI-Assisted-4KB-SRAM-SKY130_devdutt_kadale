@@ -1,0 +1,123 @@
+timestamp 1444693063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use dummy_cell_1rw dummy_cell_1rw_0 1 0 260 0 1 0
+use dummy_cell_1rw dummy_cell_1rw_1 1 0 0 0 1 0
+node "br_0_1" 1 305.102 397 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36648 1162 0 0 0 0 0 0 0 0
+node "bl_0_1" 1 142.554 313 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33085 1148 0 0 0 0 0 0 0 0
+node "br_0_0" 1 153.088 137 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 36648 1162 0 0 0 0 0 0 0 0
+node "bl_0_0" 1 294.47 53 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 33085 1148 0 0 0 0 0 0 0 0
+node "gnd" 2 355.246 0 -20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21320 1122 0 0 0 0 0 0 0 0 0 0
+node "wl_0_0" 4 235.385 0 107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8320 1072 0 0 0 0 0 0 0 0 0 0
+node "vdd" 1 452.704 0 485 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 23400 1130 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "gnd" "br_0_0" 76.2001
+cap "wl_0_0" "vdd" 59.1214
+cap "bl_0_0" "wl_0_0" 76.0942
+cap "vdd" "bl_0_1" 81.7441
+cap "br_0_1" "wl_0_0" 83.1147
+cap "wl_0_0" "br_0_0" 85.077
+cap "gnd" "wl_0_0" 206.126
+cap "br_0_1" "bl_0_1" 519.388
+cap "br_0_0" "bl_0_1" 189.925
+cap "gnd" "bl_0_1" 70.2702
+cap "bl_0_0" "vdd" 78.9873
+cap "br_0_1" "vdd" 85.7321
+cap "br_0_0" "vdd" 88.6756
+cap "bl_0_0" "br_0_0" 519.388
+cap "wl_0_0" "bl_0_1" 77.9321
+cap "bl_0_0" "gnd" 67.858
+cap "br_0_1" "gnd" 73.6245
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_1/a_145_76#" 17.9297
+cap "dummy_cell_1rw_0/q" "dummy_cell_1rw_0/gnd" -2.67414
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/br" 0.065171
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_1/qb" 0.213503
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_1/qb" 22.9
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_1/bl" 0.0403956
+cap "dummy_cell_1rw_0/bl" "dummy_cell_1rw_0/br" -183.602
+cap "dummy_cell_1rw_0/bl" "dummy_cell_1rw_0/a_145_76#" -1.90494
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/gnd" 9.29431
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_1/a_145_76#" -8.00869
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_0/gnd" -36.8917
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_0/wl" 22.9
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_1/qb" 59.8037
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/gnd" 11.1604
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/a_145_76#" -0.782849
+cap "dummy_cell_1rw_0/gnd" "dummy_cell_1rw_1/a_145_76#" -0.467671
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_0/gnd" -24.2582
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/br" -31.5927
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_0/qb" 0.576448
+cap "dummy_cell_1rw_0/q" "dummy_cell_1rw_0/br" 2.10559
+cap "dummy_cell_1rw_0/q" "dummy_cell_1rw_0/a_145_76#" -0.106295
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_1/qb" 7.57069
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_0/gnd" -5.08088
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/br" -1.63758
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/a_76_76#" -10.0942
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_0/gnd" -3.56471
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/br" -7.21781
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/a_145_76#" 36.0456
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_1/a_76_76#" -0.753542
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/bl" 0.560853
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_0/br" 59.8037
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_1/q" 0.157952
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_0/a_145_76#" -8.00869
+cap "dummy_cell_1rw_0/gnd" "dummy_cell_1rw_0/br" -31.9258
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_1/a_76_76#" 16.8224
+cap "dummy_cell_1rw_0/gnd" "dummy_cell_1rw_0/a_145_76#" -0.384883
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/bl" -21.9679
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/q" 8.26904
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_0/wl" 35.7888
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_1/a_76_76#" -1.63758
+cap "dummy_cell_1rw_0/bl" "dummy_cell_1rw_0/q" 53.7262
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/wl" 24.646
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/bl" 53.7262
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/bl" 16.8224
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/q" 6.53096
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/a_145_76#" -0.106295
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_1/q" 2.10559
+cap "dummy_cell_1rw_0/br" "dummy_cell_1rw_0/a_145_76#" 17.9297
+cap "dummy_cell_1rw_0/bl" "dummy_cell_1rw_0/wl" -11.0566
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/a_76_76#" -0.753542
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_0/bl" 24.2537
+cap "dummy_cell_1rw_0/bl" "dummy_cell_1rw_1/a_145_76#" 0.449802
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_0/gnd" -0.428438
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_1/bl" -30.9312
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/qb" -5.68434e-14
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/wl" -13.5546
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/q" -10.0942
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_1/a_145_76#" -0.782849
+cap "dummy_cell_1rw_0/bl" "dummy_cell_1rw_1/qb" 2.23653
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_1/br" -22.3241
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/q" 24.646
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/qb" 20.6429
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/gnd" -4.51627
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_0/q" 2.92162
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_0/bl" 0.213503
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_1/qb" 1.73876
+cap "dummy_cell_1rw_0/bl" "dummy_cell_1rw_0/gnd" -20.6863
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/wl" 35.3154
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_0/wl" -10.7522
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_1/bl" -183.602
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_0/a_76_76#" 0.571311
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_1/a_145_76#" 6.9703
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_1/a_145_76#" -1.90494
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_0/q" 16.5098
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/qb" 0.897008
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/gnd" -33.4853
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_1/a_145_76#" 37.0544
+cap "dummy_cell_1rw_1/br" "dummy_cell_1rw_0/wl" -4.87981
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_0/q" 5.68434e-14
+merge "dummy_cell_1rw_1/wl" "dummy_cell_1rw_0/wl" -205.914 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30 0 0 0 0 -928 -196 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_0/wl" "wl_0_0"
+merge "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_0/gnd" -559.996 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50 -21320 -1204 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_0/gnd" "SUB"
+merge "SUB" "gnd"
+merge "dummy_cell_1rw_1/vdd" "dummy_cell_1rw_0/vdd" -577.766 0 0 0 0 0 -344 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_0/vdd" "vdd"
+merge "dummy_cell_1rw_0/bl" "bl_0_1" -316.131 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8416 -1184 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_0/br" "br_0_1" -292.487 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8514 -1198 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_1/bl" "bl_0_0" -285.135 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8416 -1184 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_1/br" "br_0_0" -322.402 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8514 -1198 0 0 0 0 0 0 0 0

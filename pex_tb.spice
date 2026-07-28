@@ -1,7 +1,7 @@
 * Post-layout PEX testbench — sram_2_16_sky130A
 * Corner: TT  VDD=1.8V  Temp=27C
 
-.include results/spice/sram_2_16_sky130A.sp
+.include verification/spice/sram_2_16_pex.spice
 .lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
 * Power
@@ -34,7 +34,17 @@ Xdut VPWR VGND clk0 csb0 web0 addr0[0] addr0[1] din0[0] din0[1] dout0[0] dout0[1
 
 .control
 run
+plot v(clk0) v(dout0[0]) v(dout0[1]) v(din0[0])
 wrdata verification/results/pex_sim_TT.txt v(dout0[0]) v(dout0[1])
+
+;; Add inside .control block of each testbench
+
+;; Leakage — measure supply current during idle (csb=1)
+.measure tran I_leak AVG i(VVDD) FROM=40n TO=55n
+
+;; Read energy — integral of VDD*I during read window
+.measure tran E_read INTEG i(VVDD) FROM=25n TO=35n
+
 .endc
 
 .end

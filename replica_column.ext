@@ -1,0 +1,778 @@
+timestamp 1444693063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use dummy_cell_1rw dummy_cell_1rw_1 1 0 0 0 1 0
+use replica_cell_1rw replica_cell_1rw_16 1 0 0 0 -1 1018
+use contact_6 contact_6_2 1 0 107 0 1 -22
+use contact_6 contact_6_3 1 0 107 0 1 484
+use contact_7 contact_7_2 1 0 104 0 1 -26
+use contact_7 contact_7_3 1 0 104 0 1 482
+use replica_cell_1rw replica_cell_1rw_15 1 0 0 0 1 1018
+use replica_cell_1rw replica_cell_1rw_14 1 0 0 0 -1 2036
+use replica_cell_1rw replica_cell_1rw_13 1 0 0 0 1 2036
+use replica_cell_1rw replica_cell_1rw_12 1 0 0 0 -1 3054
+use replica_cell_1rw replica_cell_1rw_11 1 0 0 0 1 3054
+use replica_cell_1rw replica_cell_1rw_9 1 0 0 0 1 4072
+use replica_cell_1rw replica_cell_1rw_10 1 0 0 0 -1 4072
+use replica_cell_1rw replica_cell_1rw_8 1 0 0 0 -1 5090
+use replica_cell_1rw replica_cell_1rw_7 1 0 0 0 1 5090
+use replica_cell_1rw replica_cell_1rw_6 1 0 0 0 -1 6108
+use replica_cell_1rw replica_cell_1rw_5 1 0 0 0 1 6108
+use replica_cell_1rw replica_cell_1rw_4 1 0 0 0 -1 7126
+use replica_cell_1rw replica_cell_1rw_2 1 0 0 0 -1 8144
+use replica_cell_1rw replica_cell_1rw_3 1 0 0 0 1 7126
+use replica_cell_1rw replica_cell_1rw_1 1 0 0 0 1 8144
+use replica_cell_1rw replica_cell_1rw_0 1 0 0 0 -1 9162
+use dummy_cell_1rw dummy_cell_1rw_0 1 0 0 0 1 9162
+use contact_6 contact_6_0 1 0 107 0 1 9140
+use contact_7 contact_7_0 1 0 104 0 1 9136
+use contact_6 contact_6_1 1 0 107 0 1 9646
+use contact_7 contact_7_1 1 0 104 0 1 9644
+node "gnd_uq0" 0 68.4968 104 -26 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq0" 0 51.9339 104 482 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "gnd" 0 52.1574 104 9136 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd" 0 68.4688 104 9644 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "br_0_0" 17 4874.35 137 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 696312 19486 0 0 0 0 0 0 0 0
+node "bl_0_0" 19 4762.38 53 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 628615 19472 0 0 0 0 0 0 0 0
+node "wl_0_0" 2 201.87 0 107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq1" 1 211.808 0 488 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11700 610 0 0 0 0 0 0 0 0 0 0
+node "wl_0_1" 2 124.184 0 895 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq1" 1 118.283 0 997 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_2" 2 124.184 0 1125 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq2" 1 216.022 0 1503 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_3" 2 124.184 0 1913 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq2" 1 118.283 0 2015 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_4" 2 124.184 0 2143 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq3" 1 216.022 0 2521 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_5" 2 124.184 0 2931 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq3" 1 118.283 0 3033 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_6" 2 124.184 0 3161 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq4" 1 216.022 0 3539 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_7" 2 124.184 0 3949 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq4" 1 118.283 0 4051 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_8" 2 124.184 0 4179 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq5" 1 216.022 0 4557 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_9" 2 124.184 0 4967 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq5" 1 118.283 0 5069 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_10" 2 124.184 0 5197 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq6" 1 216.022 0 5575 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_11" 2 124.184 0 5985 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq6" 1 118.283 0 6087 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_12" 2 124.184 0 6215 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq7" 1 216.022 0 6593 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_13" 2 124.184 0 7003 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq7" 1 118.283 0 7105 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_14" 2 124.184 0 7233 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq8" 1 216.022 0 7611 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_15" 2 124.184 0 8021 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq8" 1 118.283 0 8123 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_16" 2 124.184 0 8251 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq9" 1 216.022 0 8629 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_17" 2 124.184 0 9039 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq9" 1 117.09 0 9141 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10660 602 0 0 0 0 0 0 0 0 0 0
+node "wl_0_18" 2 157.504 0 9269 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "vdd_uq0" "wl_0_1" 0.100843
+cap "vdd_uq4" "br_0_0" 139.984
+cap "br_0_0" "wl_0_18" 83.3479
+cap "br_0_0" "wl_0_14" 83.1147
+cap "wl_0_6" "vdd_uq4" 29.5607
+cap "br_0_0" "gnd_uq6" 117.033
+cap "gnd_uq9" "gnd" 10.8938
+cap "br_0_0" "wl_0_12" 83.1147
+cap "br_0_0" "wl_0_1" 83.1147
+cap "vdd" "bl_0_0" 24.9356
+cap "wl_0_16" "bl_0_0" 76.0942
+cap "vdd_uq2" "bl_0_0" 129.555
+cap "vdd_uq9" "br_0_0" 139.984
+cap "br_0_0" "wl_0_17" 83.1147
+cap "gnd_uq1" "wl_0_2" 103.063
+cap "vdd_uq2" "wl_0_3" 29.5607
+cap "wl_0_11" "bl_0_0" 76.0942
+cap "wl_0_15" "vdd_uq8" 29.5607
+cap "wl_0_0" "bl_0_0" 77.5843
+cap "br_0_0" "wl_0_13" 83.1147
+cap "br_0_0" "wl_0_8" 83.1147
+cap "br_0_0" "gnd_uq2" 117.033
+cap "br_0_0" "vdd_uq8" 139.984
+cap "br_0_0" "gnd_uq3" 117.033
+cap "vdd_uq0" "vdd_uq1" 11.8436
+cap "vdd_uq6" "br_0_0" 139.984
+cap "gnd_uq1" "vdd_uq0" 0.158178
+cap "wl_0_18" "vdd" 0.355676
+cap "gnd_uq4" "wl_0_8" 103.063
+cap "wl_0_6" "gnd_uq3" 103.063
+cap "br_0_0" "gnd" 55.1496
+cap "wl_0_5" "bl_0_0" 76.0942
+cap "vdd_uq6" "wl_0_10" 29.5607
+cap "wl_0_3" "bl_0_0" 76.0942
+cap "wl_0_4" "bl_0_0" 76.0942
+cap "gnd_uq5" "br_0_0" 117.033
+cap "br_0_0" "vdd_uq1" 135.306
+cap "wl_0_15" "gnd_uq8" 103.063
+cap "wl_0_11" "gnd_uq6" 103.063
+cap "gnd_uq1" "br_0_0" 117.033
+cap "gnd_uq5" "wl_0_10" 103.063
+cap "gnd_uq5" "wl_0_9" 103.063
+cap "br_0_0" "gnd_uq7" 117.033
+cap "gnd_uq0" "vdd_uq0" 7.75806
+cap "gnd_uq8" "br_0_0" 117.033
+cap "vdd_uq9" "wl_0_16" 29.5607
+cap "br_0_0" "vdd_uq7" 139.984
+cap "vdd_uq4" "bl_0_0" 129.555
+cap "wl_0_18" "bl_0_0" 76.3048
+cap "wl_0_2" "vdd_uq0" 0.0404399
+cap "wl_0_14" "bl_0_0" 76.0942
+cap "br_0_0" "wl_0_7" 83.1147
+cap "gnd_uq6" "bl_0_0" 108.438
+cap "br_0_0" "gnd_uq0" 29.6104
+cap "wl_0_11" "vdd_uq6" 29.5607
+cap "wl_0_12" "bl_0_0" 76.0942
+cap "br_0_0" "vdd_uq5" 139.984
+cap "wl_0_1" "bl_0_0" 76.0942
+cap "gnd_uq9" "br_0_0" 115.561
+cap "vdd" "gnd" 7.75806
+cap "br_0_0" "wl_0_2" 83.1147
+cap "gnd_uq4" "wl_0_7" 103.063
+cap "vdd_uq9" "bl_0_0" 129.555
+cap "wl_0_17" "bl_0_0" 76.0942
+cap "wl_0_9" "vdd_uq5" 29.5607
+cap "wl_0_13" "bl_0_0" 76.0942
+cap "wl_0_8" "bl_0_0" 76.0942
+cap "wl_0_0" "vdd_uq1" 29.3333
+cap "br_0_0" "vdd_uq3" 139.984
+cap "wl_0_5" "gnd_uq3" 103.063
+cap "gnd_uq2" "bl_0_0" 108.438
+cap "br_0_0" "vdd_uq0" 55.1496
+cap "gnd_uq3" "bl_0_0" 108.438
+cap "vdd_uq8" "bl_0_0" 129.555
+cap "wl_0_3" "gnd_uq2" 103.063
+cap "gnd_uq2" "wl_0_4" 103.063
+cap "gnd_uq8" "wl_0_16" 103.063
+cap "vdd_uq6" "bl_0_0" 129.555
+cap "wl_0_12" "gnd_uq6" 103.063
+cap "wl_0_15" "br_0_0" 83.1147
+cap "gnd" "bl_0_0" 45.9241
+cap "gnd_uq5" "bl_0_0" 108.438
+cap "vdd_uq1" "bl_0_0" 125.133
+cap "gnd_uq1" "bl_0_0" 108.438
+cap "gnd_uq0" "wl_0_0" 1.88076
+cap "vdd_uq8" "wl_0_14" 29.5607
+cap "wl_0_6" "br_0_0" 83.1147
+cap "wl_0_10" "br_0_0" 83.1147
+cap "gnd_uq7" "bl_0_0" 108.438
+cap "vdd_uq2" "wl_0_2" 29.5607
+cap "br_0_0" "wl_0_9" 83.1147
+cap "gnd_uq4" "br_0_0" 117.033
+cap "gnd_uq8" "bl_0_0" 108.438
+cap "vdd_uq9" "wl_0_17" 29.5607
+cap "vdd_uq7" "bl_0_0" 129.555
+cap "wl_0_18" "gnd" 0.631847
+cap "wl_0_7" "bl_0_0" 76.0942
+cap "wl_0_0" "vdd_uq0" 0.117128
+cap "gnd_uq0" "bl_0_0" 24.4619
+cap "vdd_uq5" "bl_0_0" 129.555
+cap "gnd_uq7" "wl_0_14" 103.063
+cap "gnd_uq9" "bl_0_0" 107.042
+cap "vdd_uq1" "wl_0_1" 29.5607
+cap "wl_0_2" "bl_0_0" 76.0942
+cap "vdd_uq9" "gnd" 0.181549
+cap "wl_0_17" "gnd" 0.61542
+cap "br_0_0" "vdd" 30.1152
+cap "gnd_uq1" "wl_0_1" 103.063
+cap "br_0_0" "wl_0_16" 83.1147
+cap "vdd_uq2" "br_0_0" 139.984
+cap "wl_0_5" "vdd_uq3" 29.5607
+cap "wl_0_11" "br_0_0" 83.1147
+cap "br_0_0" "wl_0_0" 84.7652
+cap "vdd_uq3" "bl_0_0" 129.555
+cap "vdd_uq4" "wl_0_7" 29.5607
+cap "vdd_uq3" "wl_0_4" 29.5607
+cap "wl_0_12" "vdd_uq7" 29.5607
+cap "vdd_uq0" "bl_0_0" 45.9241
+cap "wl_0_13" "gnd_uq7" 103.063
+cap "gnd_uq9" "wl_0_18" 102.143
+cap "wl_0_15" "bl_0_0" 76.0942
+cap "wl_0_13" "vdd_uq7" 29.5607
+cap "wl_0_5" "br_0_0" 83.1147
+cap "br_0_0" "bl_0_0" 9868.37
+cap "wl_0_3" "br_0_0" 83.1147
+cap "br_0_0" "wl_0_4" 83.1147
+cap "wl_0_6" "bl_0_0" 76.0942
+cap "gnd_uq9" "wl_0_17" 103.063
+cap "wl_0_10" "bl_0_0" 76.0942
+cap "wl_0_8" "vdd_uq5" 29.5607
+cap "wl_0_9" "bl_0_0" 76.0942
+cap "gnd_uq4" "bl_0_0" 108.438
+cap "replica_cell_1rw_15/wl" "dummy_cell_1rw_1/vdd" 0.0357483
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_1/qb" -8.00869
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_1/wl" 35.3154
+cap "dummy_cell_1rw_1/vdd" "replica_cell_1rw_15/qb" 0.149733
+cap "dummy_cell_1rw_1/vdd" "dummy_cell_1rw_1/wl" 69.4972
+cap "dummy_cell_1rw_1/vdd" "replica_cell_1rw_15/q" 0.0442508
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_1/vdd" 14.5725
+cap "replica_cell_1rw_16/q" "dummy_cell_1rw_1/vdd" 9.12325
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/wl" 24.646
+cap "dummy_cell_1rw_1/wl" "replica_cell_1rw_16/wl" 1.07292
+cap "dummy_cell_1rw_1/wl" "dummy_cell_1rw_1/qb" 22.9
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_1/q" -10.0942
+cap "replica_cell_1rw_16/q" "dummy_cell_1rw_1/q" 3.98198
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/vdd" 53.0542
+cap "dummy_cell_1rw_1/wl" "dummy_cell_1rw_1/a_145_76#" 36.0456
+cap "replica_cell_1rw_16/q" "dummy_cell_1rw_1/qb" 0.22142
+cap "dummy_cell_1rw_1/vdd" "replica_cell_1rw_16/wl" -3.20819
+cap "dummy_cell_1rw_1/vdd" "dummy_cell_1rw_1/qb" 67.0173
+cap "dummy_cell_1rw_1/vdd" "dummy_cell_1rw_1/a_145_76#" 15.5953
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/a_145_76#" -0.106295
+cap "replica_cell_1rw_15/q" "replica_cell_1rw_15/wl" 24.646
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_15/q" 0.648649
+cap "dummy_cell_1rw_1/vdd" "replica_cell_1rw_15/wl" 49.1187
+cap "replica_cell_1rw_16/q" "replica_cell_1rw_15/q" 1.9548
+cap "dummy_cell_1rw_1/vdd" "replica_cell_1rw_16/q" 33.748
+cap "dummy_cell_1rw_1/q" "replica_cell_1rw_16/q" 0.648649
+cap "replica_cell_1rw_16/wl" "dummy_cell_1rw_1/wl" 1.07292
+cap "replica_cell_1rw_15/vdd" "replica_cell_1rw_15/q" 0.193156
+cap "replica_cell_1rw_16/wl" "replica_cell_1rw_15/wl" 13.4185
+cap "replica_cell_1rw_15/vdd" "dummy_cell_1rw_1/vdd" -19.7997
+cap "replica_cell_1rw_16/wl" "replica_cell_1rw_16/q" 24.646
+cap "replica_cell_1rw_14/wl" "replica_cell_1rw_15/wl" 1.07292
+cap "dummy_cell_1rw_1/vdd" "replica_cell_1rw_15/q" 33.5828
+cap "replica_cell_1rw_16/q" "replica_cell_1rw_15/wl" 0.0639278
+cap "replica_cell_1rw_16/q" "dummy_cell_1rw_1/qb" 0.107402
+cap "replica_cell_1rw_16/wl" "replica_cell_1rw_15/q" 0.0639278
+cap "replica_cell_1rw_16/wl" "dummy_cell_1rw_1/vdd" 68.6012
+cap "replica_cell_1rw_15/vdd" "replica_cell_1rw_15/wl" 19.4845
+cap "replica_cell_1rw_15/vdd" "replica_cell_1rw_16/q" 0.0759139
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_14/q" 0.0639278
+cap "replica_cell_1rw_16/bl" "replica_cell_1rw_14/q" 43.9346
+cap "replica_cell_1rw_16/br" "replica_cell_1rw_16/gnd" -110.531
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_15/vdd" 0.0156091
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_16/gnd" -4.30199
+cap "replica_cell_1rw_16/bl" "replica_cell_1rw_15/q" 9.40778
+cap "replica_cell_1rw_13/vdd" "replica_cell_1rw_15/vdd" 0.149733
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_15/vdd" 0.460821
+cap "replica_cell_1rw_13/vdd" "replica_cell_1rw_16/gnd" -14.3864
+cap "replica_cell_1rw_16/wl" "replica_cell_1rw_15/vdd" 0.010316
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_16/gnd" -4.47505
+cap "replica_cell_1rw_15/wl" "replica_cell_1rw_14/wl" 1.07292
+cap "replica_cell_1rw_16/bl" "replica_cell_1rw_14/wl" 24.5845
+cap "replica_cell_1rw_15/q" "replica_cell_1rw_15/vdd" 0.267665
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_14/wl" 6.70923
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_16/br" 2.69441
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_14/q" 0.977399
+cap "replica_cell_1rw_14/wl" "replica_cell_1rw_15/vdd" 16.2147
+cap "replica_cell_1rw_15/wl" "replica_cell_1rw_15/vdd" -3.2698
+cap "replica_cell_1rw_16/bl" "replica_cell_1rw_15/vdd" -109.587
+cap "replica_cell_1rw_16/qb" "replica_cell_1rw_15/vdd" 0.149733
+cap "replica_cell_1rw_15/q" "replica_cell_1rw_16/br" -0.760742
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_15/vdd" 0.010316
+cap "replica_cell_1rw_14/wl" "replica_cell_1rw_16/gnd" -4.83817
+cap "replica_cell_1rw_16/bl" "replica_cell_1rw_16/gnd" -114.982
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_13/vdd" 0.0759139
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_16/gnd" -20.7227
+cap "replica_cell_1rw_14/wl" "replica_cell_1rw_16/br" 29.3723
+cap "replica_cell_1rw_16/bl" "replica_cell_1rw_16/br" -288.727
+cap "replica_cell_1rw_16/gnd" "replica_cell_1rw_15/vdd" -29.2035
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_15/q" 3.98198
+cap "replica_cell_1rw_16/q" "replica_cell_1rw_15/vdd" 0.0156091
+cap "replica_cell_1rw_16/br" "replica_cell_1rw_15/vdd" -24.0522
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_14/wl" 24.646
+cap "replica_cell_1rw_15/br" "replica_cell_1rw_14/gnd" 3.03809
+cap "replica_cell_1rw_15/vdd" "replica_cell_1rw_13/vdd" 0.149733
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_11/wl" 0.0639278
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_13/vdd" 0.460821
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_13/wl" 24.646
+cap "replica_cell_1rw_14/wl" "replica_cell_1rw_13/vdd" 0.010316
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_15/br" 10.1722
+cap "replica_cell_1rw_14/wl" "replica_cell_1rw_13/wl" 6.70923
+cap "replica_cell_1rw_13/vdd" "replica_cell_1rw_14/gnd" -14.8171
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_14/gnd" 15.8845
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_14/bl" 43.9346
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_12/q" 3.08402
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_13/q" 0.977399
+cap "replica_cell_1rw_14/bl" "replica_cell_1rw_14/gnd" 0.411666
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_13/vdd" 0.460821
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_11/vdd" 0.0759139
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_14/bl" 46.032
+cap "replica_cell_1rw_13/vdd" "replica_cell_1rw_11/wl" 0.010316
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_12/q" 0.977399
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_15/vdd" 0.0759139
+cap "replica_cell_1rw_15/br" "replica_cell_1rw_13/vdd" -19.41
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_15/br" 29.3723
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_12/wl" 1.07292
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_13/vdd" -3.2698
+cap "replica_cell_1rw_15/br" "replica_cell_1rw_14/bl" -276.069
+cap "replica_cell_1rw_14/wl" "replica_cell_1rw_13/q" 0.0639278
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_14/gnd" -0.173065
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_13/vdd" 16.2147
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_13/vdd" 0.149733
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_12/q" 4.63063
+cap "replica_cell_1rw_13/vdd" "replica_cell_1rw_14/bl" -110.126
+cap "replica_cell_1rw_13/wl" "replica_cell_1rw_14/bl" 24.5845
+cap "replica_cell_1rw_14/q" "replica_cell_1rw_13/vdd" 0.0156091
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_13/vdd" 0.0156091
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_14/gnd" -0.173065
+cap "replica_cell_1rw_13/q" "replica_cell_1rw_15/br" 2.69441
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_14/br" 29.3723
+cap "replica_cell_1rw_14/gnd" "replica_cell_1rw_14/bl" -114.57
+cap "replica_cell_1rw_13/vdd" "replica_cell_1rw_14/bl" -8.98488
+cap "replica_cell_1rw_14/gnd" "replica_cell_1rw_13/vdd" -14.3864
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_13/wl" 1.07292
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_11/wl" 24.646
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_11/vdd" 0.193156
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_11/vdd" 0.010316
+cap "replica_cell_1rw_14/br" "replica_cell_1rw_14/bl" -286.315
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_11/wl" 13.4185
+cap "replica_cell_1rw_14/gnd" "replica_cell_1rw_14/br" -107.493
+cap "replica_cell_1rw_13/vdd" "replica_cell_1rw_14/br" -0.530976
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_11/q" 0.977399
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_10/q" 0.22142
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_12/wl" 21.562
+cap "replica_cell_1rw_11/wl" "replica_cell_1rw_14/bl" 24.5845
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_14/bl" -0.247872
+cap "replica_cell_1rw_14/gnd" "replica_cell_1rw_11/wl" -4.83817
+cap "replica_cell_1rw_13/vdd" "replica_cell_1rw_11/vdd" 0.149733
+cap "replica_cell_1rw_14/gnd" "replica_cell_1rw_11/vdd" -14.5623
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_14/bl" -2.09746
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_14/gnd" -4.30199
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_14/br" 44.0001
+cap "replica_cell_1rw_11/wl" "replica_cell_1rw_14/br" 29.3723
+cap "replica_cell_1rw_11/wl" "replica_cell_1rw_10/wl" 1.07292
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_11/q" 0.0639278
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_14/br" -7.47777
+cap "replica_cell_1rw_11/wl" "replica_cell_1rw_11/vdd" 21.7941
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_10/q" 0.648649
+cap "replica_cell_1rw_12/q" "replica_cell_1rw_11/vdd" 0.0156091
+cap "replica_cell_1rw_14/gnd" "replica_cell_1rw_11/q" -4.47505
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_14/bl" 40.2822
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_14/bl" 24.5845
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_13/vdd" 0.0759139
+cap "replica_cell_1rw_14/gnd" "replica_cell_1rw_12/wl" -4.83817
+cap "replica_cell_1rw_12/wl" "replica_cell_1rw_13/vdd" 19.4845
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_14/br" 3.18824
+cap "replica_cell_1rw_12/br" "replica_cell_1rw_10/q" 2.69441
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_10/q" 3.98198
+cap "replica_cell_1rw_9/wl" "replica_cell_1rw_10/q" 0.0639278
+cap "replica_cell_1rw_12/br" "replica_cell_1rw_9/wl" 10.5474
+cap "replica_cell_1rw_12/gnd" "replica_cell_1rw_9/vdd" -14.3864
+cap "replica_cell_1rw_12/br" "replica_cell_1rw_11/q" -0.493826
+cap "replica_cell_1rw_12/gnd" "replica_cell_1rw_12/bl" -125.835
+cap "replica_cell_1rw_12/gnd" "replica_cell_1rw_9/q" -4.30199
+cap "replica_cell_1rw_10/wl" "replica_cell_1rw_12/bl" 24.5845
+cap "replica_cell_1rw_12/br" "replica_cell_1rw_9/vdd" -15.2871
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_10/q" 0.0759139
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_12/gnd" -29.0276
+cap "replica_cell_1rw_12/bl" "replica_cell_1rw_10/q" 43.9346
+cap "replica_cell_1rw_12/br" "replica_cell_1rw_12/bl" -313.246
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_10/wl" 16.2147
+cap "replica_cell_1rw_12/br" "replica_cell_1rw_9/q" -0.910375
+cap "replica_cell_1rw_11/q" "replica_cell_1rw_12/bl" 3.65232
+cap "replica_cell_1rw_9/q" "replica_cell_1rw_10/q" 0.977399
+cap "replica_cell_1rw_9/wl" "replica_cell_1rw_12/bl" 11.19
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_10/q" 0.239401
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_11/wl" -5.57949
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_12/br" -63.9411
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_9/wl" 0.010316
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_11/q" 0.267665
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_12/bl" -2.03286
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_9/vdd" 0.149733
+cap "replica_cell_1rw_9/q" "replica_cell_1rw_12/bl" -15.1969
+cap "replica_cell_1rw_12/gnd" "replica_cell_1rw_10/wl" -4.83817
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_12/bl" -118.863
+cap "replica_cell_1rw_12/gnd" "replica_cell_1rw_12/br" -121.627
+cap "replica_cell_1rw_12/gnd" "replica_cell_1rw_10/q" -4.47505
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_9/q" 0.0156091
+cap "replica_cell_1rw_12/gnd" "replica_cell_1rw_9/wl" -20.7034
+cap "replica_cell_1rw_10/wl" "replica_cell_1rw_10/q" 24.646
+cap "replica_cell_1rw_11/wl" "replica_cell_1rw_10/wl" 1.07292
+cap "replica_cell_1rw_12/br" "replica_cell_1rw_10/wl" 29.3723
+cap "replica_cell_1rw_10/wl" "replica_cell_1rw_9/wl" 8.14402
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_7/vdd" 0.149733
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_8/q" 0.977399
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_11/vdd" 0.149733
+cap "replica_cell_1rw_8/q" "replica_cell_1rw_11/br" 7.42652
+cap "replica_cell_1rw_9/wl" "replica_cell_1rw_11/br" 18.825
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_7/q" 0.0156091
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_8/q" 0.460821
+cap "replica_cell_1rw_8/wl" "replica_cell_1rw_8/q" 3.08402
+cap "replica_cell_1rw_11/vdd" "replica_cell_1rw_9/q" 0.0759139
+cap "replica_cell_1rw_8/wl" "replica_cell_1rw_9/wl" 1.07292
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_9/wl" 16.2147
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_11/br" 2.60978
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_10/q" 0.0156091
+cap "replica_cell_1rw_8/wl" "replica_cell_1rw_9/vdd" -3.2698
+cap "replica_cell_1rw_8/q" "replica_cell_1rw_9/q" 4.63063
+cap "replica_cell_1rw_9/bl" "replica_cell_1rw_8/q" 51.3072
+cap "replica_cell_1rw_10/wl" "replica_cell_1rw_9/wl" 5.27445
+cap "replica_cell_1rw_9/bl" "replica_cell_1rw_11/br" -251.551
+cap "replica_cell_1rw_9/wl" "replica_cell_1rw_9/bl" 13.3945
+cap "replica_cell_1rw_9/wl" "replica_cell_1rw_9/q" 24.646
+cap "replica_cell_1rw_9/q" "replica_cell_1rw_11/br" 3.60479
+cap "replica_cell_1rw_8/q" "replica_cell_1rw_7/wl" 0.0639278
+cap "replica_cell_1rw_8/q" "replica_cell_1rw_9/gnd" -0.173065
+cap "replica_cell_1rw_10/q" "replica_cell_1rw_9/q" 0.977399
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_10/wl" 0.010316
+cap "replica_cell_1rw_11/br" "replica_cell_1rw_9/gnd" 20.8342
+cap "replica_cell_1rw_9/wl" "replica_cell_1rw_9/gnd" 15.8653
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_9/bl" -111.029
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_9/q" 0.460821
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_7/wl" 0.010316
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_9/gnd" -14.8171
+cap "replica_cell_1rw_10/wl" "replica_cell_1rw_9/q" 0.0639278
+cap "replica_cell_1rw_9/bl" "replica_cell_1rw_9/q" 59.1315
+cap "replica_cell_1rw_9/bl" "replica_cell_1rw_9/gnd" 16.592
+cap "replica_cell_1rw_9/q" "replica_cell_1rw_9/gnd" -0.173065
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_8/q" 0.0759139
+cap "replica_cell_1rw_7/wl" "replica_cell_1rw_9/gnd" -4.83817
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_9/vdd" 0.149733
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_6/q" 2.31532
+cap "replica_cell_1rw_9/gnd" "replica_cell_1rw_9/bl" -119.897
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_8/wl" 19.4845
+cap "replica_cell_1rw_9/gnd" "replica_cell_1rw_8/q" -4.30199
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_9/gnd" -4.47505
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_8/wl" 0.010316
+cap "replica_cell_1rw_9/gnd" "replica_cell_1rw_9/br" -114.194
+cap "replica_cell_1rw_7/wl" "replica_cell_1rw_7/vdd" 21.7941
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_9/bl" -6.04897
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_9/bl" 0.244452
+cap "replica_cell_1rw_7/wl" "replica_cell_1rw_8/wl" 13.4185
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_9/vdd" 0.0759139
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_9/br" -7.26369
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_8/q" 0.0156091
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_7/vdd" 0.239401
+cap "replica_cell_1rw_8/wl" "replica_cell_1rw_9/bl" 24.5845
+cap "replica_cell_1rw_7/wl" "replica_cell_1rw_6/wl" 1.07292
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_9/br" 50.8533
+cap "replica_cell_1rw_8/wl" "replica_cell_1rw_8/q" 21.562
+cap "replica_cell_1rw_7/wl" "replica_cell_1rw_9/bl" 24.5845
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_8/wl" 0.0639278
+cap "replica_cell_1rw_8/wl" "replica_cell_1rw_9/br" 29.3723
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_7/wl" 24.646
+cap "replica_cell_1rw_7/wl" "replica_cell_1rw_9/br" 29.3723
+cap "replica_cell_1rw_6/q" "replica_cell_1rw_7/vdd" 0.22142
+cap "replica_cell_1rw_8/q" "replica_cell_1rw_9/bl" -7.37262
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_9/bl" 43.9346
+cap "replica_cell_1rw_9/br" "replica_cell_1rw_9/bl" -290.429
+cap "replica_cell_1rw_9/vdd" "replica_cell_1rw_9/gnd" -14.3864
+cap "replica_cell_1rw_9/br" "replica_cell_1rw_8/q" -4.7321
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_8/q" 0.977399
+cap "replica_cell_1rw_9/wl" "replica_cell_1rw_8/wl" 1.07292
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_9/gnd" -14.5623
+cap "replica_cell_1rw_7/q" "replica_cell_1rw_9/br" 2.69441
+cap "replica_cell_1rw_9/gnd" "replica_cell_1rw_8/wl" -4.83817
+cap "replica_cell_1rw_8/br" "replica_cell_1rw_5/wl" 29.3723
+cap "replica_cell_1rw_5/wl" "replica_cell_1rw_5/q" 20.2991
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_6/wl" 16.2147
+cap "replica_cell_1rw_5/wl" "replica_cell_1rw_8/bl" 24.5845
+cap "replica_cell_1rw_6/q" "replica_cell_1rw_5/q" 0.977399
+cap "replica_cell_1rw_8/br" "replica_cell_1rw_6/q" 2.69441
+cap "replica_cell_1rw_8/br" "replica_cell_1rw_8/gnd" -120.458
+cap "replica_cell_1rw_6/q" "replica_cell_1rw_8/bl" 43.9346
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_8/gnd" -4.30199
+cap "replica_cell_1rw_8/bl" "replica_cell_1rw_8/gnd" -124.97
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_7/wl" -5.57949
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_5/q" 0.0156091
+cap "replica_cell_1rw_8/br" "replica_cell_1rw_7/vdd" -70.7942
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_5/wl" 18.293
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_8/bl" -119.356
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_6/q" 0.0759139
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_8/gnd" -14.3864
+cap "replica_cell_1rw_6/q" "replica_cell_1rw_5/wl" 0.0639278
+cap "replica_cell_1rw_6/wl" "replica_cell_1rw_7/wl" 1.07292
+cap "replica_cell_1rw_8/br" "replica_cell_1rw_6/wl" 29.3723
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_5/wl" 1.07292
+cap "replica_cell_1rw_6/wl" "replica_cell_1rw_8/bl" 24.5845
+cap "replica_cell_1rw_5/wl" "replica_cell_1rw_8/gnd" -6.91158
+cap "replica_cell_1rw_6/q" "replica_cell_1rw_7/q" 2.31532
+cap "replica_cell_1rw_6/q" "replica_cell_1rw_8/gnd" -4.47505
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_7/vdd" 0.149733
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_5/wl" 0.167304
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_5/wl" 0.010316
+cap "replica_cell_1rw_8/br" "replica_cell_1rw_5/q" -1.93539
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_6/q" 0.239401
+cap "replica_cell_1rw_8/br" "replica_cell_1rw_8/bl" -310.682
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_7/q" 0.22142
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_8/bl" -13.5145
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_8/gnd" -29.0276
+cap "replica_cell_1rw_6/wl" "replica_cell_1rw_5/wl" 13.4185
+cap "replica_cell_1rw_6/q" "replica_cell_1rw_6/wl" 24.646
+cap "replica_cell_1rw_6/wl" "replica_cell_1rw_8/gnd" -4.83817
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_8/br" -13.586
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_8/bl" -3.0656
+cap "replica_cell_1rw_7/br" "replica_cell_1rw_4/q" 4.6298
+cap "replica_cell_1rw_3/wl" "replica_cell_1rw_4/q" 0.0639278
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_7/br" 4.81864
+cap "replica_cell_1rw_6/gnd" "replica_cell_1rw_7/br" 25.9295
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_6/wl" 0.010316
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_7/br" 4.6298
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_5/wl" -3.2698
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_3/wl" 0.010316
+cap "replica_cell_1rw_6/q" "replica_cell_1rw_5/vdd" 0.0156091
+cap "replica_cell_1rw_5/wl" "replica_cell_1rw_6/gnd" 1.25994
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_6/wl" 0.0639278
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_5/wl" 3.08402
+cap "replica_cell_1rw_7/br" "replica_cell_1rw_6/bl" -250
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_4/q" 0.460821
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_6/q" 0.977399
+cap "replica_cell_1rw_3/q" "replica_cell_1rw_4/q" 0.977399
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_4/q" 4.63063
+cap "replica_cell_1rw_6/gnd" "replica_cell_1rw_4/q" -0.173065
+cap "replica_cell_1rw_7/vdd" "replica_cell_1rw_5/vdd" 0.149733
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_3/q" 0.0156091
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_4/q" 3.08402
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_6/gnd" -14.8171
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_5/vdd" 0.460821
+cap "replica_cell_1rw_6/bl" "replica_cell_1rw_4/q" 56.2428
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_7/vdd" 0.0759139
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_4/wl" -3.2698
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_6/gnd" -0.173065
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_4/q" 0.0759139
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_6/bl" -112.98
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_6/gnd" 1.25994
+cap "replica_cell_1rw_6/gnd" "replica_cell_1rw_6/bl" 20.801
+cap "replica_cell_1rw_5/q" "replica_cell_1rw_6/bl" 56.2428
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_5/vdd" 0.149733
+cap "replica_cell_1rw_3/q" "replica_cell_1rw_4/q" 0.977399
+cap "replica_cell_1rw_4/br" "replica_cell_1rw_3/q" 2.69441
+cap "replica_cell_1rw_5/bl" "replica_cell_1rw_3/wl" 24.5845
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_5/bl" -3.0656
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_4/br" -120.458
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_4/q" -4.30199
+cap "replica_cell_1rw_4/br" "replica_cell_1rw_4/q" -1.93539
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_2/vdd" 0.010316
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_3/wl" 16.2147
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_2/vdd" 0.149733
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_3/q" 0.0639278
+cap "replica_cell_1rw_5/bl" "replica_cell_1rw_2/vdd" -119.356
+cap "replica_cell_1rw_3/q" "replica_cell_1rw_3/wl" 24.646
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_3/q" 0.0759139
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_4/wl" -6.91158
+cap "replica_cell_1rw_3/q" "replica_cell_1rw_5/bl" 43.9346
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_4/q" 20.2991
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_5/gnd" 0.167304
+cap "replica_cell_1rw_4/br" "replica_cell_1rw_4/wl" 29.3723
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_3/wl" -4.83817
+cap "replica_cell_1rw_3/wl" "replica_cell_1rw_2/wl" 1.07292
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_5/vdd" -14.3864
+cap "replica_cell_1rw_5/wl" "replica_cell_1rw_4/wl" 1.07292
+cap "replica_cell_1rw_4/br" "replica_cell_1rw_3/wl" 29.3723
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_2/q" 0.22142
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_5/bl" -124.97
+cap "replica_cell_1rw_4/br" "replica_cell_1rw_5/vdd" -13.586
+cap "replica_cell_1rw_3/q" "replica_cell_1rw_2/vdd" 0.239401
+cap "replica_cell_1rw_4/br" "replica_cell_1rw_5/bl" -310.682
+cap "replica_cell_1rw_4/q" "replica_cell_1rw_5/bl" -13.5145
+cap "replica_cell_1rw_3/q" "replica_cell_1rw_2/q" 2.31532
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_2/wl" -5.57949
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_2/vdd" -29.0276
+cap "replica_cell_1rw_4/q" "replica_cell_1rw_2/vdd" 0.0156091
+cap "replica_cell_1rw_4/br" "replica_cell_1rw_2/vdd" -70.7942
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_3/wl" 13.4185
+cap "replica_cell_1rw_5/vdd" "replica_cell_1rw_4/wl" 18.293
+cap "replica_cell_1rw_4/gnd" "replica_cell_1rw_3/q" -4.47505
+cap "replica_cell_1rw_4/wl" "replica_cell_1rw_5/bl" 24.5845
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_1/vdd" 0.149733
+cap "replica_cell_1rw_1/vdd" "replica_cell_1rw_4/gnd" -27.699
+cap "replica_cell_1rw_2/wl" "replica_cell_1rw_1/wl" 13.4185
+cap "replica_cell_1rw_2/q" "replica_cell_1rw_1/vdd" 0.0759139
+cap "replica_cell_1rw_2/wl" "replica_cell_1rw_2/vdd" 21.7941
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_1/wl" 0.010316
+cap "replica_cell_1rw_2/wl" "replica_cell_1rw_4/gnd" 49.1187
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_3/q" 0.22142
+cap "replica_cell_1rw_1/q" "replica_cell_1rw_1/wl" 21.562
+cap "replica_cell_1rw_1/wl" "replica_cell_1rw_4/gnd" 49.1187
+cap "replica_cell_1rw_1/q" "replica_cell_1rw_2/vdd" 0.0156091
+cap "replica_cell_1rw_2/vdd" "replica_cell_1rw_4/gnd" 36.5354
+cap "replica_cell_1rw_2/q" "replica_cell_1rw_2/wl" 24.646
+cap "replica_cell_1rw_0/wl" "replica_cell_1rw_1/wl" 1.07292
+cap "replica_cell_1rw_1/q" "replica_cell_1rw_4/gnd" -16.4067
+cap "replica_cell_1rw_2/q" "replica_cell_1rw_1/wl" 0.0639278
+cap "replica_cell_1rw_2/q" "replica_cell_1rw_3/q" 2.31532
+cap "replica_cell_1rw_2/q" "replica_cell_1rw_2/vdd" 0.239401
+cap "replica_cell_1rw_1/q" "replica_cell_1rw_2/q" 0.977399
+cap "replica_cell_1rw_2/q" "replica_cell_1rw_4/gnd" 42.1539
+cap "replica_cell_1rw_3/wl" "replica_cell_1rw_2/wl" 1.07292
+cap "replica_cell_1rw_1/vdd" "replica_cell_1rw_1/wl" 19.4845
+cap "replica_cell_1rw_1/q" "replica_cell_1rw_2/vdd" 0.0759139
+cap "replica_cell_1rw_1/q" "replica_cell_1rw_2/gnd" 58.5606
+cap "replica_cell_1rw_1/vdd" "replica_cell_1rw_2/vdd" 0.149733
+cap "replica_cell_1rw_1/vdd" "replica_cell_1rw_0/wl" 16.2147
+cap "replica_cell_1rw_1/vdd" "replica_cell_1rw_2/gnd" -123.25
+cap "replica_cell_1rw_1/q" "replica_cell_1rw_0/q" 4.63063
+cap "replica_cell_1rw_1/vdd" "dummy_cell_1rw_0/q" 0.0156091
+cap "replica_cell_1rw_0/wl" "replica_cell_1rw_2/gnd" 48.1381
+cap "replica_cell_1rw_1/vdd" "replica_cell_1rw_0/q" 0.460821
+cap "replica_cell_1rw_0/q" "replica_cell_1rw_0/wl" 24.646
+cap "replica_cell_1rw_1/q" "replica_cell_1rw_1/wl" 3.08402
+cap "replica_cell_1rw_0/q" "replica_cell_1rw_2/gnd" 62.3384
+cap "replica_cell_1rw_0/q" "dummy_cell_1rw_0/q" 0.977399
+cap "replica_cell_1rw_1/vdd" "replica_cell_1rw_1/wl" -3.2698
+cap "replica_cell_1rw_0/wl" "dummy_cell_1rw_0/a_145_76#" 0.0736689
+cap "replica_cell_1rw_0/wl" "replica_cell_1rw_1/wl" 1.07292
+cap "replica_cell_1rw_2/wl" "replica_cell_1rw_1/q" 0.0639278
+cap "dummy_cell_1rw_0/qb" "replica_cell_1rw_1/vdd" 0.149733
+cap "replica_cell_1rw_2/wl" "replica_cell_1rw_1/vdd" 0.010316
+cap "replica_cell_1rw_1/vdd" "dummy_cell_1rw_0/wl" 0.010316
+cap "replica_cell_1rw_0/q" "dummy_cell_1rw_0/a_145_76#" 0.110389
+cap "replica_cell_1rw_1/vdd" "dummy_cell_1rw_0/a_76_76#" 0.0137542
+cap "replica_cell_1rw_0/wl" "dummy_cell_1rw_0/wl" 5.27445
+cap "dummy_cell_1rw_0/qb" "replica_cell_1rw_0/q" 0.0759139
+cap "replica_cell_1rw_0/q" "dummy_cell_1rw_0/wl" 0.0639278
+cap "replica_cell_1rw_0/q" "dummy_cell_1rw_0/a_76_76#" 0.114706
+cap "replica_cell_1rw_2/q" "replica_cell_1rw_1/q" 0.977399
+cap "replica_cell_1rw_2/q" "replica_cell_1rw_1/vdd" 0.0156091
+cap "replica_cell_1rw_1/vdd" "replica_cell_1rw_1/q" 0.460821
+cap "replica_cell_1rw_1/br" "replica_cell_1rw_0/q" -20.0942
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/q" -10.0942
+cap "replica_cell_1rw_1/vdd" "dummy_cell_1rw_0/qb" 0.149733
+cap "replica_cell_1rw_1/br" "replica_cell_1rw_1/gnd" 0.0563167
+cap "replica_cell_1rw_0/q" "dummy_cell_1rw_0/q" 0.977399
+cap "replica_cell_1rw_1/br" "dummy_cell_1rw_0/wl" 1.49321
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/a_145_76#" 36.0456
+cap "replica_cell_1rw_1/br" "dummy_cell_1rw_0/a_145_76#" 15.5953
+cap "replica_cell_1rw_0/wl" "dummy_cell_1rw_0/wl" 8.14402
+cap "replica_cell_1rw_1/br" "replica_cell_1rw_0/wl" 1.66176
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/q" 24.646
+cap "dummy_cell_1rw_0/qb" "replica_cell_1rw_0/q" 0.0156091
+cap "replica_cell_1rw_1/br" "dummy_cell_1rw_0/q" 53.0601
+cap "dummy_cell_1rw_0/q" "dummy_cell_1rw_0/a_145_76#" -0.106295
+cap "replica_cell_1rw_1/br" "replica_cell_1rw_1/vdd" -29.4844
+cap "replica_cell_1rw_0/wl" "dummy_cell_1rw_0/q" 0.0639278
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/qb" 22.9
+cap "replica_cell_1rw_1/br" "dummy_cell_1rw_0/qb" 56.2963
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_0/a_145_76#" -8.00869
+cap "replica_cell_1rw_1/br" "replica_cell_1rw_1/q" 0.0850597
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/a_76_76#" 35.3154
+cap "replica_cell_1rw_1/vdd" "dummy_cell_1rw_0/q" 0.0759139
+cap "replica_cell_1rw_1/br" "dummy_cell_1rw_0/a_76_76#" 14.5725
+cap "replica_cell_1rw_0/wl" "dummy_cell_1rw_0/qb" 0.010316
+merge "replica_cell_1rw_2/wl" "wl_0_15" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_4/vdd" "replica_cell_1rw_5/vdd" -956.209 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_5/vdd" "vdd_uq7"
+merge "replica_cell_1rw_16/wl" "wl_0_1" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "contact_7_1/SUB" "contact_7_1/m2_0_0#" -19923.6 0 0 0 0 -23400 -700 0 0 -2756 -210 -14760 -1458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -65040 -5840 -222198 -12762 -368075 -51566 -7744 -704 0 0 0 0 0 0
+merge "contact_7_1/m2_0_0#" "vdd"
+merge "vdd" "contact_6_1/SUB"
+merge "contact_6_1/SUB" "contact_6_1/m1_0_0#"
+merge "contact_6_1/m1_0_0#" "dummy_cell_1rw_0/vdd"
+merge "dummy_cell_1rw_0/vdd" "contact_7_0/SUB"
+merge "contact_7_0/SUB" "contact_7_0/m2_0_0#"
+merge "contact_7_0/m2_0_0#" "gnd"
+merge "gnd" "contact_6_0/SUB"
+merge "contact_6_0/SUB" "contact_6_0/m1_0_0#"
+merge "contact_6_0/m1_0_0#" "dummy_cell_1rw_0/br"
+merge "dummy_cell_1rw_0/br" "dummy_cell_1rw_0/bl"
+merge "dummy_cell_1rw_0/bl" "dummy_cell_1rw_0/gnd"
+merge "dummy_cell_1rw_0/gnd" "replica_cell_1rw_0/gnd"
+merge "replica_cell_1rw_0/gnd" "gnd_uq9"
+merge "gnd_uq9" "replica_cell_1rw_0/br"
+merge "replica_cell_1rw_0/br" "replica_cell_1rw_0/bl"
+merge "replica_cell_1rw_0/bl" "replica_cell_1rw_1/br"
+merge "replica_cell_1rw_1/br" "replica_cell_1rw_1/bl"
+merge "replica_cell_1rw_1/bl" "replica_cell_1rw_1/gnd"
+merge "replica_cell_1rw_1/gnd" "replica_cell_1rw_3/br"
+merge "replica_cell_1rw_3/br" "gnd_uq8"
+merge "gnd_uq8" "replica_cell_1rw_3/bl"
+merge "replica_cell_1rw_3/bl" "replica_cell_1rw_3/gnd"
+merge "replica_cell_1rw_3/gnd" "replica_cell_1rw_2/gnd"
+merge "replica_cell_1rw_2/gnd" "replica_cell_1rw_2/br"
+merge "replica_cell_1rw_2/br" "replica_cell_1rw_2/bl"
+merge "replica_cell_1rw_2/bl" "replica_cell_1rw_4/gnd"
+merge "replica_cell_1rw_4/gnd" "gnd_uq7"
+merge "gnd_uq7" "replica_cell_1rw_4/br"
+merge "replica_cell_1rw_4/br" "replica_cell_1rw_4/bl"
+merge "replica_cell_1rw_4/bl" "replica_cell_1rw_5/br"
+merge "replica_cell_1rw_5/br" "replica_cell_1rw_5/bl"
+merge "replica_cell_1rw_5/bl" "replica_cell_1rw_5/gnd"
+merge "replica_cell_1rw_5/gnd" "replica_cell_1rw_6/gnd"
+merge "replica_cell_1rw_6/gnd" "gnd_uq6"
+merge "gnd_uq6" "replica_cell_1rw_6/br"
+merge "replica_cell_1rw_6/br" "replica_cell_1rw_6/bl"
+merge "replica_cell_1rw_6/bl" "replica_cell_1rw_7/br"
+merge "replica_cell_1rw_7/br" "replica_cell_1rw_7/bl"
+merge "replica_cell_1rw_7/bl" "replica_cell_1rw_7/gnd"
+merge "replica_cell_1rw_7/gnd" "replica_cell_1rw_8/gnd"
+merge "replica_cell_1rw_8/gnd" "gnd_uq5"
+merge "gnd_uq5" "replica_cell_1rw_8/br"
+merge "replica_cell_1rw_8/br" "replica_cell_1rw_8/bl"
+merge "replica_cell_1rw_8/bl" "replica_cell_1rw_9/gnd"
+merge "replica_cell_1rw_9/gnd" "gnd_uq4"
+merge "gnd_uq4" "replica_cell_1rw_9/br"
+merge "replica_cell_1rw_9/br" "replica_cell_1rw_9/bl"
+merge "replica_cell_1rw_9/bl" "replica_cell_1rw_10/gnd"
+merge "replica_cell_1rw_10/gnd" "replica_cell_1rw_10/br"
+merge "replica_cell_1rw_10/br" "replica_cell_1rw_10/bl"
+merge "replica_cell_1rw_10/bl" "replica_cell_1rw_11/br"
+merge "replica_cell_1rw_11/br" "replica_cell_1rw_11/bl"
+merge "replica_cell_1rw_11/bl" "replica_cell_1rw_11/gnd"
+merge "replica_cell_1rw_11/gnd" "replica_cell_1rw_12/gnd"
+merge "replica_cell_1rw_12/gnd" "gnd_uq3"
+merge "gnd_uq3" "replica_cell_1rw_12/br"
+merge "replica_cell_1rw_12/br" "replica_cell_1rw_12/bl"
+merge "replica_cell_1rw_12/bl" "replica_cell_1rw_13/br"
+merge "replica_cell_1rw_13/br" "replica_cell_1rw_13/bl"
+merge "replica_cell_1rw_13/bl" "replica_cell_1rw_13/gnd"
+merge "replica_cell_1rw_13/gnd" "replica_cell_1rw_14/gnd"
+merge "replica_cell_1rw_14/gnd" "gnd_uq2"
+merge "gnd_uq2" "replica_cell_1rw_14/br"
+merge "replica_cell_1rw_14/br" "replica_cell_1rw_14/bl"
+merge "replica_cell_1rw_14/bl" "replica_cell_1rw_15/br"
+merge "replica_cell_1rw_15/br" "replica_cell_1rw_15/bl"
+merge "replica_cell_1rw_15/bl" "replica_cell_1rw_15/gnd"
+merge "replica_cell_1rw_15/gnd" "contact_7_3/SUB"
+merge "contact_7_3/SUB" "contact_7_3/m2_0_0#"
+merge "contact_7_3/m2_0_0#" "vdd_uq0"
+merge "vdd_uq0" "contact_7_2/SUB"
+merge "contact_7_2/SUB" "contact_7_2/m2_0_0#"
+merge "contact_7_2/m2_0_0#" "gnd_uq0"
+merge "gnd_uq0" "contact_6_3/SUB"
+merge "contact_6_3/SUB" "contact_6_3/m1_0_0#"
+merge "contact_6_3/m1_0_0#" "replica_cell_1rw_16/vdd"
+merge "replica_cell_1rw_16/vdd" "dummy_cell_1rw_1/vdd"
+merge "dummy_cell_1rw_1/vdd" "vdd_uq1"
+merge "vdd_uq1" "contact_6_2/SUB"
+merge "contact_6_2/SUB" "contact_6_2/m1_0_0#"
+merge "contact_6_2/m1_0_0#" "replica_cell_1rw_16/br"
+merge "replica_cell_1rw_16/br" "dummy_cell_1rw_1/br"
+merge "dummy_cell_1rw_1/br" "br_0_0"
+merge "br_0_0" "replica_cell_1rw_16/bl"
+merge "replica_cell_1rw_16/bl" "dummy_cell_1rw_1/bl"
+merge "dummy_cell_1rw_1/bl" "bl_0_0"
+merge "bl_0_0" "replica_cell_1rw_16/gnd"
+merge "replica_cell_1rw_16/gnd" "gnd_uq1"
+merge "gnd_uq1" "dummy_cell_1rw_1/gnd"
+merge "dummy_cell_1rw_1/gnd" "SUB"
+merge "replica_cell_1rw_1/wl" "wl_0_16" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_1/wl" "wl_0_0" -164.634 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_15/wl" "wl_0_2" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_0/wl" "wl_0_17" -100.433 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_14/wl" "wl_0_3" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_0/wl" "wl_0_18" -130.941 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_13/wl" "wl_0_4" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_8/vdd" "replica_cell_1rw_9/vdd" -956.209 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_9/vdd" "vdd_uq5"
+merge "replica_cell_1rw_14/vdd" "replica_cell_1rw_15/vdd" -956.209 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_15/vdd" "vdd_uq2"
+merge "replica_cell_1rw_12/wl" "wl_0_5" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_12/vdd" "replica_cell_1rw_13/vdd" -956.209 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_13/vdd" "vdd_uq3"
+merge "replica_cell_1rw_11/wl" "wl_0_6" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_10/vdd" "replica_cell_1rw_11/vdd" -956.209 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_11/vdd" "vdd_uq4"
+merge "replica_cell_1rw_10/wl" "wl_0_7" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_9/wl" "wl_0_8" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_5/wl" "wl_0_12" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_6/vdd" "replica_cell_1rw_7/vdd" -956.209 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_7/vdd" "vdd_uq6"
+merge "replica_cell_1rw_8/wl" "wl_0_9" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_0/vdd" "replica_cell_1rw_1/vdd" -956.209 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_1/vdd" "vdd_uq9"
+merge "replica_cell_1rw_3/vdd" "replica_cell_1rw_2/vdd" -956.209 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_2/vdd" "vdd_uq8"
+merge "replica_cell_1rw_3/wl" "wl_0_14" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_6/wl" "wl_0_11" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_7/wl" "wl_0_10" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "replica_cell_1rw_4/wl" "wl_0_13" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0

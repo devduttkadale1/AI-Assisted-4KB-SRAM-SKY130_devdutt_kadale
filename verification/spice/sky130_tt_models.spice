@@ -1,0 +1,11 @@
+* SKY130 TT corner models — absolute paths
+.lib tt
+* MOSFET
+.include "/home/devdutt/SRAM_SKY130/OpenRAM/sky130A/models/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__tt.corner.spice"
+.include "/home/devdutt/SRAM_SKY130/OpenRAM/sky130A/models/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__tt.corner.spice"
+* Mismatch parameters
+.include "/home/devdutt/SRAM_SKY130/OpenRAM/sky130A/models/cells/nfet_01v8/sky130_fd_pr__nfet_01v8__mismatch.corner.spice"
+.include "/home/devdutt/SRAM_SKY130/OpenRAM/sky130A/models/cells/pfet_01v8/sky130_fd_pr__pfet_01v8__mismatch.corner.spice"
+* All models
+.include "/home/devdutt/SRAM_SKY130/OpenRAM/sky130A/models/all.spice"
+.endl

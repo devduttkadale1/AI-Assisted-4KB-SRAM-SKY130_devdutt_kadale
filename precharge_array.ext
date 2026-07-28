@@ -1,0 +1,98 @@
+timestamp 1444693063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use precharge_0 precharge_0_2 1 0 350 0 1 0
+use precharge_0 precharge_0_1 1 0 610 0 1 0
+use precharge_0 precharge_0_0 1 0 870 0 1 0
+node "vdd_uq0" 0 68.4338 1054 627 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd" 0 53.1199 794 627 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "vdd_uq1" 0 67.986 534 627 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2704 208 0 0 0 0 0 0
+node "br_2" 6 353.618 1057 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9800 1428 0 0 0 0 0 0 0 0
+node "bl_2" 6 154.569 929 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9800 1428 0 0 0 0 0 0 0 0
+node "br_1" 6 154.569 797 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9800 1428 0 0 0 0 0 0 0 0
+node "bl_1" 6 154.569 669 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9800 1428 0 0 0 0 0 0 0 0
+node "br_0" 6 154.569 537 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9800 1428 0 0 0 0 0 0 0 0
+node "bl_0" 6 351.069 409 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9800 1428 0 0 0 0 0 0 0 0
+node "en_bar" 10 969.026 0 116 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 15820 2288 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "br_0" "vdd_uq1" 26.3854
+cap "bl_1" "en_bar" 29.5468
+cap "vdd" "en_bar" 0.26306
+cap "vdd_uq1" "bl_0" 1.24824
+cap "bl_1" "vdd" 1.24824
+cap "br_2" "en_bar" 28.0061
+cap "vdd_uq1" "en_bar" 0.26306
+cap "br_1" "en_bar" 29.5468
+cap "vdd_uq0" "en_bar" 0.26306
+cap "bl_1" "vdd_uq1" 3.89373
+cap "vdd" "vdd_uq1" 15.5161
+cap "bl_1" "br_1" 243.056
+cap "vdd" "br_1" 26.3854
+cap "vdd" "vdd_uq0" 15.5161
+cap "bl_2" "en_bar" 29.5468
+cap "br_0" "bl_0" 243.056
+cap "br_2" "vdd_uq0" 26.3854
+cap "vdd" "bl_2" 3.89373
+cap "br_0" "en_bar" 29.5468
+cap "br_2" "bl_2" 243.056
+cap "bl_1" "br_0" 236.486
+cap "bl_0" "en_bar" 30.8345
+cap "br_1" "bl_2" 236.486
+cap "bl_2" "vdd_uq0" 1.24824
+cap "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" -24.1739
+cap "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" "precharge_0_2/pmos_m1_w0_840_sli_dli_0/a_54_0#" 1.43962
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_0/contact_20_0/w_n125_n125#" -17.1078
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" -25.8752
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_1/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.499568
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_2/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.293917
+cap "precharge_0_0/contact_20_0/w_n125_n125#" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" -1.68337
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_2/pmos_m1_w0_840_sli_dli_2/S" -244.304
+cap "precharge_0_2/pmos_m1_w0_840_sli_dli_2/a_54_0#" "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" 0.833879
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" -50.857
+cap "precharge_0_2/pmos_m1_w0_840_sli_dli_0/a_54_0#" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" 0.184159
+cap "precharge_0_2/pmos_m1_w0_840_sli_dli_2/S" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" -28.0061
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_1/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.147313
+cap "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" "precharge_0_2/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.812252
+cap "precharge_0_0/contact_20_0/w_n125_n125#" "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" 18.8014
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_0/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.147313
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_2/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.485108
+cap "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" "precharge_0_0/contact_20_0/w_n125_n125#" -0.266621
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/S" "precharge_0_1/pmos_m1_w0_840_sli_dli_2/a_54_0#" 0.833879
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/S" "precharge_0_0/contact_20_0/w_n125_n125#" 18.5348
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_2/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.147313
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_0/pmos_m1_w0_840_sli_dli_1/a_0_0#" 0.499568
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" -52.9708
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_1/pmos_m1_w0_840_sli_dli_0/a_0_0#" 0.147313
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" "precharge_0_1/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.184159
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_1/pmos_m1_w0_840_sli_dli_0/a_54_0#" 0.779025
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/S" -24.1739
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" -102.511
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/S" -153.368
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" "precharge_0_0/contact_20_0/w_n125_n125#" 1.10459
+cap "precharge_0_1/pmos_m1_w0_840_sli_dli_0/a_0_0#" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/S" 0.812252
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_0/contact_20_0/w_n125_n125#" -6.32624
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/S" "precharge_0_1/pmos_m1_w0_840_sli_dli_0/a_54_0#" 1.43962
+cap "precharge_0_0/contact_20_0/w_n125_n125#" "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" 7.83941
+cap "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "precharge_0_0/contact_20_0/w_n125_n125#" 7.83941
+merge "precharge_0_0/pmos_m1_w0_840_sli_dli_2/D" "vdd_uq0" -1634.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -56 -29400 -4326 -8112 -624 0 0 0 0 0 0
+merge "vdd_uq0" "br_2"
+merge "br_2" "precharge_0_1/pmos_m1_w0_840_sli_dli_2/D"
+merge "precharge_0_1/pmos_m1_w0_840_sli_dli_2/D" "vdd"
+merge "vdd" "br_1"
+merge "br_1" "precharge_0_2/pmos_m1_w0_840_sli_dli_2/D"
+merge "precharge_0_2/pmos_m1_w0_840_sli_dli_2/D" "vdd_uq1"
+merge "vdd_uq1" "br_0"
+merge "precharge_0_0/pmos_m1_w0_840_sli_dli_2/G" "precharge_0_1/pmos_m1_w0_840_sli_dli_2/G" -824.505 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10920 -1644 0 0 0 0 0 0 0 0 0 0
+merge "precharge_0_1/pmos_m1_w0_840_sli_dli_2/G" "precharge_0_2/pmos_m1_w0_840_sli_dli_2/G"
+merge "precharge_0_2/pmos_m1_w0_840_sli_dli_2/G" "en_bar"
+merge "precharge_0_2/pmos_m1_w0_840_sli_dli_2/S" "bl_0" -358.904 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9800 -1442 0 0 0 0 0 0 0 0
+merge "precharge_0_1/pmos_m1_w0_840_sli_dli_2/S" "bl_1" -427.289 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9800 -1442 0 0 0 0 0 0 0 0
+merge "precharge_0_0/SUB" "precharge_0_1/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "precharge_0_1/SUB" "precharge_0_2/SUB"
+merge "precharge_0_2/SUB" "SUB"
+merge "precharge_0_0/pmos_m1_w0_840_sli_dli_2/S" "bl_2" -427.289 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -9800 -1442 0 0 0 0 0 0 0 0
+merge "precharge_0_0/contact_20_0/w_n125_n125#" "precharge_0_1/contact_20_0/w_n125_n125#" -1941.74 0 0 0 0 -161812 -3920 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "precharge_0_1/contact_20_0/w_n125_n125#" "precharge_0_2/contact_20_0/w_n125_n125#"

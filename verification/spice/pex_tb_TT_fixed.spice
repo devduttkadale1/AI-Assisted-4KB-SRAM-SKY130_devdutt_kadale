@@ -1,0 +1,29 @@
+* Post-LVS simulation — sram_2_16_sky130A TT corner
+.option scale=1
+.include /home/devdutt/AI-Assisted-4KB-SRAM-SKY130/verification/spice/sky130_tt_flat.spice
+.include /home/devdutt/AI-Assisted-4KB-SRAM-SKY130/results/spice/sram_2_16_sky130A.sim.sp
+
+Vvdd vdd 0 1.8
+Rgnd gnd 0 1m
+Vclk clk0 0 pulse(0 1.8 2n 0.1n 0.1n 5n 10n)
+Vcsb csb0 0 pwl(0 1.8 4.9n 1.8 5n 0 14.9n 0 15n 1.8 24.9n 1.8 25n 0 34.9n 0 35n 1.8)
+Vweb web0 0 pwl(0 1.8 4.9n 1.8 5n 0 14.9n 0 15n 1.8 25n 1.8)
+Vaddr0 addr0_0 0 0
+Vaddr1 addr0_1 0 0
+Vaddr2 addr0_2 0 0
+Vaddr3 addr0_3 0 0
+Vdin0 din0_0 0 pwl(0 0 4.9n 0 5n 1.8 15n 0)
+Vdin1 din0_1 0 0
+Xdut din0_0 din0_1 addr0_0 addr0_1 addr0_2 addr0_3 csb0 web0 clk0 dout0_0 dout0_1 vdd gnd sram_2_16_sky130A
+.tran 0.1n 60n
+.measure tran t_access_rise TRIG v(clk0) VAL=0.9 RISE=2 TARG v(dout0_0) VAL=0.9 RISE=1
+.measure tran t_access_fall TRIG v(clk0) VAL=0.9 RISE=2 TARG v(dout0_0) VAL=0.9 FALL=1
+.measure tran i_leakage AVG i(Vvdd) FROM=50n TO=60n
+* Extra probe run
+
+
+
+.control
+run
+wrdata verification/results/pex_TT_waves.txt v(dout0_0) v(clk0) v(csb0) v(xdut.clk_buf0) v(xdut.s_en0) v(xdut.wl_en0)
+.endc

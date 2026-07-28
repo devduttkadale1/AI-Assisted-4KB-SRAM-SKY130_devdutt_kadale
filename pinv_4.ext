@@ -1,0 +1,74 @@
+timestamp 1444693063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use contact_13 contact_13_0 1 0 109 0 1 164
+use nmos_m2_w0_420_sli_dli_da_p nmos_m2_w0_420_sli_dli_da_p_0 1 0 127 0 1 32
+use pmos_m2_w0_840_sli_dli_da_p pmos_m2_w0_840_sli_dli_da_p_0 1 0 127 0 1 290
+node "gnd" 339 348.162 0 -8 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8698 996 0 0 0 0 0 0 0 0 0 0 0 0
+node "Z" 241 155.284 204 37 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5432 674 0 0 0 0 0 0 0 0 0 0 0 0
+node "A" 13 17.996 121 176 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1056 130 0 0 0 0 0 0 0 0 0 0 0 0
+node "vdd" 357 114.314 0 398 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12262 1212 0 0 0 0 0 0 0 0 0 0 0 0
+node "a_138_164#" 346 148.358 138 164 p 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3756 374 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_n127_195#" 1488 3522.89 -127 195 nw 0 0 0 0 293574 2222 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "Z" "a_138_164#" 19.4457
+cap "Z" "A" 12.75
+cap "A" "w_n127_195#" 10.7241
+cap "gnd" "a_138_164#" 2.38674
+cap "gnd" "A" 5.34066
+cap "A" "a_138_164#" 13.818
+cap "Z" "vdd" 38.002
+cap "vdd" "w_n127_195#" 330.119
+cap "gnd" "vdd" 24.0457
+cap "Z" "w_n127_195#" 87.1059
+cap "vdd" "a_138_164#" 2.5793
+cap "A" "vdd" 6.44008
+cap "Z" "gnd" 11.1551
+cap "gnd" "w_n127_195#" 26.6502
+cap "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "nmos_m2_w0_420_sli_dli_da_p_0/a_0_0#" 0.0597399
+cap "pmos_m2_w0_840_sli_dli_da_p_0/a_0_0#" "pmos_m2_w0_840_sli_dli_da_p_0/G" 1.02003
+cap "pmos_m2_w0_840_sli_dli_da_p_0/w_n127_n127#" "pmos_m2_w0_840_sli_dli_da_p_0/G" 1.90346
+cap "pmos_m2_w0_840_sli_dli_da_p_0/a_0_0#" "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" 0.176665
+cap "pmos_m2_w0_840_sli_dli_da_p_0/D" "nmos_m2_w0_420_sli_dli_da_p_0/a_132_0#" 0.339452
+cap "nmos_m2_w0_420_sli_dli_da_p_0/a_54_0#" "pmos_m2_w0_840_sli_dli_da_p_0/D" 0.777323
+cap "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" "pmos_m2_w0_840_sli_dli_da_p_0/G" 25.9303
+cap "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" "pmos_m2_w0_840_sli_dli_da_p_0/w_n127_n127#" 4.94772
+cap "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" "pmos_m2_w0_840_sli_dli_da_p_0/a_132_0#" 0.434438
+cap "pmos_m2_w0_840_sli_dli_da_p_0/a_54_0#" "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" 14.7675
+cap "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "pmos_m2_w0_840_sli_dli_da_p_0/D" -24.6512
+cap "pmos_m2_w0_840_sli_dli_da_p_0/D" "nmos_m2_w0_420_sli_dli_da_p_0/a_0_0#" 0.346719
+cap "nmos_m2_w0_420_sli_dli_da_p_0/a_54_0#" "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" 5.08409
+cap "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" "nmos_m2_w0_420_sli_dli_da_p_0/a_132_0#" 1.03392
+cap "pmos_m2_w0_840_sli_dli_da_p_0/a_0_0#" "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" 3.76714
+cap "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "pmos_m2_w0_840_sli_dli_da_p_0/G" 28.87
+cap "pmos_m2_w0_840_sli_dli_da_p_0/a_54_0#" "pmos_m2_w0_840_sli_dli_da_p_0/D" 4.9237
+cap "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "pmos_m2_w0_840_sli_dli_da_p_0/w_n127_n127#" -79.9605
+cap "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" -0.0710041
+cap "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "pmos_m2_w0_840_sli_dli_da_p_0/a_132_0#" 3.48073
+cap "pmos_m2_w0_840_sli_dli_da_p_0/G" "nmos_m2_w0_420_sli_dli_da_p_0/a_0_0#" 0.144922
+cap "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" "nmos_m2_w0_420_sli_dli_da_p_0/a_0_0#" 1.16115
+cap "pmos_m2_w0_840_sli_dli_da_p_0/a_0_0#" "pmos_m2_w0_840_sli_dli_da_p_0/D" 2.16699
+cap "nmos_m2_w0_420_sli_dli_da_p_0/a_54_0#" "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" 0.253211
+cap "pmos_m2_w0_840_sli_dli_da_p_0/D" "pmos_m2_w0_840_sli_dli_da_p_0/G" 40.5403
+cap "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "nmos_m2_w0_420_sli_dli_da_p_0/a_132_0#" 0.0922389
+cap "pmos_m2_w0_840_sli_dli_da_p_0/D" "pmos_m2_w0_840_sli_dli_da_p_0/w_n127_n127#" -15.7915
+cap "pmos_m2_w0_840_sli_dli_da_p_0/a_54_0#" "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" 0.575593
+cap "pmos_m2_w0_840_sli_dli_da_p_0/D" "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" 8.41469
+cap "pmos_m2_w0_840_sli_dli_da_p_0/D" "pmos_m2_w0_840_sli_dli_da_p_0/a_132_0#" 2.12158
+merge "pmos_m2_w0_840_sli_dli_da_p_0/S_uq0" "pmos_m2_w0_840_sli_dli_da_p_0/S" -47.8212 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2244 -268 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_m2_w0_840_sli_dli_da_p_0/S" "vdd"
+merge "nmos_m2_w0_420_sli_dli_da_p_0/S_uq0" "nmos_m2_w0_420_sli_dli_da_p_0/S" -80.4603 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -132 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_m2_w0_420_sli_dli_da_p_0/S" "gnd"
+merge "pmos_m2_w0_840_sli_dli_da_p_0/G" "nmos_m2_w0_420_sli_dli_da_p_0/G" -301.048 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1596 -230 0 0 -1056 -130 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_m2_w0_420_sli_dli_da_p_0/G" "contact_13_0/a_0_0#"
+merge "contact_13_0/a_0_0#" "A"
+merge "A" "a_138_164#"
+merge "pmos_m2_w0_840_sli_dli_da_p_0/SUB" "nmos_m2_w0_420_sli_dli_da_p_0/SUB" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_m2_w0_420_sli_dli_da_p_0/SUB" "contact_13_0/SUB"
+merge "contact_13_0/SUB" "SUB"
+merge "pmos_m2_w0_840_sli_dli_da_p_0/w_n127_n127#" "w_n127_195#" -1556.93 0 0 0 0 -129744 -1460 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "pmos_m2_w0_840_sli_dli_da_p_0/D" "nmos_m2_w0_420_sli_dli_da_p_0/D" -84.138 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1139 -202 0 0 0 0 0 0 0 0 0 0 0 0
+merge "nmos_m2_w0_420_sli_dli_da_p_0/D" "Z"

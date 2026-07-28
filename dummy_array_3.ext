@@ -1,0 +1,1323 @@
+timestamp 1444693063
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use dummy_cell_1rw dummy_cell_1rw_18 1 0 0 0 1 0
+use dummy_cell_1rw dummy_cell_1rw_17 1 0 0 0 -1 1018
+use dummy_cell_1rw dummy_cell_1rw_16 1 0 0 0 1 1018
+use dummy_cell_1rw dummy_cell_1rw_15 1 0 0 0 -1 2036
+use dummy_cell_1rw dummy_cell_1rw_14 1 0 0 0 1 2036
+use dummy_cell_1rw dummy_cell_1rw_13 1 0 0 0 -1 3054
+use dummy_cell_1rw dummy_cell_1rw_12 1 0 0 0 1 3054
+use dummy_cell_1rw dummy_cell_1rw_11 1 0 0 0 -1 4072
+use dummy_cell_1rw dummy_cell_1rw_10 1 0 0 0 1 4072
+use dummy_cell_1rw dummy_cell_1rw_9 1 0 0 0 -1 5090
+use dummy_cell_1rw dummy_cell_1rw_8 1 0 0 0 1 5090
+use dummy_cell_1rw dummy_cell_1rw_7 1 0 0 0 -1 6108
+use dummy_cell_1rw dummy_cell_1rw_6 1 0 0 0 1 6108
+use dummy_cell_1rw dummy_cell_1rw_5 1 0 0 0 -1 7126
+use dummy_cell_1rw dummy_cell_1rw_4 1 0 0 0 1 7126
+use dummy_cell_1rw dummy_cell_1rw_3 1 0 0 0 -1 8144
+use dummy_cell_1rw dummy_cell_1rw_2 1 0 0 0 1 8144
+use dummy_cell_1rw dummy_cell_1rw_1 1 0 0 0 -1 9162
+use dummy_cell_1rw dummy_cell_1rw_0 1 0 0 0 1 9162
+node "br_0_0" 17 4862.83 137 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 696312 19486 0 0 0 0 0 0 0 0
+node "bl_0_0" 19 4751.63 53 0 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 628615 19472 0 0 0 0 0 0 0 0
+node "gnd_uq0" 1 194.257 0 -20 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10660 602 0 0 0 0 0 0 0 0 0 0
+node "wl_0_0" 2 124.184 0 107 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq0" 1 216.022 0 485 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_1" 2 124.184 0 895 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd" 1 118.283 0 997 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_2" 2 124.184 0 1125 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd" 1 216.022 0 1503 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_3" 2 124.184 0 1913 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq1" 1 118.283 0 2015 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_4" 2 124.184 0 2143 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq1" 1 216.022 0 2521 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_5" 2 124.184 0 2931 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq2" 1 118.283 0 3033 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_6" 2 124.184 0 3161 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq2" 1 216.022 0 3539 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_7" 2 124.184 0 3949 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq3" 1 118.283 0 4051 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_8" 2 124.184 0 4179 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq3" 1 216.022 0 4557 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_9" 2 124.184 0 4967 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq4" 1 118.283 0 5069 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_10" 2 124.184 0 5197 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq4" 1 216.022 0 5575 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_11" 2 124.184 0 5985 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq5" 1 118.283 0 6087 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_12" 2 124.184 0 6215 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq5" 1 216.022 0 6593 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_13" 2 124.184 0 7003 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq6" 1 118.283 0 7105 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_14" 2 124.184 0 7233 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq6" 1 216.022 0 7611 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_15" 2 124.184 0 8021 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq7" 1 118.283 0 8123 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_16" 2 124.184 0 8251 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq7" 1 216.022 0 8629 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 12480 616 0 0 0 0 0 0 0 0 0 0
+node "wl_0_17" 2 124.184 0 9039 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "gnd_uq8" 1 118.283 0 9141 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10920 604 0 0 0 0 0 0 0 0 0 0
+node "wl_0_18" 2 124.184 0 9269 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4160 552 0 0 0 0 0 0 0 0 0 0
+node "vdd_uq8" 1 244.608 0 9647 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 11700 610 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "br_0_0" "gnd_uq5" 117.033
+cap "bl_0_0" "vdd_uq6" 129.555
+cap "vdd_uq0" "br_0_0" 139.984
+cap "br_0_0" "wl_0_8" 83.1147
+cap "bl_0_0" "wl_0_12" 76.0942
+cap "wl_0_5" "gnd_uq2" 103.063
+cap "wl_0_9" "gnd_uq4" 103.063
+cap "wl_0_12" "gnd_uq5" 103.063
+cap "bl_0_0" "vdd_uq4" 129.555
+cap "vdd_uq8" "bl_0_0" 78.9873
+cap "wl_0_7" "vdd_uq2" 29.5607
+cap "bl_0_0" "gnd_uq3" 108.438
+cap "wl_0_9" "bl_0_0" 76.0942
+cap "bl_0_0" "gnd_uq7" 108.438
+cap "wl_0_9" "vdd_uq3" 29.5607
+cap "wl_0_16" "br_0_0" 83.1147
+cap "wl_0_18" "gnd_uq8" 103.063
+cap "br_0_0" "vdd_uq5" 139.984
+cap "bl_0_0" "wl_0_17" 76.0942
+cap "wl_0_4" "gnd_uq1" 103.063
+cap "bl_0_0" "vdd_uq1" 129.555
+cap "gnd" "br_0_0" 117.033
+cap "wl_0_8" "gnd_uq3" 103.063
+cap "bl_0_0" "gnd_uq4" 108.438
+cap "br_0_0" "wl_0_5" 83.1147
+cap "wl_0_3" "gnd_uq1" 103.063
+cap "br_0_0" "gnd_uq1" 117.033
+cap "bl_0_0" "gnd_uq0" 67.858
+cap "vdd" "wl_0_2" 29.5607
+cap "wl_0_12" "vdd_uq5" 29.5607
+cap "wl_0_7" "br_0_0" 83.1147
+cap "bl_0_0" "vdd_uq3" 129.555
+cap "wl_0_18" "br_0_0" 83.1147
+cap "br_0_0" "wl_0_13" 83.1147
+cap "bl_0_0" "gnd_uq5" 108.438
+cap "gnd_uq6" "wl_0_14" 103.063
+cap "br_0_0" "vdd_uq7" 139.984
+cap "wl_0_16" "gnd_uq7" 103.063
+cap "br_0_0" "gnd_uq6" 117.033
+cap "vdd_uq0" "bl_0_0" 129.555
+cap "bl_0_0" "wl_0_8" 76.0942
+cap "br_0_0" "wl_0_11" 83.1147
+cap "vdd_uq3" "wl_0_8" 29.5607
+cap "wl_0_7" "gnd_uq3" 103.063
+cap "wl_0_18" "vdd_uq8" 29.5607
+cap "vdd_uq1" "wl_0_5" 29.5607
+cap "wl_0_6" "gnd_uq2" 103.063
+cap "wl_0_6" "vdd_uq2" 29.5607
+cap "wl_0_3" "vdd" 29.5607
+cap "wl_0_16" "bl_0_0" 76.0942
+cap "br_0_0" "vdd" 139.984
+cap "bl_0_0" "vdd_uq5" 129.555
+cap "vdd_uq4" "wl_0_11" 29.5607
+cap "gnd" "bl_0_0" 108.438
+cap "br_0_0" "wl_0_1" 83.1147
+cap "bl_0_0" "wl_0_5" 76.0942
+cap "vdd_uq7" "wl_0_17" 29.5607
+cap "bl_0_0" "gnd_uq1" 108.438
+cap "wl_0_0" "br_0_0" 83.1147
+cap "bl_0_0" "wl_0_7" 76.0942
+cap "wl_0_18" "bl_0_0" 76.0942
+cap "br_0_0" "wl_0_6" 83.1147
+cap "bl_0_0" "wl_0_13" 76.0942
+cap "br_0_0" "wl_0_2" 83.1147
+cap "br_0_0" "wl_0_10" 83.1147
+cap "bl_0_0" "vdd_uq7" 129.555
+cap "bl_0_0" "gnd_uq6" 108.438
+cap "bl_0_0" "wl_0_11" 76.0942
+cap "br_0_0" "gnd_uq2" 117.033
+cap "br_0_0" "vdd_uq2" 139.984
+cap "gnd_uq5" "wl_0_11" 103.063
+cap "br_0_0" "wl_0_15" 83.1147
+cap "br_0_0" "gnd_uq8" 117.033
+cap "wl_0_15" "vdd_uq6" 29.5607
+cap "vdd_uq4" "wl_0_10" 29.5607
+cap "br_0_0" "wl_0_4" 83.1147
+cap "bl_0_0" "vdd" 129.555
+cap "wl_0_13" "vdd_uq5" 29.5607
+cap "br_0_0" "wl_0_14" 83.1147
+cap "br_0_0" "wl_0_3" 83.1147
+cap "wl_0_16" "vdd_uq7" 29.5607
+cap "bl_0_0" "wl_0_1" 76.0942
+cap "wl_0_0" "gnd_uq0" 103.063
+cap "wl_0_10" "gnd_uq4" 103.063
+cap "wl_0_14" "vdd_uq6" 29.5607
+cap "wl_0_15" "gnd_uq7" 103.063
+cap "wl_0_0" "bl_0_0" 76.0942
+cap "br_0_0" "vdd_uq6" 139.984
+cap "vdd_uq0" "wl_0_1" 29.5607
+cap "bl_0_0" "wl_0_6" 76.0942
+cap "gnd_uq8" "wl_0_17" 103.063
+cap "br_0_0" "wl_0_12" 83.1147
+cap "bl_0_0" "wl_0_2" 76.0942
+cap "bl_0_0" "wl_0_10" 76.0942
+cap "vdd_uq0" "wl_0_0" 29.5607
+cap "br_0_0" "vdd_uq4" 139.984
+cap "wl_0_4" "vdd_uq1" 29.5607
+cap "gnd_uq6" "wl_0_13" 103.063
+cap "vdd_uq8" "br_0_0" 85.7321
+cap "bl_0_0" "gnd_uq2" 108.438
+cap "bl_0_0" "vdd_uq2" 129.555
+cap "br_0_0" "gnd_uq3" 117.033
+cap "wl_0_9" "br_0_0" 83.1147
+cap "bl_0_0" "wl_0_15" 76.0942
+cap "br_0_0" "gnd_uq7" 117.033
+cap "bl_0_0" "gnd_uq8" 108.438
+cap "br_0_0" "wl_0_17" 83.1147
+cap "br_0_0" "vdd_uq1" 139.984
+cap "gnd" "wl_0_1" 103.063
+cap "bl_0_0" "wl_0_4" 76.0942
+cap "br_0_0" "gnd_uq4" 117.033
+cap "br_0_0" "gnd_uq0" 73.6245
+cap "bl_0_0" "wl_0_14" 76.0942
+cap "bl_0_0" "wl_0_3" 76.0942
+cap "bl_0_0" "br_0_0" 9868.37
+cap "vdd_uq3" "br_0_0" 139.984
+cap "gnd" "wl_0_2" 103.063
+cap "dummy_cell_1rw_18/a_145_76#" "dummy_cell_1rw_18/gnd" -0.467671
+cap "dummy_cell_1rw_18/a_76_76#" "dummy_cell_1rw_18/gnd" -0.428438
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_16/qb" 0.149733
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_17/qb" 0.328823
+cap "dummy_cell_1rw_18/qb" "dummy_cell_1rw_18/wl" 22.9
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_18/qb" 0.873022
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_18/a_76_76#" -10.0942
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_18/a_145_76#" -0.106295
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_18/bl" -262.083
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_18/wl" -7.21781
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_18/bl" 9.28002
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_18/vdd" -118.428
+cap "dummy_cell_1rw_18/vdd" "dummy_cell_1rw_18/wl" -6.62683
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_18/gnd" -36.8917
+cap "dummy_cell_1rw_18/wl" "dummy_cell_1rw_18/gnd" -5.32914
+cap "dummy_cell_1rw_17/wl" "dummy_cell_1rw_18/wl" 1.07292
+cap "dummy_cell_1rw_18/vdd" "dummy_cell_1rw_17/a_145_76#" -0.431786
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_18/qb" 0.22142
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_18/qb" 60.131
+cap "dummy_cell_1rw_16/q" "dummy_cell_1rw_17/qb" 0.0156091
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_18/wl" 24.646
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_18/bl" 53.7262
+cap "dummy_cell_1rw_18/qb" "dummy_cell_1rw_18/vdd" 0.149952
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_18/br" -0.706104
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_18/bl" 8.87636
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_18/a_145_76#" -1.90494
+cap "dummy_cell_1rw_18/a_76_76#" "dummy_cell_1rw_18/bl" 16.8224
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_18/vdd" -119.408
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_18/vdd" 0.0462447
+cap "dummy_cell_1rw_18/a_76_76#" "dummy_cell_1rw_18/wl" 35.3154
+cap "dummy_cell_1rw_18/a_145_76#" "dummy_cell_1rw_18/wl" 36.0456
+cap "dummy_cell_1rw_18/qb" "dummy_cell_1rw_18/gnd" -5.08088
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_18/gnd" -33.4697
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_17/a_145_76#" -2.0085
+cap "dummy_cell_1rw_17/wl" "dummy_cell_1rw_18/vdd" -5.57949
+cap "dummy_cell_1rw_18/vdd" "dummy_cell_1rw_18/gnd" -23.9753
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_16/a_76_76#" 0.0137542
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_18/qb" 9.78198
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_18/br" 2.49795
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_17/q" 3.98198
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_16/wl" 0.010316
+cap "dummy_cell_1rw_18/a_145_76#" "dummy_cell_1rw_18/qb" -8.00869
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_18/vdd" 0.0902074
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_18/br" 48.1607
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_18/a_145_76#" 17.9297
+cap "dummy_cell_1rw_18/a_76_76#" "dummy_cell_1rw_18/br" -1.63758
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_18/vdd" 0.149952
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_18/wl" -11.1323
+cap "dummy_cell_1rw_18/a_76_76#" "dummy_cell_1rw_18/vdd" -0.753542
+cap "dummy_cell_1rw_18/a_145_76#" "dummy_cell_1rw_18/vdd" -0.782849
+cap "dummy_cell_1rw_18/q" "dummy_cell_1rw_18/gnd" -4.51627
+cap "dummy_cell_1rw_17/a_76_76#" "dummy_cell_1rw_18/vdd" -0.402601
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_18/gnd" -0.175936
+cap "dummy_cell_1rw_17/wl" "dummy_cell_1rw_17/qb" 2.30968
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_16/q" 44.5063
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_17/a_76_76#" 16.8224
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_17/wl" 20.5903
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_16/wl" -1.04734
+cap "dummy_cell_1rw_16/q" "dummy_cell_1rw_17/wl" 0.0639278
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_18/gnd" -9.51001
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_17/qb" -4.89856
+cap "dummy_cell_1rw_17/wl" "dummy_cell_1rw_17/a_76_76#" 35.3154
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_16/q" -4.47505
+cap "dummy_cell_1rw_16/q" "dummy_cell_1rw_16/wl" 24.646
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_17/a_76_76#" -0.428438
+cap "dummy_cell_1rw_18/vdd" "dummy_cell_1rw_17/a_145_76#" -0.351064
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_16/a_145_76#" 17.9297
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_16/a_145_76#" 0.110389
+cap "dummy_cell_1rw_18/wl" "dummy_cell_1rw_17/wl" 1.07292
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_16/a_145_76#" -1.90494
+cap "dummy_cell_1rw_16/q" "dummy_cell_1rw_17/qb" 0.0759139
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_16/q" 0.0439627
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_18/vdd" -1.39946
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_18/vdd" 0.0439627
+cap "dummy_cell_1rw_16/a_145_76#" "dummy_cell_1rw_16/qb" -6.00019
+cap "dummy_cell_1rw_17/wl" "dummy_cell_1rw_16/a_145_76#" 0.0736689
+cap "dummy_cell_1rw_16/q" "dummy_cell_1rw_17/a_76_76#" 0.114706
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_18/vdd" -1.31403
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_17/a_145_76#" 17.9297
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_16/a_145_76#" -0.467671
+cap "dummy_cell_1rw_16/a_145_76#" "dummy_cell_1rw_16/wl" 36.0456
+cap "dummy_cell_1rw_15/qb" "dummy_cell_1rw_16/q" 0.107402
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_18/q" 0.648649
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_17/a_145_76#" -0.106295
+cap "dummy_cell_1rw_18/vdd" "dummy_cell_1rw_17/wl" -1.04734
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_16/a_76_76#" -1.63758
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_16/a_76_76#" 0.114706
+cap "dummy_cell_1rw_16/wl" "dummy_cell_1rw_15/wl" 1.07292
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_17/a_145_76#" -1.90494
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_18/vdd" -9.51001
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_16/a_145_76#" -0.351064
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_16/a_76_76#" 16.8224
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_18/br" 3.57945
+cap "dummy_cell_1rw_17/a_145_76#" "dummy_cell_1rw_17/wl" 36.0456
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_18/qb" 0.107402
+cap "dummy_cell_1rw_17/a_145_76#" "dummy_cell_1rw_16/wl" 0.0736689
+cap "dummy_cell_1rw_16/q" "dummy_cell_1rw_16/a_145_76#" -0.106295
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_18/br" -279.23
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_17/a_145_76#" -0.467671
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_17/q" 44.634
+cap "dummy_cell_1rw_16/a_76_76#" "dummy_cell_1rw_16/wl" 35.3154
+cap "dummy_cell_1rw_18/vdd" "dummy_cell_1rw_17/a_76_76#" -0.350941
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_16/a_76_76#" -0.428438
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_16/qb" 0.0759139
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_17/wl" 24.646
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_17/wl" -6.74699
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_16/qb" 11.812
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_17/a_145_76#" -6.00019
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_18/br" -106.558
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_16/wl" 0.0639278
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_17/q" -4.47505
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_17/wl" -10.7309
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_16/wl" -6.74699
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_16/qb" -7.85958
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_16/a_76_76#" -0.350941
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_16/wl" -10.7309
+cap "dummy_cell_1rw_16/q" "dummy_cell_1rw_17/a_145_76#" 0.110389
+cap "dummy_cell_1rw_15/q" "dummy_cell_1rw_16/q" 0.648649
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_18/bl" -113.713
+cap "dummy_cell_1rw_16/q" "dummy_cell_1rw_16/a_76_76#" -10.0942
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_18/br" -1.39946
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_16/qb" -4.89856
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_17/qb" 11.9704
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_17/wl" -4.83817
+cap "dummy_cell_1rw_17/wl" "dummy_cell_1rw_16/wl" 13.4185
+cap "dummy_cell_1rw_16/wl" "dummy_cell_1rw_16/qb" 20.5903
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_17/a_76_76#" -1.63758
+cap "dummy_cell_1rw_18/gnd" "dummy_cell_1rw_16/wl" -4.83817
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_16/q" 1.9548
+cap "dummy_cell_1rw_18/br" "dummy_cell_1rw_16/q" 3.55775
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_18/bl" -1.31403
+cap "dummy_cell_1rw_17/q" "dummy_cell_1rw_17/a_76_76#" -10.0942
+cap "dummy_cell_1rw_18/bl" "dummy_cell_1rw_17/qb" -7.85513
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_16/wl" -5.57949
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_15/a_76_76#" -1.63758
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_15/a_76_76#" 16.8224
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_17/gnd" -9.51001
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_16/qb" 48.3191
+cap "dummy_cell_1rw_15/q" "dummy_cell_1rw_14/a_145_76#" 0.110389
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_15/a_145_76#" -0.467671
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_16/qb" 8.8808
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_15/a_76_76#" -0.753542
+cap "dummy_cell_1rw_15/wl" "dummy_cell_1rw_15/q" 24.646
+cap "dummy_cell_1rw_16/qb" "dummy_cell_1rw_16/vdd" 0.149952
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_15/q" 2.87334
+cap "dummy_cell_1rw_15/wl" "dummy_cell_1rw_15/qb" 22.9
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_15/q" 53.9141
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_15/qb" 60.131
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_15/qb" 1.02122
+cap "dummy_cell_1rw_16/qb" "dummy_cell_1rw_16/wl" 2.30968
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_15/q" 0.0902074
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_15/qb" 0.149952
+cap "dummy_cell_1rw_15/qb" "dummy_cell_1rw_16/q" 0.22142
+cap "dummy_cell_1rw_15/q" "dummy_cell_1rw_16/q" 3.98198
+cap "dummy_cell_1rw_15/q" "dummy_cell_1rw_14/wl" 0.0639278
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_14/a_145_76#" -0.0807222
+cap "dummy_cell_1rw_14/wl" "dummy_cell_1rw_15/qb" 0.010316
+cap "dummy_cell_1rw_15/wl" "dummy_cell_1rw_15/a_145_76#" 36.0456
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_15/a_145_76#" 17.9297
+cap "dummy_cell_1rw_16/a_145_76#" "dummy_cell_1rw_16/vdd" -0.431786
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_15/a_145_76#" -1.90494
+cap "dummy_cell_1rw_15/q" "dummy_cell_1rw_15/a_76_76#" -10.0942
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_15/wl" -4.83817
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_15/a_145_76#" -0.782849
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_17/gnd" -109.983
+cap "dummy_cell_1rw_16/qb" "dummy_cell_1rw_15/q" 0.328823
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_17/gnd" -114.512
+cap "dummy_cell_1rw_16/qb" "dummy_cell_1rw_15/qb" 9.78198
+cap "dummy_cell_1rw_16/a_76_76#" "dummy_cell_1rw_16/vdd" -0.402601
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_16/vdd" -23.9753
+cap "dummy_cell_1rw_17/a_76_76#" "dummy_cell_1rw_16/qb" 0.0137542
+cap "dummy_cell_1rw_15/q" "dummy_cell_1rw_14/q" 0.977399
+cap "dummy_cell_1rw_16/a_145_76#" "dummy_cell_1rw_16/qb" -2.0085
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_14/wl" -20.7227
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_15/qb" 0.0156091
+cap "dummy_cell_1rw_15/wl" "dummy_cell_1rw_14/a_145_76#" 0.0736689
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_15/qb" 0.149733
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_15/q" 0.0759139
+cap "dummy_cell_1rw_15/q" "dummy_cell_1rw_14/a_76_76#" 0.114706
+cap "dummy_cell_1rw_14/a_76_76#" "dummy_cell_1rw_15/qb" 0.0137542
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_15/wl" -6.74699
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_15/a_76_76#" -0.428438
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_16/qb" -0.175936
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_15/wl" -10.7309
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_17/br" -285.185
+cap "dummy_cell_1rw_15/q" "dummy_cell_1rw_15/a_145_76#" -0.106295
+cap "dummy_cell_1rw_15/a_145_76#" "dummy_cell_1rw_15/qb" -8.00869
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_15/wl" -6.62683
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_16/vdd" -119.408
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_16/vdd" -118.428
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_14/q" -4.30199
+cap "dummy_cell_1rw_16/qb" "dummy_cell_1rw_17/wl" 0.010316
+cap "dummy_cell_1rw_16/qb" "dummy_cell_1rw_17/q" 0.0156091
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_15/q" -4.47505
+cap "dummy_cell_1rw_15/wl" "dummy_cell_1rw_14/wl" 6.70923
+cap "dummy_cell_1rw_17/bl" "dummy_cell_1rw_16/q" 9.40778
+cap "dummy_cell_1rw_17/br" "dummy_cell_1rw_16/q" -0.684409
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_15/qb" -5.0745
+cap "dummy_cell_1rw_15/wl" "dummy_cell_1rw_16/wl" 1.07292
+cap "dummy_cell_1rw_17/gnd" "dummy_cell_1rw_14/a_76_76#" -0.0414892
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_17/gnd" -4.89856
+cap "dummy_cell_1rw_17/qb" "dummy_cell_1rw_16/qb" 0.149733
+cap "dummy_cell_1rw_16/vdd" "dummy_cell_1rw_16/q" 0.0462447
+cap "dummy_cell_1rw_15/wl" "dummy_cell_1rw_15/a_76_76#" 35.3154
+cap "dummy_cell_1rw_14/a_145_76#" "dummy_cell_1rw_16/br" 17.9297
+cap "dummy_cell_1rw_16/br" "dummy_cell_1rw_15/gnd" 3.42504
+cap "dummy_cell_1rw_14/wl" "dummy_cell_1rw_16/br" -6.74699
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_14/a_76_76#" -10.0942
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_13/qb" 0.328823
+cap "dummy_cell_1rw_13/wl" "dummy_cell_1rw_13/qb" 2.30968
+cap "dummy_cell_1rw_15/a_145_76#" "dummy_cell_1rw_14/wl" 0.0736689
+cap "dummy_cell_1rw_15/qb" "dummy_cell_1rw_14/q" 0.0759139
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_15/bl" 53.9141
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_13/a_76_76#" -2.59213
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_15/wl" 0.0639278
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_16/br" 10.2448
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_15/q" 0.0156091
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_12/a_145_76#" 0.110389
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_12/q" 0.977399
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_14/a_76_76#" 16.8224
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_13/qb" 8.34114
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_16/br" 60.131
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_13/a_76_76#" -0.402601
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_14/wl" 24.646
+cap "dummy_cell_1rw_13/a_145_76#" "dummy_cell_1rw_13/qb" -2.0085
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_16/br" -119.408
+cap "dummy_cell_1rw_13/wl" "dummy_cell_1rw_14/wl" 1.07292
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_14/a_145_76#" -0.106295
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_15/gnd" -0.173065
+cap "dummy_cell_1rw_14/a_76_76#" "dummy_cell_1rw_14/wl" 35.3154
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_13/q" 4.63063
+cap "dummy_cell_1rw_13/wl" "dummy_cell_1rw_13/q" 3.08402
+cap "dummy_cell_1rw_14/a_76_76#" "dummy_cell_1rw_15/gnd" -0.386949
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_14/wl" -10.7309
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_13/qb" 0.010316
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_14/a_145_76#" -1.90494
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_15/gnd" 0.798615
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_15/gnd" -0.175936
+cap "dummy_cell_1rw_15/wl" "dummy_cell_1rw_14/wl" 6.70923
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_15/a_76_76#" 0.114706
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_13/q" 48.5094
+cap "dummy_cell_1rw_13/wl" "dummy_cell_1rw_14/vdd" -5.57949
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_14/vdd" 0.0902074
+cap "dummy_cell_1rw_14/a_145_76#" "dummy_cell_1rw_14/wl" 36.0456
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_14/qb" 1.02122
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_13/qb" 9.78198
+cap "dummy_cell_1rw_14/a_76_76#" "dummy_cell_1rw_14/vdd" -0.753542
+cap "dummy_cell_1rw_14/a_145_76#" "dummy_cell_1rw_15/gnd" -0.386949
+cap "dummy_cell_1rw_14/wl" "dummy_cell_1rw_15/gnd" 15.8845
+cap "dummy_cell_1rw_15/qb" "dummy_cell_1rw_14/qb" 0.149733
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_12/qb" 0.149733
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_14/vdd" 0.149952
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_14/vdd" -118.428
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_15/wl" 0.010316
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_13/q" 0.0639278
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_15/q" 0.977399
+cap "dummy_cell_1rw_12/a_76_76#" "dummy_cell_1rw_13/qb" 0.0137542
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_15/gnd" -0.173065
+cap "dummy_cell_1rw_13/a_145_76#" "dummy_cell_1rw_14/vdd" -0.431786
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_14/a_145_76#" -8.00869
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_14/wl" 22.9
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_16/br" 2.87334
+cap "dummy_cell_1rw_14/q" "dummy_cell_1rw_15/a_145_76#" 0.110389
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_15/gnd" -0.175936
+cap "dummy_cell_1rw_14/a_145_76#" "dummy_cell_1rw_14/vdd" -0.782849
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_14/wl" -6.62683
+cap "dummy_cell_1rw_14/a_76_76#" "dummy_cell_1rw_16/br" -1.63758
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_15/gnd" -14.4653
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_13/q" 0.328823
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_16/br" 52.9612
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_16/br" -272.526
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_12/q" 0.0156091
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_12/qb" 0.0759139
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_14/vdd" 0.0902074
+cap "dummy_cell_1rw_15/a_76_76#" "dummy_cell_1rw_14/qb" 0.0137542
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_12/a_76_76#" 0.114706
+cap "dummy_cell_1rw_14/qb" "dummy_cell_1rw_14/vdd" 0.149952
+cap "dummy_cell_1rw_13/a_145_76#" "dummy_cell_1rw_15/br" 17.9297
+cap "dummy_cell_1rw_12/a_145_76#" "dummy_cell_1rw_13/wl" 0.0736689
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_13/wl" 13.4185
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_13/wl" 0.0639278
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_12/vdd" -1.35051
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_13/qb" -7.31992
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_13/wl" 21.562
+cap "dummy_cell_1rw_13/a_76_76#" "dummy_cell_1rw_12/q" 0.114706
+cap "dummy_cell_1rw_13/a_76_76#" "dummy_cell_1rw_13/q" -7.50208
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_13/a_145_76#" -0.351064
+cap "dummy_cell_1rw_12/a_145_76#" "dummy_cell_1rw_15/br" 17.9297
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_15/gnd" -113.713
+cap "dummy_cell_1rw_14/wl" "dummy_cell_1rw_13/wl" 1.07292
+cap "dummy_cell_1rw_12/a_76_76#" "dummy_cell_1rw_12/wl" 35.3154
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_15/br" -6.74699
+cap "dummy_cell_1rw_12/a_76_76#" "dummy_cell_1rw_12/q" -10.0942
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_15/br" 3.29084
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_12/qb" 1.43983
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_15/br" -7.37147
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_11/q" 0.648649
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_12/qb" 3.42758
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_13/wl" 20.5903
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_13/a_145_76#" 0.0736689
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_13/a_145_76#" 0.110389
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_13/a_145_76#" -0.106295
+cap "dummy_cell_1rw_13/wl" "dummy_cell_1rw_15/gnd" -4.83817
+cap "dummy_cell_1rw_12/qb" "dummy_cell_1rw_13/wl" 0.010316
+cap "dummy_cell_1rw_12/a_76_76#" "dummy_cell_1rw_12/vdd" -0.350941
+cap "dummy_cell_1rw_13/a_76_76#" "dummy_cell_1rw_15/gnd" -0.428438
+cap "dummy_cell_1rw_12/vdd" "dummy_cell_1rw_15/br" -0.890758
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_15/br" 7.16982
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_12/a_145_76#" 36.0456
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_12/a_145_76#" -0.106295
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_12/wl" 24.646
+cap "dummy_cell_1rw_13/a_76_76#" "dummy_cell_1rw_12/qb" 0.0137542
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_12/q" 0.977399
+cap "dummy_cell_1rw_12/a_76_76#" "dummy_cell_1rw_15/gnd" -0.428438
+cap "dummy_cell_1rw_15/br" "dummy_cell_1rw_15/gnd" -106.558
+cap "dummy_cell_1rw_12/qb" "dummy_cell_1rw_15/br" 53.2784
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_13/wl" -10.7309
+cap "dummy_cell_1rw_13/a_76_76#" "dummy_cell_1rw_15/bl" 16.8224
+cap "dummy_cell_1rw_13/a_145_76#" "dummy_cell_1rw_13/qb" -6.00019
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_15/gnd" -9.51001
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_15/br" -279.23
+cap "dummy_cell_1rw_12/a_76_76#" "dummy_cell_1rw_15/bl" 16.8224
+cap "dummy_cell_1rw_12/qb" "dummy_cell_1rw_11/q" 0.22142
+cap "dummy_cell_1rw_13/a_145_76#" "dummy_cell_1rw_15/gnd" -0.467671
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_12/vdd" -1.04734
+cap "dummy_cell_1rw_12/vdd" "dummy_cell_1rw_12/a_145_76#" -0.351064
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_13/qb" 0.0759139
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_12/vdd" 0.0439627
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_15/bl" -1.31403
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_15/gnd" -4.83817
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_12/qb" 22.9
+cap "dummy_cell_1rw_12/qb" "dummy_cell_1rw_12/a_145_76#" -8.00869
+cap "dummy_cell_1rw_12/a_145_76#" "dummy_cell_1rw_15/gnd" -0.467671
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_15/gnd" -4.47505
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_13/a_145_76#" -1.90494
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_15/gnd" -4.30199
+cap "dummy_cell_1rw_13/a_76_76#" "dummy_cell_1rw_13/wl" 35.3154
+cap "dummy_cell_1rw_13/q" "dummy_cell_1rw_12/qb" 0.0156091
+cap "dummy_cell_1rw_15/br" "dummy_cell_1rw_13/wl" -6.74699
+cap "dummy_cell_1rw_13/a_76_76#" "dummy_cell_1rw_15/br" -1.63758
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_12/a_145_76#" -1.90494
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_12/wl" -10.7309
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_12/q" 50.2617
+cap "dummy_cell_1rw_15/bl" "dummy_cell_1rw_13/q" 5.40463
+cap "dummy_cell_1rw_12/a_76_76#" "dummy_cell_1rw_15/br" -1.63758
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_13/wl" -1.04734
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_11/wl" 1.07292
+cap "dummy_cell_1rw_13/a_76_76#" "dummy_cell_1rw_14/vdd" -0.350941
+cap "dummy_cell_1rw_12/vdd" "dummy_cell_1rw_15/gnd" -9.51001
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_15/gnd" -4.89856
+cap "dummy_cell_1rw_13/a_145_76#" "dummy_cell_1rw_13/wl" 36.0456
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_12/q" 0.107402
+cap "dummy_cell_1rw_13/qb" "dummy_cell_1rw_12/qb" 0.149733
+cap "dummy_cell_1rw_12/vdd" "dummy_cell_1rw_12/qb" 0.107456
+cap "dummy_cell_1rw_14/vdd" "dummy_cell_1rw_15/br" -1.39946
+cap "dummy_cell_1rw_12/qb" "dummy_cell_1rw_15/gnd" -5.0745
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_10/a_76_76#" 14.8378
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_10/q" -7.50208
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_10/vdd" -0.350941
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_11/a_76_76#" 16.8224
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_10/wl" -20.7034
+cap "dummy_cell_1rw_10/wl" "dummy_cell_1rw_11/wl" 8.14402
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_10/q" -7.69485
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_12/vdd" -23.9753
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_11/q" 0.114706
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_11/wl" -4.83817
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_10/vdd" -1.31403
+cap "dummy_cell_1rw_12/vdd" "dummy_cell_1rw_11/wl" -6.62683
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_12/q" 3.65232
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_12/qb" -0.418604
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_10/a_145_76#" -1.0692
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_13/br" -0.922778
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_11/qb" 0.0137542
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_11/q" 53.9141
+cap "dummy_cell_1rw_10/a_145_76#" "dummy_cell_1rw_10/q" -0.106295
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_10/qb" -0.367889
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_12/vdd" -5.57949
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_11/a_76_76#" -10.0942
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_10/q" 0.977399
+cap "dummy_cell_1rw_12/wl" "dummy_cell_1rw_11/wl" 1.07292
+cap "dummy_cell_1rw_10/a_145_76#" "dummy_cell_1rw_10/vdd" -0.351064
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_13/br" -307.711
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_11/a_76_76#" -1.63758
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_12/qb" 0.107402
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_12/q" 3.98198
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_11/qb" 1.02122
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_10/q" -0.804079
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_10/vdd" -1.39946
+cap "dummy_cell_1rw_11/a_145_76#" "dummy_cell_1rw_13/bl" -1.90494
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_10/q" 0.0156091
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_10/a_145_76#" 0.110389
+cap "dummy_cell_1rw_10/a_145_76#" "dummy_cell_1rw_10/qb" -6.00019
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_12/qb" 6.85267
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_12/qb" 6.35441
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_10/qb" 0.0759139
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_12/q" -0.417493
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_12/q" 0.22142
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_10/a_145_76#" 15.9058
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_13/br" 2.87334
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_10/qb" -7.58629
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_10/qb" 0.149733
+cap "dummy_cell_1rw_11/a_145_76#" "dummy_cell_1rw_11/q" -0.106295
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_10/wl" 11.4482
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_13/gnd" -0.428438
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_11/qb" 60.131
+cap "dummy_cell_1rw_11/a_145_76#" "dummy_cell_1rw_11/qb" -8.00869
+cap "dummy_cell_1rw_11/a_145_76#" "dummy_cell_1rw_13/br" 17.9297
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_10/wl" -0.258243
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_13/gnd" -124.978
+cap "dummy_cell_1rw_12/vdd" "dummy_cell_1rw_11/a_76_76#" -0.753542
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_12/vdd" -118.392
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_11/a_76_76#" -0.428438
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_10/q" -4.30199
+cap "dummy_cell_1rw_13/bl" "dummy_cell_1rw_11/wl" -10.7309
+cap "dummy_cell_1rw_11/wl" "dummy_cell_1rw_11/a_76_76#" 35.3154
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_10/vdd" -9.51001
+cap "dummy_cell_1rw_12/a_145_76#" "dummy_cell_1rw_12/vdd" -0.431786
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_10/wl" 0.0639278
+cap "dummy_cell_1rw_10/a_145_76#" "dummy_cell_1rw_10/wl" 11.4482
+cap "dummy_cell_1rw_12/q" "dummy_cell_1rw_12/vdd" 0.0462447
+cap "dummy_cell_1rw_12/vdd" "dummy_cell_1rw_12/qb" 0.0424961
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_10/qb" -4.89856
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_10/a_145_76#" -0.467671
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_13/gnd" -4.47505
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_11/wl" 24.646
+cap "dummy_cell_1rw_10/a_145_76#" "dummy_cell_1rw_11/wl" 0.0736689
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_12/vdd" 0.0902074
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_10/wl" 0.010316
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_10/wl" -0.900883
+cap "dummy_cell_1rw_12/a_76_76#" "dummy_cell_1rw_12/vdd" -0.402601
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_13/br" -120.692
+cap "dummy_cell_1rw_13/gnd" "dummy_cell_1rw_11/qb" -5.0745
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_12/vdd" -119.916
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_11/wl" 22.9
+cap "dummy_cell_1rw_13/br" "dummy_cell_1rw_11/wl" -6.74699
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_12/vdd" 0.149952
+cap "dummy_cell_1rw_11/a_145_76#" "dummy_cell_1rw_12/vdd" -0.782849
+cap "dummy_cell_1rw_11/a_145_76#" "dummy_cell_1rw_13/gnd" -0.467671
+cap "dummy_cell_1rw_11/a_145_76#" "dummy_cell_1rw_11/wl" 36.0456
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_9/qb" 0.0156091
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_10/a_76_76#" -0.402601
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_10/wl" 23.8672
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_10/q" 61.6089
+cap "dummy_cell_1rw_11/wl" "dummy_cell_1rw_10/wl" 5.27445
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_10/q" 0.977399
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_10/qb" 1.38911
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_9/q" 0.0639278
+cap "dummy_cell_1rw_12/br" "dummy_cell_1rw_11/gnd" 20.8342
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_11/qb" 0.0759139
+cap "dummy_cell_1rw_11/q" "dummy_cell_1rw_10/qb" 0.0156091
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_9/qb" 2.30968
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_10/wl" 24.646
+cap "dummy_cell_1rw_11/qb" "dummy_cell_1rw_10/qb" 0.149733
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_9/q" 4.63063
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_10/vdd" 0.0902074
+cap "dummy_cell_1rw_9/qb" "dummy_cell_1rw_9/a_145_76#" -2.0085
+cap "dummy_cell_1rw_10/a_145_76#" "dummy_cell_1rw_12/br" 2.02397
+cap "dummy_cell_1rw_10/wl" "dummy_cell_1rw_10/qb" 22.9
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_10/qb" 0.328823
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_10/qb" 0.149952
+cap "dummy_cell_1rw_9/qb" "dummy_cell_1rw_12/br" 59.6939
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_10/vdd" -117.114
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_10/wl" -10.4727
+cap "dummy_cell_1rw_9/qb" "dummy_cell_1rw_11/gnd" -0.175936
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_9/q" 53.7846
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_8/a_76_76#" 0.114706
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_8/qb" 0.0759139
+cap "dummy_cell_1rw_10/a_76_76#" "dummy_cell_1rw_12/br" -0.7148
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_11/a_145_76#" 0.110389
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_10/wl" -6.62683
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_10/vdd" 0.0902074
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_8/q" 0.977399
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_12/br" 3.67742
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_11/gnd" -0.173065
+cap "dummy_cell_1rw_11/a_145_76#" "dummy_cell_1rw_10/wl" 0.0736689
+cap "dummy_cell_1rw_11/a_76_76#" "dummy_cell_1rw_10/q" 0.114706
+cap "dummy_cell_1rw_12/br" "dummy_cell_1rw_10/qb" 67.7173
+cap "dummy_cell_1rw_11/a_76_76#" "dummy_cell_1rw_10/qb" 0.0137542
+cap "dummy_cell_1rw_11/gnd" "dummy_cell_1rw_10/qb" -0.175936
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_9/qb" 0.010316
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_12/br" -250
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_11/gnd" 16.592
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_10/vdd" -5.57949
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_10/wl" 1.07292
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_9/q" 3.08402
+cap "dummy_cell_1rw_10/a_145_76#" "dummy_cell_1rw_10/qb" -2.0085
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_9/qb" 0.328823
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_9/a_145_76#" -0.431786
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_9/a_76_76#" -0.402601
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_10/a_145_76#" -0.83574
+cap "dummy_cell_1rw_9/qb" "dummy_cell_1rw_10/qb" 9.78198
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_9/a_76_76#" -2.59213
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_12/br" -118.008
+cap "dummy_cell_1rw_12/br" "dummy_cell_1rw_10/wl" -5.84611
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_12/br" 7.49915
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_11/gnd" -14.4653
+cap "dummy_cell_1rw_11/gnd" "dummy_cell_1rw_10/wl" 15.8653
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_10/a_76_76#" -2.59213
+cap "dummy_cell_1rw_9/qb" "dummy_cell_1rw_8/a_76_76#" 0.0137542
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_11/gnd" -0.173065
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_9/qb" 5.40523
+cap "dummy_cell_1rw_10/q" "dummy_cell_1rw_11/wl" 0.0639278
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_9/qb" 0.149733
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_10/a_145_76#" -0.431786
+cap "dummy_cell_1rw_11/bl" "dummy_cell_1rw_10/a_76_76#" 1.98462
+cap "dummy_cell_1rw_10/a_145_76#" "dummy_cell_1rw_10/wl" 24.5974
+cap "dummy_cell_1rw_11/wl" "dummy_cell_1rw_10/qb" 0.010316
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_8/a_145_76#" 0.110389
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_9/qb" 0.149952
+cap "dummy_cell_1rw_10/br" "dummy_cell_1rw_10/bl" -283.344
+cap "dummy_cell_1rw_11/gnd" "dummy_cell_1rw_9/a_76_76#" -0.428438
+cap "dummy_cell_1rw_8/vdd" "dummy_cell_1rw_10/bl" -0.46274
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_11/gnd" -5.0745
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_10/bl" 53.9141
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_11/gnd" -9.51001
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_11/gnd" -4.83817
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_7/qb" 0.107402
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_7/q" 0.22142
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_10/br" 17.9297
+cap "dummy_cell_1rw_8/a_145_76#" "dummy_cell_1rw_10/bl" -1.90494
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_10/bl" 0.129469
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_8/q" 0.110389
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_9/q" -0.106295
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_8/vdd" 0.149952
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_10/br" -1.39946
+cap "dummy_cell_1rw_9/a_76_76#" "dummy_cell_1rw_10/br" -1.63758
+cap "dummy_cell_1rw_10/bl" "dummy_cell_1rw_9/qb" -4.38401
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_9/a_76_76#" 0.114706
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_10/br" 60.131
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_9/a_76_76#" -7.50208
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_10/br" -6.74699
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_8/q" 0.0639278
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_9/q" 0.0156091
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_9/qb" -6.00019
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_8/a_145_76#" -8.00869
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_8/a_76_76#" 35.3154
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_9/q" 21.562
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_8/a_145_76#" 0.0736689
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_10/bl" -10.7309
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_9/qb" 0.149733
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_9/qb" 20.5903
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_8/wl" 0.0736689
+cap "dummy_cell_1rw_10/bl" "dummy_cell_1rw_8/a_76_76#" 16.8224
+cap "dummy_cell_1rw_11/gnd" "dummy_cell_1rw_10/br" -113.258
+cap "dummy_cell_1rw_8/vdd" "dummy_cell_1rw_11/gnd" -9.51001
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_11/gnd" -4.47505
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_11/gnd" -4.30199
+cap "dummy_cell_1rw_11/gnd" "dummy_cell_1rw_8/a_145_76#" -0.467671
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_8/qb" 22.9
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_7/q" 2.31532
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_10/bl" -1.90494
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_9/wl" 13.4185
+cap "dummy_cell_1rw_8/vdd" "dummy_cell_1rw_10/br" -0.431384
+cap "dummy_cell_1rw_11/gnd" "dummy_cell_1rw_9/qb" -4.89856
+cap "dummy_cell_1rw_8/vdd" "dummy_cell_1rw_8/q" 0.0902074
+cap "dummy_cell_1rw_9/a_76_76#" "dummy_cell_1rw_10/bl" 16.8224
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_10/br" 2.87334
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_10/bl" 1.02122
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_10/bl" -1.31403
+cap "dummy_cell_1rw_8/vdd" "dummy_cell_1rw_8/a_145_76#" -0.351064
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_10/br" -4.62581
+cap "dummy_cell_1rw_9/q" "dummy_cell_1rw_8/q" 0.977399
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_7/qb" 4.89099
+cap "dummy_cell_1rw_10/br" "dummy_cell_1rw_8/a_145_76#" 17.9297
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_10/bl" -10.7309
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_8/a_145_76#" -0.106295
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_10/vdd" -0.351064
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_11/gnd" -4.83817
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_9/wl" 36.0456
+cap "dummy_cell_1rw_10/br" "dummy_cell_1rw_9/qb" 0.437111
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_10/wl" 1.07292
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_9/qb" 0.0759139
+cap "dummy_cell_1rw_10/vdd" "dummy_cell_1rw_9/a_76_76#" -0.350941
+cap "dummy_cell_1rw_11/gnd" "dummy_cell_1rw_8/a_76_76#" -0.428438
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_9/a_76_76#" 0.0137542
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_9/a_76_76#" 35.3154
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_8/qb" 0.010316
+cap "dummy_cell_1rw_11/gnd" "dummy_cell_1rw_10/bl" -119.04
+cap "dummy_cell_1rw_9/wl" "dummy_cell_1rw_10/vdd" -1.04734
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_8/vdd" -1.04734
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_7/wl" 1.07292
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_10/br" -6.74699
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_8/q" 24.646
+cap "dummy_cell_1rw_9/a_145_76#" "dummy_cell_1rw_11/gnd" -0.467671
+cap "dummy_cell_1rw_8/vdd" "dummy_cell_1rw_8/a_76_76#" -0.350941
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_8/a_145_76#" 36.0456
+cap "dummy_cell_1rw_10/br" "dummy_cell_1rw_8/a_76_76#" -1.63758
+cap "dummy_cell_1rw_8/q" "dummy_cell_1rw_8/a_76_76#" -10.0942
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_6/qb" 19.3988
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_7/a_145_76#" -0.106295
+cap "dummy_cell_1rw_7/a_76_76#" "dummy_cell_1rw_8/vdd" -0.753542
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_6/a_76_76#" -0.350941
+cap "dummy_cell_1rw_9/bl" "dummy_cell_1rw_9/gnd" -124.114
+cap "dummy_cell_1rw_8/a_145_76#" "dummy_cell_1rw_8/vdd" -0.431786
+cap "dummy_cell_1rw_6/q" "dummy_cell_1rw_6/a_76_76#" -7.50208
+cap "dummy_cell_1rw_7/qb" "dummy_cell_1rw_9/bl" 1.02122
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_6/vdd" -0.351064
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_6/vdd" -1.39946
+cap "dummy_cell_1rw_7/a_145_76#" "dummy_cell_1rw_9/bl" -1.90494
+cap "dummy_cell_1rw_7/qb" "dummy_cell_1rw_9/gnd" -5.0745
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_7/wl" 1.07292
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_6/a_76_76#" 35.3154
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_7/wl" 13.4185
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_6/q" -1.82909
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_6/q" -0.106295
+cap "dummy_cell_1rw_7/a_145_76#" "dummy_cell_1rw_9/gnd" -0.467671
+cap "dummy_cell_1rw_7/wl" "dummy_cell_1rw_8/vdd" -6.62683
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_6/wl" -6.74699
+cap "dummy_cell_1rw_8/a_76_76#" "dummy_cell_1rw_8/vdd" -0.402601
+cap "dummy_cell_1rw_7/qb" "dummy_cell_1rw_7/a_145_76#" -8.00869
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_6/q" 0.977399
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_6/a_145_76#" 36.0456
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_8/vdd" -120.376
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_7/q" 0.0639278
+cap "dummy_cell_1rw_7/a_76_76#" "dummy_cell_1rw_7/wl" 35.3154
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_9/bl" -1.31403
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_8/vdd" -2.13163e-14
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_8/vdd" 0.0902074
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_9/gnd" -9.51001
+cap "dummy_cell_1rw_6/q" "dummy_cell_1rw_9/bl" -6.01245
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_7/a_76_76#" -1.63758
+cap "dummy_cell_1rw_6/q" "dummy_cell_1rw_9/gnd" -4.30199
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_6/qb" -5.88525
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_6/qb" -6.00019
+cap "dummy_cell_1rw_6/q" "dummy_cell_1rw_7/qb" 0.0156091
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_9/bl" -10.7309
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_6/qb" 0.0759139
+cap "dummy_cell_1rw_7/a_76_76#" "dummy_cell_1rw_7/q" -10.0942
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_9/gnd" -6.91158
+cap "dummy_cell_1rw_8/vdd" "dummy_cell_1rw_9/bl" -119.279
+cap "dummy_cell_1rw_8/vdd" "dummy_cell_1rw_9/gnd" -23.9753
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_7/qb" 0.010316
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_6/a_76_76#" -1.63758
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_7/wl" 0.0736689
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_7/wl" -6.74699
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_7/a_145_76#" 0.0736689
+cap "dummy_cell_1rw_7/qb" "dummy_cell_1rw_8/vdd" 0.149952
+cap "dummy_cell_1rw_7/a_145_76#" "dummy_cell_1rw_8/vdd" -0.782849
+cap "dummy_cell_1rw_7/a_76_76#" "dummy_cell_1rw_9/bl" 16.8224
+cap "dummy_cell_1rw_6/qb" "dummy_cell_1rw_9/gnd" -4.89856
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_6/a_76_76#" 0.114706
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_7/wl" 24.646
+cap "dummy_cell_1rw_6/qb" "dummy_cell_1rw_9/bl" -1.40063
+cap "dummy_cell_1rw_7/a_76_76#" "dummy_cell_1rw_9/gnd" -0.428438
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_6/a_145_76#" 17.9297
+cap "dummy_cell_1rw_6/qb" "dummy_cell_1rw_7/qb" 0.149733
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_8/q" 2.31532
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_7/q" 0.110389
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_7/q" 2.87334
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_5/gnd" 0.167304
+cap "dummy_cell_1rw_6/a_76_76#" "dummy_cell_1rw_9/bl" 16.8224
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_7/q" 0.107402
+cap "dummy_cell_1rw_7/wl" "dummy_cell_1rw_9/bl" -10.7309
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_6/vdd" -1.04734
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_5/wl" 1.07292
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_6/q" 20.2991
+cap "dummy_cell_1rw_6/a_76_76#" "dummy_cell_1rw_9/gnd" -0.428438
+cap "dummy_cell_1rw_7/wl" "dummy_cell_1rw_9/gnd" -4.83817
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_9/bl" -303.597
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_9/bl" -1.90494
+cap "dummy_cell_1rw_7/qb" "dummy_cell_1rw_6/a_76_76#" 0.0137542
+cap "dummy_cell_1rw_7/qb" "dummy_cell_1rw_7/wl" 22.9
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_9/gnd" -119.523
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_9/gnd" -0.467671
+cap "dummy_cell_1rw_7/wl" "dummy_cell_1rw_7/a_145_76#" 36.0456
+cap "dummy_cell_1rw_8/wl" "dummy_cell_1rw_8/vdd" -5.57949
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_9/bl" 53.9141
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_7/qb" 60.131
+cap "dummy_cell_1rw_9/br" "dummy_cell_1rw_7/a_145_76#" 17.9297
+cap "dummy_cell_1rw_7/qb" "dummy_cell_1rw_8/q" 0.22142
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_9/gnd" -4.47505
+cap "dummy_cell_1rw_8/qb" "dummy_cell_1rw_7/qb" 4.89099
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_7/gnd" 1.25994
+cap "dummy_cell_1rw_5/wl" "dummy_cell_1rw_5/qb" 2.30968
+cap "dummy_cell_1rw_7/bl" "dummy_cell_1rw_7/gnd" 20.801
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_6/q" 0.977399
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_6/qb" 2.30968
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_5/a_76_76#" -0.402601
+cap "dummy_cell_1rw_4/wl" "dummy_cell_1rw_5/qb" 0.010316
+cap "dummy_cell_1rw_6/q" "dummy_cell_1rw_7/gnd" -0.173065
+cap "dummy_cell_1rw_7/bl" "dummy_cell_1rw_6/qb" 2.42186
+cap "dummy_cell_1rw_5/qb" "dummy_cell_1rw_4/a_76_76#" 0.0137542
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_7/gnd" -0.173065
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_6/qb" 0.328823
+cap "dummy_cell_1rw_5/qb" "dummy_cell_1rw_7/bl" 2.42186
+cap "dummy_cell_1rw_7/a_76_76#" "dummy_cell_1rw_6/qb" 0.0137542
+cap "dummy_cell_1rw_5/qb" "dummy_cell_1rw_6/q" 0.328823
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_5/a_145_76#" -0.431786
+cap "dummy_cell_1rw_5/wl" "dummy_cell_1rw_5/q" 3.08402
+cap "dummy_cell_1rw_8/br" "dummy_cell_1rw_6/vdd" -118.008
+cap "dummy_cell_1rw_6/a_76_76#" "dummy_cell_1rw_6/q" -2.59213
+cap "dummy_cell_1rw_7/wl" "dummy_cell_1rw_6/qb" 0.010316
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_5/qb" 0.0156091
+cap "dummy_cell_1rw_4/wl" "dummy_cell_1rw_5/q" 0.0639278
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_6/q" 3.08402
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_6/vdd" -0.431786
+cap "dummy_cell_1rw_4/a_145_76#" "dummy_cell_1rw_5/q" 0.110389
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_7/bl" 58.7203
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_4/a_76_76#" 0.114706
+cap "dummy_cell_1rw_7/bl" "dummy_cell_1rw_6/q" 58.7203
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_6/q" 4.63063
+cap "dummy_cell_1rw_7/a_76_76#" "dummy_cell_1rw_6/q" 0.114706
+cap "dummy_cell_1rw_8/br" "dummy_cell_1rw_7/gnd" 25.9295
+cap "dummy_cell_1rw_5/qb" "dummy_cell_1rw_5/a_145_76#" -2.0085
+cap "dummy_cell_1rw_8/br" "dummy_cell_1rw_6/qb" 64.81
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_5/q" 0.977399
+cap "dummy_cell_1rw_6/a_145_76#" "dummy_cell_1rw_6/qb" -2.0085
+cap "dummy_cell_1rw_6/q" "dummy_cell_1rw_7/wl" 0.0639278
+cap "dummy_cell_1rw_5/qb" "dummy_cell_1rw_4/qb" 0.149733
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_5/a_76_76#" -2.59213
+cap "dummy_cell_1rw_8/br" "dummy_cell_1rw_5/qb" 64.81
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_7/gnd" -14.4653
+cap "dummy_cell_1rw_7/qb" "dummy_cell_1rw_6/qb" 0.149733
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_6/qb" 0.149952
+cap "dummy_cell_1rw_6/q" "dummy_cell_1rw_7/a_145_76#" 0.110389
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_5/qb" 0.149952
+cap "dummy_cell_1rw_5/wl" "dummy_cell_1rw_6/vdd" -5.57949
+cap "dummy_cell_1rw_8/br" "dummy_cell_1rw_7/bl" -250
+cap "dummy_cell_1rw_7/q" "dummy_cell_1rw_6/qb" 0.0156091
+cap "dummy_cell_1rw_6/a_76_76#" "dummy_cell_1rw_6/vdd" -0.402601
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_4/qb" 0.0759139
+cap "dummy_cell_1rw_8/br" "dummy_cell_1rw_5/q" 4.70243
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_6/wl" -5.57949
+cap "dummy_cell_1rw_7/gnd" "dummy_cell_1rw_6/qb" -0.175936
+cap "dummy_cell_1rw_8/br" "dummy_cell_1rw_6/q" 4.70243
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_7/bl" -117.114
+cap "dummy_cell_1rw_5/qb" "dummy_cell_1rw_7/gnd" -0.175936
+cap "dummy_cell_1rw_6/q" "dummy_cell_1rw_7/qb" 0.0759139
+cap "dummy_cell_1rw_5/qb" "dummy_cell_1rw_6/qb" 9.78198
+cap "dummy_cell_1rw_5/wl" "dummy_cell_1rw_7/gnd" 1.25994
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_6/q" 0.0902074
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_5/q" 0.0902074
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_5/a_76_76#" 0.114706
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_4/a_76_76#" -0.753542
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_4/vdd" -0.431786
+cap "dummy_cell_1rw_3/a_76_76#" "dummy_cell_1rw_4/vdd" -0.402601
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_6/bl" -303.597
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_6/bl" 1.02122
+cap "dummy_cell_1rw_6/bl" "dummy_cell_1rw_4/a_145_76#" -1.90494
+cap "dummy_cell_1rw_3/qb" "dummy_cell_1rw_4/vdd" -1.42109e-14
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_6/bl" -124.114
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_5/q" -1.82909
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_5/q" 0.0156091
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_4/a_76_76#" -1.63758
+cap "dummy_cell_1rw_6/bl" "dummy_cell_1rw_5/qb" -1.40063
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_4/vdd" 0.0902074
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_6/vdd" -0.351064
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_5/q" -4.30199
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_3/qb" 4.89099
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_4/a_76_76#" -0.428438
+cap "dummy_cell_1rw_6/bl" "dummy_cell_1rw_5/wl" -10.7309
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_4/wl" -6.62683
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_4/vdd" 7.10543e-15
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_5/br" 2.87334
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_5/wl" 20.2991
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_4/a_145_76#" -0.106295
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_5/a_76_76#" -0.350941
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_4/wl" -6.74699
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_5/gnd" -4.47505
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_4/wl" 22.9
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_5/br" 17.9297
+cap "dummy_cell_1rw_4/a_145_76#" "dummy_cell_1rw_4/wl" 36.0456
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_5/qb" 0.0759139
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_3/q" 0.22142
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_4/wl" -4.83817
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_5/qb" -6.00019
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_5/gnd" -0.467671
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_5/wl" 0.0639278
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_5/a_76_76#" -1.63758
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_5/wl" 36.0456
+cap "dummy_cell_1rw_5/wl" "dummy_cell_1rw_4/wl" 13.4185
+cap "dummy_cell_1rw_4/wl" "dummy_cell_1rw_3/wl" 1.07292
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_5/a_76_76#" 0.0137542
+cap "dummy_cell_1rw_6/wl" "dummy_cell_1rw_5/wl" 1.07292
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_5/br" -1.39946
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_5/a_76_76#" -0.428438
+cap "dummy_cell_1rw_4/a_76_76#" "dummy_cell_1rw_6/bl" 16.8224
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_6/bl" -6.01245
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_4/vdd" -120.376
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_4/vdd" 0.149952
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_4/a_145_76#" -0.782849
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_5/gnd" -9.51001
+cap "dummy_cell_1rw_5/a_76_76#" "dummy_cell_1rw_5/wl" 35.3154
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_6/bl" 53.9141
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_4/vdd" -23.9753
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_5/br" 60.131
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_4/a_145_76#" -8.00869
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_5/wl" -1.04734
+cap "dummy_cell_1rw_6/bl" "dummy_cell_1rw_4/wl" -10.7309
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_5/q" 0.977399
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_6/bl" -1.90494
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_4/a_145_76#" 17.9297
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_3/wl" -5.57949
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_4/a_76_76#" -10.0942
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_5/br" -119.523
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_5/qb" 0.149733
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_5/gnd" -5.0745
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_5/q" -0.106295
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_4/a_145_76#" -0.467671
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_5/qb" -5.88525
+cap "dummy_cell_1rw_4/a_76_76#" "dummy_cell_1rw_4/wl" 35.3154
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_3/qb" 0.107402
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_5/wl" 0.010316
+cap "dummy_cell_1rw_6/bl" "dummy_cell_1rw_5/a_76_76#" 16.8224
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_5/qb" -4.89856
+cap "dummy_cell_1rw_6/gnd" "dummy_cell_1rw_5/wl" 0.167304
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_5/wl" -6.74699
+cap "dummy_cell_1rw_4/a_145_76#" "dummy_cell_1rw_5/wl" 0.0736689
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_4/wl" 24.646
+cap "dummy_cell_1rw_6/vdd" "dummy_cell_1rw_6/bl" -1.31403
+cap "dummy_cell_1rw_5/q" "dummy_cell_1rw_5/a_76_76#" -7.50208
+cap "dummy_cell_1rw_5/gnd" "dummy_cell_1rw_5/wl" -6.91158
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_4/q" 0.110389
+cap "dummy_cell_1rw_5/qb" "dummy_cell_1rw_5/wl" 19.3988
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_4/q" 2.31532
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_6/bl" -119.279
+cap "dummy_cell_1rw_5/a_145_76#" "dummy_cell_1rw_4/wl" 0.0736689
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_5/gnd" -9.51001
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_2/a_76_76#" 16.8224
+cap "dummy_cell_1rw_2/a_76_76#" "dummy_cell_1rw_3/q" 0.114706
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_3/wl" 36.0456
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_4/q" 2.31532
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_3/qb" 0.149952
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_3/a_76_76#" -0.350941
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_5/br" -0.431384
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_3/q" 24.646
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_3/wl" -10.7309
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_2/wl" 0.0736689
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_2/a_145_76#" -1.90494
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_2/a_145_76#" 0.110389
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_2/wl" 0.0639278
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_2/wl" -10.7309
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_2/qb" 0.0759139
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_3/q" 0.107402
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_2/qb" -4.38401
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_2/vdd" -1.31403
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_5/gnd" -0.467671
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_3/qb" -8.00869
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_5/gnd" -4.47505
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_5/br" 17.9297
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_5/gnd" -119.04
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_2/q" 0.977399
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_3/a_76_76#" -10.0942
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_5/br" 2.87334
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_3/qb" 1.02122
+cap "dummy_cell_1rw_2/a_76_76#" "dummy_cell_1rw_2/wl" 35.3154
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_2/q" 0.129469
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_5/br" -283.344
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_3/a_76_76#" 16.8224
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_2/a_145_76#" 0.0736689
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_2/wl" 13.4185
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_4/vdd" -0.351064
+cap "dummy_cell_1rw_2/a_76_76#" "dummy_cell_1rw_2/vdd" -0.350941
+cap "dummy_cell_1rw_2/a_145_76#" "dummy_cell_1rw_2/wl" 36.0456
+cap "dummy_cell_1rw_2/a_145_76#" "dummy_cell_1rw_2/qb" -6.00019
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_4/vdd" -0.46274
+cap "dummy_cell_1rw_2/qb" "dummy_cell_1rw_2/wl" 20.5903
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_3/q" 0.0902074
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_2/a_145_76#" -0.351064
+cap "dummy_cell_1rw_2/a_76_76#" "dummy_cell_1rw_2/q" -7.50208
+cap "dummy_cell_1rw_2/a_76_76#" "dummy_cell_1rw_5/gnd" -0.428438
+cap "dummy_cell_1rw_2/a_76_76#" "dummy_cell_1rw_3/qb" 0.0137542
+cap "dummy_cell_1rw_2/a_76_76#" "dummy_cell_1rw_5/br" -1.63758
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_5/gnd" -4.83817
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_2/wl" -1.04734
+cap "dummy_cell_1rw_2/a_145_76#" "dummy_cell_1rw_5/gnd" -0.467671
+cap "dummy_cell_1rw_4/q" "dummy_cell_1rw_3/qb" 0.22142
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_3/qb" 22.9
+cap "dummy_cell_1rw_2/q" "dummy_cell_1rw_2/a_145_76#" -0.106295
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_5/br" -6.74699
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_3/a_76_76#" 35.3154
+cap "dummy_cell_1rw_2/wl" "dummy_cell_1rw_5/gnd" -4.83817
+cap "dummy_cell_1rw_1/wl" "dummy_cell_1rw_2/wl" 1.07292
+cap "dummy_cell_1rw_2/a_145_76#" "dummy_cell_1rw_5/br" 17.9297
+cap "dummy_cell_1rw_3/qb" "dummy_cell_1rw_2/wl" 0.010316
+cap "dummy_cell_1rw_4/wl" "dummy_cell_1rw_3/wl" 1.07292
+cap "dummy_cell_1rw_2/q" "dummy_cell_1rw_2/wl" 21.562
+cap "dummy_cell_1rw_2/qb" "dummy_cell_1rw_5/gnd" -4.89856
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_2/wl" -6.74699
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_5/gnd" -9.51001
+cap "dummy_cell_1rw_2/qb" "dummy_cell_1rw_3/qb" 0.149733
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_3/q" -0.106295
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_3/a_145_76#" -1.90494
+cap "dummy_cell_1rw_4/qb" "dummy_cell_1rw_3/qb" 4.89099
+cap "dummy_cell_1rw_2/qb" "dummy_cell_1rw_5/br" 0.437111
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_5/br" -1.39946
+cap "dummy_cell_1rw_5/bl" "dummy_cell_1rw_3/q" 53.9141
+cap "dummy_cell_1rw_4/vdd" "dummy_cell_1rw_3/wl" -1.04734
+cap "dummy_cell_1rw_3/qb" "dummy_cell_1rw_5/gnd" -5.0745
+cap "dummy_cell_1rw_2/q" "dummy_cell_1rw_5/gnd" -4.30199
+cap "dummy_cell_1rw_3/a_76_76#" "dummy_cell_1rw_5/gnd" -0.428438
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_5/gnd" -113.258
+cap "dummy_cell_1rw_2/q" "dummy_cell_1rw_3/qb" 0.0156091
+cap "dummy_cell_1rw_3/a_76_76#" "dummy_cell_1rw_5/br" -1.63758
+cap "dummy_cell_1rw_5/br" "dummy_cell_1rw_3/qb" 60.131
+cap "dummy_cell_1rw_2/q" "dummy_cell_1rw_5/br" -4.62581
+cap "dummy_cell_1rw_3/bl" "dummy_cell_1rw_2/qb" 5.40523
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_2/a_145_76#" -0.431786
+cap "dummy_cell_1rw_4/br" "dummy_cell_1rw_1/a_76_76#" -0.7148
+cap "dummy_cell_1rw_2/wl" "dummy_cell_1rw_2/q" 3.08402
+cap "dummy_cell_1rw_1/wl" "dummy_cell_1rw_1/a_76_76#" 23.8672
+cap "dummy_cell_1rw_3/gnd" "dummy_cell_1rw_2/vdd" -14.4653
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/a_76_76#" -2.59213
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_2/q" 0.0902074
+cap "dummy_cell_1rw_3/bl" "dummy_cell_1rw_1/a_76_76#" 1.98462
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_2/q" 0.977399
+cap "dummy_cell_1rw_3/gnd" "dummy_cell_1rw_1/qb" -0.175936
+cap "dummy_cell_1rw_2/q" "dummy_cell_1rw_1/qb" 0.328823
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_0/qb" 0.149733
+cap "dummy_cell_1rw_2/wl" "dummy_cell_1rw_1/wl" 1.07292
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_1/a_145_76#" -0.431786
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_4/br" -118.008
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/q" 0.977399
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_1/qb" -2.0085
+cap "dummy_cell_1rw_3/qb" "dummy_cell_1rw_2/q" 0.0759139
+cap "dummy_cell_1rw_4/br" "dummy_cell_1rw_1/qb" 67.7173
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_1/wl" -6.62683
+cap "dummy_cell_1rw_3/a_76_76#" "dummy_cell_1rw_2/q" 0.114706
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_2/qb" 0.010316
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_1/q" 0.0902074
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_1/wl" 22.9
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_3/bl" -117.114
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_2/a_76_76#" -0.402601
+cap "dummy_cell_1rw_3/bl" "dummy_cell_1rw_1/qb" 1.38911
+cap "dummy_cell_1rw_3/gnd" "dummy_cell_1rw_2/q" -0.173065
+cap "dummy_cell_1rw_2/wl" "dummy_cell_1rw_2/qb" 2.30968
+cap "dummy_cell_1rw_3/gnd" "dummy_cell_1rw_4/br" 20.8342
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_0/wl" 0.010316
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_0/a_76_76#" 0.0137542
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/a_145_76#" 0.110389
+cap "dummy_cell_1rw_1/wl" "dummy_cell_1rw_0/a_145_76#" 0.0736689
+cap "dummy_cell_1rw_4/br" "dummy_cell_1rw_2/q" 7.49915
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_2/qb" 0.149952
+cap "dummy_cell_1rw_3/a_145_76#" "dummy_cell_1rw_2/q" 0.110389
+cap "dummy_cell_1rw_3/q" "dummy_cell_1rw_2/qb" 0.0156091
+cap "dummy_cell_1rw_3/gnd" "dummy_cell_1rw_1/q" -0.173065
+cap "dummy_cell_1rw_3/gnd" "dummy_cell_1rw_1/wl" 15.8653
+cap "dummy_cell_1rw_2/qb" "dummy_cell_1rw_1/qb" 9.78198
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_2/q" 4.63063
+cap "dummy_cell_1rw_3/gnd" "dummy_cell_1rw_3/bl" 16.592
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_4/br" 2.02397
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/qb" 0.0759139
+cap "dummy_cell_1rw_3/qb" "dummy_cell_1rw_2/qb" 0.149733
+cap "dummy_cell_1rw_3/bl" "dummy_cell_1rw_2/q" 53.7846
+cap "dummy_cell_1rw_4/br" "dummy_cell_1rw_1/wl" -5.84611
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_1/a_76_76#" -0.402601
+cap "dummy_cell_1rw_2/a_76_76#" "dummy_cell_1rw_2/q" -2.59213
+cap "dummy_cell_1rw_3/a_76_76#" "dummy_cell_1rw_2/qb" 0.0137542
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_4/br" 3.67742
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_1/wl" 24.5974
+cap "dummy_cell_1rw_2/a_145_76#" "dummy_cell_1rw_2/qb" -2.0085
+cap "dummy_cell_1rw_4/br" "dummy_cell_1rw_3/bl" -250
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_3/bl" -0.83574
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_1/wl" 24.646
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_2/wl" -5.57949
+cap "dummy_cell_1rw_3/bl" "dummy_cell_1rw_1/wl" -10.4727
+cap "dummy_cell_1rw_3/gnd" "dummy_cell_1rw_2/qb" -0.175936
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_3/bl" 61.6089
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_0/q" 0.0156091
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/wl" 0.0639278
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_0/a_76_76#" 0.114706
+cap "dummy_cell_1rw_1/wl" "dummy_cell_1rw_0/wl" 5.27445
+cap "dummy_cell_1rw_4/br" "dummy_cell_1rw_2/qb" 59.6939
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_1/qb" 0.149952
+cap "dummy_cell_1rw_3/wl" "dummy_cell_1rw_2/q" 0.0639278
+cap "dummy_cell_1rw_1/q" "dummy_cell_1rw_2/qb" 0.328823
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_0/a_145_76#" -0.467671
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_1/a_145_76#" -6.00019
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/a_145_76#" -0.782849
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_2/br" -0.922778
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_0/wl" -5.00548
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/wl" -6.77731
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/q" -10.0942
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_1/bl" 16.8224
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_2/br" 15.9058
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_1/q" -4.30199
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_1/wl" 8.14402
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_1/bl" -1.31403
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_0/vdd" -16.7426
+cap "dummy_cell_1rw_0/q" "dummy_cell_1rw_0/a_145_76#" -0.106295
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_0/a_145_76#" -1.90494
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_1/wl" -20.7034
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_2/br" -1.63758
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/q" 24.646
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_0/wl" -10.7309
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_0/a_145_76#" -8.00869
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_1/a_76_76#" -0.350941
+cap "dummy_cell_1rw_2/vdd" "dummy_cell_1rw_2/br" -1.39946
+cap "dummy_cell_1rw_0/q" "dummy_cell_1rw_1/q" 0.977399
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_0/q" -4.47505
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_1/q" -7.69485
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_1/bl" -124.978
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/qb" 22.9
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_0/q" 1.42109e-14
+cap "dummy_cell_1rw_2/br" "dummy_cell_1rw_0/a_145_76#" 17.9297
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_1/bl" -30.9312
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_1/gnd" -4.89856
+cap "dummy_cell_1rw_0/q" "dummy_cell_1rw_1/wl" 0.0639278
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_2/vdd" -0.351064
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_1/wl" -0.258243
+cap "dummy_cell_1rw_2/br" "dummy_cell_1rw_0/wl" -6.74699
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_1/q" 0.0156091
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_0/qb" -5.0745
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_2/br" -120.692
+cap "dummy_cell_1rw_2/br" "dummy_cell_1rw_1/q" -0.804079
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_1/q" -7.50208
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_1/a_76_76#" -0.428438
+cap "dummy_cell_1rw_0/qb" "dummy_cell_1rw_1/wl" 0.010316
+cap "dummy_cell_1rw_0/vdd" "dummy_cell_1rw_2/br" -31.5927
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_0/q" 53.9141
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_0/wl" 0.0736689
+cap "dummy_cell_1rw_2/br" "dummy_cell_1rw_1/wl" -0.900883
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_1/wl" 11.4482
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_0/q" 0.0759139
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_1/q" -0.106295
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_1/bl" -0.367889
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_1/gnd" -0.467671
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_0/qb" 0.361707
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/wl" 35.3154
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_1/wl" 11.4482
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_0/q" 0.114706
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_0/qb" 0.149733
+cap "dummy_cell_1rw_2/br" "dummy_cell_1rw_0/q" 2.48099
+cap "dummy_cell_1rw_1/bl" "dummy_cell_1rw_2/br" -248.85
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_1/bl" 14.8378
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_0/a_76_76#" -0.428438
+cap "dummy_cell_1rw_1/qb" "dummy_cell_1rw_2/br" -7.58629
+cap "dummy_cell_1rw_0/a_76_76#" "dummy_cell_1rw_0/vdd" -0.753542
+cap "dummy_cell_1rw_2/br" "dummy_cell_1rw_0/qb" 59.8037
+cap "dummy_cell_1rw_1/gnd" "dummy_cell_1rw_2/vdd" -9.51001
+cap "dummy_cell_1rw_0/wl" "dummy_cell_1rw_0/a_145_76#" 36.0456
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_0/q" 0.110389
+cap "dummy_cell_1rw_1/a_76_76#" "dummy_cell_1rw_0/qb" 0.0137542
+cap "dummy_cell_1rw_1/a_145_76#" "dummy_cell_1rw_1/bl" -1.0692
+merge "dummy_cell_1rw_3/wl" "wl_0_15" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_17/wl" "wl_0_1" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_0/br" "dummy_cell_1rw_1/br" -5937.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -178146 -25102 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_1/br" "dummy_cell_1rw_2/br"
+merge "dummy_cell_1rw_2/br" "dummy_cell_1rw_3/br"
+merge "dummy_cell_1rw_3/br" "dummy_cell_1rw_4/br"
+merge "dummy_cell_1rw_4/br" "dummy_cell_1rw_5/br"
+merge "dummy_cell_1rw_5/br" "dummy_cell_1rw_6/br"
+merge "dummy_cell_1rw_6/br" "dummy_cell_1rw_7/br"
+merge "dummy_cell_1rw_7/br" "dummy_cell_1rw_8/br"
+merge "dummy_cell_1rw_8/br" "dummy_cell_1rw_9/br"
+merge "dummy_cell_1rw_9/br" "dummy_cell_1rw_10/br"
+merge "dummy_cell_1rw_10/br" "dummy_cell_1rw_11/br"
+merge "dummy_cell_1rw_11/br" "dummy_cell_1rw_12/br"
+merge "dummy_cell_1rw_12/br" "dummy_cell_1rw_13/br"
+merge "dummy_cell_1rw_13/br" "dummy_cell_1rw_14/br"
+merge "dummy_cell_1rw_14/br" "dummy_cell_1rw_15/br"
+merge "dummy_cell_1rw_15/br" "dummy_cell_1rw_16/br"
+merge "dummy_cell_1rw_16/br" "dummy_cell_1rw_17/br"
+merge "dummy_cell_1rw_17/br" "dummy_cell_1rw_18/br"
+merge "dummy_cell_1rw_18/br" "br_0_0"
+merge "dummy_cell_1rw_5/vdd" "dummy_cell_1rw_6/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_6/vdd" "vdd_uq5"
+merge "dummy_cell_1rw_1/wl" "wl_0_17" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_2/wl" "wl_0_16" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_16/wl" "wl_0_2" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_4/wl" "wl_0_14" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_17/vdd" "dummy_cell_1rw_18/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_18/vdd" "vdd_uq0"
+merge "dummy_cell_1rw_15/wl" "wl_0_3" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_7/wl" "wl_0_11" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_13/vdd" "dummy_cell_1rw_14/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_14/vdd" "vdd_uq1"
+merge "dummy_cell_1rw_0/wl" "wl_0_18" -97.5574 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_14/wl" "wl_0_4" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_0/gnd" "dummy_cell_1rw_1/gnd" -6068.85 0 0 0 0 0 0 0 0 0 0 -14760 -1458 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -58536 -5256 -202540 -11438 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_1/gnd" "gnd_uq8"
+merge "gnd_uq8" "dummy_cell_1rw_2/gnd"
+merge "dummy_cell_1rw_2/gnd" "dummy_cell_1rw_3/gnd"
+merge "dummy_cell_1rw_3/gnd" "gnd_uq7"
+merge "gnd_uq7" "dummy_cell_1rw_4/gnd"
+merge "dummy_cell_1rw_4/gnd" "dummy_cell_1rw_5/gnd"
+merge "dummy_cell_1rw_5/gnd" "gnd_uq6"
+merge "gnd_uq6" "dummy_cell_1rw_6/gnd"
+merge "dummy_cell_1rw_6/gnd" "dummy_cell_1rw_7/gnd"
+merge "dummy_cell_1rw_7/gnd" "gnd_uq5"
+merge "gnd_uq5" "dummy_cell_1rw_8/gnd"
+merge "dummy_cell_1rw_8/gnd" "dummy_cell_1rw_9/gnd"
+merge "dummy_cell_1rw_9/gnd" "gnd_uq4"
+merge "gnd_uq4" "dummy_cell_1rw_10/gnd"
+merge "dummy_cell_1rw_10/gnd" "dummy_cell_1rw_11/gnd"
+merge "dummy_cell_1rw_11/gnd" "gnd_uq3"
+merge "gnd_uq3" "dummy_cell_1rw_12/gnd"
+merge "dummy_cell_1rw_12/gnd" "dummy_cell_1rw_13/gnd"
+merge "dummy_cell_1rw_13/gnd" "gnd_uq2"
+merge "gnd_uq2" "dummy_cell_1rw_14/gnd"
+merge "dummy_cell_1rw_14/gnd" "dummy_cell_1rw_15/gnd"
+merge "dummy_cell_1rw_15/gnd" "gnd_uq1"
+merge "gnd_uq1" "dummy_cell_1rw_16/gnd"
+merge "dummy_cell_1rw_16/gnd" "dummy_cell_1rw_17/gnd"
+merge "dummy_cell_1rw_17/gnd" "gnd"
+merge "gnd" "dummy_cell_1rw_18/gnd"
+merge "dummy_cell_1rw_18/gnd" "SUB"
+merge "SUB" "gnd_uq0"
+merge "dummy_cell_1rw_7/vdd" "dummy_cell_1rw_8/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_8/vdd" "vdd_uq4"
+merge "dummy_cell_1rw_11/vdd" "dummy_cell_1rw_12/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_12/vdd" "vdd_uq2"
+merge "dummy_cell_1rw_13/wl" "wl_0_5" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_9/vdd" "dummy_cell_1rw_10/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_10/vdd" "vdd_uq3"
+merge "dummy_cell_1rw_12/wl" "wl_0_6" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_11/wl" "wl_0_7" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_0/bl" "dummy_cell_1rw_1/bl" -5798.17 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -176284 -24836 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_1/bl" "dummy_cell_1rw_2/bl"
+merge "dummy_cell_1rw_2/bl" "dummy_cell_1rw_3/bl"
+merge "dummy_cell_1rw_3/bl" "dummy_cell_1rw_4/bl"
+merge "dummy_cell_1rw_4/bl" "dummy_cell_1rw_5/bl"
+merge "dummy_cell_1rw_5/bl" "dummy_cell_1rw_6/bl"
+merge "dummy_cell_1rw_6/bl" "dummy_cell_1rw_7/bl"
+merge "dummy_cell_1rw_7/bl" "dummy_cell_1rw_8/bl"
+merge "dummy_cell_1rw_8/bl" "dummy_cell_1rw_9/bl"
+merge "dummy_cell_1rw_9/bl" "dummy_cell_1rw_10/bl"
+merge "dummy_cell_1rw_10/bl" "dummy_cell_1rw_11/bl"
+merge "dummy_cell_1rw_11/bl" "dummy_cell_1rw_12/bl"
+merge "dummy_cell_1rw_12/bl" "dummy_cell_1rw_13/bl"
+merge "dummy_cell_1rw_13/bl" "dummy_cell_1rw_14/bl"
+merge "dummy_cell_1rw_14/bl" "dummy_cell_1rw_15/bl"
+merge "dummy_cell_1rw_15/bl" "dummy_cell_1rw_16/bl"
+merge "dummy_cell_1rw_16/bl" "dummy_cell_1rw_17/bl"
+merge "dummy_cell_1rw_17/bl" "dummy_cell_1rw_18/bl"
+merge "dummy_cell_1rw_18/bl" "bl_0_0"
+merge "dummy_cell_1rw_10/wl" "wl_0_8" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_3/vdd" "dummy_cell_1rw_4/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_4/vdd" "vdd_uq6"
+merge "dummy_cell_1rw_9/wl" "wl_0_9" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_1/vdd" "dummy_cell_1rw_2/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_2/vdd" "vdd_uq7"
+merge "dummy_cell_1rw_0/vdd" "vdd_uq8" -247.302 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -11700 -610 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_15/vdd" "dummy_cell_1rw_16/vdd" -930.838 0 0 0 0 -23400 -700 0 0 -2756 -210 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -6504 -584 -23400 -1220 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_16/vdd" "vdd"
+merge "dummy_cell_1rw_5/wl" "wl_0_13" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_8/wl" "wl_0_10" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_18/wl" "wl_0_0" -86.884 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
+merge "dummy_cell_1rw_6/wl" "wl_0_12" -100.412 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -464 -98 0 0 0 0 0 0 0 0 0 0
