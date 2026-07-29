@@ -1,3 +1,7 @@
+> Note:
+> This report documents the earlier exploratory 2×16 OpenRAM verification flow.
+> The final Week 5 implementation uses the OpenRAM generated 16×16 SRAM macro.
+
 # OpenRAM Regression Test Report
 
 ## Objective
