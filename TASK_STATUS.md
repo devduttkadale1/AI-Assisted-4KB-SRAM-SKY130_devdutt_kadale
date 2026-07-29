@@ -66,3 +66,20 @@ Remaining:
 - Record demo video
 - Upload video
 - Add video link in README
+
+
+## Task 4 – Week 5
+
+**Status:** ✅ Completed
+
+### Completed Activities
+
+- Installed OpenRAM v1.2.49
+- Configured SKY130A PDK
+- Generated SRAM macro
+- Inspected generated GDS in Magic
+- Executed DRC workflow
+- Executed LVS workflow
+- Generated GDS, LEF, SPICE, Verilog, Liberty, HTML reports
+- Documented OpenRAM compiler limitations
+- Updated repository documentation

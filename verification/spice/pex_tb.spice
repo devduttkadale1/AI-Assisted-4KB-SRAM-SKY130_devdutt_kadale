@@ -1,7 +1,7 @@
 * Post-layout PEX testbench — sram_2_16_sky130A
 * Corner: TT  VDD=1.8V  Temp=27C
 
-.include results/spice/sram_2_16_sky130A.sp
+.include results/spice/sram_2_16_sky130A.sim.sp
 .lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 
 * Power
