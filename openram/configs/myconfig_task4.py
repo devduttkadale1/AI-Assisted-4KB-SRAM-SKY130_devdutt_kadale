@@ -3,7 +3,7 @@
 # -----------------------------
 
 word_size = 16
-num_words = 2
+num_words = 16
 
 tech_name = "sky130"
 
@@ -13,7 +13,7 @@ temperatures = [25]
 
 output_path = "task4/results"
 
-output_name = "task4_sram_2x16"
+output_name = "task4_sram_16x16"
 
 route_supplies = True
 
