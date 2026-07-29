@@ -12,9 +12,8 @@ __pycache__/
 build/
 dist/
 
-# OpenRAM generated outputs
-outputs/
-macro/
+# OpenRAM temporary generated outputs
+/openram/macro/
 
 # Simulation
 *.raw
