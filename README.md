@@ -732,3 +732,6 @@ The current repository focuses on circuit-level implementation and verification 
 - Timing Characterization
 
 The repository includes representative OpenRAM-generated deliverables together with the supporting documentation required for the internship while intentionally excluding large external SKY130 PDK libraries and unnecessary intermediate generated files. This keeps the repository focused, reproducible, and easy to navigate.
+
+
+_Last updated: 29 July 2026_
