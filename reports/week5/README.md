@@ -77,6 +77,22 @@ The generated SRAM macro includes:
 
 ---
 
+# OpenRAM Compilation Evidence
+
+## Compiler Execution
+
+The OpenRAM compiler was executed using a custom SKY130 SRAM configuration.
+
+![Compiler Execution](screenshots/execution/task4_openram_execution_history.png)
+
+## Generated Files
+
+The successful OpenRAM run produced GDSII, LEF, SPICE, Verilog, Liberty, HTML, and log files.
+
+![Generated Outputs](screenshots/execution/task4_sram_results_directory.png)
+
+---
+
 # Static Noise Margin (SNM)
 
 The Hold, Read, and Write SNM simulation workflows developed during the previous stages of the project were reviewed and compared as part of Week 5.
@@ -96,13 +112,19 @@ Butterfly curve analysis confirmed correct operation of the cross-coupled invert
 The generated files are available in:
 
 ```
-results/
-├── gds/
-├── lef/
-├── lib/
-├── spice/
-├── verilog/
-└── openram/
+openram/
+├── results/
+│   ├── task4_sram_16x16.gds
+│   ├── task4_sram_16x16.lef
+│   ├── task4_sram_16x16.sp
+│   ├── task4_sram_16x16.v
+│   ├── task4_sram_16x16.html
+│   ├── task4_sram_16x16.lvs.sp
+│   ├── task4_sram_16x16.log
+│   ├── task4_sram_16x16_TT_1p8V_25C.lib
+│   ├── task4_sram_16x16_FF_1p8V_25C.lib
+│   └── task4_sram_16x16_SS_1p8V_25C.lib
+└── archive_2x16/
 
 ```
 
@@ -117,6 +139,36 @@ results/
 | `.log` | Compiler execution log |
 | `.lvs.report` | LVS report |
 | `.lvs.json` | LVS report in JSON format |
+
+---
+
+# Generated Output Inspection
+
+## HTML Datasheet
+
+OpenRAM automatically generated an HTML summary containing the complete SRAM configuration, operating conditions, timing information, power estimates, characterization corners, and generated deliverables.
+
+![HTML Datasheet](screenshots/outputs/task4_sram_16x16_html_datasheet.png)
+
+## LEF Physical Abstract
+
+The generated LEF describes the physical abstract of the SRAM macro, including the macro dimensions, symmetry, routing layers, and pin locations required for digital place-and-route integration.
+
+![LEF](screenshots/outputs/task4_sram_16x16_lef_file.png)
+
+## Liberty Timing Model
+
+OpenRAM generated Liberty timing models for TT, FF, and SS process corners.
+
+The screenshot below illustrates the TT timing model.
+
+![Liberty](screenshots/outputs/task4_sram_16x16_liberty_tt.png)
+
+## Behavioral Verilog Model
+
+The automatically generated Verilog model can be used for functional simulation and RTL-level integration.
+
+![Verilog](screenshots/outputs/task4_sram_16x16_verilog_model.png)
 
 ---
 
@@ -155,6 +207,26 @@ The layout hierarchy, memory array, and peripheral circuits were explored to und
 ### Memory Array
 
 ![Array Zoom](../../assets/images/week5/magic_array_zoom.png)
+
+---
+
+# KLayout Verification
+
+## Top-Level Hierarchy
+
+![Hierarchy](screenshots/layout/klayout_sram_hierarchy.png)
+
+---
+
+## Expanded Hierarchy
+
+![Expanded](screenshots/layout/klayout_hierarchy_expanded.png)
+
+---
+
+## Top-Level Layout
+
+![Top Layout](screenshots/layout/klayout_top_level_sram_layout.png)
 
 ---
 
