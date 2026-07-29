@@ -54,6 +54,26 @@ The repository documents the circuit-level design, simulation, layout, verificat
 
 ---
 
+## 📑 Table of Contents
+
+- [Project Overview](#project-overview)
+- [Current Project Status](#current-project-status)
+- [SRAM Architecture](#sram-architecture)
+- [6T SRAM Cell](#6t-sram-cell)
+- [Peripheral Circuits](#peripheral-circuits)
+- [Integrated 1-Bit SRAM Verification](#integrated-1-bit-sram-verification)
+- [OpenRAM Flow](#openram-flow)
+- [Week 5 – OpenRAM SRAM Generation](#week-5--openram-sram-generation-and-physical-verification)
+- [Repository Structure](#repository-structure)
+- [Progress by Week](#progress-by-week)
+- [How to Run Simulations](#how-to-run-simulations)
+- [Tools & Environment](#tools--environment)
+- [AI Workflow](#ai-workflow)
+- [Internship Status](#vsd-internship-task-status)
+- [Future Work](#future-work)
+
+---
+
 ## Key Achievements
 
 - ✅ Designed and simulated a CMOS inverter using SKY130A.
@@ -110,6 +130,9 @@ sudo ln -s <path-to-your-sky130A> /usr/local/share/pdk/sky130A
 
 ---
 
+<details>
+<summary><b>🏗️ SRAM Architecture</b></summary>
+
 ## SRAM Architecture
 
 ![SRAM Architecture](assets/images/sram_architecture.png)
@@ -127,6 +150,11 @@ A 4KB SRAM macro consists of several key blocks working together:
 
 ---
 
+</details>
+
+<details>
+<summary><b>🧩 6T SRAM Cell</b></summary>
+
 ## 6T SRAM Cell
 
 ![6T SRAM Cell](assets/images/6t_sram_cell.png)
@@ -142,6 +170,11 @@ The fundamental storage unit is a **6-transistor (6T) SRAM cell**:
 The two cross-coupled inverters hold one bit indefinitely as long as power is supplied — no refresh needed, unlike DRAM.
 
 ---
+
+</details>
+
+<details>
+<summary><b>📖 Read and Write Operations</b></summary>
 
 ## Read and Write Operations
 
@@ -167,6 +200,11 @@ The two cross-coupled inverters hold one bit indefinitely as long as power is su
 > **Key constraint:** Write Ratio (WR) = W_access / W_pullup must be > 1 to successfully overwrite cell.
 
 ---
+
+</details>
+
+<details>
+<summary><b>⚡ Peripheral Circuits</b></summary>
 
 ## Peripheral Circuits
 
@@ -205,6 +243,11 @@ Cross-coupled CMOS latch triggered by SAE (sense amp enable):
 - Example: 128 rows × 256 columns → 8 words/row → 1024 words logical
 
 ---
+
+</details>
+
+<details>
+<summary><b>🧪 Integrated 1-Bit SRAM Verification</b></summary>
 
 ## Integrated 1-Bit SRAM Verification
 
@@ -282,6 +325,12 @@ The integrated 1-bit SRAM simulation successfully demonstrates functional intera
 
 The present implementation uses simplified peripheral circuits intended for educational verification rather than production-quality SRAM design. Additional transistor sizing optimization, write-assist techniques and timing optimization would be required for a fully optimized SRAM macro.
 
+---
+
+</details>
+
+<details>
+<summary><b>🧠 OpenRAM Flow</b></summary>
 
 ## OpenRAM Flow
 
@@ -315,9 +364,14 @@ DRC / LVS
 
 ---
 
+</details>
+
+<details open>
+<summary><b>📦 Week 5 – OpenRAM SRAM Generation and Physical Verification</b></summary>
+
 ## Week 5 – OpenRAM SRAM Generation and Physical Verification
 
-The objective of Week 5 was to install OpenRAM, configure the SKY130 technology, generate an SRAM macro, and document the complete compiler workflow.
+The objective of Week 5 was to install OpenRAM, configure the SKY130 technology, generate the final 16×16 SRAM macro, inspect the generated layout, and document the complete compiler workflow using the SKY130A PDK.
 
 ### OpenRAM Environment
 
@@ -375,24 +429,49 @@ These layout views demonstrate that OpenRAM successfully generated a complete SR
 
 ### Generated Outputs
 
-The following generated files are included in this repository:
+The final validated OpenRAM deliverables for this project are located in `openram/results/`.
 
 | Output | File |
 |---------|------|
-| GDSII Layout | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.gds` |
-| LEF | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.lef` |
-| SPICE | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.sp` |
-| Verilog | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.v` |
-| Liberty | `openram/results/sky130_sram_0kbytes_1rw_8x16_2_TT_1p8V_25C.lib` |
-| HTML Report | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.html` |
-| OpenRAM Compiler Log | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.log` |
-| LVS Report | `openram/results/sky130_sram_0kbytes_1rw_8x16_2.lvs.report` |
+| GDSII Layout | `openram/results/task4_sram_16x16.gds` |
+| LEF | `openram/results/task4_sram_16x16.lef` |
+| SPICE Netlist | `openram/results/task4_sram_16x16.sp` |
+| LVS Netlist | `openram/results/task4_sram_16x16.lvs.sp` |
+| Verilog Model | `openram/results/task4_sram_16x16.v` |
+| HTML Datasheet | `openram/results/task4_sram_16x16.html` |
+| Liberty (TT) | `openram/results/task4_sram_16x16_TT_1p8V_25C.lib` |
+| Liberty (FF) | `openram/results/task4_sram_16x16_FF_1p8V_25C.lib` |
+| Liberty (SS) | `openram/results/task4_sram_16x16_SS_1p8V_25C.lib` |
+| OpenRAM Compiler Log | `openram/results/task4_sram_16x16.log` |
 
-> **Note**
+> **Repository Note**
 >
-> This repository contains both legacy OpenRAM experiment outputs (`results/`) and the final validated Week 5 outputs (`openram/results/`).
+> The exploratory 2×16 OpenRAM generation has been preserved in
+> `openram/archive_2x16/` for reference.
 >
-> Unless explicitly stated otherwise, all OpenRAM documentation and verification reports refer to the files located in `openram/results/`.
+> All documentation, screenshots, and verification presented in this repository
+> refer to the final validated **16×16 OpenRAM SRAM macro** stored in
+> `openram/results/`.
+
+### Generated Output Inspection
+
+The generated OpenRAM deliverables were further inspected to validate each output format produced by the compiler.
+
+Representative screenshots are available under:
+
+- `reports/week5/screenshots/execution/`
+- `reports/week5/screenshots/layout/`
+- `reports/week5/screenshots/outputs/`
+
+The documentation includes:
+
+- OpenRAM compiler execution
+- Generated output directory
+- HTML datasheet
+- LEF abstract view
+- Liberty timing model
+- Generated Verilog model
+- Magic hierarchy inspection
 
 ### Documentation
 
@@ -429,6 +508,8 @@ The generated macro was therefore based on the minimum configuration supported b
 
 ---
 
+</details>
+
 ## Repository Structure
 
 | Folder | Contents |
@@ -444,9 +525,12 @@ The generated macro was therefore based on the minimum configuration supported b
 | `reports/week1/` | Week 1 IEEE PDF + LaTeX source |
 | `reports/week2 & week3/` | Week 2&3 IEEE PDF + LaTeX with all waveforms |
 | `assets/images/` | Architecture diagrams |
-| `openram/` | OpenRAM configuration files and generated SRAM results |
+| `openram/` | OpenRAM configuration files, final 16×16 generated outputs (`results/`), and archived exploratory 2×16 outputs (`archive_2x16/`) |
 
 ---
+
+<details>
+<summary><b>📅 Progress by Week</b></summary>
 
 ## Progress by Week
 
@@ -536,7 +620,8 @@ Completed:
 - Executed OpenRAM compiler
 - Investigated OpenRAM minimum row constraint
 - Documented minimum supported OpenRAM configuration
-- Generated and archived GDS, LEF, Liberty, Verilog and SPICE outputs
+- Generated and validated the final 16×16 OpenRAM SRAM macro including GDSII, LEF, SPICE, Verilog, HTML datasheet, and  
+  Liberty timing models.
 - Created AI Audit documentation
 - Created regression testbench and simulation log
 - Executed behavioral regression simulation using Icarus Verilog
@@ -567,7 +652,7 @@ Completed:
 - Verified generated GDS in Magic VLSI
 - Executed DRC
 - Executed LVS
-- Archived generated outputs
+- Archived exploratory 2×16 OpenRAM outputs while preserving the validated 16×16 implementation as the primary deliverable.
 - Added Magic layout screenshots
 - Completed Week 5 journal
 - Completed Week 5 technical report
@@ -575,6 +660,11 @@ Completed:
 - Organized repository for submission
 
 ---
+
+</details>
+
+<details>
+<summary><b>▶️ How to Run Simulations</b></summary>
 
 ## How to Run Simulations
 
@@ -599,6 +689,11 @@ ngspice -b snm_butterfly.spice
 
 ---
 
+</details>
+
+<details>
+<summary><b>🛠️ Tools & Environment</b></summary>
+
 ## Tools & Environment
 
 | Tool | Version | Purpose |
@@ -612,6 +707,11 @@ ngspice -b snm_butterfly.spice
 
 ---
 
+</details>
+
+<details>
+<summary><b>🤖 AI Workflow</b></summary>
+
 ## AI Workflow
 
 Every AI interaction is logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md) with:
@@ -624,6 +724,8 @@ Every AI interaction is logged in [`ai_workflow/prompts.md`](ai_workflow/prompts
 See [`ai_workflow/workflow.md`](ai_workflow/workflow.md) for the full methodology.
 
 ---
+
+</details>
 
 ## Intern Information
 
@@ -684,7 +786,7 @@ This repository is organized around the assigned VSD internship tasks only.
 | `verification/xschem/` | Xschem schematic and bitcell SPICE |
 | `verification/waveforms/` | Verified waveform screenshots |
 | `Layout/` | Final 6T bitcell Magic layout and LVS-ready netlist |
-| `openram/` | OpenRAM configuration files and generated SRAM results |
+| `openram/` | OpenRAM configuration files, validated 16×16 outputs, archived exploratory results, and compiler logs |
 | `Layout/debug_history/` | Old LVS/debug reports kept for transparency |
 | `architecture/` | SRAM architecture notes |
 | `docs/` | Design notes and validation strategy |
@@ -717,6 +819,9 @@ This integration serves as the functional foundation for extending the design to
 
 ---
 
+<details>
+<summary><b>🚀 Future Work</b></summary>
+
 ## Future Work
 
 The current repository focuses on circuit-level implementation and verification of the 6T SRAM bitcell. Future work includes:
@@ -728,10 +833,15 @@ The current repository focuses on circuit-level implementation and verification 
 - Hierarchical SRAM Array Integration
 - Custom transistor-level 4KB SRAM implementation
 - Post-layout Extraction
+- Full custom transistor-level 4KB SRAM implementation
+- Automated DRC/LVS closure for generated SRAM macros
 - Process, Voltage and Temperature (PVT) Corner Verification
 - Timing Characterization
 
 The repository includes representative OpenRAM-generated deliverables together with the supporting documentation required for the internship while intentionally excluding large external SKY130 PDK libraries and unnecessary intermediate generated files. This keeps the repository focused, reproducible, and easy to navigate.
 
+---
+
+<details>
 
 _Last updated: 29 July 2026_
