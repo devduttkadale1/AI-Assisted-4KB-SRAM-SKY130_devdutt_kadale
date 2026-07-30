@@ -200,7 +200,7 @@ The integrated verification demonstrates correct interaction between the SRAM bi
 
 ### 4. Final OpenRAM SRAM Macro
 
-![Final 16 × 16 SRAM Macro](reports/week5/screenshots/output/task4_sram_16x16_gds_layout_magic.png)
+![Final 16 × 16 SRAM Macro](reports/week5/screenshots/outputs/task4_sram_16x16_gds_layout_magic.png)
 
 The final validated **16 × 16 SRAM macro** was successfully generated using **OpenRAM v1.2.49**, imported into Magic VLSI, and documented together with the generated deliverables and verification reports.
 
