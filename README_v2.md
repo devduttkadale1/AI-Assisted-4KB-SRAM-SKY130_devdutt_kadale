@@ -14,6 +14,17 @@
 
 ---
 
+> [!NOTE]
+> **Project Summary**
+>
+> - **Internship:** VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
+> - **Technology:** SKY130A Open-Source PDK
+> - **Design Flow:** Xschem → NGSpice → Magic → Netgen → OpenRAM
+> - **Final Deliverable:** Validated **16 × 16 SRAM Macro**
+> - **Focus:** AI-assisted SRAM design, verification, physical validation, and documentation
+
+---
+
 <p align="center">
   <img src="assets/images/sram_architecture.png" width="900" alt="4KB SRAM Architecture">
 </p>
@@ -161,7 +172,7 @@ The project successfully demonstrates the complete AI-assisted SRAM design workf
 
 ---
 
-## Representative Results
+## Technical Results
 
 ### 1. SRAM Read Verification
 
@@ -189,7 +200,7 @@ The integrated verification demonstrates correct interaction between the SRAM bi
 
 ### 4. Final OpenRAM SRAM Macro
 
-![Final 16 × 16 SRAM Macro](reports/week5/screenshots/layout/task4_sram_16x16_macro.png)
+![Final 16 × 16 SRAM Macro](reports/week5/screenshots/output/task4_sram_16x16_gds_layout_magic.png)
 
 The final validated **16 × 16 SRAM macro** was successfully generated using **OpenRAM v1.2.49**, imported into Magic VLSI, and documented together with the generated deliverables and verification reports.
 
@@ -197,21 +208,29 @@ The final validated **16 × 16 SRAM macro** was successfully generated using **O
 >
 > The repository focuses on documenting the complete engineering workflow. Additional screenshots, verification reports, generated outputs, and OpenRAM documentation are available in the corresponding folders under `verification/`, `docs/openram/`, and `reports/week5/`.
 
+---
+
 ## 📑 Table of Contents
 
-- Project Results
-- SRAM Architecture
-- 6T SRAM Cell
-- Read & Write Operations
-- Peripheral Circuits
-- Integrated 1-Bit SRAM Verification
-- OpenRAM Design Flow
-- OpenRAM SRAM Generation
-- Repository Structure
-- Progress Summary
-- Quick Start
-- Tools & Environment
-- AI Workflow
-- Internship Information
-- Final Verification Summary
-- Future Work
+- [Overview](#overview)
+- [Project Highlights](#project-highlights)
+- [Current Project Status](#current-project-status)
+- [Key Achievements](#key-achievements)
+- [Project Results](#project-results)
+- [SRAM Architecture](#sram-architecture)
+- [6T SRAM Cell](#6t-sram-cell)
+- [Read & Write Operations](#read--write-operations)
+- [Peripheral Circuits](#peripheral-circuits)
+- [Integrated 1-Bit SRAM Verification](#integrated-1-bit-sram-verification)
+- [OpenRAM Design Flow](#openram-design-flow)
+- [OpenRAM SRAM Generation](#openram-sram-generation)
+- [Generated Outputs](#generated-outputs)
+- [Repository Structure](#repository-structure)
+- [Progress Summary](#progress-summary)
+- [Quick Start](#quick-start)
+- [Tools & Environment](#tools--environment)
+- [AI Workflow](#ai-workflow)
+- [Internship Information](#internship-information)
+- [Final Verification Summary](#final-verification-summary)
+- [Future Work](#future-work)
+- [License](#license)
