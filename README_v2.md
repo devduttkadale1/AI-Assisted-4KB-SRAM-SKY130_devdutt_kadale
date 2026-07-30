@@ -19,15 +19,11 @@
 >
 > - **Internship:** VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
 > - **Technology:** SKY130A Open-Source PDK
-> - **Design Flow:** Xschem → NGSpice → Magic → Netgen → OpenRAM
+> - **Design Flow:** **Xschem → NGSpice → Magic VLSI → Netgen LVS → OpenRAM**
 > - **Final Deliverable:** Validated **16 × 16 SRAM Macro**
 > - **Focus:** AI-assisted SRAM design, verification, physical validation, and documentation
 
 ---
-
-<p align="center">
-  <img src="assets/images/sram_architecture.png" width="900" alt="4KB SRAM Architecture">
-</p>
 
 ## Overview
 
@@ -59,7 +55,7 @@ The repository combines:
 | Integrated 1-Bit SRAM Verification | ✅ |
 | OpenRAM SRAM Macro Generation | ✅ |
 | Physical Verification Documentation | ✅ |
-| Final Generated SRAM Macro | **16 Words × 16 Bits** |
+| Final Generated SRAM Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
 
 > **Repository Note**
 >
@@ -94,7 +90,7 @@ The repository documents the complete development flow of the internship project
 | OpenRAM Generated Outputs | ✅ Validated |
 | OpenRAM Documentation | ✅ Complete |
 | Physical Verification Documentation | ✅ Complete |
-| Final Generated SRAM Macro | **16 Words × 16 Bits** |
+| Final Generated SRAM Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
 
 > **Current Scope**
 >
@@ -166,7 +162,7 @@ The project successfully demonstrates the complete AI-assisted SRAM design workf
 | Layout Tool | Magic VLSI |
 | LVS Verification | Netgen |
 | SRAM Compiler | OpenRAM v1.2.49 |
-| Final Generated Macro | **16 × 16 SRAM** |
+| Validated 16 × 16 SRAM Macro (256-bit)
 | Generated Deliverables | GDSII, LEF, SPICE, Verilog, Liberty, HTML |
 | AI-Assisted Workflow | Fully Documented |
 
@@ -290,7 +286,7 @@ The objective of this project was to understand, design, verify, and document th
 
 > 📖 **Additional Documentation**
 >
-> Detailed explanations of the SRAM architecture, memory organization, and individual functional blocks are available in the **`architecture/`** directory.
+>Continue with the [6T SRAM Cell](#6t-sram-cell) to understand the storage element used throughout the design.
 
 ---
 
@@ -347,6 +343,8 @@ The primary functions of an SRAM cell are **read** and **write** operations. Bot
 </p>
 
 During a read operation, both bitlines are first precharged to **VDD**. When the **wordline (WL)** is asserted, the access transistors connect the storage nodes to the bitlines. Depending on the stored data, one bitline discharges slightly while the other remains near the precharged voltage. This small differential voltage is then detected and amplified by the sense amplifier.
+
+See the [Integrated 1-Bit SRAM Verification](#integrated-1-bit-sram-verification) section for subsystem-level validation.
 
 ### Read Verification
 
@@ -410,8 +408,6 @@ The precharge circuit initializes both **BL** and **BLB** to **VDD** before ever
 - ✅ Differential sensing enabled through equalized bitlines.
 - ✅ Stable operation verified using NGSpice.
 
----
-
 ## Write Driver
 
 The write driver forces complementary logic values onto the bitlines during write operations. It must be strong enough to overwrite the previous cell state while maintaining reliable switching characteristics.
@@ -421,8 +417,6 @@ The write driver forces complementary logic values onto the bitlines during writ
 - ✅ Correct complementary bitline generation.
 - ✅ Reliable write operation verified.
 - ✅ Successful overwrite of stored data.
-
----
 
 ## Sense Amplifier
 
@@ -438,8 +432,6 @@ The sense amplifier detects the small voltage difference that develops between *
 - ✅ Reliable logic-level output generation.
 - ✅ Integrated successfully with the SRAM read path.
 
----
-
 ## Row Decoder
 
 The row decoder converts the binary address into a **one-hot wordline selection**, ensuring that only the required memory row is activated during an access operation.
@@ -450,8 +442,6 @@ The row decoder converts the binary address into a **one-hot wordline selection*
 - ✅ Wordline selection
 - ✅ Single-row activation
 
----
-
 ## Column Multiplexer
 
 The column multiplexer selects the required bitline pair from the memory array and routes it to the sense amplifier or output circuitry.
@@ -461,8 +451,6 @@ The column multiplexer selects the required bitline pair from the memory array a
 - ✅ Column selection
 - ✅ Bitline routing
 - ✅ Output path optimization
-
----
 
 ## Peripheral Circuit Summary
 
@@ -589,6 +577,8 @@ The final stage of this project involved generating an SRAM macro using **OpenRA
 <p align="center">
   <img src="reports/week5/screenshots/outputs/task4_sram_16x16_gds_layout_magic.png" width="850" alt="16 × 16 SRAM Macro">
 </p>
+
+The generated files are summarized in the [Generated Outputs](#generated-outputs) section.
 
 ## Generated SRAM Configuration
 
@@ -727,14 +717,14 @@ git clone https://github.com/your-username/AI-Assisted-4KB-SRAM-SKY130.git
 cd AI-Assisted-4KB-SRAM-SKY130
 ```
 
-Explore the repository in the following order:
+## Explore the Repository
 
-1. Read the project overview.
-2. Review the SRAM architecture documentation.
-3. Explore the verification results.
-4. Inspect the Magic layouts.
-5. Review the OpenRAM documentation.
-6. Examine the generated SRAM outputs.
+1. Review the **Project Results** section.
+2. Study the **SRAM Architecture** and **6T SRAM Cell**.
+3. Examine the **verification waveforms**.
+4. Inspect the **Magic VLSI layouts**.
+5. Review the **OpenRAM generation flow**.
+6. Explore the generated SRAM deliverables.
 
 ---
 
@@ -768,7 +758,7 @@ AI assistance included:
 - Documentation preparation
 - Technical report generation
 
-All circuit implementation, simulation, verification, and validation were independently executed using the corresponding open-source EDA tools.
+All AI-generated suggestions were independently verified using Xschem, NGSpice, Magic VLSI, Netgen, and OpenRAM before being incorporated into the final project. AI served as an engineering assistant for learning, planning, debugging, and documentation, while all design validation and verification were performed using the corresponding open-source EDA tools.
 
 ---
 
