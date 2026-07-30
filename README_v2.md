@@ -284,9 +284,7 @@ Wordline Driver
 
 The objective of this project was to understand, design, verify, and document the major functional blocks required for SRAM implementation before exploring compiler-generated memory macros using **OpenRAM**. The circuit-level verification performed throughout this repository establishes the foundation for larger SRAM organizations and demonstrates the complete AI-assisted design workflow.
 
-> 📖 **Additional Documentation**
->
->Continue with the [6T SRAM Cell](#6t-sram-cell) to understand the storage element used throughout the design.
+> 📖 Continue with the [6T SRAM Cell](#6t-sram-cell) to understand the storage element used throughout the design, or explore the detailed architecture notes in the `architecture/` directory.
 
 ---
 
@@ -324,9 +322,7 @@ The two cross-coupled CMOS inverters create a bistable latch capable of storing 
 - Proper transistor sizing is essential for balancing stability, performance, and power consumption.
 - Differential bitline operation improves noise immunity and sensing accuracy.
 
-> 📖 **Additional Documentation**
->
-> Detailed analysis of the 6T SRAM cell, transistor sizing, and stability considerations is available in the **`architecture/`** directory.
+> 📖 Detailed transistor-level analysis and stability discussions are available in the `architecture/` directory.
 
 ---
 
@@ -380,9 +376,7 @@ The NGSpice simulation verifies:
 
 The read and write simulations demonstrate the functional correctness of the custom **6T SRAM bitcell** designed in this project. These verified operations establish the basis for higher-level SRAM integration and subsequent OpenRAM-based memory generation.
 
-> 📖 **Additional Documentation**
->
-> Detailed read/write timing analysis, SPICE netlists, and waveform results are available in the **`verification/`** and **`architecture/`** directories.
+> 📖 Related SPICE netlists, timing analysis, and waveform results are available in the `verification/` directory.
 
 ---
 
@@ -456,9 +450,7 @@ The column multiplexer selects the required bitline pair from the memory array a
 
 Together, these peripheral circuits enable reliable SRAM operation by coordinating address decoding, bitline conditioning, write data transfer, read sensing, and output selection. Their successful verification forms the basis of the integrated SRAM design and the subsequent OpenRAM-generated memory macro.
 
-> 📖 **Additional Documentation**
->
-> Detailed schematics, simulations, and verification reports for the peripheral circuits are available in the **`verification/`**, **`architecture/`**, and **`docs/`** directories.
+> 📖 Additional circuit schematics and verification reports are available in the `verification/` and `docs/` directories.
 
 ---
 
@@ -508,9 +500,7 @@ The integrated NGSpice simulation confirms:
 
 The waveform demonstrates successful coordination between the SRAM bitcell and the peripheral circuitry, confirming that the complete memory subsystem operates correctly under the selected simulation conditions.
 
-> 📖 **Additional Documentation**
->
-> Detailed simulation waveforms, SPICE netlists, and verification reports are available in the **`verification/`** directory.
+> 📖 Complete simulation waveforms, SPICE netlists, and verification reports are available in the `verification/` directory.
 
 ---
 
@@ -564,9 +554,7 @@ The OpenRAM implementation in this project followed these major steps:
 
 The objective of using OpenRAM was to complement the custom circuit-level design with an automated SRAM generation flow. This demonstrates how transistor-level SRAM concepts can be translated into a complete memory macro suitable for digital integration.
 
-> 📖 **Additional Documentation**
->
-> Detailed OpenRAM setup instructions, configuration files, generated outputs, and compilation logs are available in the **`docs/openram/`** and **`reports/week5/`** directories.
+> 📖 Generated reports, configuration files, compiler logs, and layout screenshots are available in `reports/week5/` and `docs/openram/`.
 
 ---
 
