@@ -414,10 +414,6 @@ The precharge circuit initializes both **BL** and **BLB** to **VDD** before ever
 
 ## Write Driver
 
-<p align="center">
-  <img src="assets/images/write_driver.png" width="650" alt="Write Driver">
-</p>
-
 The write driver forces complementary logic values onto the bitlines during write operations. It must be strong enough to overwrite the previous cell state while maintaining reliable switching characteristics.
 
 ### Verification Summary
@@ -537,7 +533,7 @@ After completing the transistor-level design and verification of the SRAM buildi
 OpenRAM automates the generation of memory macros by integrating validated SRAM bitcells with peripheral circuits, control logic, address decoding, and physical layout generation. This enables rapid creation of manufacturable SRAM macros together with the files required for ASIC implementation.
 
 <p align="center">
-  <img src="assets/images/openram_flow.png" width="850" alt="OpenRAM Design Flow">
+  <img src="assets/images/sky130_openram_flow.png" width="850" alt="OpenRAM Design Flow">
 </p>
 
 ## OpenRAM Workflow
