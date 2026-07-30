@@ -87,3 +87,50 @@ The repository documents the complete development flow of the internship project
 > **Current Scope**
 >
 > The circuit-level design and verification presented in this repository form the foundation of a larger SRAM implementation. The OpenRAM deliverables correspond to the validated **16×16 SRAM macro**, while the overall repository documents the complete AI-assisted workflow developed throughout the internship.
+
+---
+
+# Key Achievements
+
+The project combines circuit-level SRAM design, physical verification, OpenRAM-based SRAM generation, and AI-assisted engineering practices using the SKY130A Open-Source PDK.
+
+## Circuit Design & Verification
+
+- ✅ Designed and simulated a CMOS inverter using the SKY130A PDK.
+- ✅ Designed a 6T SRAM bitcell in Xschem.
+- ✅ Verified SRAM read and write operations using NGSpice.
+- ✅ Performed Static Noise Margin (SNM) analysis using butterfly curves.
+- ✅ Verified read disturb and write margin characteristics.
+- ✅ Designed and verified the SRAM precharge circuit.
+- ✅ Designed and verified the write driver.
+- ✅ Designed and verified the sense amplifier.
+- ✅ Integrated all major peripheral circuits into a functional 1-bit SRAM testbench.
+
+---
+
+## Physical Design & Verification
+
+- ✅ Created the 6T SRAM bitcell layout in Magic VLSI.
+- ✅ Achieved DRC-clean implementation for the custom SRAM bitcell.
+- ✅ Successfully completed Netgen LVS verification with matching schematic and layout.
+- ✅ Inspected the generated OpenRAM SRAM layout hierarchy using Magic VLSI.
+- ✅ Executed and documented the physical verification workflow for the generated SRAM macro.
+
+---
+
+## OpenRAM SRAM Generation
+
+- ✅ Installed and configured OpenRAM v1.2.49 with the SKY130A technology.
+- ✅ Generated the final **16 × 16 SRAM macro** using the OpenRAM compiler.
+- ✅ Validated the generated GDSII, LEF, SPICE, Verilog, Liberty, and HTML deliverables.
+- ✅ Documented the complete OpenRAM compilation and verification workflow.
+
+---
+
+## Documentation & AI-Assisted Workflow
+
+- ✅ Maintained complete AI prompt and verification records throughout the project.
+- ✅ Produced weekly technical reports documenting project progress.
+- ✅ Organized architecture notes, verification reports, and OpenRAM documentation.
+- ✅ Preserved reproducible project structure with supporting design files and verification results.
+
