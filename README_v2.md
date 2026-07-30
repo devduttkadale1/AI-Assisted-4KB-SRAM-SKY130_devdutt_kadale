@@ -3,7 +3,6 @@
 > **VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship | Cohort 1.2**  
 > **Designer:** Devdutt Bajirao Kadale
 
-[![AI Workflow](https://img.shields.io/badge/AI-Assisted-Verified-purple)](...)
 [![Week 1](https://img.shields.io/badge/Week%201-Complete-brightgreen)](reports/week1/)
 [![Week 2&3](https://img.shields.io/badge/Week%202%263-Complete-brightgreen)](reports/week2%20%26%20week3/)
 [![Week 5](https://img.shields.io/badge/Week%205-Complete-brightgreen)](reports/week5/)
@@ -54,3 +53,37 @@ The repository combines:
 > **Repository Note**
 >
 > This repository represents the complete learning and implementation journey toward a **4KB SRAM design**. Due to the minimum memory organization supported by the OpenRAM version used during the internship, the final compiler-generated deliverable is a **validated 16×16 SRAM macro**, while the remaining work documents the complete circuit-level design methodology, verification flow, and AI-assisted engineering process.
+
+---
+
+# Current Project Status
+
+The repository documents the complete development flow of the internship project, from SRAM architecture exploration and transistor-level circuit verification to OpenRAM-based SRAM macro generation and supporting documentation.
+
+| Development Stage | Status |
+|-------------------|:------:|
+| SRAM Architecture Study | ✅ Complete |
+| CMOS Inverter Verification | ✅ Complete |
+| 6T SRAM Bitcell Design | ✅ Complete |
+| 6T SRAM Bitcell Layout | ✅ Complete |
+| 6T Bitcell DRC | ✅ Passed |
+| 6T Bitcell LVS | ✅ Passed |
+| Read Operation Verification | ✅ Verified |
+| Write Operation Verification | ✅ Verified |
+| Static Noise Margin (SNM) Analysis | ✅ Verified |
+| Read Disturb Analysis | ✅ Verified |
+| Write Margin Analysis | ✅ Verified |
+| Precharge Circuit Design | ✅ Verified |
+| Write Driver Design | ✅ Verified |
+| Sense Amplifier Design | ✅ Verified |
+| Integrated 1-Bit SRAM Verification | ✅ Complete |
+| OpenRAM Environment Setup | ✅ Complete |
+| OpenRAM SRAM Generation | ✅ Complete |
+| OpenRAM Generated Outputs | ✅ Validated |
+| OpenRAM Documentation | ✅ Complete |
+| Physical Verification Documentation | ✅ Complete |
+| Final Generated SRAM Macro | **16 Words × 16 Bits** |
+
+> **Current Scope**
+>
+> The circuit-level design and verification presented in this repository form the foundation of a larger SRAM implementation. The OpenRAM deliverables correspond to the validated **16×16 SRAM macro**, while the overall repository documents the complete AI-assisted workflow developed throughout the internship.
