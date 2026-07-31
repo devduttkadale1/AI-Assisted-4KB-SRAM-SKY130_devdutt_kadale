@@ -42,6 +42,19 @@ The repository combines:
 
 ---
 
+## 📂 Repository Navigation
+
+Explore different stages of the project directly.
+
+| Section | Description |
+|---------|-------------|
+| 🏗 **Architecture** | SRAM architecture, memory organization, and design concepts. [architecture/](architecture/) |
+| ⚙️ **Circuit Design** | CMOS inverter, 6T SRAM cell, peripheral circuits. [docs/](docs/) |
+| 📈 **Verification** | NGSpice simulations, SNM analysis, waveform validation. [verification/](verification/) |
+| 🧩 **OpenRAM** | OpenRAM setup, compiler flow, generated SRAM macro. [openram/](openram/) |
+| 📄 **Reports** | Weekly internship reports and documentation. [reports/](reports/) |
+| 🖼 **Generated Outputs** | GDSII, LEF, Liberty, Verilog, SPICE and HTML files. [generated/](generated/) |
+
 ## Project Highlights
 
 | Feature | Status |
