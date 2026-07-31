@@ -1086,7 +1086,11 @@ See the `LICENSE` file for complete licensing information.
 
 ---
 
+<p align="center">
+
 ⭐ If you found this repository useful, consider giving it a star.
 
 Developed as part of the
 VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
+
+</p>
