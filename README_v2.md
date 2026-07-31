@@ -972,12 +972,12 @@ The following open-source tools, technologies, documentation, and educational re
 
 ## Documentation & Technical References
 
-- **OpenRAM** – https://github.com/VLSIDA/OpenRAM
-- **SKY130A PDK** – https://skywater-pdk.readthedocs.io/
-- **Magic VLSI** – http://opencircuitdesign.com/magic/
-- **Xschem** – https://xschem.sourceforge.io/
-- **NGSpice** – https://ngspice.sourceforge.io/
-- **Netgen** – http://opencircuitdesign.com/netgen/
+- **OpenRAM** – [GitHub Repository](https://github.com/VLSIDA/OpenRAM)
+- **SKY130A PDK** – [Official Documentation](https://skywater-pdk.readthedocs.io/)
+- **Magic VLSI** – [Official Website](http://opencircuitdesign.com/magic/)
+- **Xschem** – [Official Website](https://xschem.sourceforge.io/)
+- **NGSpice** – [Official Website](https://ngspice.sourceforge.io/)
+- **Netgen** – [Official Website](http://opencircuitdesign.com/netgen/)
 
 ---
 
