@@ -25,6 +25,21 @@
 
 ---
 
+## 📊 Repository at a Glance
+
+| Category | Details |
+|-----------|---------|
+| 🎯 Project Goal | AI-Assisted 4KB SRAM Design using SKY130 PDK and OpenRAM |
+| 🏁 Final Deliverable | Validated 16 × 16 SRAM Macro (256-bit) |
+| 🛠 EDA Tools | Xschem, NGSpice, Magic VLSI, Netgen, OpenRAM |
+| 📐 Technology | SKY130A Open-Source PDK |
+| 🧩 Major Circuit Blocks | CMOS Inverter, 6T SRAM Cell, Precharge, Write Driver, Sense Amplifier |
+| 📈 Verification | Read, Write, SNM, Read Disturb, Write Margin, Integrated SRAM |
+| 📄 Generated Outputs | GDSII, LEF, SPICE, Verilog, Liberty, HTML |
+| 🤖 AI Assistance | Design Planning, Debugging, Verification, Documentation |
+
+---
+
 ## Overview
 
 This repository documents the complete **AI-assisted design, simulation, verification, and OpenRAM generation workflow** for an SRAM design using the **SKY130A Open-Source PDK**.
@@ -238,7 +253,6 @@ I --> J[OpenRAM Configuration]
 J --> K[16 × 16 SRAM Generation]
 K --> L[GDSII • LEF • SPICE • Verilog • Liberty]
 ```
-This workflow summarizes the complete design journey, starting from SRAM architecture exploration, progressing through transistor-level design and verification, and concluding with OpenRAM-based SRAM macro generation and standard ASIC deliverables.
 
 ## 📑 Table of Contents
 
@@ -839,6 +853,81 @@ All AI-generated suggestions were independently verified using Xschem, NGSpice, 
 
 
 <details>
+<summary><b>💡 Technical Skills Demonstrated</b></summary>
+
+<br>
+
+### Analog & Mixed Signal
+
+- CMOS Circuit Design
+- SRAM Architecture
+- 6T SRAM Bitcell Design
+- Peripheral Circuit Design
+
+### Verification
+
+- NGSpice Simulation
+- Static Noise Margin Analysis
+- Read/Write Verification
+- Read Disturb Analysis
+- Write Margin Analysis
+
+### Physical Design
+
+- Magic VLSI
+- Netgen LVS
+- Layout Inspection
+
+### Memory Compiler
+
+- OpenRAM
+- SKY130 PDK
+- SRAM Macro Generation
+
+### Engineering Workflow
+
+- AI-Assisted Design
+- Technical Documentation
+- Git & GitHub
+
+</details>
+
+<details>
+<summary><b>🚧 Engineering Challenges</b></summary>
+
+<br>
+
+| Challenge | Solution |
+|------------|----------|
+| OpenRAM configuration issues | Configured SKY130 environment and resolved compiler setup |
+| Missing PDK libraries | Corrected technology paths and environment variables |
+| Bitcell stability | Verified using SNM butterfly analysis |
+| Layout verification | Achieved DRC-clean layout and successful LVS matching |
+| OpenRAM macro validation | Generated and inspected final SRAM macro using Magic VLSI |
+
+<details>
+
+
+<details>
+<summary><b>🚀 🎓 Key Learning Outcomes</b></summary>
+
+<br> 
+
+Through this project I gained practical experience in:
+
+- SRAM architecture and memory organization
+- Transistor-level CMOS circuit design
+- SPICE-based circuit simulation
+- Physical layout inspection
+- Layout versus schematic verification
+- OpenRAM memory generation
+- AI-assisted engineering workflow
+- Technical documentation
+
+<details>
+
+
+<details>
 <summary><b>🚀 Future Work</b></summary>
 
 <br>
@@ -853,6 +942,75 @@ Possible future extensions include:
 - Advanced AI-assisted memory design workflows
 
 </details>
+
+<details>
+<summary><b># 📚 References, Resources & Acknowledgements</b></summary>
+
+<br>
+
+The following open-source tools, technologies, documentation, and educational resources were used throughout the design, verification, and documentation of this project.
+
+## Open-Source EDA Tools
+
+| Tool | Purpose |
+|------|---------|
+| **OpenRAM v1.2.49** | SRAM compiler used to generate the validated 16 × 16 SRAM macro and associated deliverables. |
+| **Xschem** | Schematic capture and transistor-level circuit design. |
+| **NGSpice** | Circuit simulation, waveform analysis, and functional verification. |
+| **Magic VLSI** | Physical layout inspection and DRC verification. |
+| **Netgen** | Layout-versus-Schematic (LVS) verification. |
+
+---
+
+## Process Design Kit (PDK)
+
+| Technology | Description |
+|------------|-------------|
+| **SKY130A Open-Source PDK** | 130 nm CMOS Process Design Kit used for schematic design, layout, simulation, and OpenRAM macro generation. |
+
+---
+
+## Documentation & Technical References
+
+- **OpenRAM** – https://github.com/VLSIDA/OpenRAM
+- **SKY130A PDK** – https://skywater-pdk.readthedocs.io/
+- **Magic VLSI** – http://opencircuitdesign.com/magic/
+- **Xschem** – https://xschem.sourceforge.io/
+- **NGSpice** – https://ngspice.sourceforge.io/
+- **Netgen** – http://opencircuitdesign.com/netgen/
+
+---
+
+## Internship
+
+**VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship**
+
+The internship provided the project objectives, design milestones, validation tasks, and engineering workflow followed throughout this repository.
+
+---
+
+## AI-Assisted Engineering
+
+Artificial Intelligence tools were used as engineering assistants for:
+
+- Understanding SRAM architecture
+- Planning circuit implementation
+- Debugging OpenRAM setup
+- Reviewing verification results
+- Improving technical documentation
+- Organizing project artifacts
+
+All generated suggestions were independently verified using the corresponding open-source EDA tools before being incorporated into the final project.
+
+---
+
+## Acknowledgements
+
+This project was completed as part of the **VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship**.
+
+The work combines open-source semiconductor design tools, the SKY130A Process Design Kit, OpenRAM, and AI-assisted engineering practices to document a complete SRAM design and verification workflow.
+
+<details>
 
 
 <details>
