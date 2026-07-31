@@ -54,7 +54,7 @@ The repository combines:
 | Peripheral Circuit Design | ✅ |
 | Integrated 1-Bit SRAM Verification | ✅ |
 | OpenRAM SRAM Macro Generation | ✅ |
-| Physical Verification Documentation | ✅ |
+| Physical Verification | ✅ |
 | Final Generated SRAM Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
 
 > **Repository Note**
@@ -162,7 +162,7 @@ The project successfully demonstrates the complete AI-assisted SRAM design workf
 | Layout Tool | Magic VLSI |
 | LVS Verification | Netgen |
 | SRAM Compiler | OpenRAM v1.2.49 |
-| Validated 16 × 16 SRAM Macro (256-bit)
+| Final Generated Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
 | Generated Deliverables | GDSII, LEF, SPICE, Verilog, Liberty, HTML |
 | AI-Assisted Workflow | Fully Documented |
 
@@ -202,7 +202,7 @@ The final validated **16 × 16 SRAM macro** was successfully generated using **O
 
 > **Note**
 >
-> The repository focuses on documenting the complete engineering workflow. Additional screenshots, verification reports, generated outputs, and OpenRAM documentation are available in the corresponding folders under `verification/`, `docs/openram/`, and `reports/week5/`.
+> The repository focuses on documenting the complete engineering workflow. Additional verification results, generated outputs, and supporting documentation are available in the `verification/`, `docs/openram/`, and `reports/week5/` directories.
 
 ---
 
@@ -603,6 +603,12 @@ OpenRAM automatically generated the files required for simulation, physical impl
 | **HTML Report (.html)** | Memory configuration summary |
 | **Log File (.log)** | Compiler execution log |
 
+---
+
+# 📚 Additional Information
+
+The sections below provide supplementary project information, repository organization, implementation details, and future directions.
+
 ## Output Verification
 
 The generated outputs were reviewed to ensure:
@@ -618,7 +624,10 @@ These deliverables represent the standard output package produced by the OpenRAM
 
 ---
 
-# Repository Structure
+<details>
+<summary><b>📁 Repository Structure</b></summary>
+
+<br>
 
 The repository is organized to separate architecture documentation, circuit design, verification results, OpenRAM deliverables, and weekly internship reports.
 
@@ -644,11 +653,15 @@ AI-Assisted-4KB-SRAM-SKY130/
 
 The modular organization enables easy navigation between design documentation, verification results, OpenRAM outputs, and supporting project reports.
 
----
+</details>
 
-# Final Verification Summary
 
-The project successfully demonstrates the complete **AI-assisted SRAM design workflow** using the **SKY130A Open-Source PDK**, beginning with transistor-level circuit design and progressing through OpenRAM-based SRAM macro generation.
+<details>
+<summary><b>✅ Final Verification Summary</b></summary>
+
+<br>
+
+The project successfully demonstrates the complete AI-assisted SRAM design workflow using the SKY130A Open-Source PDK, beginning with transistor-level circuit design and progressing through OpenRAM-based SRAM macro generation.
 
 ## Verification Checklist
 
@@ -672,13 +685,17 @@ The project successfully demonstrates the complete **AI-assisted SRAM design wor
 
 ## Project Outcome
 
-This repository demonstrates the complete engineering workflow for SRAM development, including architecture study, circuit implementation, transistor-level verification, physical validation, OpenRAM-based memory generation, and comprehensive technical documentation using open-source EDA tools.
+This repository demonstrates the complete engineering workflow for SRAM development using open-source EDA tools.
 
----
+</details>
 
-# Progress Summary
 
-The internship project was completed in multiple phases, gradually progressing from SRAM fundamentals to compiler-generated memory macros.
+<details>
+<summary><b>📅 Progress Summary</b></summary>
+
+<br>
+
+The internship project progressed through three major phases.
 
 | Phase | Major Activities | Status |
 |--------|------------------|:------:|
@@ -686,7 +703,7 @@ The internship project was completed in multiple phases, gradually progressing f
 | Week 2–3 | Bitcell verification, SNM, read/write, peripheral circuits | ✅ |
 | Week 5 | OpenRAM setup, SRAM generation, documentation | ✅ |
 
-## Overall Progress
+### Overall Progress
 
 - ✅ SRAM architecture study completed
 - ✅ Circuit-level verification completed
@@ -694,63 +711,77 @@ The internship project was completed in multiple phases, gradually progressing f
 - ✅ OpenRAM workflow completed
 - ✅ Documentation completed
 
----
+</details>
 
-# Quick Start
 
-Clone the repository:
+<details>
+<summary><b>🚀 Quick Start</b></summary>
+
+<br>
+
+Clone the repository.
 
 ```bash
 git clone https://github.com/your-username/AI-Assisted-4KB-SRAM-SKY130.git
 cd AI-Assisted-4KB-SRAM-SKY130
 ```
 
-## Explore the Repository
+### Explore the Repository
 
-1. Review the **Project Results** section.
-2. Study the **SRAM Architecture** and **6T SRAM Cell**.
-3. Examine the **verification waveforms**.
-4. Inspect the **Magic VLSI layouts**.
-5. Review the **OpenRAM generation flow**.
-6. Explore the generated SRAM deliverables.
+1. Review the Project Results.
+2. Study the SRAM Architecture.
+3. Explore the verification waveforms.
+4. Inspect the Magic layouts.
+5. Review the OpenRAM flow.
+6. Examine the generated outputs.
 
----
+</details>
 
-# Tools & Environment
+
+<details>
+<summary><b>🛠️ Tools & Environment</b></summary>
+
+<br>
 
 | Tool | Purpose |
 |------|---------|
 | Xschem | Schematic capture |
 | NGSpice | Circuit simulation |
 | Magic VLSI | Layout inspection |
-| Netgen | Layout-versus-Schematic verification |
-| OpenRAM v1.2.49 | SRAM macro generation |
-| SKY130A PDK | Process Design Kit |
-| Ubuntu (WSL2) | Development environment |
+| Netgen | LVS verification |
+| OpenRAM | SRAM generation |
+| SKY130A | Open-source PDK |
+| Ubuntu (WSL2) | Development platform |
 | Git & GitHub | Version control |
 | ChatGPT | AI-assisted workflow |
 
----
+</details>
 
-# AI-Assisted Workflow
 
-AI tools were used throughout the project to assist with learning, circuit planning, verification strategies, debugging, documentation, and workflow organization.
+<details>
+<summary><b>🤖 AI-Assisted Workflow</b></summary>
 
-AI assistance included:
+<br>
+
+AI tools assisted with:
 
 - SRAM architecture understanding
 - Circuit design guidance
 - SPICE simulation planning
 - Verification methodology
-- OpenRAM setup assistance
-- Documentation preparation
+- OpenRAM setup
+- Documentation
 - Technical report generation
 
-All AI-generated suggestions were independently verified using Xschem, NGSpice, Magic VLSI, Netgen, and OpenRAM before being incorporated into the final project. AI served as an engineering assistant for learning, planning, debugging, and documentation, while all design validation and verification were performed using the corresponding open-source EDA tools.
+All AI-generated suggestions were independently verified using Xschem, NGSpice, Magic VLSI, Netgen, and OpenRAM before being incorporated into the final project.
 
----
+</details>
 
-# Internship Information
+
+<details>
+<summary><b>🎓 Internship Information</b></summary>
+
+<br>
 
 **Program**
 
@@ -770,23 +801,33 @@ All AI-generated suggestions were independently verified using Xschem, NGSpice, 
 - OpenRAM Memory Generation
 - AI-Assisted Engineering Workflow
 
----
+</details>
 
-# Future Work
 
-Possible extensions of this project include:
+<details>
+<summary><b>🚀 Future Work</b></summary>
 
-- Generate larger SRAM organizations using OpenRAM.
-- Perform complete DRC/LVS verification on generated macros.
-- Integrate the SRAM macro into a larger digital system.
-- Perform timing and power characterization across multiple PVT corners.
-- Explore memory compiler customization and optimization techniques.
-- Extend the workflow to larger AI-assisted memory design projects.
+<br>
 
----
+Possible future extensions include:
 
-# License
+- Larger SRAM organizations
+- Complete DRC/LVS on generated macros
+- Digital SoC integration
+- Multi-corner timing and power characterization
+- OpenRAM customization
+- Advanced AI-assisted memory design workflows
+
+</details>
+
+
+<details>
+<summary><b>📄 License</b></summary>
+
+<br>
 
 This project is released under the MIT License.
 
 See the `LICENSE` file for complete licensing information.
+
+</details>
