@@ -281,7 +281,10 @@ K --> L[GDSII • LEF • SPICE • Verilog • Liberty]
 
 ---
 
----
+<details>
+<summary><b>🏛 SRAM Architecture & Theory (Click to Expand)</b></summary>
+
+<br>
 
 # SRAM Architecture
 
@@ -334,9 +337,13 @@ The objective of this project was to understand, design, verify, and document th
 
 > 📖 Continue with the [6T SRAM Cell](#6t-sram-cell) to understand the storage element used throughout the design, or explore the detailed architecture notes in the `architecture/` directory.
 
----
+</details>
 
-# 6T SRAM Cell
+
+<details>
+<summary><b>🧩 6T SRAM Bitcell Design & Verification</b></summary>
+
+<br>
 
 The **6-Transistor (6T) SRAM cell** is the fundamental storage element of an SRAM memory. It stores one bit of data using two cross-coupled CMOS inverters and two NMOS access transistors controlled by the wordline (WL).
 
@@ -372,13 +379,15 @@ The two cross-coupled CMOS inverters create a bistable latch capable of storing 
 
 > 📖 Detailed transistor-level analysis and stability discussions are available in the `architecture/` directory.
 
----
+</details>
 
-# Read & Write Operations
+
+<details>
+<summary><b>📖 Read & Write Operation Verification</b></summary>
+
+<br>
 
 The primary functions of an SRAM cell are **read** and **write** operations. Both rely on the coordinated timing of the **wordline (WL)**, **bitlines (BL/BLB)**, **precharge circuit**, and **write driver** to ensure reliable data transfer while maintaining cell stability.
-
----
 
 ## Read Operation
 
@@ -426,15 +435,17 @@ The read and write simulations demonstrate the functional correctness of the cus
 
 > 📖 Related SPICE netlists, timing analysis, and waveform results are available in the `verification/` directory.
 
----
+</details>
 
-# Peripheral Circuits
+
+<details>
+<summary><b>⚙ Peripheral Circuit Design</b></summary>
+
+<br>
 
 In addition to the **6T SRAM bitcell**, several peripheral circuits are required to perform reliable read and write operations. These circuits control memory access, improve signal integrity, and enable efficient communication between the memory array and external logic.
 
 The following peripheral blocks were studied, designed, and verified during this project.
-
----
 
 ## Precharge Circuit
 
@@ -500,9 +511,12 @@ Together, these peripheral circuits enable reliable SRAM operation by coordinati
 
 > 📖 Additional circuit schematics and verification reports are available in the `verification/` and `docs/` directories.
 
----
+</details>
 
-# Integrated 1-Bit SRAM Verification
+<details>
+<summary><b>🏗 Integrated 1-Bit SRAM Verification</b></summary>
+
+<br>
 
 After verifying the individual SRAM building blocks, the complete **1-bit SRAM subsystem** was integrated and simulated to validate the interaction between the memory cell and its supporting peripheral circuits.
 
@@ -604,9 +618,12 @@ The objective of using OpenRAM was to complement the custom circuit-level design
 
 > 📖 Generated reports, configuration files, compiler logs, and layout screenshots are available in `reports/week5/` and `docs/openram/`.
 
----
+</details>
 
-# OpenRAM SRAM Generation
+<details>
+<summary><b>📈 OpenRAM SRAM Generation</b></summary>
+
+<br>
 
 The final stage of this project involved generating an SRAM macro using **OpenRAM v1.2.49** with the **SKY130A Open-Source PDK**. The compiler automatically integrated the memory array, peripheral circuitry, address decoding, and physical layout to produce a complete SRAM implementation.
 
@@ -635,9 +652,13 @@ The OpenRAM compiler successfully generated the complete SRAM macro together wit
 >
 > Configuration files, compiler logs, screenshots, and generated reports are available in the **`reports/week5/`** and **`docs/openram/`** directories.
 
----
+</details>
 
-# Generated Outputs
+
+<details>
+<summary><b>📦 Generated Deliverables (GDS, LEF, SPICE, Liberty, Verilog)</b></summary>
+
+<br>
 
 OpenRAM automatically generated the files required for simulation, physical implementation, and ASIC integration.
 
@@ -651,9 +672,13 @@ OpenRAM automatically generated the files required for simulation, physical impl
 | **HTML Report (.html)** | Memory configuration summary |
 | **Log File (.log)** | Compiler execution log |
 
----
+</details>
 
-# 📚 Additional Information
+
+<details>
+<summary><b>📚 Additional Information</b></summary>
+
+<br>
 
 The sections below provide supplementary project information, repository organization, implementation details, and future directions.
 
@@ -670,7 +695,8 @@ The generated outputs were reviewed to ensure:
 
 These deliverables represent the standard output package produced by the OpenRAM compiler for downstream ASIC design flows.
 
----
+</details>
+
 
 <details>
 <summary><b>📁 Repository Structure</b></summary>
@@ -944,7 +970,7 @@ Possible future extensions include:
 </details>
 
 <details>
-<summary><b>🧩 References, Resources & Acknowledgements</b></summary>
+<summary><b>📖 References, Resources & Acknowledgements</b></summary>
 
 <br>
 
