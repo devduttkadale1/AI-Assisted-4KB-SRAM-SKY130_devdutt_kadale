@@ -909,7 +909,7 @@ All AI-generated suggestions were independently verified using Xschem, NGSpice, 
 
 
 <details>
-<summary><b>🎓 Key Learning Outcomes</b></summary>
+<summary><b>🏷 Key Learning Outcomes</b></summary>
 
 <br> 
 
@@ -928,7 +928,7 @@ Through this project I gained practical experience in:
 
 
 <details>
-<summary><b>🚀 Future Work</b></summary>
+<summary><b>📈 Future Work</b></summary>
 
 <br>
 
@@ -944,7 +944,7 @@ Possible future extensions include:
 </details>
 
 <details>
-<summary><b>📚 References, Resources & Acknowledgements</b></summary>
+<summary><b>🧩 References, Resources & Acknowledgements</b></summary>
 
 <br>
 
