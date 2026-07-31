@@ -905,7 +905,7 @@ All AI-generated suggestions were independently verified using Xschem, NGSpice, 
 | Layout verification | Achieved DRC-clean layout and successful LVS matching |
 | OpenRAM macro validation | Generated and inspected final SRAM macro using Magic VLSI |
 
-<details>
+</details>
 
 
 <details>
@@ -924,7 +924,7 @@ Through this project I gained practical experience in:
 - AI-assisted engineering workflow
 - Technical documentation
 
-<details>
+</details>
 
 
 <details>
@@ -1010,7 +1010,7 @@ This project was completed as part of the **VSD AI-Assisted Analog, Mixed-Signal
 
 The work combines open-source semiconductor design tools, the SKY130A Process Design Kit, OpenRAM, and AI-assisted engineering practices to document a complete SRAM design and verification workflow.
 
-<details>
+</details>
 
 
 <details>
