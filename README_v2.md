@@ -625,7 +625,7 @@ These deliverables represent the standard output package produced by the OpenRAM
 ---
 
 <details>
-<summary><b># 📁 Repository Structure</b></summary>
+<summary><b>📁 Repository Structure</b></summary>
 
 <br>
 
