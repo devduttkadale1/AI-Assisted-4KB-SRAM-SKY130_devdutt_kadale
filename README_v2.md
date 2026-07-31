@@ -22,6 +22,7 @@
 > - **Design Flow:** **Xschem → NGSpice → Magic VLSI → Netgen LVS → OpenRAM**
 > - **Final Deliverable:** Validated **16 × 16 SRAM Macro**
 > - **Focus:** AI-assisted SRAM design, verification, physical validation, and documentation
+> - Last Updated: July 2026
 
 ---
 
@@ -37,6 +38,21 @@
 | 📈 Verification | Read, Write, SNM, Read Disturb, Write Margin, Integrated SRAM |
 | 📄 Generated Outputs | GDSII, LEF, SPICE, Verilog, Liberty, HTML |
 | 🤖 AI Assistance | Design Planning, Debugging, Verification, Documentation |
+
+---
+
+## 📈 Repository Statistics
+
+| Metric | Value |
+|---------|------:|
+| Internship Duration | 5 Weeks |
+| SRAM Cells Designed | 6T CMOS SRAM Bitcell |
+| Major Circuit Blocks | 8 |
+| SPICE Simulations | 10+ |
+| Physical Verification Reports | 5+ |
+| OpenRAM Generated Files | GDS, LEF, SPICE, Verilog, Liberty, HTML |
+| Documentation | 1000+ Lines |
+| Technology | SKY130A Open-Source PDK |
 
 ---
 
@@ -126,6 +142,11 @@ The repository documents the complete development flow of the internship project
 
 ---
 
+## 🧠 Skills Demonstrated
+
+`CMOS Design` • `SRAM Design` • `SPICE Simulation` • `Magic VLSI`
+`Netgen LVS` • `OpenRAM` • `SKY130A` • `Git`
+`Technical Documentation` • `AI-assisted Engineering`
 
 ## Key Achievements
 
@@ -1049,3 +1070,23 @@ This project is released under the MIT License.
 See the `LICENSE` file for complete licensing information.
 
 </details>
+
+---
+
+## ❤️ Designed With
+
+- OpenRAM
+- SKY130A PDK
+- Xschem
+- NGSpice
+- Magic VLSI
+- Netgen
+- GitHub
+- ChatGPT
+
+---
+
+⭐ If you found this repository useful, consider giving it a star.
+
+Developed as part of the
+VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
