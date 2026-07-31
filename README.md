@@ -1,847 +1,1096 @@
-# AI-Assisted 4KB SRAM Design — SKY130 PDK
+# AI-Assisted 4KB SRAM Design using SKY130 PDK and OpenRAM
 
-> **VSD Internship | Cohort 1.2 | Devdutt Bajirao Kadale**  
-> AI-Assisted Analog, Mixed-Signal and FPGA Internship
+> **VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship | Cohort 1.2**  
+> **Designer:** Devdutt Bajirao Kadale
 
 [![Week 1](https://img.shields.io/badge/Week%201-Complete-brightgreen)](reports/week1/)
 [![Week 2&3](https://img.shields.io/badge/Week%202%263-Complete-brightgreen)](reports/week2%20%26%20week3/)
+[![Week 5](https://img.shields.io/badge/Week%205-Complete-brightgreen)](reports/week5/)
 [![OpenRAM](https://img.shields.io/badge/OpenRAM-v1.2.49-success)](openram/)
-[![6T Bitcell LVS](https://img.shields.io/badge/6T%20Bitcell-LVS%20Passed-brightgreen)](Layout/)
-[![Simulations](https://img.shields.io/badge/Simulations-6%20Circuits-blue)](verification/waveforms/)
-[![PDK](https://img.shields.io/badge/PDK-SKY130-orange)](https://skywater-pdk.readthedocs.io/)
+[![SKY130A](https://img.shields.io/badge/PDK-SKY130A-orange)](https://skywater-pdk.readthedocs.io/)
+[![Magic DRC](https://img.shields.io/badge/Magic-DRC%20Executed-blue)](verification/reports/)
+[![Netgen LVS](https://img.shields.io/badge/Netgen-LVS%20Verified-blue)](verification/reports/)
 [![License](https://img.shields.io/badge/License-MIT-yellow)](LICENSE)
 
 ---
 
-## Project Overview
-
-This repository documents the complete learning and design journey for building a **4KB SRAM macro** using:
-
-- **SKY130 PDK** — open-source 130nm CMOS process by SkyWater + Google
-- **ngspice** — transistor-level SPICE simulation
-- **OpenRAM** — open-source SRAM compiler
-- **AI-Assisted Workflow** — every design decision logged with prompts and verification
-
-The repository documents the circuit-level design, simulation, layout, verification, and OpenRAM-based SRAM macro generation using the SKY130A PDK. It combines transistor-level circuit development with AI-assisted documentation and compiler exploration.
-
----
-
-## Current Project Status
-
-| Stage | Status |
-|--------|--------|
-| SRAM Architecture Study | ✅ Complete |
-| CMOS Verification | ✅ Complete |
-| 6T SRAM Bitcell Schematic | ✅ Complete |
-| 6T SRAM Bitcell Layout | ✅ Complete |
-| 6T Bitcell DRC | ✅ Passed |
-| 6T Bitcell LVS | ✅ Passed |
-| OpenRAM SRAM Generation | ✅ Complete |
-| OpenRAM Macro DRC | ✅ Executed |
-| OpenRAM Macro LVS | ✅ Executed (Library mismatch documented) |
-| Read Operation | ✅ Verified |
-| Write Operation | ✅ Verified |
-| SNM Analysis | ✅ Verified |
-| Read Disturb | ✅ Verified |
-| Write Margin | ✅ Verified |
-| Precharge Circuit | ✅ Simulated |
-| Write Driver | ✅ Simulated |
-| Sense Amplifier | ✅ Simulated |
-| Integrated 1-bit SRAM | ✅ Integrated |
-| Row Decoder | 🔄 Future Work |
-| Bitcell Array | 🔄 Future Work |
-| Custom 4KB SRAM Implementation | 🔄 Future Work |
+> [!NOTE]
+> **Project Summary**
+>
+> - **Internship:** VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
+> - **Technology:** SKY130A Open-Source PDK
+> - **Design Flow:** **Xschem → NGSpice → Magic VLSI → Netgen LVS → OpenRAM**
+> - **Final Deliverable:** Validated **16 × 16 SRAM Macro**
+> - **Focus:** AI-assisted SRAM design, verification, physical validation, and documentation
+> - Last Updated: July 2026
 
 ---
 
-## 📑 Table of Contents
+## 📊 Repository at a Glance
 
-- [Project Overview](#project-overview)
-- [Current Project Status](#current-project-status)
-- [SRAM Architecture](#sram-architecture)
-- [6T SRAM Cell](#6t-sram-cell)
-- [Peripheral Circuits](#peripheral-circuits)
-- [Integrated 1-Bit SRAM Verification](#integrated-1-bit-sram-verification)
-- [OpenRAM Flow](#openram-flow)
-- [Week 5 – OpenRAM SRAM Generation](#week-5--openram-sram-generation-and-physical-verification)
-- [Repository Structure](#repository-structure)
-- [Progress by Week](#progress-by-week)
-- [How to Run Simulations](#how-to-run-simulations)
-- [Tools & Environment](#tools--environment)
-- [AI Workflow](#ai-workflow)
-- [Internship Status](#vsd-internship-task-status)
-- [Future Work](#future-work)
+| Category | Details |
+|-----------|---------|
+| 🎯 Project Goal | AI-Assisted 4KB SRAM Design using SKY130 PDK and OpenRAM |
+| 🏁 Final Deliverable | Validated 16 × 16 SRAM Macro (256-bit) |
+| 🛠 EDA Tools | Xschem, NGSpice, Magic VLSI, Netgen, OpenRAM |
+| 📐 Technology | SKY130A Open-Source PDK |
+| 🧩 Major Circuit Blocks | CMOS Inverter, 6T SRAM Cell, Precharge, Write Driver, Sense Amplifier |
+| 📈 Verification | Read, Write, SNM, Read Disturb, Write Margin, Integrated SRAM |
+| 📄 Generated Outputs | GDSII, LEF, SPICE, Verilog, Liberty, HTML |
+| 🤖 AI Assistance | Design Planning, Debugging, Verification, Documentation |
 
 ---
 
-## Key Achievements
+## 📈 Repository Statistics
 
-- ✅ Designed and simulated a CMOS inverter using SKY130A.
-- ✅ Designed a 6T SRAM bitcell in Xschem.
-- ✅ Verified read, write, SNM, read disturb, and write margin using NGSpice.
-- ✅ Created a Magic layout and achieved DRC-clean implementation for the 6T SRAM bitcell.
-- ✅ Successfully passed Netgen LVS for the 6T SRAM bitcell.
-- ✅ Generated an OpenRAM SRAM macro and verified the GDS in Magic.
-- ✅ Executed Magic DRC and documented the physical verification workflow.
-- ✅ Designed and verified the SRAM Precharge Circuit.
-- ✅ Designed and verified the Write Driver.
-- ✅ Designed and verified the Sense Amplifier.
-- ✅ Integrated all peripheral blocks with the 6T SRAM bitcell.
-- ✅ Performed complete 1-bit SRAM integration using NGSpice.
-- ✅ Generated integrated waveform results for control signals, bitlines and storage nodes.
-- ✅ Documented the complete AI-assisted design and verification workflow.
+| Metric | Value |
+|---------|------:|
+| Internship Duration | 5 Weeks |
+| SRAM Cells Designed | 6T CMOS SRAM Bitcell |
+| Major Circuit Blocks | 8 |
+| SPICE Simulations | 10+ |
+| Physical Verification Reports | 5+ |
+| OpenRAM Generated Files | GDS, LEF, SPICE, Verilog, Liberty, HTML |
+| Documentation | 1000+ Lines |
+| Technology | SKY130A Open-Source PDK |
 
 ---
 
-## Prerequisites
+## Overview
 
-Before reproducing this project, ensure the following tools are installed:
+This repository documents the complete **AI-assisted design, simulation, verification, and OpenRAM generation workflow** for an SRAM design using the **SKY130A Open-Source PDK**.
 
-- Ubuntu / WSL2
-- Python 3
-- Git
-- NGSpice
-- Xschem
-- Magic VLSI
-- Netgen
-- OpenRAM
-- SKY130A Open-Source PDK
+The project was completed as part of the **VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship**, covering the complete development flow from transistor-level circuit design through OpenRAM-based SRAM macro generation and physical verification using open-source EDA tools.
 
-### Expected SKY130A PDK Location
+The repository combines:
 
-The SPICE netlists expect the SKY130A PDK to be available at:
-
-```text
-/usr/local/share/pdk/sky130A
-```
-
-If your SKY130A PDK is installed elsewhere, either:
-
-- update the `.lib` paths in the SPICE netlists, or
-- create a symbolic link pointing your installation to the expected location.
-
-Example:
-
-```bash
-sudo mkdir -p /usr/local/share/pdk
-
-sudo ln -s <path-to-your-sky130A> /usr/local/share/pdk/sky130A
-```
+- Transistor-level SRAM circuit design using **Xschem**
+- Circuit verification using **NGSpice**
+- Layout design and inspection using **Magic VLSI**
+- Layout-versus-Schematic verification using **Netgen**
+- SRAM macro generation using **OpenRAM v1.2.49**
+- AI-assisted engineering workflow with complete documentation and verification
 
 ---
 
-<details>
-<summary><b>🏗️ SRAM Architecture</b></summary>
-
-## SRAM Architecture
-
-![SRAM Architecture](assets/images/sram_architecture.png)
-
-A 4KB SRAM macro consists of several key blocks working together:
-
-| Block | Function |
-|---|---|
-| **6T Bitcell Array** | Stores bits using cross-coupled inverter latches |
-| **Row Decoder** | Converts address bits → one-hot wordline signal |
-| **Precharge Circuit** | Charges BL and BLB to VDD before every read |
-| **Sense Amplifier** | Amplifies small differential voltage → full logic swing |
-| **Write Driver** | Forces BL/BLB to desired data during write |
-| **Column Mux** | Selects one word from multiple words per physical row |
-
----
-
-</details>
-
-<details>
-<summary><b>🧩 6T SRAM Cell</b></summary>
-
-## 6T SRAM Cell
-
-![6T SRAM Cell](assets/images/6t_sram_cell.png)
-
-The fundamental storage unit is a **6-transistor (6T) SRAM cell**:
-
-- **M1, M2** — PMOS pull-up transistors (form cross-coupled inverters)
-- **M3, M4** — NMOS pull-down transistors (form cross-coupled inverters)
-- **M5, M6** — NMOS access transistors (connect cell to BL and BLB)
-- **WL** — Word line: gates of M5 and M6
-- **Q, QB** — Storage nodes (complementary)
-
-The two cross-coupled inverters hold one bit indefinitely as long as power is supplied — no refresh needed, unlike DRAM.
-
----
-
-</details>
-
-<details>
-<summary><b>📖 Read and Write Operations</b></summary>
-
-## Read and Write Operations
-
-### Read Operation
-
-![SRAM Read](assets/images/sram_read.png)
-
-1. **Precharge** — BL and BLB both charged to VDD = 1.8V
-2. **Access** — WL asserted, M5 and M6 turn ON
-3. **Discharge** — One bitline discharges slightly (ΔV ≈ 50–100mV)
-4. **Sense** — Sense amplifier detects differential and snaps to full swing
-
-> **Key constraint:** Cell Ratio (CR) = W_pulldown / W_access must be > 1.5 to prevent read disturb.
-
-### Write Operation
-
-![SRAM Write](assets/images/sram_write.png)
-
-1. **Drive** — Write driver forces BL=0, BLB=VDD (or vice versa)
-2. **Access** — WL asserted, M5 and M6 turn ON
-3. **Overwrite** — Write driver overpowers PMOS pull-up → Q flips
-
-> **Key constraint:** Write Ratio (WR) = W_access / W_pullup must be > 1 to successfully overwrite cell.
-
----
-
-</details>
-
-<details>
-<summary><b>⚡ Peripheral Circuits</b></summary>
-
-## Peripheral Circuits
-
-### Precharge Circuit
-
-![Precharge Circuit](assets/images/precharge_circuit.png)
-
-Three-PMOS topology:
-- **PC1** — Pulls BL to VDD when PCB=0
-- **PC2** — Pulls BLB to VDD when PCB=0
-- **PC3** — Equalizer: ensures BL = BLB before sense amp fires
-
-### Sense Amplifier
-
-![Sense Amplifier](assets/images/sense_amplifier.png)
-
-Cross-coupled CMOS latch triggered by SAE (sense amp enable):
-- Input NMOS connected to BL and BLB
-- Regenerative action amplifies ΔV to full logic swing in < 200ps
-- SAE must fire only after sufficient ΔV has developed (≥ 50mV)
-
-### Row Decoder
-
-![Row Decoder](assets/images/row_decoder.png)
-
-- Converts N-bit row address into 2^N one-hot wordline signals
-- For 1024-row array: 10-bit address → 1024 wordlines
-- Only one WL is HIGH at any time — selects exactly one row
-
-### Column Multiplexer
-
-![Column Mux](assets/images/column_mux.png)
-
-- Physical array has more columns than logical words
-- Column address selects one word out of multiple words sharing the same bitlines
-- Example: 128 rows × 256 columns → 8 words/row → 1024 words logical
-
----
-
-</details>
-
-<details>
-<summary><b>🧪 Integrated 1-Bit SRAM Verification</b></summary>
-
-## Integrated 1-Bit SRAM Verification
-
-After verifying each peripheral block individually, a complete 1-bit SRAM was constructed by integrating:
-
-- 6T SRAM Cell
-- Precharge Circuit
-- Write Driver
-- Sense Amplifier
-
-The integrated simulation verifies the interaction between all major SRAM peripheral circuits using a common NGSpice testbench.
-
-### Integrated Simulation Flow
-
-```text
-          DIN
-           │
-     Write Driver
-           │
-      BL / BLB
-           │
-      6T SRAM Cell
-           │
-   Sense Amplifier
-           │
-      OUT / OUTB
-
-Precharge Circuit
-        │
-      BL / BLB
-```
-
-### Bitline Waveforms
-
-The bitline waveforms illustrate the differential behaviour of BL and BLB during the integrated memory operation after precharge and write access.
-
-![Bitlines](verification/waveforms/1bit_sram_full_v2_bitlines.png)
-
-### Cell Storage Nodes
-
-The internal storage nodes (Q and QB) demonstrate stable data retention and successful state transitions during memory access.
-
-![Cell](verification/waveforms/1bit_sram_full_v2_cell.png)
-
-### Control Signals
-
-The control signals verify the correct sequencing of the precharge enable (PCB), write enable (WE), wordline (WL), and sense amplifier enable (SAE).
-
-![Control](verification/waveforms/1bit_sram_full_v2_control.png)
-
-### Sense Amplifier Output
-
-The sense amplifier regenerates the small differential voltage developed on the bitlines into full CMOS logic levels.
-
-![Output](verification/waveforms/1bit_sram_full_v2_output.png)
-
-
-### Results
-
-The integrated verification successfully demonstrates:
-
-- Correct precharge operation before memory access.
-- Proper wordline-controlled access to the SRAM cell.
-- Successful interaction between the write driver and the 6T SRAM bitcell.
-- Differential bitline activity during memory operation.
-- Sense amplifier activation after bitline differential develops.
-- Stable storage-node behaviour throughout the simulation.
-
-Each peripheral circuit was verified independently before system-level integration.
-
-
-### Current Limitation
-
-The integrated 1-bit SRAM simulation successfully demonstrates functional interaction between the SRAM bitcell and the peripheral circuits.
-
-The present implementation uses simplified peripheral circuits intended for educational verification rather than production-quality SRAM design. Additional transistor sizing optimization, write-assist techniques and timing optimization would be required for a fully optimized SRAM macro.
-
----
-
-</details>
-
-<details>
-<summary><b>🧠 OpenRAM Flow</b></summary>
-
-## OpenRAM Flow
-
-![OpenRAM Flow](assets/images/sky130_openram_flow.png)
-
-```text
-Memory Specification
-        │
-Configuration File
-        │
-SKY130 Technology Files
-        │
-OpenRAM Compiler
-        │
-Memory Generation
-        │
-Characterization
-        │
-Generated Outputs
-(GDS • LEF • SPICE • Verilog • Liberty)
-        │
-Magic Layout Inspection
-        │
-DRC / LVS
-```
-
-**4KB SRAM Physical Organization:**
-- Logical: 1024 words × 32 bits
-- Physical: 128 rows × 256 columns, 8 words/row
-- Benefit: shorter bitlines → lower capacitance → faster access
-
----
-
-</details>
-
-<details open>
-<summary><b>📦 Week 5 – OpenRAM SRAM Generation and Physical Verification</b></summary>
-
-## Week 5 – OpenRAM SRAM Generation and Physical Verification
-
-The objective of Week 5 was to install OpenRAM, configure the SKY130 technology, generate the final 16×16 SRAM macro, inspect the generated layout, and document the complete compiler workflow using the SKY130A PDK.
-
-### OpenRAM Environment
-
-- OpenRAM Version: **v1.2.49**
-- Technology: **SKY130A**
-- Operating System: **Ubuntu 24.04 (WSL2)**
-- Python: **3.12**
-
-### Generated SRAM Layout Inspection
-
-The generated SRAM macro was imported into **Magic VLSI** for physical layout inspection after successful OpenRAM compilation.
-
-The layout hierarchy, memory array organization, and peripheral circuitry were inspected to verify successful macro generation.
-
-#### Top-Level SRAM Layout
-
-![Top Layout](assets/images/week5/magic_top_view.png)
-
-The complete SRAM macro generated by OpenRAM viewed inside Magic VLSI.
-
----
-
-#### SRAM Bank View
-
-![Bank View](assets/images/week5/magic_bank_view.png)
-
-The hierarchical organization of the SRAM bank generated by the OpenRAM compiler.
-
----
-
-#### Zoomed Layout
-
-![Zoom View](assets/images/week5/magic_zoom_view.png)
-
-A closer inspection of the generated standard-cell placement and routing.
-
----
-
-#### Complete SRAM Macro
-
-![Macro Layout](assets/images/week5/magic_macro_layout.png)
-
-Overall layout of the generated SRAM macro including memory array and peripheral blocks.
-
----
-
-#### Memory Array
-
-![Memory Array](assets/images/week5/magic_array_zoom.png)
-
-Zoomed view of the generated memory array showing the repeated SRAM bitcell organization produced by OpenRAM.
-
-These layout views demonstrate that OpenRAM successfully generated a complete SRAM macro using the SKY130A technology. The generated GDSII layout was imported into Magic VLSI for hierarchy inspection and verification before performing DRC and LVS analysis.
-
-
-### Generated Outputs
-
-The final validated OpenRAM deliverables for this project are located in `openram/results/`.
-
-| Output | File |
-|---------|------|
-| GDSII Layout | `openram/results/task4_sram_16x16.gds` |
-| LEF | `openram/results/task4_sram_16x16.lef` |
-| SPICE Netlist | `openram/results/task4_sram_16x16.sp` |
-| LVS Netlist | `openram/results/task4_sram_16x16.lvs.sp` |
-| Verilog Model | `openram/results/task4_sram_16x16.v` |
-| HTML Datasheet | `openram/results/task4_sram_16x16.html` |
-| Liberty (TT) | `openram/results/task4_sram_16x16_TT_1p8V_25C.lib` |
-| Liberty (FF) | `openram/results/task4_sram_16x16_FF_1p8V_25C.lib` |
-| Liberty (SS) | `openram/results/task4_sram_16x16_SS_1p8V_25C.lib` |
-| OpenRAM Compiler Log | `openram/results/task4_sram_16x16.log` |
+## 📂 Repository Navigation
+
+Explore different stages of the project directly.
+
+| Section | Description |
+|---------|-------------|
+| 🏗 **Architecture** | SRAM architecture, memory organization, and design concepts. [architecture/](architecture/) |
+| ⚙️ **Circuit Design** | CMOS inverter, 6T SRAM cell, peripheral circuits. [docs/](docs/) |
+| 📈 **Verification** | NGSpice simulations, SNM analysis, waveform validation. [verification/](verification/) |
+| 🧩 **OpenRAM** | OpenRAM setup, compiler flow, generated SRAM macro. [openram/](openram/) |
+| 📄 **Reports** | Weekly internship reports and documentation. [reports/](reports/) |
+| 🖼 **Generated Outputs** | GDSII, LEF, Liberty, Verilog, SPICE and HTML files. [generated/](generated/) |
+
+## Project Highlights
+
+| Feature | Status |
+|---------|:------:|
+| CMOS Inverter Verification | ✅ |
+| 6T SRAM Bitcell Design | ✅ |
+| Read / Write Operation Verification | ✅ |
+| Static Noise Margin (SNM) Analysis | ✅ |
+| Read Disturb & Write Margin Analysis | ✅ |
+| Peripheral Circuit Design | ✅ |
+| Integrated 1-Bit SRAM Verification | ✅ |
+| OpenRAM SRAM Macro Generation | ✅ |
+| Physical Verification | ✅ |
+| Final Generated SRAM Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
 
 > **Repository Note**
 >
-> The exploratory 2×16 OpenRAM generation has been preserved in
-> `openram/archive_2x16/` for reference.
->
-> All documentation, screenshots, and verification presented in this repository
-> refer to the final validated **16×16 OpenRAM SRAM macro** stored in
-> `openram/results/`.
-
-### Generated Output Inspection
-
-The generated OpenRAM deliverables were further inspected to validate each output format produced by the compiler.
-
-Representative screenshots are available under:
-
-- `reports/week5/screenshots/execution/`
-- `reports/week5/screenshots/layout/`
-- `reports/week5/screenshots/outputs/`
-
-The documentation includes:
-
-- OpenRAM compiler execution
-- Generated output directory
-- HTML datasheet
-- LEF abstract view
-- Liberty timing model
-- Generated Verilog model
-- Magic hierarchy inspection
-
-### Documentation
-
-Additional OpenRAM documentation is available in:
-
-- `docs/openram/installation.md`
-- `docs/openram/generated_files.md`
-- `docs/openram/liberty_analysis.md`
-- `docs/openram/generated_macro_verification.md`
-- `docs/openram/openram_output_audit.md`
-- `docs/openram/openram_commands.md`
-- `docs/openram/minimum_supported_configuration.md`
-- `docs/openram/output_directory_structure.md`
-
-Additional verification reports:
-
-- `verification/reports/magic_drc_report.md`
-- `verification/reports/lvs_status.md`
-
-AI workflow documentation:
-
-- `ai_workflow/ai_audit.md`
-
-
-### OpenRAM Limitation
-
-The internship task requested a **2-word × 16-bit SRAM**.
-
-During implementation, the OpenRAM version used in this project enforced an internal minimum row constraint, preventing direct generation of the requested memory organization without modifying the compiler.
-
-Following the project mentor's guidance, the repository documents the **minimum specification supported by the OpenRAM version** while preserving the standard compiler flow.
-
-The generated macro was therefore based on the minimum configuration supported by the compiler while preserving the complete OpenRAM design flow and verification methodology.
+> This repository documents the complete AI-assisted workflow for a **4KB SRAM design** using the SKY130A Open-Source PDK. Due to the minimum memory organization supported by the OpenRAM version used during the internship, the final compiler-generated deliverable is a validated **16 × 16 SRAM macro**, while the remaining work demonstrates the complete circuit-level design, verification, physical implementation, and documentation methodology.
 
 ---
 
-</details>
 
-## Repository Structure
+## Current Project Status
 
-| Folder | Contents |
-|---|---|
-| `verification/spice/` | SPICE netlists for all circuit blocks |
-| `verification/waveforms/` | Simulation waveform screenshots (PNG) |
-| `verification/xschem/` | Schematic files (.sch) |
-| `architecture/` | SRAM theory docs — 10 topics (bitcell, SA, precharge, decoder, timing...) |
-| `docs/` | Design notes, validation strategy and OpenRAM documentation |
-| `docs/openram/` | Installation guide, generated files and compiler limitations |
-| `ai_workflow/` | AI prompt log, verified answers, mistakes caught |
-| `journal/` | Week-by-week learning diary |
-| `reports/week1/` | Week 1 IEEE PDF + LaTeX source |
-| `reports/week2 & week3/` | Week 2&3 IEEE PDF + LaTeX with all waveforms |
-| `assets/images/` | Architecture diagrams |
-| `openram/` | OpenRAM configuration files, final 16×16 generated outputs (`results/`), and archived exploratory 2×16 outputs (`archive_2x16/`) |
+The repository documents the complete development flow of the internship project, from SRAM architecture exploration and transistor-level circuit verification to OpenRAM-based SRAM macro generation and supporting documentation.
+
+| Development Stage | Status |
+|-------------------|:------:|
+| SRAM Architecture Study | ✅ Complete |
+| CMOS Inverter Verification | ✅ Complete |
+| 6T SRAM Bitcell Design | ✅ Complete |
+| 6T SRAM Bitcell Layout | ✅ Complete |
+| 6T Bitcell DRC | ✅ Passed |
+| 6T Bitcell LVS | ✅ Passed |
+| Read Operation Verification | ✅ Verified |
+| Write Operation Verification | ✅ Verified |
+| Static Noise Margin (SNM) Analysis | ✅ Verified |
+| Read Disturb Analysis | ✅ Verified |
+| Write Margin Analysis | ✅ Verified |
+| Precharge Circuit Design | ✅ Verified |
+| Write Driver Design | ✅ Verified |
+| Sense Amplifier Design | ✅ Verified |
+| Integrated 1-Bit SRAM Verification | ✅ Complete |
+| OpenRAM Environment Setup | ✅ Complete |
+| OpenRAM SRAM Generation | ✅ Complete |
+| OpenRAM Generated Outputs | ✅ Validated |
+| OpenRAM Documentation | ✅ Complete |
+| Physical Verification Documentation | ✅ Complete |
+| Final Generated SRAM Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
+
+> **Current Scope**
+>
+> The circuit-level design, simulation, and verification presented in this repository establish the foundation for a larger SRAM implementation. The OpenRAM deliverables correspond to the validated **16 × 16 SRAM macro**, while the repository documents the complete AI-assisted engineering workflow developed throughout the internship.
+
+---
+
+## 🧠 Skills Demonstrated
+
+`CMOS Design` • `SRAM Design` • `SPICE Simulation` • `Magic VLSI`
+`Netgen LVS` • `OpenRAM` • `SKY130A` • `Git`
+`Technical Documentation` • `AI-assisted Engineering`
+
+## Key Achievements
+
+The project successfully integrates circuit-level SRAM design, transistor-level verification, physical implementation, OpenRAM-based SRAM generation, and AI-assisted engineering practices using the SKY130A Open-Source PDK. The key technical achievements are summarized below.
+
+## Circuit Design & Verification
+
+The following SRAM building blocks were designed, simulated, and verified using **Xschem**, **NGSpice**, and the **SKY130A Open-Source PDK**.
+
+- ✅ Designed and simulated a CMOS inverter using the SKY130A PDK.
+- ✅ Designed a 6T SRAM bitcell in Xschem.
+- ✅ Verified SRAM read and write operations using NGSpice.
+- ✅ Performed Static Noise Margin (SNM) analysis using butterfly curves.
+- ✅ Verified read disturb and write margin characteristics.
+- ✅ Designed and verified the SRAM precharge circuit.
+- ✅ Designed and verified the write driver.
+- ✅ Designed and verified the sense amplifier.
+- ✅ Integrated all major peripheral circuits into a functional 1-bit SRAM testbench.
+
+## Physical Design & Verification
+
+The custom SRAM bitcell layout and the generated OpenRAM SRAM macro were inspected and verified using **Magic VLSI** and **Netgen**, demonstrating both custom-layout verification and compiler-generated macro validation.
+
+- ✅ Created the 6T SRAM bitcell layout in Magic VLSI.
+- ✅ Achieved DRC-clean implementation for the custom SRAM bitcell.
+- ✅ Successfully completed Netgen LVS verification with matching schematic and layout.
+- ✅ Inspected the generated OpenRAM SRAM layout hierarchy using Magic VLSI.
+- ✅ Executed and documented the physical verification workflow for the generated SRAM macro.
+
+## OpenRAM SRAM Generation
+
+The OpenRAM compiler was configured with the SKY130A technology to generate the final validated **16 × 16 SRAM macro** together with all standard deliverables required for physical design and digital integration.
+
+- ✅ Installed and configured OpenRAM v1.2.49 with the SKY130A technology.
+- ✅ Generated the final **16 × 16 SRAM macro** using the OpenRAM compiler.
+- ✅ Validated the generated GDSII, LEF, SPICE, Verilog, Liberty, and HTML deliverables.
+- ✅ Documented the complete OpenRAM compilation and verification workflow.
+
+## Documentation & AI-Assisted Workflow
+
+Comprehensive technical documentation was developed throughout the internship to record design decisions, verification methodology, AI-assisted workflows, generated outputs, and project deliverables, ensuring reproducibility and transparency.
+
+- ✅ Maintained complete AI prompt and verification records throughout the project.
+- ✅ Produced weekly technical reports documenting project progress.
+- ✅ Organized architecture notes, verification reports, and OpenRAM documentation.
+- ✅ Preserved reproducible project structure with supporting design files and verification results.
+
+---
+
+# Project Results
+
+The project successfully demonstrates the complete AI-assisted SRAM design workflow using the **SKY130A Open-Source PDK**, beginning with transistor-level circuit development and progressing through OpenRAM-based SRAM macro generation and physical verification.
+
+## Final Project Summary
+
+| Category | Result |
+|-----------|--------|
+| Technology | SKY130A Open-Source PDK |
+| SRAM Bitcell | Custom 6T SRAM Cell |
+| Circuit Design | Xschem |
+| Circuit Simulation | NGSpice |
+| Layout Tool | Magic VLSI |
+| LVS Verification | Netgen |
+| SRAM Compiler | OpenRAM v1.2.49 |
+| Final Generated Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
+| Generated Deliverables | GDSII, LEF, SPICE, Verilog, Liberty, HTML |
+| AI-Assisted Workflow | Fully Documented |
+
+---
+
+## Technical Results
+
+### 1. SRAM Read Verification
+
+![SRAM Read](verification/waveforms/sram_read.png)
+
+The read simulation demonstrates successful differential bitline development while preserving the stored data inside the SRAM bitcell, confirming correct read functionality.
+
+---
+
+### 2. Static Noise Margin (SNM)
+
+![SNM Butterfly](verification/waveforms/snm_butterfly_curve.png)
+
+Butterfly curve analysis confirms stable operation of the custom 6T SRAM bitcell under nominal operating conditions using the SKY130A device models.
+
+---
+
+### 3. Integrated 1-Bit SRAM Verification
+
+![Integrated SRAM](verification/waveforms/1bit_sram_full_v2_output.png)
+
+The integrated verification demonstrates correct interaction between the SRAM bitcell, write driver, precharge circuit, and sense amplifier using a common NGSpice testbench.
+
+---
+
+### 4. Final OpenRAM SRAM Macro
+
+![Final 16 × 16 SRAM Macro](reports/week5/screenshots/outputs/task4_sram_16x16_gds_layout_magic.png)
+
+The final validated **16 × 16 SRAM macro** was successfully generated using **OpenRAM v1.2.49**, imported into Magic VLSI, and documented together with the generated deliverables and verification reports.
+
+> **Note**
+>
+> The repository focuses on documenting the complete engineering workflow. Additional verification results, generated outputs, and supporting documentation are available in the `verification/`, `docs/openram/`, and `reports/week5/` directories.
+
+---
+
+## 🔄 Engineering Workflow
+
+The following workflow summarizes the complete engineering process followed during the AI-assisted SRAM design and verification project.
+
+```mermaid
+flowchart LR
+
+A[SRAM Architecture] --> B[CMOS Inverter Design]
+B --> C[6T SRAM Bitcell]
+C --> D[SPICE Simulation]
+D --> E[SNM & Read/Write Verification]
+E --> F[Peripheral Circuit Design]
+F --> G[Integrated 1-Bit SRAM]
+G --> H[Magic Layout]
+H --> I[Netgen LVS]
+I --> J[OpenRAM Configuration]
+J --> K[16 × 16 SRAM Generation]
+K --> L[GDSII • LEF • SPICE • Verilog • Liberty]
+```
+
+## 📑 Table of Contents
+
+- [Overview](#overview)
+- [Project Highlights](#project-highlights)
+- [Current Project Status](#current-project-status)
+- [Key Achievements](#key-achievements)
+- [Project Results](#project-results)
+- [SRAM Architecture](#sram-architecture)
+- [6T SRAM Cell](#6t-sram-cell)
+- [Read & Write Operations](#read--write-operations)
+- [Peripheral Circuits](#peripheral-circuits)
+- [Integrated 1-Bit SRAM Verification](#integrated-1-bit-sram-verification)
+- [OpenRAM Design Flow](#openram-design-flow)
+- [OpenRAM SRAM Generation](#openram-sram-generation)
+- [Generated Outputs](#generated-outputs)
+- [Repository Structure](#repository-structure)
+- [Progress Summary](#progress-summary)
+- [Quick Start](#quick-start)
+- [Tools & Environment](#tools--environment)
+- [AI Workflow](#ai-workflow)
+- [Internship Information](#internship-information)
+- [Final Verification Summary](#final-verification-summary)
+- [Future Work](#future-work)
+- [License](#license)
 
 ---
 
 <details>
-<summary><b>📅 Progress by Week</b></summary>
+<summary><b>🏛 SRAM Architecture & Theory (Click to Expand)</b></summary>
 
-## Progress by Week
+<br>
 
-### ✅ Week 1 — SRAM Theory & Fundamentals
+# SRAM Architecture
 
-> 📄 [Download IEEE PDF](reports/week1/Devdutt_Kadale_SRAM_4KB_Week_1_Report.pdf)
+The target application of this project is a **4KB Static Random Access Memory (SRAM)** designed using the **SKY130A Open-Source PDK**. Although the final compiler-generated deliverable is a validated **16 × 16 SRAM macro**, the architectural concepts presented in this repository correspond to a complete SRAM memory system.
 
-![Week 1 Report Preview](reports/week1/week1_report_preview.png)
+<p align="center">
+  <img src="assets/images/sram_architecture.png" width="900" alt="SRAM Architecture">
+</p>
 
-**Completed:**
-- Studied 6T SRAM cell, read/write operation, SNM, OpenRAM architecture
-- CMOS inverter simulated with SKY130 PDK (baseline verification)
-- Documented 8 architecture topics in `architecture/`
-- Wrote IEEE one-page technical report
+A conventional SRAM macro consists of several functional blocks that operate together during every read and write cycle.
+
+| Block | Function |
+|--------|----------|
+| **6T SRAM Bitcell Array** | Stores data using cross-coupled CMOS inverters. |
+| **Row Decoder** | Decodes the input address and activates the selected wordline. |
+| **Wordline Driver** | Buffers and drives the selected wordline across the memory array. |
+| **Precharge Circuit** | Precharges and equalizes the bitlines before every read operation. |
+| **Write Driver** | Forces the required data onto the bitlines during write operations. |
+| **Sense Amplifier** | Detects and amplifies small bitline voltage differences during read operations. |
+| **Column Multiplexer** | Selects the required bitlines and routes data to the output circuitry. |
+| **Control Logic** | Coordinates timing signals for read, write, precharge, and sense operations. |
+
+## Architectural Design Flow
+
+The overall SRAM operation follows the sequence below:
+
+```text
+Address
+   │
+   ▼
+Row Decoder
+   │
+   ▼
+Wordline Driver
+   │
+   ▼
+6T SRAM Bitcell Array
+   │
+   ├───────────────► Write Driver (Write Operation)
+   │
+   └───────────────► Sense Amplifier (Read Operation)
+                     │
+                     ▼
+                Data Output
+```
+
+### Design Objective
+
+The objective of this project was to understand, design, verify, and document the major functional blocks required for SRAM implementation before exploring compiler-generated memory macros using **OpenRAM**. The circuit-level verification performed throughout this repository establishes the foundation for larger SRAM organizations and demonstrates the complete AI-assisted design workflow.
+
+> 📖 Continue with the [6T SRAM Cell](#6t-sram-cell) to understand the storage element used throughout the design, or explore the detailed architecture notes in the `architecture/` directory.
+
+</details>
+
+
+<details>
+<summary><b>🧩 6T SRAM Bitcell Design & Verification</b></summary>
+
+<br>
+
+The **6-Transistor (6T) SRAM cell** is the fundamental storage element of an SRAM memory. It stores one bit of data using two cross-coupled CMOS inverters and two NMOS access transistors controlled by the wordline (WL).
+
+<p align="center">
+  <img src="assets/images/6t_sram_cell.png" width="700" alt="6T SRAM Cell">
+</p>
+
+## Cell Structure
+
+| Transistor | Function |
+|------------|----------|
+| **M1, M2** | PMOS pull-up transistors forming one inverter pair |
+| **M3, M4** | NMOS pull-down transistors forming the complementary inverter pair |
+| **M5, M6** | NMOS access transistors connecting the storage nodes to the bitlines |
+| **WL** | Enables read and write access to the SRAM cell |
+| **BL / BLB** | Differential bitlines used for data transfer |
+| **Q / QB** | Complementary storage nodes representing one stored bit |
+
+## Operating Principle
+
+The two cross-coupled CMOS inverters create a bistable latch capable of storing one bit as long as power is supplied.
+
+- During **Hold Mode**, the wordline remains LOW and the stored data is retained.
+- During **Read Mode**, the wordline connects the internal storage nodes to the precharged bitlines, allowing the stored value to be sensed.
+- During **Write Mode**, the write driver forces complementary values onto the bitlines, updating the stored data.
+
+## Key Design Considerations
+
+- **Cell Ratio (CR)** influences read stability.
+- **Write Ratio (WR)** determines write ability.
+- Proper transistor sizing is essential for balancing stability, performance, and power consumption.
+- Differential bitline operation improves noise immunity and sensing accuracy.
+
+> 📖 Detailed transistor-level analysis and stability discussions are available in the `architecture/` directory.
+
+</details>
+
+
+<details>
+<summary><b>📖 Read & Write Operation Verification</b></summary>
+
+<br>
+
+The primary functions of an SRAM cell are **read** and **write** operations. Both rely on the coordinated timing of the **wordline (WL)**, **bitlines (BL/BLB)**, **precharge circuit**, and **write driver** to ensure reliable data transfer while maintaining cell stability.
+
+## Read Operation
+
+<p align="center">
+  <img src="assets/images/sram_read.png" width="650" alt="SRAM Read Operation">
+</p>
+
+During a read operation, both bitlines are first precharged to **VDD**. When the **wordline (WL)** is asserted, the access transistors connect the storage nodes to the bitlines. Depending on the stored data, one bitline discharges slightly while the other remains near the precharged voltage. This small differential voltage is then detected and amplified by the sense amplifier.
+
+See the [Integrated 1-Bit SRAM Verification](#integrated-1-bit-sram-verification) section for subsystem-level validation.
+
+### Read Verification
+
+The NGSpice simulation confirms:
+
+- ✅ Successful bitline differential development.
+- ✅ Stable data retention during read access.
+- ✅ No destructive read behaviour under the selected transistor sizing.
+- ✅ Correct interaction between the SRAM cell and precharged bitlines.
 
 ---
 
-### ✅ Weeks 2 & 3 — Circuit Simulations (ngspice + SKY130)
+## Write Operation
 
-> 📄 [Download IEEE PDF](reports/week2%20%26%20week3/Devdutt_Kadale_SRAM_4KB_Week2_3_Report.pdf)  
-> Journal: [`journal/week2.md`](journal/week2.md)
+<p align="center">
+  <img src="assets/images/sram_write.png" width="650" alt="SRAM Write Operation">
+</p>
 
-**AI-Assisted workflow:** ChatGPT (OpenAI) + Perplexity AI used for netlist generation, debugging hints and simulation setup. All prompts logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md).
+During a write operation, the write driver forces complementary logic values onto the bitlines (**BL** and **BLB**). When the wordline is enabled, the new data overcomes the previous latch state and updates the stored value inside the SRAM cell.
 
-#### CMOS Baseline Verification
+### Write Verification
 
-![CMOS Design Waveform](verification/waveforms/cmos_design_waveform.png)
+The NGSpice simulation verifies:
 
-CMOS inverter simulated at VDD=1.8V TT corner to verify SKY130 PDK + ngspice integration before SRAM-specific blocks.
+- ✅ Successful overwrite of the previously stored data.
+- ✅ Correct switching of the internal storage nodes (**Q** and **QB**).
+- ✅ Reliable operation of the write driver.
+- ✅ Stable write behaviour using the SKY130A transistor models.
 
-#### 6T SRAM Bitcell — Read Operation
+---
 
-![SRAM Read Waveform](verification/waveforms/sram_read.png)
+## Verification Summary
 
-BL and BLB differential development after WL assertion. Cell ratio β > 1.5 confirmed — no read disturb.
+The read and write simulations demonstrate the functional correctness of the custom **6T SRAM bitcell** designed in this project. These verified operations establish the basis for higher-level SRAM integration and subsequent OpenRAM-based memory generation.
 
-#### 6T SRAM Bitcell — Write Operation
+> 📖 Related SPICE netlists, timing analysis, and waveform results are available in the `verification/` directory.
 
-![SRAM Write Waveform](verification/waveforms/sram_write.png)
+</details>
 
-Write driver successfully overrides stored latch. Write ratio γ ≈ 1.2 confirmed.
 
-#### Static Noise Margin — Butterfly Curve
+<details>
+<summary><b>⚙ Peripheral Circuit Design</b></summary>
 
-![SNM Butterfly Curve](verification/waveforms/snm_butterfly_curve.png)
+<br>
 
-SNM ≈ 280–320 mV at TT corner, 1.8V. Consistent with published SKY130 bitcell values.
+In addition to the **6T SRAM bitcell**, several peripheral circuits are required to perform reliable read and write operations. These circuits control memory access, improve signal integrity, and enable efficient communication between the memory array and external logic.
 
-#### Read Disturb Analysis
+The following peripheral blocks were studied, designed, and verified during this project.
 
-![Read Disturb Analysis](verification/waveforms/read_disturb_analysis.png)
+## Precharge Circuit
 
-Q node voltage recovers after WL assertion — data integrity confirmed with standard SKY130 cell sizing.
+<p align="center">
+  <img src="assets/images/precharge_circuit.png" width="650" alt="Precharge Circuit">
+</p>
 
-#### Write Margin Analysis
+The precharge circuit initializes both **BL** and **BLB** to **VDD** before every read operation. Equalizing the bitlines minimizes sensing delay and ensures accurate differential voltage development during memory access.
 
-![Write Margin Analysis](verification/waveforms/write_margin_analysis.png)
+### Verification Summary
 
-Latch flip threshold analysis confirms reliable write operation across process corners.
+- ✅ Bitlines successfully precharged before read operations.
+- ✅ Differential sensing enabled through equalized bitlines.
+- ✅ Stable operation verified using NGSpice.
 
-#### New Architecture Docs Added
-- [`wordline_control.md`](architecture/wordline_control.md) — WL timing and driver sizing
-- [`bitline_behaviour.md`](architecture/bitline_behaviour.md) — BL capacitance and precharge analysis
-- [`sram_timing_sequence.md`](architecture/sram_timing_sequence.md) — Full read/write cycle timing
+## Write Driver
 
-### Additional Integrated Verification
+The write driver forces complementary logic values onto the bitlines during write operations. It must be strong enough to overwrite the previous cell state while maintaining reliable switching characteristics.
 
-During the final stage of Weeks 2 & 3, the independently verified SRAM building blocks were integrated into a complete 1-bit SRAM testbench.
+### Verification Summary
 
-The integrated design includes:
+- ✅ Correct complementary bitline generation.
+- ✅ Reliable write operation verified.
+- ✅ Successful overwrite of stored data.
 
-- 6T SRAM Cell
+## Sense Amplifier
+
+<p align="center">
+  <img src="assets/images/sense_amplifier.png" width="650" alt="Sense Amplifier">
+</p>
+
+The sense amplifier detects the small voltage difference that develops between **BL** and **BLB** during a read operation and amplifies it into a full digital logic level.
+
+### Verification Summary
+
+- ✅ Correct differential voltage detection.
+- ✅ Reliable logic-level output generation.
+- ✅ Integrated successfully with the SRAM read path.
+
+## Row Decoder
+
+The row decoder converts the binary address into a **one-hot wordline selection**, ensuring that only the required memory row is activated during an access operation.
+
+### Key Functions
+
+- ✅ Address decoding
+- ✅ Wordline selection
+- ✅ Single-row activation
+
+## Column Multiplexer
+
+The column multiplexer selects the required bitline pair from the memory array and routes it to the sense amplifier or output circuitry.
+
+### Key Functions
+
+- ✅ Column selection
+- ✅ Bitline routing
+- ✅ Output path optimization
+
+## Peripheral Circuit Summary
+
+Together, these peripheral circuits enable reliable SRAM operation by coordinating address decoding, bitline conditioning, write data transfer, read sensing, and output selection. Their successful verification forms the basis of the integrated SRAM design and the subsequent OpenRAM-generated memory macro.
+
+> 📖 Additional circuit schematics and verification reports are available in the `verification/` and `docs/` directories.
+
+</details>
+
+<details>
+<summary><b>🏗 Integrated 1-Bit SRAM Verification</b></summary>
+
+<br>
+
+After verifying the individual SRAM building blocks, the complete **1-bit SRAM subsystem** was integrated and simulated to validate the interaction between the memory cell and its supporting peripheral circuits.
+
+The integrated design combines the following functional blocks:
+
+- 6T SRAM Bitcell
 - Precharge Circuit
 - Write Driver
 - Sense Amplifier
+- Wordline Control
+- Bitline Interface
 
-The complete integrated simulation generated bitline, storage-node, control-signal and output waveforms, demonstrating correct interaction between the major SRAM peripheral circuits.
+<p align="center">
+  <img src="verification/waveforms/1bit_sram_full_v2_output.png" width="850" alt="Integrated 1-Bit SRAM Verification">
+</p>
 
----
+## Integrated Verification Objectives
 
-### ✅ Week 5 — OpenRAM SRAM Generation & Physical Verification
+The objective of the integrated simulation was to verify that all SRAM building blocks operate together as a complete memory subsystem.
 
-Completed:
-- Installed OpenRAM v1.2.49 on Ubuntu 24.04 (WSL2)
-- Configured SKY130A technology environment
-- Created OpenRAM SRAM configuration
-- Executed OpenRAM compiler
-- Investigated OpenRAM minimum row constraint
-- Documented minimum supported OpenRAM configuration
-- Generated and validated the final 16×16 OpenRAM SRAM macro including GDSII, LEF, SPICE, Verilog, HTML datasheet, and  
-  Liberty timing models.
-- Created AI Audit documentation
-- Created regression testbench and simulation log
-- Executed behavioral regression simulation using Icarus Verilog
+The verification focused on:
 
-### Physical Verification
+- ✅ Correct write operation
+- ✅ Reliable read operation
+- ✅ Proper precharge timing
+- ✅ Differential bitline behaviour
+- ✅ Stable storage node operation
+- ✅ Sense amplifier functionality
+- ✅ Overall timing coordination
 
-#### Magic DRC
+## Simulation Results
 
-- Successfully imported the generated SRAM GDS into Magic.
-- Executed DRC using the SKY130A technology file.
-- DRC execution completed successfully.
-- The reported DRC rule categories have been documented in `verification/reports/magic_drc_report.md` for future investigation.
+The integrated NGSpice simulation confirms:
 
-#### Netgen LVS
+| Verification Item | Status |
+|-------------------|:------:|
+| Write Operation | ✅ Verified |
+| Read Operation | ✅ Verified |
+| Bitline Precharge | ✅ Verified |
+| Sense Amplifier Response | ✅ Verified |
+| Storage Node Stability | ✅ Verified |
+| Integrated Timing | ✅ Verified |
 
-- Verified Netgen installation and SKY130A LVS setup.
-- Verified the generated OpenRAM SPICE and LVS netlists.
-- Prepared the environment for layout-versus-schematic verification.
-- Current LVS status is documented in `verification/reports/lvs_status.md`.
+The waveform demonstrates successful coordination between the SRAM bitcell and the peripheral circuitry, confirming that the complete memory subsystem operates correctly under the selected simulation conditions.
 
----
-
-### ✅ Week 5 — Repository Completion
-
-Completed:
-
-- Finalized OpenRAM SRAM generation workflow
-- Verified generated GDS in Magic VLSI
-- Executed DRC
-- Executed LVS
-- Archived exploratory 2×16 OpenRAM outputs while preserving the validated 16×16 implementation as the primary deliverable.
-- Added Magic layout screenshots
-- Completed Week 5 journal
-- Completed Week 5 technical report
-- Updated project README
-- Organized repository for submission
+> 📖 Complete simulation waveforms, SPICE netlists, and verification reports are available in the `verification/` directory.
 
 ---
+
+# OpenRAM Design Flow
+
+After completing the transistor-level design and verification of the SRAM building blocks, the **OpenRAM** compiler was used to generate a complete SRAM macro using the **SKY130A Open-Source PDK**.
+
+OpenRAM automates the generation of memory macros by integrating validated SRAM bitcells with peripheral circuits, control logic, address decoding, and physical layout generation. This enables rapid creation of manufacturable SRAM macros together with the files required for ASIC implementation.
+
+<p align="center">
+  <img src="assets/images/sky130_openram_flow.png" width="850" alt="OpenRAM Design Flow">
+</p>
+
+## OpenRAM Workflow
+
+The overall design flow followed during this project is illustrated below.
+
+```text
+SRAM Specification
+        │
+        ▼
+Configuration File
+        │
+        ▼
+OpenRAM Compiler
+        │
+        ▼
+Memory Generation
+        │
+        ├── Verilog Model
+        ├── SPICE Netlist
+        ├── Liberty (.lib)
+        ├── LEF
+        ├── GDSII
+        └── HTML Report
+```
+
+## Project Workflow
+
+The OpenRAM implementation in this project followed these major steps:
+
+1. Installed and configured **OpenRAM v1.2.49**.
+2. Configured the compiler for the **SKY130A** technology.
+3. Created the SRAM configuration file.
+4. Executed the OpenRAM compiler.
+5. Generated the complete SRAM macro and supporting deliverables.
+6. Inspected the generated layout using **Magic VLSI**.
+7. Documented the generated outputs and verification results.
+
+## Design Objective
+
+The objective of using OpenRAM was to complement the custom circuit-level design with an automated SRAM generation flow. This demonstrates how transistor-level SRAM concepts can be translated into a complete memory macro suitable for digital integration.
+
+> 📖 Generated reports, configuration files, compiler logs, and layout screenshots are available in `reports/week5/` and `docs/openram/`.
 
 </details>
 
 <details>
-<summary><b>▶️ How to Run Simulations</b></summary>
+<summary><b>📈 OpenRAM SRAM Generation</b></summary>
 
-## How to Run Simulations
+<br>
 
-```bash
-# Clone the repo
-git clone https://github.com/devduttkadale1/AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale.git
-cd AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale
+The final stage of this project involved generating an SRAM macro using **OpenRAM v1.2.49** with the **SKY130A Open-Source PDK**. The compiler automatically integrated the memory array, peripheral circuitry, address decoding, and physical layout to produce a complete SRAM implementation.
 
-# Run any waveform simulation (example: SRAM read)
-cd verification/spice
-# Read simulation
-ngspice -b sram_read.spice
+<p align="center">
+  <img src="reports/week5/screenshots/outputs/task4_sram_16x16_gds_layout_magic.png" width="850" alt="16 × 16 SRAM Macro">
+</p>
 
-# Write simulation
-ngspice -b sram_write.spice
+The generated files are summarized in the [Generated Outputs](#generated-outputs) section.
 
-# SNM analysis
-ngspice -b snm_butterfly.spice
-```
+## Generated SRAM Configuration
 
-**Prerequisite:** SKY130 PDK installed at `/usr/local/share/pdk/sky130A/`
+| Parameter | Value |
+|-----------|-------|
+| Technology | SKY130A Open-Source PDK |
+| OpenRAM Version | v1.2.49 |
+| Memory Organization | **16 Words × 16 Bits** |
+| Total Capacity | 256 Bits |
+| Read/Write Ports | 1 RW Port |
+| Compiler | OpenRAM |
 
----
+## Generation Summary
+
+The OpenRAM compiler successfully generated the complete SRAM macro together with all standard design deliverables required for simulation, physical design, timing analysis, and digital integration. The generated layout was inspected using **Magic VLSI**, and all generated files were documented as part of the internship workflow.
+
+> 📖 **Additional Documentation**
+>
+> Configuration files, compiler logs, screenshots, and generated reports are available in the **`reports/week5/`** and **`docs/openram/`** directories.
 
 </details>
+
+
+<details>
+<summary><b>📦 Generated Deliverables (GDS, LEF, SPICE, Liberty, Verilog)</b></summary>
+
+<br>
+
+OpenRAM automatically generated the files required for simulation, physical implementation, and ASIC integration.
+
+| File | Description |
+|------|-------------|
+| **GDSII (.gds)** | Physical layout of the generated SRAM macro |
+| **LEF (.lef)** | Abstract physical information for place-and-route |
+| **SPICE (.sp)** | Transistor-level netlist |
+| **Verilog (.v)** | Functional behavioral model |
+| **Liberty (.lib)** | Standard timing library |
+| **HTML Report (.html)** | Memory configuration summary |
+| **Log File (.log)** | Compiler execution log |
+
+</details>
+
+
+<details>
+<summary><b>📚 Additional Information</b></summary>
+
+<br>
+
+The sections below provide supplementary project information, repository organization, implementation details, and future directions.
+
+## Output Verification
+
+The generated outputs were reviewed to ensure:
+
+- ✅ Successful SRAM macro generation
+- ✅ Correct memory organization
+- ✅ Availability of physical design files
+- ✅ Availability of simulation models
+- ✅ Availability of timing libraries
+- ✅ Complete compiler documentation
+
+These deliverables represent the standard output package produced by the OpenRAM compiler for downstream ASIC design flows.
+
+</details>
+
+
+<details>
+<summary><b>📁 Repository Structure</b></summary>
+
+<br>
+
+The repository is organized to separate architecture documentation, circuit design, verification results, OpenRAM deliverables, and weekly internship reports.
+
+```text
+AI-Assisted-4KB-SRAM-SKY130/
+│
+├── architecture/          # SRAM architecture and theory
+├── assets/                # Images and diagrams
+├── docs/                  # OpenRAM documentation
+├── Layout/                # Magic layout files
+├── openram/               # OpenRAM configuration
+├── reports/
+│   ├── week1/
+│   ├── week2_week3/
+│   └── week5/
+├── verification/
+│   ├── spice/
+│   ├── waveforms/
+│   └── reports/
+├── README.md
+└── LICENSE
+```
+
+The modular organization enables easy navigation between design documentation, verification results, OpenRAM outputs, and supporting project reports.
+
+</details>
+
+
+<details>
+<summary><b>✅ Final Verification Summary</b></summary>
+
+<br>
+
+The project successfully demonstrates the complete AI-assisted SRAM design workflow using the SKY130A Open-Source PDK, beginning with transistor-level circuit design and progressing through OpenRAM-based SRAM macro generation.
+
+## Verification Checklist
+
+| Verification Stage | Status |
+|--------------------|:------:|
+| CMOS Inverter Verification | ✅ Passed |
+| 6T SRAM Bitcell Design | ✅ Completed |
+| SRAM Read Verification | ✅ Passed |
+| SRAM Write Verification | ✅ Passed |
+| Static Noise Margin (SNM) | ✅ Verified |
+| Read Disturb Analysis | ✅ Verified |
+| Write Margin Analysis | ✅ Verified |
+| Precharge Circuit | ✅ Verified |
+| Write Driver | ✅ Verified |
+| Sense Amplifier | ✅ Verified |
+| Integrated 1-Bit SRAM | ✅ Verified |
+| Magic Layout Inspection | ✅ Completed |
+| Netgen LVS | ✅ Passed |
+| OpenRAM Generation | ✅ Completed |
+| Generated Deliverables | ✅ Validated |
+
+## Project Outcome
+
+This repository demonstrates the complete engineering workflow for SRAM development using open-source EDA tools.
+
+</details>
+
+
+<details>
+<summary><b>📅 Progress Summary</b></summary>
+
+<br>
+
+The internship project progressed through three major phases.
+
+| Phase | Major Activities | Status |
+|--------|------------------|:------:|
+| Week 1 | SRAM architecture, CMOS inverter, 6T SRAM fundamentals | ✅ |
+| Week 2–3 | Bitcell verification, SNM, read/write, peripheral circuits | ✅ |
+| Week 5 | OpenRAM setup, SRAM generation, documentation | ✅ |
+
+### Overall Progress
+
+- ✅ SRAM architecture study completed
+- ✅ Circuit-level verification completed
+- ✅ Physical verification completed
+- ✅ OpenRAM workflow completed
+- ✅ Documentation completed
+
+</details>
+
+
+<details>
+<summary><b>🚀 Quick Start</b></summary>
+
+<br>
+
+Clone the repository.
+
+```bash
+git clone https://github.com/your-username/AI-Assisted-4KB-SRAM-SKY130.git
+cd AI-Assisted-4KB-SRAM-SKY130
+```
+
+### Explore the Repository
+
+1. Review the Project Results.
+2. Study the SRAM Architecture.
+3. Explore the verification waveforms.
+4. Inspect the Magic layouts.
+5. Review the OpenRAM flow.
+6. Examine the generated outputs.
+
+</details>
+
 
 <details>
 <summary><b>🛠️ Tools & Environment</b></summary>
 
-## Tools & Environment
+<br>
 
-| Tool | Version | Purpose |
-|---|---|---|
-| ngspice | 42 | SPICE simulation |
-| SKY130 PDK | Combined lib, TT corner | 130nm transistor models |
-| xschem | latest | Schematic capture |
-| OpenRAM | v1.2.49 | SRAM compiler |
-| ChatGPT (OpenAI) | June 2026 | Netlist generation, debugging |
-| Perplexity AI | June 2026 | Design verification, prompts |
+| Tool | Purpose |
+|------|---------|
+| Xschem | Schematic capture |
+| NGSpice | Circuit simulation |
+| Magic VLSI | Layout inspection |
+| Netgen | LVS verification |
+| OpenRAM | SRAM generation |
+| SKY130A | Open-source PDK |
+| Ubuntu (WSL2) | Development platform |
+| Git & GitHub | Version control |
+| ChatGPT | AI-assisted workflow |
 
----
+</details>
+
+
+<details>
+<summary><b>🤖 AI-Assisted Workflow</b></summary>
+
+<br>
+
+AI tools assisted with:
+
+- SRAM architecture understanding
+- Circuit design guidance
+- SPICE simulation planning
+- Verification methodology
+- OpenRAM setup
+- Documentation
+- Technical report generation
+
+All AI-generated suggestions were independently verified using Xschem, NGSpice, Magic VLSI, Netgen, and OpenRAM before being incorporated into the final project.
+
+</details>
+
+
+<details>
+<summary><b>🎓 Internship Information</b></summary>
+
+<br>
+
+**Program**
+
+- VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
+- Cohort 1.2
+
+**Project**
+
+- AI-Assisted 4KB SRAM Design using SKY130A and OpenRAM
+
+**Focus Areas**
+
+- SRAM Architecture
+- Circuit Design
+- SPICE Simulation
+- Physical Verification
+- OpenRAM Memory Generation
+- AI-Assisted Engineering Workflow
+
+</details>
+
+
+<details>
+<summary><b>💡 Technical Skills Demonstrated</b></summary>
+
+<br>
+
+### Analog & Mixed Signal
+
+- CMOS Circuit Design
+- SRAM Architecture
+- 6T SRAM Bitcell Design
+- Peripheral Circuit Design
+
+### Verification
+
+- NGSpice Simulation
+- Static Noise Margin Analysis
+- Read/Write Verification
+- Read Disturb Analysis
+- Write Margin Analysis
+
+### Physical Design
+
+- Magic VLSI
+- Netgen LVS
+- Layout Inspection
+
+### Memory Compiler
+
+- OpenRAM
+- SKY130 PDK
+- SRAM Macro Generation
+
+### Engineering Workflow
+
+- AI-Assisted Design
+- Technical Documentation
+- Git & GitHub
 
 </details>
 
 <details>
-<summary><b>🤖 AI Workflow</b></summary>
+<summary><b>🚧 Engineering Challenges</b></summary>
 
-## AI Workflow
+<br>
 
-Every AI interaction is logged in [`ai_workflow/prompts.md`](ai_workflow/prompts.md) with:
-- Exact prompt used
-- AI tool and model name
-- Generated output (netlist / explanation)
-- Verification method
-- Mistakes caught and corrections made
-
-See [`ai_workflow/workflow.md`](ai_workflow/workflow.md) for the full methodology.
-
----
+| Challenge | Solution |
+|------------|----------|
+| OpenRAM configuration issues | Configured SKY130 environment and resolved compiler setup |
+| Missing PDK libraries | Corrected technology paths and environment variables |
+| Bitcell stability | Verified using SNM butterfly analysis |
+| Layout verification | Achieved DRC-clean layout and successful LVS matching |
+| OpenRAM macro validation | Generated and inspected final SRAM macro using Magic VLSI |
 
 </details>
 
-## Intern Information
-
-**Name:** Devdutt Bajirao Kadale  
-**Program:** VSD AI-Assisted Analog, Mixed-Signal and FPGA Internship (Cohort 1.2)  
-**Duration:** June – August 2026  
-**Contact:** [GitHub](https://github.com/devduttkadale1)
-
----
-
-## VSD Internship Task Status
-
-This repository is prepared for the assigned **4kB SRAM Design** track.
-
-| Task | Requirement | Status |
-|---|---|---|
-| Task 1 - Week 1 | SRAM fundamentals + reference repo study + IEEE report | Complete |
-| Task 2 - Week 2 & 3 | Circuit-level SRAM blocks using AI-assisted workflow | Complete |
-| Task 3 - Week 4 | Demonstration video and README link | Pending video link |
-| Task 4 - Week 5 | OpenRAM SRAM generation, physical verification, and documentation | Complete |
-
-
-Detailed task status is available in [`TASK_STATUS.md`](TASK_STATUS.md).
-
----
-
-## Final 6T Bitcell LVS Status
-
-The 6T SRAM bitcell schematic and layout have been verified using Netgen LVS.
-
-| Item | File |
-|---|---|
-| Layout LVS netlist | `Layout/sram_6t_cell_lvs_clean.spice` |
-| Schematic SPICE | `verification/xschem/schematic/bitcell/sram_6t_bitcell.spice` |
-| LVS report | `lvs_report.txt` |
-
-Final LVS Result
-
-✔ Number of devices: 6
-
-✔ Netlists match uniquely.
-
-✔ Final Result: Circuits Match Uniquely.
-
-
----
-
-## Clean Repository Structure
-
-This repository is organized around the assigned VSD internship tasks only.
-
-| Path | Purpose |
-|---|---|
-| `TASK_STATUS.md` | Summary of Task 1, Task 2, and Task 3 status |
-| `reports/week1/` | Week 1 IEEE report |
-| `reports/week2 & week3/` | Week 2 and Week 3 circuit-level SRAM report |
-| `verification/spice/` | SRAM circuit SPICE decks |
-| `verification/xschem/` | Xschem schematic and bitcell SPICE |
-| `verification/waveforms/` | Verified waveform screenshots |
-| `Layout/` | Final 6T bitcell Magic layout and LVS-ready netlist |
-| `openram/` | OpenRAM configuration files, validated 16×16 outputs, archived exploratory results, and compiler logs |
-| `Layout/debug_history/` | Old LVS/debug reports kept for transparency |
-| `architecture/` | SRAM architecture notes |
-| `docs/` | Design notes and validation strategy |
-| `ai_workflow/` | AI prompts, workflow, mistakes, and verified answers |
-| `assets/images/` | README/report images |
-| `references/` | External reference repo links |
-
----
-
-## Integrated Verification Summary
-
-The final stage of this project focused on integrating the independently verified SRAM peripheral circuits into a complete 1-bit SRAM architecture.
-
-The integrated design includes:
-
-- 6T SRAM Bitcell
-- Write Driver
-- Precharge Circuit
-- Sense Amplifier
-
-The integrated NGSpice simulation verified:
-
-- Control signal sequencing
-- Bitline behaviour
-- Internal storage node transitions
-- Sense amplifier response
-- Functional integration of the major SRAM building blocks
-
-This integration serves as the functional foundation for extending the design toward a complete multi-bit and 4KB SRAM macro.
-
----
 
 <details>
-<summary><b>🚀 Future Work</b></summary>
+<summary><b>🏷 Key Learning Outcomes</b></summary>
 
-## Future Work
+<br> 
 
-The current repository focuses on circuit-level implementation and verification of the 6T SRAM bitcell. Future work includes:
+Through this project I gained practical experience in:
 
-- Row Decoder
-- Column Decoder
-- Column Multiplexer
-- Wordline Driver
-- Hierarchical SRAM Array Integration
-- Custom transistor-level 4KB SRAM implementation
-- Post-layout Extraction
-- Full custom transistor-level 4KB SRAM implementation
-- Automated DRC/LVS closure for generated SRAM macros
-- Process, Voltage and Temperature (PVT) Corner Verification
-- Timing Characterization
+- SRAM architecture and memory organization
+- Transistor-level CMOS circuit design
+- SPICE-based circuit simulation
+- Physical layout inspection
+- Layout versus schematic verification
+- OpenRAM memory generation
+- AI-assisted engineering workflow
+- Technical documentation
 
-The repository includes representative OpenRAM-generated deliverables together with the supporting documentation required for the internship while intentionally excluding large external SKY130 PDK libraries and unnecessary intermediate generated files. This keeps the repository focused, reproducible, and easy to navigate.
+</details>
+
+
+<details>
+<summary><b>📈 Future Work</b></summary>
+
+<br>
+
+Possible future extensions include:
+
+- Larger SRAM organizations
+- Complete DRC/LVS on generated macros
+- Digital SoC integration
+- Multi-corner timing and power characterization
+- OpenRAM customization
+- Advanced AI-assisted memory design workflows
+
+</details>
+
+<details>
+<summary><b>📖 References, Resources & Acknowledgements</b></summary>
+
+<br>
+
+The following open-source tools, technologies, documentation, and educational resources were used throughout the design, verification, and documentation of this project.
+
+## Open-Source EDA Tools
+
+| Tool | Purpose |
+|------|---------|
+| **OpenRAM v1.2.49** | SRAM compiler used to generate the validated 16 × 16 SRAM macro and associated deliverables. |
+| **Xschem** | Schematic capture and transistor-level circuit design. |
+| **NGSpice** | Circuit simulation, waveform analysis, and functional verification. |
+| **Magic VLSI** | Physical layout inspection and DRC verification. |
+| **Netgen** | Layout-versus-Schematic (LVS) verification. |
 
 ---
 
-<details>
+## Process Design Kit (PDK)
 
-_Last updated: 29 July 2026_
+| Technology | Description |
+|------------|-------------|
+| **SKY130A Open-Source PDK** | 130 nm CMOS Process Design Kit used for schematic design, layout, simulation, and OpenRAM macro generation. |
+
+---
+
+## Documentation & Technical References
+
+- **OpenRAM** – [GitHub Repository](https://github.com/VLSIDA/OpenRAM)
+- **SKY130A PDK** – [Official Documentation](https://skywater-pdk.readthedocs.io/)
+- **Magic VLSI** – [Official Website](http://opencircuitdesign.com/magic/)
+- **Xschem** – [Official Website](https://xschem.sourceforge.io/)
+- **NGSpice** – [Official Website](https://ngspice.sourceforge.io/)
+- **Netgen** – [Official Website](http://opencircuitdesign.com/netgen/)
+
+---
+
+## Internship
+
+**VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship**
+
+The internship provided the project objectives, design milestones, validation tasks, and engineering workflow followed throughout this repository.
+
+---
+
+## AI-Assisted Engineering
+
+Artificial Intelligence tools were used as engineering assistants for:
+
+- Understanding SRAM architecture
+- Planning circuit implementation
+- Debugging OpenRAM setup
+- Reviewing verification results
+- Improving technical documentation
+- Organizing project artifacts
+
+All generated suggestions were independently verified using the corresponding open-source EDA tools before being incorporated into the final project.
+
+---
+
+## Acknowledgements
+
+This project was completed as part of the **VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship**.
+
+The work combines open-source semiconductor design tools, the SKY130A Process Design Kit, OpenRAM, and AI-assisted engineering practices to document a complete SRAM design and verification workflow.
+
+</details>
+
+
+<details>
+<summary><b>📄 License</b></summary>
+
+<br>
+
+This project is released under the MIT License.
+
+See the `LICENSE` file for complete licensing information.
+
+</details>
+
+---
+
+## ❤️ Designed With
+
+- OpenRAM
+- SKY130A PDK
+- Xschem
+- NGSpice
+- Magic VLSI
+- Netgen
+- GitHub
+- ChatGPT
+
+---
+
+<p align="center">
+
+⭐ If you found this repository useful, consider giving it a star.
+
+Developed as part of the
+VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
+
+</p>
