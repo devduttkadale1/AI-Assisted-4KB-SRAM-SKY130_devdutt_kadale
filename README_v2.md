@@ -219,6 +219,27 @@ The final validated **16 × 16 SRAM macro** was successfully generated using **O
 
 ---
 
+## 🔄 Engineering Workflow
+
+The following workflow summarizes the complete engineering process followed during the AI-assisted SRAM design and verification project.
+
+```mermaid
+flowchart LR
+
+A[SRAM Architecture] --> B[CMOS Inverter Design]
+B --> C[6T SRAM Bitcell]
+C --> D[SPICE Simulation]
+D --> E[SNM & Read/Write Verification]
+E --> F[Peripheral Circuit Design]
+F --> G[Integrated 1-Bit SRAM]
+G --> H[Magic Layout]
+H --> I[Netgen LVS]
+I --> J[OpenRAM Configuration]
+J --> K[16 × 16 SRAM Generation]
+K --> L[GDSII • LEF • SPICE • Verilog • Liberty]
+```
+This workflow summarizes the complete design journey, starting from SRAM architecture exploration, progressing through transistor-level design and verification, and concluding with OpenRAM-based SRAM macro generation and standard ASIC deliverables.
+
 ## 📑 Table of Contents
 
 - [Overview](#overview)
