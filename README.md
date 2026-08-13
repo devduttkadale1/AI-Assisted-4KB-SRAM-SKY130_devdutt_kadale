@@ -20,9 +20,11 @@
 > - **Internship:** VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
 > - **Technology:** SKY130A Open-Source PDK
 > - **Design Flow:** **Xschem → NGSpice → Magic VLSI → Netgen LVS → OpenRAM**
-> - **Final Deliverable:** Validated **16 × 16 SRAM Macro**
+> - **Validated Intermediate Macro:** **16 × 16 SRAM Macro (256-bit)**
+> - **Current Target:** **1024 × 32 SRAM Macro (4 KB) — Task 5 / Week 6**
+> - **Current Status:** Task 5 architecture established; controlled OpenRAM compilation pending
 > - **Focus:** AI-assisted SRAM design, verification, physical validation, and documentation
-> - Last Updated: July 2026
+> - Last Updated: August 2026
 
 ---
 
@@ -31,7 +33,9 @@
 | Category | Details |
 |-----------|---------|
 | 🎯 Project Goal | AI-Assisted 4KB SRAM Design using SKY130 PDK and OpenRAM |
-| 🏁 Final Deliverable | Validated 16 × 16 SRAM Macro (256-bit) |
+| 🧪 Validated Intermediate Macro | 16 × 16 SRAM Macro (256-bit) |
+| 🎯 Final Target | 1024 × 32 SRAM Macro (4 KB) |
+| 📌 Current Phase | Task 5 — Architecture established; compilation pending |
 | 🛠 EDA Tools | Xschem, NGSpice, Magic VLSI, Netgen, OpenRAM |
 | 📐 Technology | SKY130A Open-Source PDK |
 | 🧩 Major Circuit Blocks | CMOS Inverter, 6T SRAM Cell, Precharge, Write Driver, Sense Amplifier |
@@ -45,12 +49,12 @@
 
 | Metric | Value |
 |---------|------:|
-| Internship Duration | 5 Weeks |
+| Internship Duration | Through 6 Weeks |
 | SRAM Cells Designed | 6T CMOS SRAM Bitcell |
 | Major Circuit Blocks | 8 |
 | SPICE Simulations | 10+ |
 | Physical Verification Reports | 5+ |
-| OpenRAM Generated Files | GDS, LEF, SPICE, Verilog, Liberty, HTML |
+| Validated OpenRAM Outputs | 16 × 16 SRAM: GDS, LEF, SPICE, Verilog, Liberty, HTML |
 | Documentation | 1000+ Lines |
 | Technology | SKY130A Open-Source PDK |
 
@@ -103,7 +107,22 @@ Explore different stages of the project directly.
 
 > **Repository Note**
 >
-> This repository documents the complete AI-assisted workflow for a **4KB SRAM design** using the SKY130A Open-Source PDK. Due to the minimum memory organization supported by the OpenRAM version used during the internship, the final compiler-generated deliverable is a validated **16 × 16 SRAM macro**, while the remaining work demonstrates the complete circuit-level design, verification, physical implementation, and documentation methodology.
+> The repository contains the validated **16 × 16 SRAM macro (256-bit)**
+> generated during Task 4, together with the complete investigation of the
+> requested **2-word × 16-bit SRAM organization**.
+>
+> During Task 4, the original `words_per_row=8` organization was shown to be
+> invalid because it produced zero calculated rows. A corrected
+> `words_per_row=1` organization successfully passed SRAM configuration and
+> progressed through array construction, but the normal OpenRAM v1.2.49 flow
+> subsequently rejected the resulting 2-row bank at the hierarchical decoder.
+>
+> No OpenRAM source, SKY130 technology files, or custom cells were modified
+> to bypass this limitation.
+>
+> **Task 5 now targets the required 1024 × 32 SRAM organization (4 KB).**
+> The Task-5 architecture has been established, while controlled compilation
+> and subsequent validation remain in progress.
 
 ---
 
@@ -130,15 +149,26 @@ The repository documents the complete development flow of the internship project
 | Sense Amplifier Design | ✅ Verified |
 | Integrated 1-Bit SRAM Verification | ✅ Complete |
 | OpenRAM Environment Setup | ✅ Complete |
-| OpenRAM SRAM Generation | ✅ Complete |
-| OpenRAM Generated Outputs | ✅ Validated |
-| OpenRAM Documentation | ✅ Complete |
-| Physical Verification Documentation | ✅ Complete |
-| Final Generated SRAM Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
+| Task 4 — OpenRAM Investigation | ✅ Complete |
+| Task 4 — 16 × 16 Intermediate Macro | ✅ Generated / Validated |
+| Task 4 — 2 × 16 Normal-Flow Limitation | ✅ Documented |
+| Task 5 — 1024 × 32 Architecture | ✅ Established |
+| Task 5 — Configuration | ⏳ Pending |
+| Task 5 — 1024 × 32 Compilation | ⏳ Pending |
+| Task 5 — Final Validation | ⏳ Pending |
+| Current Validated Macro | **16 × 16 SRAM Macro (256-bit)** |
+| Final Project Target | **1024 × 32 SRAM Macro (4 KB)** |
 
 > **Current Scope**
 >
-> The circuit-level design, simulation, and verification presented in this repository establish the foundation for a larger SRAM implementation. The OpenRAM deliverables correspond to the validated **16 × 16 SRAM macro**, while the repository documents the complete AI-assisted engineering workflow developed throughout the internship.
+> The repository currently contains the completed circuit-level design and
+> verification work, the validated 16 × 16 OpenRAM intermediate macro from
+> Task 4, and the documented investigation of the requested 2 × 16
+> organization.
+>
+> **Task 5 extends the project toward the required 1024 × 32 single-port
+> 4 KB SRAM macro.** The Task-5 architecture has been established and the
+> controlled OpenRAM generation phase is currently in progress.
 
 ---
 
@@ -178,11 +208,13 @@ The custom SRAM bitcell layout and the generated OpenRAM SRAM macro were inspect
 
 ## OpenRAM SRAM Generation
 
-The OpenRAM compiler was configured with the SKY130A technology to generate the final validated **16 × 16 SRAM macro** together with all standard deliverables required for physical design and digital integration.
+The OpenRAM compiler was configured with the SKY130A technology to generate and validate an intermediate **16 × 16 SRAM macro** during Task 4.
 
 - ✅ Installed and configured OpenRAM v1.2.49 with the SKY130A technology.
-- ✅ Generated the final **16 × 16 SRAM macro** using the OpenRAM compiler.
-- ✅ Validated the generated GDSII, LEF, SPICE, Verilog, Liberty, and HTML deliverables.
+- ✅ Generated the **16 × 16 SRAM macro** during Task 4.
+- ✅ Preserved the generated GDSII, LEF, SPICE, Verilog, Liberty, and HTML outputs.
+- ✅ Investigated and documented the requested 2 × 16 SRAM limitation.
+- ⏳ Task 5 1024 × 32 SRAM generation is in progress.
 - ✅ Documented the complete OpenRAM compilation and verification workflow.
 
 ## Documentation & AI-Assisted Workflow
@@ -271,8 +303,11 @@ F --> G[Integrated 1-Bit SRAM]
 G --> H[Magic Layout]
 H --> I[Netgen LVS]
 I --> J[OpenRAM Configuration]
-J --> K[16 × 16 SRAM Generation]
-K --> L[GDSII • LEF • SPICE • Verilog • Liberty]
+J --> K[Task 4 — 16 × 16 SRAM Generation]
+K --> L[Task 4 Investigation / Validation]
+L --> M[Task 5 — 1024 × 32 SRAM Configuration]
+M --> N[1024 × 32 SRAM Generation]
+N --> O[GDSII • LEF • SPICE • Verilog • Liberty]
 ```
 
 ## 📑 Table of Contents
@@ -654,7 +689,7 @@ The final stage of this project involved generating an SRAM macro using **OpenRA
 
 The generated files are summarized in the [Generated Outputs](#generated-outputs) section.
 
-## Generated SRAM Configuration
+## Task 4 — Validated Intermediate SRAM Configuration
 
 | Parameter | Value |
 |-----------|-------|
@@ -664,6 +699,12 @@ The generated files are summarized in the [Generated Outputs](#generated-outputs
 | Total Capacity | 256 Bits |
 | Read/Write Ports | 1 RW Port |
 | Compiler | OpenRAM |
+
+> **Task 5 Target**
+>
+> The next implementation target is a **1024 × 32 single-port SRAM
+> (32,768 bits / 4 KB)**. Task-5 configuration and compilation are
+> currently in progress.
 
 ## Generation Summary
 
@@ -775,8 +816,13 @@ The project successfully demonstrates the complete AI-assisted SRAM design workf
 | Integrated 1-Bit SRAM | ✅ Verified |
 | Magic Layout Inspection | ✅ Completed |
 | Netgen LVS | ✅ Passed |
-| OpenRAM Generation | ✅ Completed |
-| Generated Deliverables | ✅ Validated |
+| Task 4 OpenRAM Generation | ✅ Completed |
+| Task 4 16 × 16 Intermediate Macro | ✅ Generated |
+| Task 4 2 × 16 Investigation | ✅ Completed |
+| Task 4 Decoder Limitation | ✅ Documented |
+| Task 5 Architecture | ✅ Established |
+| Task 5 1024 × 32 Generation | ⏳ In Progress |
+| Task 5 Final Validation | ⏳ Pending |
 
 ## Project Outcome
 
@@ -796,14 +842,16 @@ The internship project progressed through three major phases.
 |--------|------------------|:------:|
 | Week 1 | SRAM architecture, CMOS inverter, 6T SRAM fundamentals | ✅ |
 | Week 2–3 | Bitcell verification, SNM, read/write, peripheral circuits | ✅ |
-| Week 5 | OpenRAM setup, SRAM generation, documentation | ✅ |
+| Week 5 | OpenRAM setup, 16 × 16 intermediate macro, 2 × 16 investigation | ✅ |
+| Week 6 | 1024 × 32 SRAM implementation | 🟡 In Progress |
 
 ### Overall Progress
 
 - ✅ SRAM architecture study completed
 - ✅ Circuit-level verification completed
 - ✅ Physical verification completed
-- ✅ OpenRAM workflow completed
+- ✅ Task 4 OpenRAM workflow and investigation completed
+- 🟡 Task 5 1024 × 32 SRAM implementation in progress
 - ✅ Documentation completed
 
 </details>
@@ -981,11 +1029,9 @@ Through this project I gained practical experience in:
 
 Possible future extensions include:
 
-- Larger SRAM organizations
 - Complete DRC/LVS on generated macros
 - Digital SoC integration
 - Multi-corner timing and power characterization
-- OpenRAM customization
 - Advanced AI-assisted memory design workflows
 
 </details>
