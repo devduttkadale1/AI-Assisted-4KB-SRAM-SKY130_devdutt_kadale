@@ -83,3 +83,45 @@ Remaining:
 - Generated GDS, LEF, SPICE, Verilog, Liberty, HTML reports
 - Documented OpenRAM compiler limitations
 - Updated repository documentation
+
+
+### Task 5 - Week 6
+Status: In Progress — core SRAM generation and physical sign-off complete
+
+Requirement:
+Generate and validate a 1024-word × 32-bit single-port SRAM (4 KB) using OpenRAM on SKY130, including generated views, automated functional regression, physical verification, extraction, characterization, integration, and reproducibility evidence.
+
+Completed:
+- Generated authoritative 1024 × 32 single-port SRAM using OpenRAM v1.2.49
+- Generated GDS, LEF, Verilog, SPICE, and TT/SS/FF Liberty views
+- Completed automated functional regression
+- Functional result: 144 PASS / 0 FAIL
+- Covered first/last and representative boundary addresses
+- Covered all-zero, all-one, alternating, walking-1, walking-0, and deterministic pseudorandom patterns
+- Completed authoritative Magic DRC
+- Magic DRC result: 0 errors
+- Completed corrected full Magic extraction
+- Generated extracted top-level SPICE
+- Completed final Netgen LVS
+- Final LVS device count: 270248 vs 270248
+- Final LVS net count: 69617 vs 69617
+- Final LVS result: Circuits match uniquely.
+- Final LVS property error count: 0
+- Packaged authoritative configuration, generated views, regression evidence, DRC evidence, extraction evidence, LVS evidence, and SHA-256 manifest under week6_task5/
+
+Remaining:
+- Complete characterization summary for TT / SS / FF
+- Report read access time, write time, leakage power, read energy, and write energy where computationally practical
+- Compare measured/derived timing against OpenRAM Liberty data
+- Complete integration / STA evidence
+- Determine maximum safe operating frequency
+- Complete clean-clone reproducibility check
+- Finish Task 5 documentation and final repository checkpoint
+
+Evidence:
+- week6_task5/config/
+- week6_task5/generated/
+- week6_task5/regression/
+- week6_task5/verification/
+- week6_task5/SHA256SUMS
+- week6_task5/docs/signoff_checkpoint.md

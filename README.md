@@ -22,8 +22,29 @@
 > - **Design Flow:** **Xschem → NGSpice → Magic VLSI → Netgen LVS → OpenRAM**
 > - **Validated Intermediate Macro:** **16 × 16 SRAM Macro (256-bit)**
 > - **Current Target:** **1024 × 32 SRAM Macro (4 KB) — Task 5 / Week 6**
-> - **Current Status:** Task 5 architecture established; controlled OpenRAM compilation pending
+> - **Current Status:** Task 5 core SRAM generation and physical sign-off complete; characterization and integration remain
 > - **Focus:** AI-assisted SRAM design, verification, physical validation, and documentation
+
+## Task 5 — 1024 × 32 SRAM Sign-off Checkpoint
+
+The Week 6 Task 5 target is a **1024-word × 32-bit single-port SRAM (4 KB)** generated with **OpenRAM v1.2.49** using **SKY130**.
+
+Current validated results:
+
+- Production GDS, LEF, Verilog, SPICE, and TT/SS/FF Liberty views generated
+- Automated functional regression: **144 PASS / 0 FAIL**
+- Magic DRC: **0 errors**
+- Corrected full Magic extraction completed
+- Extracted top-level SPICE generated
+- Final Netgen LVS device count: **270248 vs 270248**
+- Final Netgen LVS net count: **69617 vs 69617**
+- Final Netgen result: **Circuits match uniquely**
+- LVS property error count: **0**
+
+The authoritative checkpoint artifacts and verification evidence are stored under [`week6_task5/`](week6_task5/).
+
+Remaining Task 5 work includes characterization reporting, Liberty comparison, integration/STA, maximum safe frequency analysis, clean-clone reproducibility, and final documentation.
+
 > - Last Updated: August 2026
 
 ---
@@ -35,7 +56,7 @@
 | 🎯 Project Goal | AI-Assisted 4KB SRAM Design using SKY130 PDK and OpenRAM |
 | 🧪 Validated Intermediate Macro | 16 × 16 SRAM Macro (256-bit) |
 | 🎯 Final Target | 1024 × 32 SRAM Macro (4 KB) |
-| 📌 Current Phase | Task 5 — Architecture established; compilation pending |
+| 📌 Current Phase | Task 5 — 1024 × 32 generation, functional regression, DRC, extraction, and clean LVS complete |
 | 🛠 EDA Tools | Xschem, NGSpice, Magic VLSI, Netgen, OpenRAM |
 | 📐 Technology | SKY130A Open-Source PDK |
 | 🧩 Major Circuit Blocks | CMOS Inverter, 6T SRAM Cell, Precharge, Write Driver, Sense Amplifier |
@@ -103,7 +124,7 @@ Explore different stages of the project directly.
 | Integrated 1-Bit SRAM Verification | ✅ |
 | OpenRAM SRAM Macro Generation | ✅ |
 | Physical Verification | ✅ |
-| Final Generated SRAM Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
+| Final Generated SRAM Macro | **Validated 1024 × 32 SRAM Macro (4 KB)** |
 
 > **Repository Note**
 >
@@ -153,10 +174,10 @@ The repository documents the complete development flow of the internship project
 | Task 4 — 16 × 16 Intermediate Macro | ✅ Generated / Validated |
 | Task 4 — 2 × 16 Normal-Flow Limitation | ✅ Documented |
 | Task 5 — 1024 × 32 Architecture | ✅ Established |
-| Task 5 — Configuration | ⏳ Pending |
-| Task 5 — 1024 × 32 Compilation | ⏳ Pending |
-| Task 5 — Final Validation | ⏳ Pending |
-| Current Validated Macro | **16 × 16 SRAM Macro (256-bit)** |
+| Task 5 — Configuration | ✅ Complete |
+| Task 5 — 1024 × 32 Compilation | ✅ Complete |
+| Task 5 — Core Physical Sign-off | ✅ DRC + Extraction + Clean LVS |
+| Current Validated Macro | **1024 × 32 SRAM Macro (4 KB)** |
 | Final Project Target | **1024 × 32 SRAM Macro (4 KB)** |
 
 > **Current Scope**
@@ -168,7 +189,7 @@ The repository documents the complete development flow of the internship project
 >
 > **Task 5 extends the project toward the required 1024 × 32 single-port
 > 4 KB SRAM macro.** The Task-5 architecture has been established and the
-> controlled OpenRAM generation phase is currently in progress.
+> production SRAM generation and core physical sign-off are complete; characterization and integration remain.
 
 ---
 
@@ -214,7 +235,7 @@ The OpenRAM compiler was configured with the SKY130A technology to generate and 
 - ✅ Generated the **16 × 16 SRAM macro** during Task 4.
 - ✅ Preserved the generated GDSII, LEF, SPICE, Verilog, Liberty, and HTML outputs.
 - ✅ Investigated and documented the requested 2 × 16 SRAM limitation.
-- ⏳ Task 5 1024 × 32 SRAM generation is in progress.
+- ✅ Task 5 1024 × 32 SRAM generation and core physical sign-off are complete.
 - ✅ Documented the complete OpenRAM compilation and verification workflow.
 
 ## Documentation & AI-Assisted Workflow
@@ -243,7 +264,7 @@ The project successfully demonstrates the complete AI-assisted SRAM design workf
 | Layout Tool | Magic VLSI |
 | LVS Verification | Netgen |
 | SRAM Compiler | OpenRAM v1.2.49 |
-| Final Generated Macro | **Validated 16 × 16 SRAM Macro (256-bit)** |
+| Final Generated Macro | **Validated 1024 × 32 SRAM Macro (4 KB)** |
 | Generated Deliverables | GDSII, LEF, SPICE, Verilog, Liberty, HTML |
 | AI-Assisted Workflow | Fully Documented |
 
@@ -821,8 +842,8 @@ The project successfully demonstrates the complete AI-assisted SRAM design workf
 | Task 4 2 × 16 Investigation | ✅ Completed |
 | Task 4 Decoder Limitation | ✅ Documented |
 | Task 5 Architecture | ✅ Established |
-| Task 5 1024 × 32 Generation | ⏳ In Progress |
-| Task 5 Final Validation | ⏳ Pending |
+| Task 5 1024 × 32 Generation | ✅ Complete |
+| Task 5 Final Validation | 🟡 In Progress — characterization and integration remain |
 
 ## Project Outcome
 
@@ -851,7 +872,7 @@ The internship project progressed through three major phases.
 - ✅ Circuit-level verification completed
 - ✅ Physical verification completed
 - ✅ Task 4 OpenRAM workflow and investigation completed
-- 🟡 Task 5 1024 × 32 SRAM implementation in progress
+- ✅ Task 5 1024 × 32 SRAM generation and core physical sign-off complete; characterization and integration remain
 - ✅ Documentation completed
 
 </details>

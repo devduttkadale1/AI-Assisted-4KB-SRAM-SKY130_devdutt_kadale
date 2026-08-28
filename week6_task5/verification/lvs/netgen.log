@@ -1,0 +1,1934 @@
+Netgen 1.5.323 compiled on Wed Jul 22 15:44:17 UTC 2026
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice for /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice task5_4kb_sram
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_nfet_pass
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_pfet_pass
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_nfet_latch
+Creating placeholder cell definition.
+Reading netlist file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp for /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp task5_4kb_sram
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_nfet_pass
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_nfet_latch
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__special_pfet_pass
+Creating placeholder cell definition.
+
+Reading setup file /usr/local/share/pdk/sky130A/libs.tech/netgen/setup.tcl
+
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__nfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__nfet_01v8
+No property ad found for device sky130_fd_pr__nfet_01v8
+No property ps found for device sky130_fd_pr__nfet_01v8
+No property pd found for device sky130_fd_pr__nfet_01v8
+No property mult found for device sky130_fd_pr__nfet_01v8
+No property sa found for device sky130_fd_pr__nfet_01v8
+No property sb found for device sky130_fd_pr__nfet_01v8
+No property sd found for device sky130_fd_pr__nfet_01v8
+No property nf found for device sky130_fd_pr__nfet_01v8
+No property nrd found for device sky130_fd_pr__nfet_01v8
+No property nrs found for device sky130_fd_pr__nfet_01v8
+No property area found for device sky130_fd_pr__nfet_01v8
+No property perim found for device sky130_fd_pr__nfet_01v8
+No property topography found for device sky130_fd_pr__nfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__pfet_01v8 pin 1 == 3
+No property as found for device sky130_fd_pr__pfet_01v8
+No property ad found for device sky130_fd_pr__pfet_01v8
+No property ps found for device sky130_fd_pr__pfet_01v8
+No property pd found for device sky130_fd_pr__pfet_01v8
+No property mult found for device sky130_fd_pr__pfet_01v8
+No property sa found for device sky130_fd_pr__pfet_01v8
+No property sb found for device sky130_fd_pr__pfet_01v8
+No property sd found for device sky130_fd_pr__pfet_01v8
+No property nf found for device sky130_fd_pr__pfet_01v8
+No property nrd found for device sky130_fd_pr__pfet_01v8
+No property nrs found for device sky130_fd_pr__pfet_01v8
+No property area found for device sky130_fd_pr__pfet_01v8
+No property perim found for device sky130_fd_pr__pfet_01v8
+No property topography found for device sky130_fd_pr__pfet_01v8
+Model sky130_fd_pr__special_pfet_pass pin 1 == 3
+No property mult found for device sky130_fd_pr__special_pfet_pass
+No property sa found for device sky130_fd_pr__special_pfet_pass
+No property sb found for device sky130_fd_pr__special_pfet_pass
+No property sd found for device sky130_fd_pr__special_pfet_pass
+No property nf found for device sky130_fd_pr__special_pfet_pass
+No property nrd found for device sky130_fd_pr__special_pfet_pass
+No property nrs found for device sky130_fd_pr__special_pfet_pass
+No property area found for device sky130_fd_pr__special_pfet_pass
+No property perim found for device sky130_fd_pr__special_pfet_pass
+No property topography found for device sky130_fd_pr__special_pfet_pass
+Model sky130_fd_pr__special_pfet_pass pin 1 == 3
+No property mult found for device sky130_fd_pr__special_pfet_pass
+No property sa found for device sky130_fd_pr__special_pfet_pass
+No property sb found for device sky130_fd_pr__special_pfet_pass
+No property sd found for device sky130_fd_pr__special_pfet_pass
+No property nf found for device sky130_fd_pr__special_pfet_pass
+No property nrd found for device sky130_fd_pr__special_pfet_pass
+No property nrs found for device sky130_fd_pr__special_pfet_pass
+No property area found for device sky130_fd_pr__special_pfet_pass
+No property perim found for device sky130_fd_pr__special_pfet_pass
+No property topography found for device sky130_fd_pr__special_pfet_pass
+Model sky130_fd_pr__special_nfet_pass pin 1 == 3
+No property mult found for device sky130_fd_pr__special_nfet_pass
+No property sa found for device sky130_fd_pr__special_nfet_pass
+No property sb found for device sky130_fd_pr__special_nfet_pass
+No property sd found for device sky130_fd_pr__special_nfet_pass
+No property nf found for device sky130_fd_pr__special_nfet_pass
+No property nrd found for device sky130_fd_pr__special_nfet_pass
+No property nrs found for device sky130_fd_pr__special_nfet_pass
+No property area found for device sky130_fd_pr__special_nfet_pass
+No property perim found for device sky130_fd_pr__special_nfet_pass
+No property topography found for device sky130_fd_pr__special_nfet_pass
+Model sky130_fd_pr__special_nfet_pass pin 1 == 3
+No property mult found for device sky130_fd_pr__special_nfet_pass
+No property sa found for device sky130_fd_pr__special_nfet_pass
+No property sb found for device sky130_fd_pr__special_nfet_pass
+No property sd found for device sky130_fd_pr__special_nfet_pass
+No property nf found for device sky130_fd_pr__special_nfet_pass
+No property nrd found for device sky130_fd_pr__special_nfet_pass
+No property nrs found for device sky130_fd_pr__special_nfet_pass
+No property area found for device sky130_fd_pr__special_nfet_pass
+No property perim found for device sky130_fd_pr__special_nfet_pass
+No property topography found for device sky130_fd_pr__special_nfet_pass
+Model sky130_fd_pr__special_nfet_latch pin 1 == 3
+No property mult found for device sky130_fd_pr__special_nfet_latch
+No property sa found for device sky130_fd_pr__special_nfet_latch
+No property sb found for device sky130_fd_pr__special_nfet_latch
+No property sd found for device sky130_fd_pr__special_nfet_latch
+No property nf found for device sky130_fd_pr__special_nfet_latch
+No property nrd found for device sky130_fd_pr__special_nfet_latch
+No property nrs found for device sky130_fd_pr__special_nfet_latch
+No property area found for device sky130_fd_pr__special_nfet_latch
+No property perim found for device sky130_fd_pr__special_nfet_latch
+No property topography found for device sky130_fd_pr__special_nfet_latch
+Model sky130_fd_pr__special_nfet_latch pin 1 == 3
+No property mult found for device sky130_fd_pr__special_nfet_latch
+No property sa found for device sky130_fd_pr__special_nfet_latch
+No property sb found for device sky130_fd_pr__special_nfet_latch
+No property sd found for device sky130_fd_pr__special_nfet_latch
+No property nf found for device sky130_fd_pr__special_nfet_latch
+No property nrd found for device sky130_fd_pr__special_nfet_latch
+No property nrs found for device sky130_fd_pr__special_nfet_latch
+No property area found for device sky130_fd_pr__special_nfet_latch
+No property perim found for device sky130_fd_pr__special_nfet_latch
+No property topography found for device sky130_fd_pr__special_nfet_latch
+Comparison output logged to file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r45_final_property_clean_netgen_lvs/task5_4kb_sram.final.lvs.out
+Logging to file "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r45_final_property_clean_netgen_lvs/task5_4kb_sram.final.lvs.out" enabled
+Circuit sky130_fd_pr__nfet_01v8 contains no devices.
+Circuit sky130_fd_pr__pfet_01v8 contains no devices.
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_dec'
+Circuit task5_4kb_sram_pinv_dec contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_dec'
+Circuit task5_4kb_sram_pinv_dec contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_sp_nand2_dec'
+Circuit sky130_fd_bd_sram__openram_sp_nand2_dec contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_sp_nand2_dec'
+Circuit sky130_fd_bd_sram__openram_sp_nand2_dec contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 6 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_sp_nand3_dec'
+Circuit sky130_fd_bd_sram__openram_sp_nand3_dec contains 6 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_sp_nand3_dec'
+Circuit sky130_fd_bd_sram__openram_sp_nand3_dec contains 6 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 8 nets.
+
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 8 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_0'
+Circuit task5_4kb_sram_pinv_0 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_0'
+Circuit task5_4kb_sram_pinv_0 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv'
+Circuit task5_4kb_sram_pinv contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv'
+Circuit task5_4kb_sram_pinv contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv'
+Circuit task5_4kb_sram_pinv contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv'
+Circuit task5_4kb_sram_pinv contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+Circuit sky130_fd_pr__special_nfet_pass contains no devices.
+Circuit sky130_fd_pr__special_pfet_pass contains no devices.
+Circuit sky130_fd_pr__special_nfet_latch contains no devices.
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_dec_0'
+Circuit task5_4kb_sram_pinv_dec_0 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_dec_0'
+Circuit task5_4kb_sram_pinv_dec_0 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_and2_dec'
+Circuit task5_4kb_sram_and2_dec contains 2 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   1
+  Class: task5_4kb_sram_pinv_dec instances:   1
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_and2_dec'
+Circuit task5_4kb_sram_and2_dec contains 2 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   1
+  Class: task5_4kb_sram_pinv_dec instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 7 nets,    Circuit 2 contains 6 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_and2_dec task5_4kb_sram_and2_dec
+
+Flattening instances of task5_4kb_sram_and2_dec in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_and2_dec in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_and3_dec'
+Circuit task5_4kb_sram_and3_dec contains 2 device instances.
+  Class: task5_4kb_sram_pinv_dec instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances:   1
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_and3_dec'
+Circuit task5_4kb_sram_and3_dec contains 2 device instances.
+  Class: task5_4kb_sram_pinv_dec instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances:   1
+Circuit contains 7 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 7 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_and3_dec task5_4kb_sram_and3_dec
+
+Flattening instances of task5_4kb_sram_and3_dec in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_and3_dec in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pnand3'
+Circuit task5_4kb_sram_pnand3 contains 6 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 10 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pnand3'
+Circuit task5_4kb_sram_pnand3 contains 6 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 8 nets.
+
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 10 nets,    Circuit 2 contains 8 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_pnand3 task5_4kb_sram_pnand3
+
+Flattening instances of task5_4kb_sram_pnand3 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_pnand3 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pdriver_0'
+Circuit task5_4kb_sram_pdriver_0 contains 1 device instances.
+  Class: task5_4kb_sram_pinv_0 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pdriver_0'
+Circuit task5_4kb_sram_pdriver_0 contains 1 device instances.
+  Class: task5_4kb_sram_pinv_0 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pnand2'
+Circuit task5_4kb_sram_pnand2 contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pnand2'
+Circuit task5_4kb_sram_pnand2 contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 6 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 6 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_pnand2 task5_4kb_sram_pnand2
+
+Flattening instances of task5_4kb_sram_pnand2 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_pnand2 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pdriver'
+Circuit task5_4kb_sram_pdriver contains 1 device instances.
+  Class: task5_4kb_sram_pinv   instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pdriver'
+Circuit task5_4kb_sram_pdriver contains 1 device instances.
+  Class: task5_4kb_sram_pinv   instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__sram_sp_colend'
+Circuit sky130_fd_bd_sram__sram_sp_colend contains 1 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   1
+Circuit contains 3 nets, and 6 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__sram_sp_colend'
+Circuit sky130_fd_bd_sram__sram_sp_colend contains 1 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   1
+Circuit contains 3 nets, and 4 disconnected pins.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__sram_sp_colenda'
+Circuit sky130_fd_bd_sram__sram_sp_colenda contains 1 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   1
+Circuit contains 3 nets, and 6 disconnected pins.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__sram_sp_colenda'
+Circuit sky130_fd_bd_sram__sram_sp_colenda contains 1 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   1
+Circuit contains 3 nets, and 4 disconnected pins.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 3 nets,    Circuit 2 contains 3 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_sp_cell_opt1_replica'
+Circuit sky130_fd_bd_sram__openram_sp_cell_opt1_replica contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 9 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_sp_cell_opt1_replica'
+Circuit sky130_fd_bd_sram__openram_sp_cell_opt1_replica contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 8 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 8 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_fd_bd_sram__openram_sp_cell_opt1_replica sky130_fd_bd_sram__openram_sp_cell_opt1_replica
+
+Flattening instances of sky130_fd_bd_sram__openram_sp_cell_opt1_replica in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of sky130_fd_bd_sram__openram_sp_cell_opt1_replica in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_sp_cell_opt1a_replica'
+Circuit sky130_fd_bd_sram__openram_sp_cell_opt1a_replica contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 9 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_sp_cell_opt1a_replica'
+Circuit sky130_fd_bd_sram__openram_sp_cell_opt1a_replica contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 8 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 8 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_fd_bd_sram__openram_sp_cell_opt1a_replica sky130_fd_bd_sram__openram_sp_cell_opt1a_replica
+
+Flattening instances of sky130_fd_bd_sram__openram_sp_cell_opt1a_replica in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of sky130_fd_bd_sram__openram_sp_cell_opt1a_replica in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy'
+Circuit sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 14 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy'
+Circuit sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 13 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 14 nets,    Circuit 2 contains 13 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy
+
+Flattening instances of sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__sram_sp_cell_opt1a'
+Circuit sky130_fd_bd_sram__sram_sp_cell_opt1a contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 10 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__sram_sp_cell_opt1a'
+Circuit sky130_fd_bd_sram__sram_sp_cell_opt1a contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 9 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 10 nets,    Circuit 2 contains 9 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_fd_bd_sram__sram_sp_cell_opt1a sky130_fd_bd_sram__sram_sp_cell_opt1a
+
+Flattening instances of sky130_fd_bd_sram__sram_sp_cell_opt1a in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of sky130_fd_bd_sram__sram_sp_cell_opt1a in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__sram_sp_cell_opt1'
+Circuit sky130_fd_bd_sram__sram_sp_cell_opt1 contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 10 nets, and 1 disconnected pin.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__sram_sp_cell_opt1'
+Circuit sky130_fd_bd_sram__sram_sp_cell_opt1 contains 8 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances:   2
+  Class: sky130_fd_pr__special_pfet_pass instances:   4
+  Class: sky130_fd_pr__special_nfet_latch instances:   2
+Circuit contains 9 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 10 nets,    Circuit 2 contains 9 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_fd_bd_sram__sram_sp_cell_opt1 sky130_fd_bd_sram__sram_sp_cell_opt1
+
+Flattening instances of sky130_fd_bd_sram__sram_sp_cell_opt1 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of sky130_fd_bd_sram__sram_sp_cell_opt1 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_wordline_driver'
+Circuit task5_4kb_sram_wordline_driver contains 2 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   1
+  Class: task5_4kb_sram_pinv_dec_0 instances:   1
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_wordline_driver'
+Circuit task5_4kb_sram_wordline_driver contains 2 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   1
+  Class: task5_4kb_sram_pinv_dec_0 instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 7 nets,    Circuit 2 contains 6 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_wordline_driver task5_4kb_sram_wordline_driver
+
+Flattening instances of task5_4kb_sram_wordline_driver in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_wordline_driver in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_hierarchical_predecode2x4'
+Circuit task5_4kb_sram_hierarchical_predecode2x4 contains 10 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   4
+  Class: task5_4kb_sram_pinv_dec instances:   6
+Circuit contains 16 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_hierarchical_predecode2x4'
+Circuit task5_4kb_sram_hierarchical_predecode2x4 contains 10 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   4
+  Class: task5_4kb_sram_pinv_dec instances:   6
+Circuit contains 14 nets.
+
+Circuit 1 contains 10 devices, Circuit 2 contains 10 devices.
+Circuit 1 contains 16 nets,    Circuit 2 contains 14 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_hierarchical_predecode2x4 task5_4kb_sram_hierarchical_predecode2x4
+
+Flattening instances of task5_4kb_sram_hierarchical_predecode2x4 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_hierarchical_predecode2x4 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_hierarchical_predecode3x8'
+Circuit task5_4kb_sram_hierarchical_predecode3x8 contains 19 device instances.
+  Class: task5_4kb_sram_pinv_dec instances:  11
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances:   8
+Circuit contains 26 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_hierarchical_predecode3x8'
+Circuit task5_4kb_sram_hierarchical_predecode3x8 contains 19 device instances.
+  Class: task5_4kb_sram_pinv_dec instances:  11
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances:   8
+Circuit contains 24 nets.
+
+Circuit 1 contains 19 devices, Circuit 2 contains 19 devices.
+Circuit 1 contains 26 nets,    Circuit 2 contains 24 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_hierarchical_predecode3x8 task5_4kb_sram_hierarchical_predecode3x8
+
+Flattening instances of task5_4kb_sram_hierarchical_predecode3x8 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_hierarchical_predecode3x8 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pand3'
+Circuit task5_4kb_sram_pand3 contains 7 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: task5_4kb_sram_pdriver_0 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pand3'
+Circuit task5_4kb_sram_pand3 contains 7 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: task5_4kb_sram_pdriver_0 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 9 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_1'
+Circuit task5_4kb_sram_pinv_1 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_1'
+Circuit task5_4kb_sram_pinv_1 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_write_driver'
+Circuit sky130_fd_bd_sram__openram_write_driver contains 16 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+  Class: sky130_fd_pr__nfet_01v8 instances:   9
+Circuit contains 14 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_write_driver'
+Circuit sky130_fd_bd_sram__openram_write_driver contains 16 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+  Class: sky130_fd_pr__nfet_01v8 instances:   9
+Circuit contains 13 nets.
+
+Circuit 1 contains 16 devices, Circuit 2 contains 16 devices.
+Circuit 1 contains 14 nets,    Circuit 2 contains 13 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_fd_bd_sram__openram_write_driver sky130_fd_bd_sram__openram_write_driver
+
+Flattening instances of sky130_fd_bd_sram__openram_write_driver in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of sky130_fd_bd_sram__openram_write_driver in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_column_mux'
+Circuit task5_4kb_sram_column_mux contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_column_mux'
+Circuit task5_4kb_sram_column_mux contains 2 device instances.
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 6 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_sense_amp'
+Circuit sky130_fd_bd_sram__openram_sense_amp contains 9 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   5
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+Circuit contains 10 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_sense_amp'
+Circuit sky130_fd_bd_sram__openram_sense_amp contains 9 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   5
+  Class: sky130_fd_pr__nfet_01v8 instances:   4
+Circuit contains 9 nets.
+
+Circuit 1 contains 9 devices, Circuit 2 contains 9 devices.
+Circuit 1 contains 10 nets,    Circuit 2 contains 9 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits sky130_fd_bd_sram__openram_sense_amp sky130_fd_bd_sram__openram_sense_amp
+
+Flattening instances of sky130_fd_bd_sram__openram_sense_amp in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of sky130_fd_bd_sram__openram_sense_amp in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pand2'
+Circuit task5_4kb_sram_pand2 contains 5 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: task5_4kb_sram_pdriver instances:   1
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pand2'
+Circuit task5_4kb_sram_pand2 contains 5 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+  Class: task5_4kb_sram_pdriver instances:   1
+Circuit contains 7 nets.
+
+Circuit 1 contains 5 devices, Circuit 2 contains 5 devices.
+Circuit 1 contains 7 nets,    Circuit 2 contains 7 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_precharge_0'
+Circuit task5_4kb_sram_precharge_0 contains 3 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_precharge_0'
+Circuit task5_4kb_sram_precharge_0 contains 3 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+Circuit contains 4 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_sky130_col_cap_array'
+Circuit task5_4kb_sram_sky130_col_cap_array contains 257 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 257
+Circuit contains 518 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_sky130_col_cap_array'
+Circuit task5_4kb_sram_sky130_col_cap_array contains 257 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 257
+Circuit contains 518 nets.
+
+Circuit 1 contains 257 devices, Circuit 2 contains 257 devices.
+Circuit 1 contains 518 nets,    Circuit 2 contains 517 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_sky130_col_cap_array task5_4kb_sram_sky130_col_cap_array
+
+Flattening instances of task5_4kb_sram_sky130_col_cap_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_sky130_col_cap_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_sky130_col_cap_array_0'
+Circuit task5_4kb_sram_sky130_col_cap_array_0 contains 257 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 257
+Circuit contains 518 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_sky130_col_cap_array_0'
+Circuit task5_4kb_sram_sky130_col_cap_array_0 contains 257 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 257
+Circuit contains 518 nets.
+
+Circuit 1 contains 257 devices, Circuit 2 contains 257 devices.
+Circuit 1 contains 518 nets,    Circuit 2 contains 517 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_sky130_col_cap_array_0 task5_4kb_sram_sky130_col_cap_array_0
+
+Flattening instances of task5_4kb_sram_sky130_col_cap_array_0 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_sky130_col_cap_array_0 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_sky130_replica_column'
+Circuit task5_4kb_sram_sky130_replica_column contains 1042 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colend instances:   1
+  Class: sky130_fd_pr__special_nfet_pass instances: 260
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances:   1
+  Class: sky130_fd_pr__special_pfet_pass instances: 520
+  Class: sky130_fd_pr__special_nfet_latch instances: 260
+Circuit contains 268 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_sky130_replica_column'
+Circuit task5_4kb_sram_sky130_replica_column contains 1042 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colend instances:   1
+  Class: sky130_fd_pr__special_nfet_pass instances: 260
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances:   1
+  Class: sky130_fd_pr__special_pfet_pass instances: 520
+  Class: sky130_fd_pr__special_nfet_latch instances: 260
+Circuit contains 266 nets.
+
+Circuit 1 contains 1042 devices, Circuit 2 contains 1042 devices.
+Circuit 1 contains 268 nets,    Circuit 2 contains 266 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_sky130_replica_column task5_4kb_sram_sky130_replica_column
+
+Flattening instances of task5_4kb_sram_sky130_replica_column in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_sky130_replica_column in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_sky130_dummy_array'
+Circuit task5_4kb_sram_sky130_dummy_array contains 2056 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances: 514
+  Class: sky130_fd_pr__special_pfet_pass instances: 1028
+  Class: sky130_fd_pr__special_nfet_latch instances: 514
+Circuit contains 2061 nets, and 256 disconnected pins.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_sky130_dummy_array'
+Circuit task5_4kb_sram_sky130_dummy_array contains 2056 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances: 514
+  Class: sky130_fd_pr__special_pfet_pass instances: 1028
+  Class: sky130_fd_pr__special_nfet_latch instances: 514
+Circuit contains 2059 nets.
+
+Circuit 1 contains 2056 devices, Circuit 2 contains 2056 devices.
+Circuit 1 contains 2061 nets,    Circuit 2 contains 2059 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_sky130_dummy_array task5_4kb_sram_sky130_dummy_array
+
+Flattening instances of task5_4kb_sram_sky130_dummy_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_sky130_dummy_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_sky130_bitcell_array'
+Circuit task5_4kb_sram_sky130_bitcell_array contains 265224 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances: 66306
+  Class: sky130_fd_pr__special_pfet_pass instances: 132612
+  Class: sky130_fd_pr__special_nfet_latch instances: 66306
+Circuit contains 66953 nets, and 256 disconnected pins.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_sky130_bitcell_array'
+Circuit task5_4kb_sram_sky130_bitcell_array contains 265224 device instances.
+  Class: sky130_fd_pr__special_nfet_pass instances: 66306
+  Class: sky130_fd_pr__special_pfet_pass instances: 132612
+  Class: sky130_fd_pr__special_nfet_latch instances: 66306
+Circuit contains 66951 nets.
+
+Circuit 1 contains 265224 devices, Circuit 2 contains 265224 devices.
+Circuit 1 contains 66953 nets,    Circuit 2 contains 66951 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_sky130_bitcell_array task5_4kb_sram_sky130_bitcell_array
+
+Flattening instances of task5_4kb_sram_sky130_bitcell_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_sky130_bitcell_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_13'
+Circuit task5_4kb_sram_pinv_13 contains 44 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  22
+  Class: sky130_fd_pr__nfet_01v8 instances:  22
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_13'
+Circuit task5_4kb_sram_pinv_13 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_13'
+Circuit task5_4kb_sram_pinv_13 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_13'
+Circuit task5_4kb_sram_pinv_13 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_4'
+Circuit task5_4kb_sram_pinv_4 contains 14 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   7
+  Class: sky130_fd_pr__nfet_01v8 instances:   7
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_4'
+Circuit task5_4kb_sram_pinv_4 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_4'
+Circuit task5_4kb_sram_pinv_4 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_4'
+Circuit task5_4kb_sram_pinv_4 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_2'
+Circuit task5_4kb_sram_pinv_2 contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_2'
+Circuit task5_4kb_sram_pinv_2 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_2'
+Circuit task5_4kb_sram_pinv_2 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_2'
+Circuit task5_4kb_sram_pinv_2 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_3'
+Circuit task5_4kb_sram_pinv_3 contains 6 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_3'
+Circuit task5_4kb_sram_pinv_3 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_3'
+Circuit task5_4kb_sram_pinv_3 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_3'
+Circuit task5_4kb_sram_pinv_3 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'sky130_fd_bd_sram__openram_dff'
+Circuit sky130_fd_bd_sram__openram_dff contains 22 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  11
+  Class: sky130_fd_pr__nfet_01v8 instances:  11
+Circuit contains 17 nets.
+Contents of circuit 2:  Circuit: 'sky130_fd_bd_sram__openram_dff'
+Circuit sky130_fd_bd_sram__openram_dff contains 22 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  11
+  Class: sky130_fd_pr__nfet_01v8 instances:  11
+Circuit contains 17 nets.
+
+Circuit 1 contains 22 devices, Circuit 2 contains 22 devices.
+Circuit 1 contains 17 nets,    Circuit 2 contains 17 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_14'
+Circuit task5_4kb_sram_pinv_14 contains 36 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  18
+  Class: sky130_fd_pr__nfet_01v8 instances:  18
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_14'
+Circuit task5_4kb_sram_pinv_14 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_14'
+Circuit task5_4kb_sram_pinv_14 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_14'
+Circuit task5_4kb_sram_pinv_14 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_wordline_driver_array'
+Circuit task5_4kb_sram_wordline_driver_array contains 258 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 129
+  Class: task5_4kb_sram_pinv_dec_0 instances: 129
+Circuit contains 391 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_wordline_driver_array'
+Circuit task5_4kb_sram_wordline_driver_array contains 258 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 129
+  Class: task5_4kb_sram_pinv_dec_0 instances: 129
+Circuit contains 390 nets.
+
+Circuit 1 contains 258 devices, Circuit 2 contains 258 devices.
+Circuit 1 contains 391 nets,    Circuit 2 contains 390 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_wordline_driver_array task5_4kb_sram_wordline_driver_array
+
+Flattening instances of task5_4kb_sram_wordline_driver_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_wordline_driver_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_and2_dec_0'
+Circuit task5_4kb_sram_and2_dec_0 contains 2 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   1
+  Class: task5_4kb_sram_pinv_dec_0 instances:   1
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_and2_dec_0'
+Circuit task5_4kb_sram_and2_dec_0 contains 2 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   1
+  Class: task5_4kb_sram_pinv_dec_0 instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 7 nets,    Circuit 2 contains 6 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_and2_dec_0 task5_4kb_sram_and2_dec_0
+
+Flattening instances of task5_4kb_sram_and2_dec_0 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_and2_dec_0 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_hierarchical_decoder'
+Circuit task5_4kb_sram_hierarchical_decoder contains 306 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   4
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 326 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_hierarchical_decoder'
+Circuit task5_4kb_sram_hierarchical_decoder contains 306 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances:   4
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 316 nets.
+
+Circuit 1 contains 306 devices, Circuit 2 contains 306 devices.
+Circuit 1 contains 326 nets,    Circuit 2 contains 316 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_hierarchical_decoder task5_4kb_sram_hierarchical_decoder
+
+Flattening instances of task5_4kb_sram_hierarchical_decoder in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_hierarchical_decoder in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_hierarchical_predecode3x8_0'
+Circuit task5_4kb_sram_hierarchical_predecode3x8_0 contains 11 device instances.
+  Class: task5_4kb_sram_pinv_1 instances:   3
+  Class: task5_4kb_sram_pand3  instances:   8
+Circuit contains 19 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_hierarchical_predecode3x8_0'
+Circuit task5_4kb_sram_hierarchical_predecode3x8_0 contains 11 device instances.
+  Class: task5_4kb_sram_pinv_1 instances:   3
+  Class: task5_4kb_sram_pand3  instances:   8
+Circuit contains 16 nets.
+
+Circuit 1 contains 11 devices, Circuit 2 contains 11 devices.
+Circuit 1 contains 19 nets,    Circuit 2 contains 16 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_hierarchical_predecode3x8_0 task5_4kb_sram_hierarchical_predecode3x8_0
+
+Flattening instances of task5_4kb_sram_hierarchical_predecode3x8_0 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_hierarchical_predecode3x8_0 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_write_driver_array'
+Circuit task5_4kb_sram_write_driver_array contains 528 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances: 231
+  Class: sky130_fd_pr__nfet_01v8 instances: 297
+Circuit contains 338 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_write_driver_array'
+Circuit task5_4kb_sram_write_driver_array contains 528 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances: 231
+  Class: sky130_fd_pr__nfet_01v8 instances: 297
+Circuit contains 337 nets.
+
+Circuit 1 contains 528 devices, Circuit 2 contains 528 devices.
+Circuit 1 contains 338 nets,    Circuit 2 contains 337 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_write_driver_array task5_4kb_sram_write_driver_array
+
+Flattening instances of task5_4kb_sram_write_driver_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_write_driver_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_column_mux_array'
+Circuit task5_4kb_sram_column_mux_array contains 256 device instances.
+  Class: task5_4kb_sram_column_mux instances: 256
+Circuit contains 585 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_column_mux_array'
+Circuit task5_4kb_sram_column_mux_array contains 256 device instances.
+  Class: task5_4kb_sram_column_mux instances: 256
+Circuit contains 585 nets.
+
+Circuit 1 contains 256 devices, Circuit 2 contains 256 devices.
+Circuit 1 contains 585 nets,    Circuit 2 contains 585 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_sense_amp_array'
+Circuit task5_4kb_sram_sense_amp_array contains 297 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances: 165
+  Class: sky130_fd_pr__nfet_01v8 instances: 132
+Circuit contains 202 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_sense_amp_array'
+Circuit task5_4kb_sram_sense_amp_array contains 297 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances: 165
+  Class: sky130_fd_pr__nfet_01v8 instances: 132
+Circuit contains 201 nets.
+
+Circuit 1 contains 297 devices, Circuit 2 contains 297 devices.
+Circuit 1 contains 202 nets,    Circuit 2 contains 201 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_sense_amp_array task5_4kb_sram_sense_amp_array
+
+Flattening instances of task5_4kb_sram_sense_amp_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_sense_amp_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_write_mask_and_array'
+Circuit task5_4kb_sram_write_mask_and_array contains 4 device instances.
+  Class: task5_4kb_sram_pand2  instances:   4
+Circuit contains 11 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_write_mask_and_array'
+Circuit task5_4kb_sram_write_mask_and_array contains 4 device instances.
+  Class: task5_4kb_sram_pand2  instances:   4
+Circuit contains 11 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 11 nets,    Circuit 2 contains 11 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_precharge_array'
+Circuit task5_4kb_sram_precharge_array contains 258 device instances.
+  Class: task5_4kb_sram_precharge_0 instances: 258
+Circuit contains 518 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_precharge_array'
+Circuit task5_4kb_sram_precharge_array contains 258 device instances.
+  Class: task5_4kb_sram_precharge_0 instances: 258
+Circuit contains 518 nets.
+
+Circuit 1 contains 258 devices, Circuit 2 contains 258 devices.
+Circuit 1 contains 518 nets,    Circuit 2 contains 518 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_sky130_replica_bitcell_array'
+Circuit task5_4kb_sram_sky130_replica_bitcell_array contains 268836 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+Circuit contains 68627 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_sky130_replica_bitcell_array'
+Circuit task5_4kb_sram_sky130_replica_bitcell_array contains 268836 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+Circuit contains 68628 nets.
+
+Circuit 1 contains 268836 devices, Circuit 2 contains 268836 devices.
+Circuit 1 contains 68627 nets,    Circuit 2 contains 68626 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_sky130_replica_bitcell_array task5_4kb_sram_sky130_replica_bitcell_array
+
+Flattening instances of task5_4kb_sram_sky130_replica_bitcell_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_sky130_replica_bitcell_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_11'
+Circuit task5_4kb_sram_pinv_11 contains 16 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   8
+  Class: sky130_fd_pr__nfet_01v8 instances:   8
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_11'
+Circuit task5_4kb_sram_pinv_11 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_11'
+Circuit task5_4kb_sram_pinv_11 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_11'
+Circuit task5_4kb_sram_pinv_11 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_12'
+Circuit task5_4kb_sram_pinv_12 contains 48 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  24
+  Class: sky130_fd_pr__nfet_01v8 instances:  24
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_12'
+Circuit task5_4kb_sram_pinv_12 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_12'
+Circuit task5_4kb_sram_pinv_12 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_12'
+Circuit task5_4kb_sram_pinv_12 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pdriver_4'
+Circuit task5_4kb_sram_pdriver_4 contains 1 device instances.
+  Class: task5_4kb_sram_pinv_13 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pdriver_4'
+Circuit task5_4kb_sram_pdriver_4 contains 1 device instances.
+  Class: task5_4kb_sram_pinv_13 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_18'
+Circuit task5_4kb_sram_pinv_18 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_18'
+Circuit task5_4kb_sram_pinv_18 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pdriver_1'
+Circuit task5_4kb_sram_pdriver_1 contains 1 device instances.
+  Class: task5_4kb_sram_pinv_4 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pdriver_1'
+Circuit task5_4kb_sram_pdriver_1 contains 1 device instances.
+  Class: task5_4kb_sram_pinv_4 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pnand2_0'
+Circuit task5_4kb_sram_pnand2_0 contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pnand2_0'
+Circuit task5_4kb_sram_pnand2_0 contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 6 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 6 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_pnand2_0 task5_4kb_sram_pnand2_0
+
+Flattening instances of task5_4kb_sram_pnand2_0 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_pnand2_0 in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_17'
+Circuit task5_4kb_sram_pinv_17 contains 94 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  47
+  Class: sky130_fd_pr__nfet_01v8 instances:  47
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_17'
+Circuit task5_4kb_sram_pinv_17 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_17'
+Circuit task5_4kb_sram_pinv_17 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_17'
+Circuit task5_4kb_sram_pinv_17 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_15'
+Circuit task5_4kb_sram_pinv_15 contains 12 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   6
+  Class: sky130_fd_pr__nfet_01v8 instances:   6
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_15'
+Circuit task5_4kb_sram_pinv_15 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_15'
+Circuit task5_4kb_sram_pinv_15 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_15'
+Circuit task5_4kb_sram_pinv_15 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_7'
+Circuit task5_4kb_sram_pinv_7 contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_7'
+Circuit task5_4kb_sram_pinv_7 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_7'
+Circuit task5_4kb_sram_pinv_7 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_7'
+Circuit task5_4kb_sram_pinv_7 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_16'
+Circuit task5_4kb_sram_pinv_16 contains 32 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  16
+  Class: sky130_fd_pr__nfet_01v8 instances:  16
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_16'
+Circuit task5_4kb_sram_pinv_16 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_16'
+Circuit task5_4kb_sram_pinv_16 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_16'
+Circuit task5_4kb_sram_pinv_16 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_dff_buf_0'
+Circuit task5_4kb_sram_dff_buf_0 contains 3 device instances.
+  Class: task5_4kb_sram_pinv_3 instances:   1
+  Class: sky130_fd_bd_sram__openram_dff instances:   1
+  Class: task5_4kb_sram_pinv_2 instances:   1
+Circuit contains 8 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_dff_buf_0'
+Circuit task5_4kb_sram_dff_buf_0 contains 3 device instances.
+  Class: task5_4kb_sram_pinv_3 instances:   1
+  Class: sky130_fd_bd_sram__openram_dff instances:   1
+  Class: task5_4kb_sram_pinv_2 instances:   1
+Circuit contains 8 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 8 nets,    Circuit 2 contains 8 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pdriver_5'
+Circuit task5_4kb_sram_pdriver_5 contains 1 device instances.
+  Class: task5_4kb_sram_pinv_14 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pdriver_5'
+Circuit task5_4kb_sram_pdriver_5 contains 1 device instances.
+  Class: task5_4kb_sram_pinv_14 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_10'
+Circuit task5_4kb_sram_pinv_10 contains 90 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  45
+  Class: sky130_fd_pr__nfet_01v8 instances:  45
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_10'
+Circuit task5_4kb_sram_pinv_10 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_10'
+Circuit task5_4kb_sram_pinv_10 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_10'
+Circuit task5_4kb_sram_pinv_10 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_9'
+Circuit task5_4kb_sram_pinv_9 contains 30 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:  15
+  Class: sky130_fd_pr__nfet_01v8 instances:  15
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_9'
+Circuit task5_4kb_sram_pinv_9 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_9'
+Circuit task5_4kb_sram_pinv_9 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_9'
+Circuit task5_4kb_sram_pinv_9 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_8'
+Circuit task5_4kb_sram_pinv_8 contains 10 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   5
+  Class: sky130_fd_pr__nfet_01v8 instances:   5
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_8'
+Circuit task5_4kb_sram_pinv_8 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit was modified by parallel/series device merging.
+New circuit summary:
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pinv_8'
+Circuit task5_4kb_sram_pinv_8 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pinv_8'
+Circuit task5_4kb_sram_pinv_8 contains 2 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   1
+Circuit contains 4 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 4 nets,    Circuit 2 contains 4 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_port_address'
+Circuit task5_4kb_sram_port_address contains 566 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 134
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: task5_4kb_sram_pinv_dec_0 instances: 130
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 590 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_port_address'
+Circuit task5_4kb_sram_port_address contains 566 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 134
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: task5_4kb_sram_pinv_dec_0 instances: 130
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 577 nets.
+
+Circuit 1 contains 566 devices, Circuit 2 contains 566 devices.
+Circuit 1 contains 590 nets,    Circuit 2 contains 577 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_port_address task5_4kb_sram_port_address
+
+Flattening instances of task5_4kb_sram_port_address in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_port_address in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_column_decoder'
+Circuit task5_4kb_sram_column_decoder contains 11 device instances.
+  Class: task5_4kb_sram_pinv_1 instances:   3
+  Class: task5_4kb_sram_pand3  instances:   8
+Circuit contains 16 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_column_decoder'
+Circuit task5_4kb_sram_column_decoder contains 11 device instances.
+  Class: task5_4kb_sram_pinv_1 instances:   3
+  Class: task5_4kb_sram_pand3  instances:   8
+Circuit contains 16 nets.
+
+Circuit 1 contains 11 devices, Circuit 2 contains 11 devices.
+Circuit 1 contains 16 nets,    Circuit 2 contains 16 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_port_data'
+Circuit task5_4kb_sram_port_data contains 828 device instances.
+  Class: task5_4kb_sram_precharge_array instances:   1
+  Class: task5_4kb_sram_write_mask_and_array instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances: 396
+  Class: task5_4kb_sram_column_mux_array instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances: 429
+Circuit contains 1003 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_port_data'
+Circuit task5_4kb_sram_port_data contains 828 device instances.
+  Class: task5_4kb_sram_precharge_array instances:   1
+  Class: task5_4kb_sram_write_mask_and_array instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances: 396
+  Class: task5_4kb_sram_column_mux_array instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances: 429
+Circuit contains 998 nets.
+
+Circuit 1 contains 828 devices, Circuit 2 contains 828 devices.
+Circuit 1 contains 1003 nets,    Circuit 2 contains 998 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_port_data task5_4kb_sram_port_data
+
+Flattening instances of task5_4kb_sram_port_data in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_port_data in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_sky130_capped_replica_bitcell_array'
+Circuit task5_4kb_sram_sky130_capped_replica_bitcell_array contains 268836 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+Circuit contains 68627 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_sky130_capped_replica_bitcell_array'
+Circuit task5_4kb_sram_sky130_capped_replica_bitcell_array contains 268836 device instances.
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+Circuit contains 68628 nets.
+
+Circuit 1 contains 268836 devices, Circuit 2 contains 268836 devices.
+Circuit 1 contains 68627 nets,    Circuit 2 contains 68626 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_sky130_capped_replica_bitcell_array task5_4kb_sram_sky130_capped_replica_bitcell_array
+
+Flattening instances of task5_4kb_sram_sky130_capped_replica_bitcell_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_sky130_capped_replica_bitcell_array in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pnand2_1'
+Circuit task5_4kb_sram_pnand2_1 contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pnand2_1'
+Circuit task5_4kb_sram_pnand2_1 contains 4 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 6 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pdriver_3'
+Circuit task5_4kb_sram_pdriver_3 contains 2 device instances.
+  Class: task5_4kb_sram_pinv_12 instances:   1
+  Class: task5_4kb_sram_pinv_11 instances:   1
+Circuit contains 5 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pdriver_3'
+Circuit task5_4kb_sram_pdriver_3 contains 2 device instances.
+  Class: task5_4kb_sram_pinv_12 instances:   1
+  Class: task5_4kb_sram_pinv_11 instances:   1
+Circuit contains 5 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 5 nets,    Circuit 2 contains 5 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pand3_0'
+Circuit task5_4kb_sram_pand3_0 contains 7 device instances.
+  Class: task5_4kb_sram_pdriver_4 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pand3_0'
+Circuit task5_4kb_sram_pand3_0 contains 7 device instances.
+  Class: task5_4kb_sram_pdriver_4 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 9 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_delay_chain'
+Circuit task5_4kb_sram_delay_chain contains 45 device instances.
+  Class: task5_4kb_sram_pinv_18 instances:  45
+Circuit contains 48 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_delay_chain'
+Circuit task5_4kb_sram_delay_chain contains 45 device instances.
+  Class: task5_4kb_sram_pinv_18 instances:  45
+Circuit contains 48 nets.
+
+Circuit 1 contains 45 devices, Circuit 2 contains 45 devices.
+Circuit 1 contains 48 nets,    Circuit 2 contains 48 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pand2_0'
+Circuit task5_4kb_sram_pand2_0 contains 5 device instances.
+  Class: task5_4kb_sram_pdriver_1 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 7 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pand2_0'
+Circuit task5_4kb_sram_pand2_0 contains 5 device instances.
+  Class: task5_4kb_sram_pdriver_1 instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances:   2
+  Class: sky130_fd_pr__nfet_01v8 instances:   2
+Circuit contains 7 nets.
+
+Circuit 1 contains 5 devices, Circuit 2 contains 5 devices.
+Circuit 1 contains 7 nets,    Circuit 2 contains 7 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pdriver_6'
+Circuit task5_4kb_sram_pdriver_6 contains 6 device instances.
+  Class: task5_4kb_sram_pinv_17 instances:   1
+  Class: task5_4kb_sram_pinv_7 instances:   1
+  Class: task5_4kb_sram_pinv_0 instances:   2
+  Class: task5_4kb_sram_pinv_16 instances:   1
+  Class: task5_4kb_sram_pinv_15 instances:   1
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pdriver_6'
+Circuit task5_4kb_sram_pdriver_6 contains 6 device instances.
+  Class: task5_4kb_sram_pinv_17 instances:   1
+  Class: task5_4kb_sram_pinv_7 instances:   1
+  Class: task5_4kb_sram_pinv_0 instances:   2
+  Class: task5_4kb_sram_pinv_16 instances:   1
+  Class: task5_4kb_sram_pinv_15 instances:   1
+Circuit contains 9 nets.
+
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_dff_buf_array'
+Circuit task5_4kb_sram_dff_buf_array contains 2 device instances.
+  Class: task5_4kb_sram_dff_buf_0 instances:   2
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_dff_buf_array'
+Circuit task5_4kb_sram_dff_buf_array contains 2 device instances.
+  Class: task5_4kb_sram_dff_buf_0 instances:   2
+Circuit contains 9 nets.
+
+Circuit 1 contains 2 devices, Circuit 2 contains 2 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pand3_1'
+Circuit task5_4kb_sram_pand3_1 contains 7 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: task5_4kb_sram_pdriver_5 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pand3_1'
+Circuit task5_4kb_sram_pand3_1 contains 7 device instances.
+  Class: sky130_fd_pr__pfet_01v8 instances:   3
+  Class: task5_4kb_sram_pdriver_5 instances:   1
+  Class: sky130_fd_pr__nfet_01v8 instances:   3
+Circuit contains 9 nets.
+
+Circuit 1 contains 7 devices, Circuit 2 contains 7 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_pdriver_2'
+Circuit task5_4kb_sram_pdriver_2 contains 6 device instances.
+  Class: task5_4kb_sram_pinv_9 instances:   1
+  Class: task5_4kb_sram_pinv_7 instances:   1
+  Class: task5_4kb_sram_pinv_8 instances:   1
+  Class: task5_4kb_sram_pinv_0 instances:   2
+  Class: task5_4kb_sram_pinv_10 instances:   1
+Circuit contains 9 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_pdriver_2'
+Circuit task5_4kb_sram_pdriver_2 contains 6 device instances.
+  Class: task5_4kb_sram_pinv_9 instances:   1
+  Class: task5_4kb_sram_pinv_7 instances:   1
+  Class: task5_4kb_sram_pinv_8 instances:   1
+  Class: task5_4kb_sram_pinv_0 instances:   2
+  Class: task5_4kb_sram_pinv_10 instances:   1
+Circuit contains 9 nets.
+
+Circuit 1 contains 6 devices, Circuit 2 contains 6 devices.
+Circuit 1 contains 9 nets,    Circuit 2 contains 9 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_row_addr_dff'
+Circuit task5_4kb_sram_row_addr_dff contains 8 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   8
+Circuit contains 27 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_row_addr_dff'
+Circuit task5_4kb_sram_row_addr_dff contains 8 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   8
+Circuit contains 27 nets.
+
+Circuit 1 contains 8 devices, Circuit 2 contains 8 devices.
+Circuit 1 contains 27 nets,    Circuit 2 contains 27 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_wmask_dff'
+Circuit task5_4kb_sram_wmask_dff contains 4 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   4
+Circuit contains 15 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_wmask_dff'
+Circuit task5_4kb_sram_wmask_dff contains 4 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   4
+Circuit contains 15 nets.
+
+Circuit 1 contains 4 devices, Circuit 2 contains 4 devices.
+Circuit 1 contains 15 nets,    Circuit 2 contains 15 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_bank'
+Circuit task5_4kb_sram_bank contains 270231 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 134
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: task5_4kb_sram_precharge_array instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: task5_4kb_sram_write_mask_and_array instances:   1
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: sky130_fd_pr__pfet_01v8 instances: 396
+  Class: task5_4kb_sram_column_mux_array instances:   1
+  Class: task5_4kb_sram_column_decoder instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: task5_4kb_sram_pinv_dec_0 instances: 130
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+  Class: sky130_fd_pr__nfet_01v8 instances: 429
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 69576 nets, and 4 disconnected pins.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_bank'
+Circuit task5_4kb_sram_bank contains 270231 device instances.
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 134
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: task5_4kb_sram_precharge_array instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: task5_4kb_sram_write_mask_and_array instances:   1
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: sky130_fd_pr__pfet_01v8 instances: 396
+  Class: task5_4kb_sram_column_mux_array instances:   1
+  Class: task5_4kb_sram_column_decoder instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: task5_4kb_sram_pinv_dec_0 instances: 130
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+  Class: sky130_fd_pr__nfet_01v8 instances: 429
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 69556 nets.
+
+Circuit 1 contains 270231 devices, Circuit 2 contains 270231 devices.
+Circuit 1 contains 69576 nets,    Circuit 2 contains 69554 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_bank task5_4kb_sram_bank
+
+Flattening instances of task5_4kb_sram_bank in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_bank in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_data_dff'
+Circuit task5_4kb_sram_data_dff contains 33 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:  33
+Circuit contains 102 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_data_dff'
+Circuit task5_4kb_sram_data_dff contains 33 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:  33
+Circuit contains 102 nets.
+
+Circuit 1 contains 33 devices, Circuit 2 contains 33 devices.
+Circuit 1 contains 102 nets,    Circuit 2 contains 102 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_control_logic_rw'
+Circuit task5_4kb_sram_control_logic_rw contains 12 device instances.
+  Class: task5_4kb_sram_pand3_1 instances:   1
+  Class: task5_4kb_sram_pdriver_3 instances:   1
+  Class: task5_4kb_sram_pinv_1 instances:   2
+  Class: task5_4kb_sram_pdriver_6 instances:   1
+  Class: task5_4kb_sram_dff_buf_array instances:   1
+  Class: task5_4kb_sram_pnand2_1 instances:   1
+  Class: task5_4kb_sram_pand3_0 instances:   1
+  Class: task5_4kb_sram_delay_chain instances:   1
+  Class: task5_4kb_sram_pdriver_2 instances:   1
+  Class: task5_4kb_sram_pand2_0 instances:   2
+Circuit contains 23 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_control_logic_rw'
+Circuit task5_4kb_sram_control_logic_rw contains 12 device instances.
+  Class: task5_4kb_sram_pand3_1 instances:   1
+  Class: task5_4kb_sram_pdriver_3 instances:   1
+  Class: task5_4kb_sram_pinv_1 instances:   2
+  Class: task5_4kb_sram_pdriver_6 instances:   1
+  Class: task5_4kb_sram_dff_buf_array instances:   1
+  Class: task5_4kb_sram_pnand2_1 instances:   1
+  Class: task5_4kb_sram_pand3_0 instances:   1
+  Class: task5_4kb_sram_delay_chain instances:   1
+  Class: task5_4kb_sram_pdriver_2 instances:   1
+  Class: task5_4kb_sram_pand2_0 instances:   2
+Circuit contains 21 nets.
+
+Circuit 1 contains 12 devices, Circuit 2 contains 12 devices.
+Circuit 1 contains 23 nets,    Circuit 2 contains 21 nets. *** MISMATCH ***
+
+  Flattening non-matched subcircuits task5_4kb_sram_control_logic_rw task5_4kb_sram_control_logic_rw
+
+Flattening instances of task5_4kb_sram_control_logic_rw in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice
+Flattening instances of task5_4kb_sram_control_logic_rw in file /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_spare_wen_dff'
+Circuit task5_4kb_sram_spare_wen_dff contains 1 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   1
+Circuit contains 6 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_spare_wen_dff'
+Circuit task5_4kb_sram_spare_wen_dff contains 1 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_col_addr_dff'
+Circuit task5_4kb_sram_col_addr_dff contains 3 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   3
+Circuit contains 12 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_col_addr_dff'
+Circuit task5_4kb_sram_col_addr_dff contains 3 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   3
+Circuit contains 12 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 12 nets,    Circuit 2 contains 12 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram'
+Circuit task5_4kb_sram contains 270248 device instances.
+  Class: task5_4kb_sram_col_addr_dff instances:   1
+  Class: task5_4kb_sram_pand3_1 instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 134
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: task5_4kb_sram_precharge_array instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: task5_4kb_sram_pdriver_3 instances:   1
+  Class: task5_4kb_sram_pinv_1 instances:   2
+  Class: task5_4kb_sram_write_mask_and_array instances:   1
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: task5_4kb_sram_row_addr_dff instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances: 396
+  Class: task5_4kb_sram_pdriver_6 instances:   1
+  Class: task5_4kb_sram_column_mux_array instances:   1
+  Class: task5_4kb_sram_dff_buf_array instances:   1
+  Class: task5_4kb_sram_column_decoder instances:   1
+  Class: task5_4kb_sram_pnand2_1 instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: task5_4kb_sram_pinv_dec_0 instances: 130
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: task5_4kb_sram_spare_wen_dff instances:   1
+  Class: task5_4kb_sram_pand3_0 instances:   1
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+  Class: sky130_fd_pr__nfet_01v8 instances: 429
+  Class: task5_4kb_sram_delay_chain instances:   1
+  Class: task5_4kb_sram_wmask_dff instances:   1
+  Class: task5_4kb_sram_pdriver_2 instances:   1
+  Class: task5_4kb_sram_pand2_0 instances:   2
+  Class: task5_4kb_sram_data_dff instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 69617 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram'
+Circuit task5_4kb_sram contains 270248 device instances.
+  Class: task5_4kb_sram_col_addr_dff instances:   1
+  Class: task5_4kb_sram_pand3_1 instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 134
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: task5_4kb_sram_precharge_array instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: task5_4kb_sram_pdriver_3 instances:   1
+  Class: task5_4kb_sram_pinv_1 instances:   2
+  Class: task5_4kb_sram_write_mask_and_array instances:   1
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: task5_4kb_sram_row_addr_dff instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances: 396
+  Class: task5_4kb_sram_pdriver_6 instances:   1
+  Class: task5_4kb_sram_column_mux_array instances:   1
+  Class: task5_4kb_sram_dff_buf_array instances:   1
+  Class: task5_4kb_sram_column_decoder instances:   1
+  Class: task5_4kb_sram_pnand2_1 instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: task5_4kb_sram_pinv_dec_0 instances: 130
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: task5_4kb_sram_spare_wen_dff instances:   1
+  Class: task5_4kb_sram_pand3_0 instances:   1
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+  Class: sky130_fd_pr__nfet_01v8 instances: 429
+  Class: task5_4kb_sram_delay_chain instances:   1
+  Class: task5_4kb_sram_wmask_dff instances:   1
+  Class: task5_4kb_sram_pdriver_2 instances:   1
+  Class: task5_4kb_sram_pand2_0 instances:   2
+  Class: task5_4kb_sram_data_dff instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 69619 nets.
+
+Circuit 1 contains 270248 devices, Circuit 2 contains 270248 devices.
+Circuit 1 contains 69617 nets,    Circuit 2 contains 69617 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r45_final_property_clean_netgen_lvs/task5_4kb_sram.final.lvs.out" disabled
+LVS Done.
+	Command being timed: "/usr/local/bin/netgen -batch lvs /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice task5_4kb_sram /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp task5_4kb_sram /usr/local/share/pdk/sky130A/libs.tech/netgen/setup.tcl /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r45_final_property_clean_netgen_lvs/task5_4kb_sram.final.lvs.out"
+	User time (seconds): 434.98
+	System time (seconds): 21.16
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:35.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 11622268
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2946
+	Minor (reclaiming a frame) page faults: 3901735
+	Voluntary context switches: 3230
+	Involuntary context switches: 2472
+	Swaps: 0
+	File system inputs: 147824
+	File system outputs: 960
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

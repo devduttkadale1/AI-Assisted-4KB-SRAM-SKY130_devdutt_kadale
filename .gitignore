@@ -23,3 +23,13 @@ dist/
 # IDE
 .vscode/
 .idea/
+
+# Task 5 authoritative sign-off evidence
+!week6_task5/regression/logs/
+!week6_task5/regression/logs/task5_4kb_regression.log
+
+!week6_task5/verification/drc/
+!week6_task5/verification/drc/r31d_authoritative_drc.log
+
+!week6_task5/verification/lvs/
+!week6_task5/verification/lvs/netgen.log

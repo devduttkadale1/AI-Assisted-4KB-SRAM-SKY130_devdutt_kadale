@@ -1,0 +1,349 @@
+========== R45 FINAL LVS COMPLETION ==========
+STATE=FINISHED
+NETGEN_STATUS=0
+END=2026-08-28T15:49:08+00:00
+
+========== FILES ==========
+REPORT_SIZE=351349 bytes  MTIME=2026-08-28 15:49:08.137795617 +0000
+LOG_SIZE=97194 bytes  MTIME=2026-08-28 15:49:08.553849659 +0000
+
+========== FINAL VERDICT LOCATORS ==========
+226:Netlists do not match.
+249:Netlists do not match.
+279:Netlists do not match.
+329:Netlists do not match.
+445:Netlists do not match.
+471:Netlists do not match.
+497:Netlists do not match.
+523:Netlists do not match.
+549:Netlists do not match.
+572:Netlists do not match.
+598:Netlists do not match.
+624:Netlists do not match.
+693:Netlists do not match.
+740:Netlists do not match.
+809:Netlists do not match.
+833:Netlists do not match.
+888:Netlists do not match.
+1179:Netlists do not match.
+1472:Netlists do not match.
+1628:Netlists do not match.
+1651:Netlists do not match.
+1703:Netlists do not match.
+1733:Netlists do not match.
+1757:Netlists do not match.
+2383:Netlists do not match.
+3000:Netlists do not match.
+3135:Netlists do not match.
+3397:Netlists do not match.
+3469:Netlists do not match.
+3511:Netlists do not match.
+3944:Netlists do not match.
+4080:Netlists do not match.
+4264:Final result: Circuits match uniquely.
+
+========== FINAL REPORT TAIL ==========
+-------------------------------------------|-------------------------------------------
+sky130_fd_bd_sram__openram_dff (1)         |sky130_fd_bd_sram__openram_dff (1)         
+Number of devices: 1                       |Number of devices: 1                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: task5_4kb_sram_spare_wen_dff    |Circuit 2: task5_4kb_sram_spare_wen_dff    
+-------------------------------------------|-------------------------------------------
+din_0                                      |din_0                                      
+dout_0                                     |dout_0                                     
+clk                                        |clk                                        
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes task5_4kb_sram_spare_wen_dff and task5_4kb_sram_spare_wen_dff are equivalent.
+
+Subcircuit summary:
+Circuit 1: task5_4kb_sram_col_addr_dff     |Circuit 2: task5_4kb_sram_col_addr_dff     
+-------------------------------------------|-------------------------------------------
+sky130_fd_bd_sram__openram_dff (3)         |sky130_fd_bd_sram__openram_dff (3)         
+Number of devices: 3                       |Number of devices: 3                       
+Number of nets: 12                         |Number of nets: 12                         
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: task5_4kb_sram_col_addr_dff     |Circuit 2: task5_4kb_sram_col_addr_dff     
+-------------------------------------------|-------------------------------------------
+clk                                        |clk                                        
+vdd                                        |vdd                                        
+gnd                                        |gnd                                        
+din_0                                      |din_0                                      
+din_1                                      |din_1                                      
+din_2                                      |din_2                                      
+dout_0                                     |dout_0                                     
+dout_1                                     |dout_1                                     
+dout_2                                     |dout_2                                     
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes task5_4kb_sram_col_addr_dff and task5_4kb_sram_col_addr_dff are equivalent.
+
+Subcircuit summary:
+Circuit 1: task5_4kb_sram                  |Circuit 2: task5_4kb_sram                  
+-------------------------------------------|-------------------------------------------
+task5_4kb_sram_row_addr_dff (1)            |task5_4kb_sram_row_addr_dff (1)            
+task5_4kb_sram_wmask_dff (1)               |task5_4kb_sram_wmask_dff (1)               
+sky130_fd_bd_sram__openram_sp_nand2_dec (1 |sky130_fd_bd_sram__openram_sp_nand2_dec (1 
+task5_4kb_sram_pinv_dec_0 (130)            |task5_4kb_sram_pinv_dec_0 (130)            
+task5_4kb_sram_pinv_dec (157)              |task5_4kb_sram_pinv_dec (157)              
+sky130_fd_bd_sram__openram_sp_nand3_dec (1 |sky130_fd_bd_sram__openram_sp_nand3_dec (1 
+task5_4kb_sram_column_decoder (1)          |task5_4kb_sram_column_decoder (1)          
+sky130_fd_pr__nfet_01v8 (429)              |sky130_fd_pr__nfet_01v8 (429)              
+sky130_fd_pr__pfet_01v8 (396)              |sky130_fd_pr__pfet_01v8 (396)              
+task5_4kb_sram_column_mux_array (1)        |task5_4kb_sram_column_mux_array (1)        
+task5_4kb_sram_write_mask_and_array (1)    |task5_4kb_sram_write_mask_and_array (1)    
+task5_4kb_sram_precharge_array (1)         |task5_4kb_sram_precharge_array (1)         
+sky130_fd_bd_sram__sram_sp_colend (258)    |sky130_fd_bd_sram__sram_sp_colend (258)    
+sky130_fd_bd_sram__sram_sp_colenda (258)   |sky130_fd_bd_sram__sram_sp_colenda (258)   
+sky130_fd_pr__special_pfet_pass (134160)   |sky130_fd_pr__special_pfet_pass (134160)   
+sky130_fd_pr__special_nfet_latch (67080)   |sky130_fd_pr__special_nfet_latch (67080)   
+sky130_fd_pr__special_nfet_pass (67080)    |sky130_fd_pr__special_nfet_pass (67080)    
+task5_4kb_sram_data_dff (1)                |task5_4kb_sram_data_dff (1)                
+task5_4kb_sram_pnand2_1 (1)                |task5_4kb_sram_pnand2_1 (1)                
+task5_4kb_sram_pdriver_3 (1)               |task5_4kb_sram_pdriver_3 (1)               
+task5_4kb_sram_pand3_0 (1)                 |task5_4kb_sram_pand3_0 (1)                 
+task5_4kb_sram_delay_chain (1)             |task5_4kb_sram_delay_chain (1)             
+task5_4kb_sram_pand2_0 (2)                 |task5_4kb_sram_pand2_0 (2)                 
+task5_4kb_sram_pdriver_6 (1)               |task5_4kb_sram_pdriver_6 (1)               
+task5_4kb_sram_dff_buf_array (1)           |task5_4kb_sram_dff_buf_array (1)           
+task5_4kb_sram_pand3_1 (1)                 |task5_4kb_sram_pand3_1 (1)                 
+task5_4kb_sram_pinv_1 (2)                  |task5_4kb_sram_pinv_1 (2)                  
+task5_4kb_sram_pdriver_2 (1)               |task5_4kb_sram_pdriver_2 (1)               
+task5_4kb_sram_spare_wen_dff (1)           |task5_4kb_sram_spare_wen_dff (1)           
+task5_4kb_sram_col_addr_dff (1)            |task5_4kb_sram_col_addr_dff (1)            
+Number of devices: 270248                  |Number of devices: 270248                  
+Number of nets: 69617                      |Number of nets: 69617                      
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: task5_4kb_sram                  |Circuit 2: task5_4kb_sram                  
+-------------------------------------------|-------------------------------------------
+dout0[32]                                  |dout0[32]                                  
+dout0[0]                                   |dout0[0]                                   
+dout0[1]                                   |dout0[1]                                   
+dout0[2]                                   |dout0[2]                                   
+dout0[3]                                   |dout0[3]                                   
+dout0[4]                                   |dout0[4]                                   
+dout0[5]                                   |dout0[5]                                   
+dout0[6]                                   |dout0[6]                                   
+dout0[7]                                   |dout0[7]                                   
+dout0[8]                                   |dout0[8]                                   
+dout0[9]                                   |dout0[9]                                   
+dout0[10]                                  |dout0[10]                                  
+dout0[11]                                  |dout0[11]                                  
+dout0[12]                                  |dout0[12]                                  
+dout0[13]                                  |dout0[13]                                  
+dout0[14]                                  |dout0[14]                                  
+dout0[15]                                  |dout0[15]                                  
+dout0[16]                                  |dout0[16]                                  
+dout0[17]                                  |dout0[17]                                  
+dout0[18]                                  |dout0[18]                                  
+dout0[19]                                  |dout0[19]                                  
+dout0[20]                                  |dout0[20]                                  
+dout0[21]                                  |dout0[21]                                  
+dout0[22]                                  |dout0[22]                                  
+dout0[23]                                  |dout0[23]                                  
+dout0[24]                                  |dout0[24]                                  
+dout0[25]                                  |dout0[25]                                  
+dout0[26]                                  |dout0[26]                                  
+dout0[27]                                  |dout0[27]                                  
+dout0[28]                                  |dout0[28]                                  
+dout0[29]                                  |dout0[29]                                  
+dout0[30]                                  |dout0[30]                                  
+dout0[31]                                  |dout0[31]                                  
+vccd1                                      |vccd1                                      
+vssd1                                      |vssd1                                      
+csb0                                       |csb0                                       
+web0                                       |web0                                       
+clk0                                       |clk0                                       
+addr0[3]                                   |addr0[3]                                   
+addr0[4]                                   |addr0[4]                                   
+addr0[5]                                   |addr0[5]                                   
+addr0[6]                                   |addr0[6]                                   
+addr0[7]                                   |addr0[7]                                   
+addr0[8]                                   |addr0[8]                                   
+addr0[9]                                   |addr0[9]                                   
+addr0[10]                                  |addr0[10]                                  
+addr0[0]                                   |addr0[0]                                   
+addr0[1]                                   |addr0[1]                                   
+addr0[2]                                   |addr0[2]                                   
+wmask0[0]                                  |wmask0[0]                                  
+wmask0[1]                                  |wmask0[1]                                  
+wmask0[2]                                  |wmask0[2]                                  
+wmask0[3]                                  |wmask0[3]                                  
+din0[0]                                    |din0[0]                                    
+din0[1]                                    |din0[1]                                    
+din0[2]                                    |din0[2]                                    
+din0[3]                                    |din0[3]                                    
+din0[4]                                    |din0[4]                                    
+din0[5]                                    |din0[5]                                    
+din0[6]                                    |din0[6]                                    
+din0[7]                                    |din0[7]                                    
+din0[8]                                    |din0[8]                                    
+din0[9]                                    |din0[9]                                    
+din0[10]                                   |din0[10]                                   
+din0[11]                                   |din0[11]                                   
+din0[12]                                   |din0[12]                                   
+din0[13]                                   |din0[13]                                   
+din0[14]                                   |din0[14]                                   
+din0[15]                                   |din0[15]                                   
+din0[16]                                   |din0[16]                                   
+din0[17]                                   |din0[17]                                   
+din0[18]                                   |din0[18]                                   
+din0[19]                                   |din0[19]                                   
+din0[20]                                   |din0[20]                                   
+din0[21]                                   |din0[21]                                   
+din0[22]                                   |din0[22]                                   
+din0[23]                                   |din0[23]                                   
+din0[24]                                   |din0[24]                                   
+din0[25]                                   |din0[25]                                   
+din0[26]                                   |din0[26]                                   
+din0[27]                                   |din0[27]                                   
+din0[28]                                   |din0[28]                                   
+din0[29]                                   |din0[29]                                   
+din0[30]                                   |din0[30]                                   
+din0[31]                                   |din0[31]                                   
+din0[32]                                   |din0[32]                                   
+spare_wen0                                 |spare_wen0                                 
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes task5_4kb_sram and task5_4kb_sram are equivalent.
+
+Final result: Circuits match uniquely.
+.
+
+========== NETGEN LOG TAIL ==========
+Circuit task5_4kb_sram_spare_wen_dff contains 1 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   1
+Circuit contains 6 nets.
+
+Circuit 1 contains 1 devices, Circuit 2 contains 1 devices.
+Circuit 1 contains 6 nets,    Circuit 2 contains 6 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram_col_addr_dff'
+Circuit task5_4kb_sram_col_addr_dff contains 3 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   3
+Circuit contains 12 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram_col_addr_dff'
+Circuit task5_4kb_sram_col_addr_dff contains 3 device instances.
+  Class: sky130_fd_bd_sram__openram_dff instances:   3
+Circuit contains 12 nets.
+
+Circuit 1 contains 3 devices, Circuit 2 contains 3 devices.
+Circuit 1 contains 12 nets,    Circuit 2 contains 12 nets.
+
+
+Contents of circuit 1:  Circuit: 'task5_4kb_sram'
+Circuit task5_4kb_sram contains 270248 device instances.
+  Class: task5_4kb_sram_col_addr_dff instances:   1
+  Class: task5_4kb_sram_pand3_1 instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 134
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: task5_4kb_sram_precharge_array instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: task5_4kb_sram_pdriver_3 instances:   1
+  Class: task5_4kb_sram_pinv_1 instances:   2
+  Class: task5_4kb_sram_write_mask_and_array instances:   1
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: task5_4kb_sram_row_addr_dff instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances: 396
+  Class: task5_4kb_sram_pdriver_6 instances:   1
+  Class: task5_4kb_sram_column_mux_array instances:   1
+  Class: task5_4kb_sram_dff_buf_array instances:   1
+  Class: task5_4kb_sram_column_decoder instances:   1
+  Class: task5_4kb_sram_pnand2_1 instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: task5_4kb_sram_pinv_dec_0 instances: 130
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: task5_4kb_sram_spare_wen_dff instances:   1
+  Class: task5_4kb_sram_pand3_0 instances:   1
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+  Class: sky130_fd_pr__nfet_01v8 instances: 429
+  Class: task5_4kb_sram_delay_chain instances:   1
+  Class: task5_4kb_sram_wmask_dff instances:   1
+  Class: task5_4kb_sram_pdriver_2 instances:   1
+  Class: task5_4kb_sram_pand2_0 instances:   2
+  Class: task5_4kb_sram_data_dff instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 69617 nets.
+Contents of circuit 2:  Circuit: 'task5_4kb_sram'
+Circuit task5_4kb_sram contains 270248 device instances.
+  Class: task5_4kb_sram_col_addr_dff instances:   1
+  Class: task5_4kb_sram_pand3_1 instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand2_dec instances: 134
+  Class: task5_4kb_sram_pinv_dec instances: 157
+  Class: task5_4kb_sram_precharge_array instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colend instances: 258
+  Class: task5_4kb_sram_pdriver_3 instances:   1
+  Class: task5_4kb_sram_pinv_1 instances:   2
+  Class: task5_4kb_sram_write_mask_and_array instances:   1
+  Class: sky130_fd_pr__special_nfet_pass instances: 67080
+  Class: task5_4kb_sram_row_addr_dff instances:   1
+  Class: sky130_fd_pr__pfet_01v8 instances: 396
+  Class: task5_4kb_sram_pdriver_6 instances:   1
+  Class: task5_4kb_sram_column_mux_array instances:   1
+  Class: task5_4kb_sram_dff_buf_array instances:   1
+  Class: task5_4kb_sram_column_decoder instances:   1
+  Class: task5_4kb_sram_pnand2_1 instances:   1
+  Class: sky130_fd_bd_sram__sram_sp_colenda instances: 258
+  Class: task5_4kb_sram_pinv_dec_0 instances: 130
+  Class: sky130_fd_pr__special_pfet_pass instances: 134160
+  Class: task5_4kb_sram_spare_wen_dff instances:   1
+  Class: task5_4kb_sram_pand3_0 instances:   1
+  Class: sky130_fd_pr__special_nfet_latch instances: 67080
+  Class: sky130_fd_pr__nfet_01v8 instances: 429
+  Class: task5_4kb_sram_delay_chain instances:   1
+  Class: task5_4kb_sram_wmask_dff instances:   1
+  Class: task5_4kb_sram_pdriver_2 instances:   1
+  Class: task5_4kb_sram_pand2_0 instances:   2
+  Class: task5_4kb_sram_data_dff instances:   1
+  Class: sky130_fd_bd_sram__openram_sp_nand3_dec instances: 145
+Circuit contains 69619 nets.
+
+Circuit 1 contains 270248 devices, Circuit 2 contains 270248 devices.
+Circuit 1 contains 69617 nets,    Circuit 2 contains 69617 nets.
+
+
+Final result: 
+Circuits match uniquely.
+.
+Logging to file "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r45_final_property_clean_netgen_lvs/task5_4kb_sram.final.lvs.out" disabled
+LVS Done.
+	Command being timed: "/usr/local/bin/netgen -batch lvs /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r38_corrected_top_ext2spice/task5_4kb_sram.spice task5_4kb_sram /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r43_property_corrected_reference_v1/task5_4kb_sram.corrected_pfet.lvs.sp task5_4kb_sram /usr/local/share/pdk/sky130A/libs.tech/netgen/setup.tcl /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r45_final_property_clean_netgen_lvs/task5_4kb_sram.final.lvs.out"
+	User time (seconds): 434.98
+	System time (seconds): 21.16
+	Percent of CPU this job got: 100%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 7:35.96
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 11622268
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2946
+	Minor (reclaiming a frame) page faults: 3901735
+	Voluntary context switches: 3230
+	Involuntary context switches: 2472
+	Swaps: 0
+	File system inputs: 147824
+	File system outputs: 960
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0
+
+NETGEN_STATUS=0

@@ -489,3 +489,139 @@ Verify SKY130 model files
 ## Summary
 
 OpenRAM is an open-source SRAM compiler that transforms memory specifications into complete SRAM macros. Using SKY130 technology files and custom SRAM cells, it generates functional, circuit-level, timing, physical, and layout views required throughout the ASIC design flow.
+
+---
+
+## Week 6 Task 5 — 1024 × 32 Production SRAM
+
+### Target configuration
+
+The Week 6 production target is a single-port OpenRAM SRAM using the SKY130 technology:
+
+- Logical organization: 1024 words × 32 bits
+- Logical capacity: 4 KB
+- Port type: single-port 1RW
+- Words per row: 8
+- Spare rows: 1
+- Spare columns: 1
+- Nominal supply: 1.8 V
+- Temperature: 25 C
+
+Authoritative configuration:
+
+`week6_task5/config/task5_4kb_sram.py`
+
+### Generated SRAM views
+
+The production OpenRAM run generated:
+
+- GDS
+- LEF
+- Verilog
+- SPICE
+- TT Liberty
+- SS Liberty
+- FF Liberty
+
+Repository location:
+
+`week6_task5/generated/`
+
+### Functional regression
+
+An automated behavioral regression was created for the 1024 × 32 SRAM.
+
+Final result:
+
+- TOTAL_PASS = 144
+- TOTAL_FAIL = 0
+- TASK5_FUNCTIONAL_REGRESSION = PASS
+
+Coverage includes:
+
+- first address
+- last address
+- representative boundary addresses
+- all-zero data
+- all-one data
+- alternating patterns
+- walking-1
+- walking-0
+- deterministic pseudorandom patterns
+
+Evidence:
+
+`week6_task5/regression/`
+
+### Magic DRC
+
+The authoritative production GDS was checked using Magic.
+
+Final result:
+
+- Total DRC errors found: 0
+- DRC status: PASS
+
+Evidence:
+
+`week6_task5/verification/drc/`
+
+### Magic extraction
+
+A corrected full Magic extraction was completed and converted to hierarchical SPICE.
+
+Final extracted top-level SPICE:
+
+`week6_task5/verification/extraction/task5_4kb_sram_extracted.spice`
+
+SHA-256:
+
+`35574eb6b6027fdb89d84d7d78f1e77d4130391c574c6e92cebbfc005a1b3a5b`
+
+### Netgen LVS
+
+Final top-level LVS results:
+
+- Layout devices: 270248
+- Reference devices: 270248
+- Layout nets: 69617
+- Reference nets: 69617
+- Cell pin lists: equivalent
+- Property errors: 0
+- Final result: Circuits match uniquely.
+- LVS status: PASS
+
+The final clean LVS comparison used the corrected extracted layout netlist and a disposable property-corrected LVS reference. The original generated SRAM source was not manually waived or altered to force a match.
+
+Evidence:
+
+`week6_task5/verification/lvs/`
+
+### Current Task 5 status
+
+Completed:
+
+- production OpenRAM generation
+- generated implementation views
+- automated functional regression
+- Magic DRC
+- Magic extraction
+- final clean Netgen LVS
+- sign-off evidence packaging
+- SHA-256 evidence manifest
+
+Remaining:
+
+- targeted extracted simulations
+- TT / SS / FF characterization summary
+- read access time
+- write timing
+- leakage power
+- read energy
+- write energy
+- comparison against Liberty timing
+- hard-macro controller integration
+- STA
+- maximum safe operating frequency
+- clean-clone reproducibility
+- final Task-5 repository documentation

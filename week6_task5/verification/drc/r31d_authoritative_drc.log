@@ -1,0 +1,205 @@
+
+Magic 8.3 revision 670 - Compiled on Mon Jul  6 15:05:54 UTC 2026.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+WARNING: RLIMIT_NOFILE is above 1024 and Tcl_Version<9 this may cause runtime issues [rlim_cur=1048576]
+Using NULL graphics device.
+Processing system .magicrc file
+Switching to WIRING tool.
+Switching to NETLIST tool.
+Switching to PICK tool.
+Switching to BOX tool.
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(vendor): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/verification/r31b_new_purem2_authoritative_drc_v1/run_authoritative_drc.tcl" from command line.
+Cell task5_4kb_sram read from current working directory
+R31B_DRC_SRAM_LOAD_COMPLETE
+R31B_DRC_SRAM_BBOX=0 0 161769 70258
+DRC style is now "drc(fast)"
+Cell task5_4kb_sram_contact_20 read from current working directory
+Cell task5_4kb_sram_contact_35 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_35 geometry by factor of 2
+Cell task5_4kb_sram_contact_7 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_7 geometry by factor of 2
+Cell task5_4kb_sram_contact_8 read from current working directory
+Cell task5_4kb_sram_contact_12 read from current working directory
+Cell task5_4kb_sram_contact_13 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_13 geometry by factor of 2
+Cell task5_4kb_sram_contact_30 read from current working directory
+Cell task5_4kb_sram_col_addr_dff read from current working directory
+Cell sky130_fd_bd_sram__openram_dff read from current working directory
+Cell task5_4kb_sram_wmask_dff read from current working directory
+Cell task5_4kb_sram_data_dff read from current working directory
+Cell task5_4kb_sram_cr_2 read from current working directory
+Cell task5_4kb_sram_spare_wen_dff read from current working directory
+Cell task5_4kb_sram_cr_3 read from current working directory
+Cell task5_4kb_sram_row_addr_dff read from current working directory
+Cell task5_4kb_sram_control_logic_rw read from current working directory
+Cell task5_4kb_sram_pnand2_1 read from current working directory
+Cell task5_4kb_sram_pmos_m1_w1_120_sli_dli read from current working directory
+Cell task5_4kb_sram_contact_11 read from current working directory
+Cell task5_4kb_sram_nmos_m1_w0_740_sli_dactive read from current working directory
+Cell task5_4kb_sram_contact_10 read from current working directory
+Cell task5_4kb_sram_nmos_m1_w0_740_sactive_dli read from current working directory
+Cell task5_4kb_sram_contact_27 read from current working directory
+Cell task5_4kb_sram_contact_26 read from current working directory
+Cell task5_4kb_sram_contact_15 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_15 geometry by factor of 2
+Cell task5_4kb_sram_pinv_1 read from current working directory
+Cell task5_4kb_sram_pmos_m1_w1_120_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m1_w0_360_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pdriver_6 read from current working directory
+Cell task5_4kb_sram_pinv_17 read from current working directory
+Cell task5_4kb_sram_pmos_m47_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m47_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pinv_16 read from current working directory
+Cell task5_4kb_sram_pmos_m16_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m16_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pinv_15 read from current working directory
+Cell task5_4kb_sram_pmos_m6_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m6_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pinv_7 read from current working directory
+Cell task5_4kb_sram_pmos_m2_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m2_w1_260_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pinv_0 read from current working directory
+Cell task5_4kb_sram_pdriver_3 read from current working directory
+Cell task5_4kb_sram_pinv_12 read from current working directory
+Cell task5_4kb_sram_pmos_m24_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m24_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pinv_11 read from current working directory
+Cell task5_4kb_sram_pmos_m8_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m8_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pdriver_2 read from current working directory
+Cell task5_4kb_sram_pinv_10 read from current working directory
+Cell task5_4kb_sram_pmos_m45_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m45_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pinv_9 read from current working directory
+Cell task5_4kb_sram_pmos_m15_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m15_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pinv_8 read from current working directory
+Cell task5_4kb_sram_pmos_m5_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m5_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pand3_1 read from current working directory
+Cell task5_4kb_sram_pnand3 read from current working directory
+Cell task5_4kb_sram_nmos_m1_w0_740_sactive_dactive read from current working directory
+Cell task5_4kb_sram_pdriver_5 read from current working directory
+Cell task5_4kb_sram_pinv_14 read from current working directory
+Cell task5_4kb_sram_pmos_m18_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m18_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pand3_0 read from current working directory
+Cell task5_4kb_sram_pdriver_4 read from current working directory
+Cell task5_4kb_sram_pinv_13 read from current working directory
+Cell task5_4kb_sram_pmos_m22_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m22_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pand2_0 read from current working directory
+Cell task5_4kb_sram_pnand2_0 read from current working directory
+Cell task5_4kb_sram_pdriver_1 read from current working directory
+Cell task5_4kb_sram_pinv_4 read from current working directory
+Cell task5_4kb_sram_pmos_m7_w2_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m7_w1_680_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_dff_buf_array read from current working directory
+Cell task5_4kb_sram_dff_buf_0 read from current working directory
+Cell task5_4kb_sram_pinv_3 read from current working directory
+Cell task5_4kb_sram_pmos_m3_w1_680_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m3_w1_680_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_pinv_2 read from current working directory
+Cell task5_4kb_sram_pmos_m2_w1_260_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m2_w0_740_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_delay_chain read from current working directory
+Cell task5_4kb_sram_pinv_18 read from current working directory
+Cell task5_4kb_sram_bank read from current working directory
+Cell task5_4kb_sram_sky130_capped_replica_bitcell_array read from current working directory
+Cell task5_4kb_sram_sky130_replica_bitcell_array read from current working directory
+Cell task5_4kb_sram_sky130_row_cap_array_0 read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_rowenda read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_rowend read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_cornerb read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_cornera read from current working directory
+Cell task5_4kb_sram_sky130_row_cap_array read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_corner read from current working directory
+Cell sky130_fd_bd_sram__openram_sp_rowenda_replica read from current working directory
+Cell sky130_fd_bd_sram__openram_sp_rowend_replica read from current working directory
+Cell task5_4kb_sram_sky130_replica_column read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_wlstrapa_p read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_wlstrap_p read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_colenda_p_cent read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_colenda read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_colend_p_cent read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_colend read from current working directory
+Cell sky130_fd_bd_sram__openram_sp_cell_opt1a_replica read from current working directory
+Cell sky130_fd_bd_sram__openram_sp_cell_opt1_replica read from current working directory
+Cell task5_4kb_sram_sky130_dummy_array read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_wlstrapa read from current working directory
+Cell sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy read from current working directory
+Cell task5_4kb_sram_sky130_col_cap_array read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_colend_cent read from current working directory
+Cell task5_4kb_sram_sky130_col_cap_array_0 read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_colenda_cent read from current working directory
+Cell task5_4kb_sram_sky130_bitcell_array read from current working directory
+task5_4kb_sram_sky130_bitcell_array: 10000 rects
+task5_4kb_sram_sky130_bitcell_array: 20000 rects
+task5_4kb_sram_sky130_bitcell_array: 30000 rects
+Cell sky130_fd_bd_sram__sram_sp_wlstrap read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_cell_opt1a read from current working directory
+Cell sky130_fd_bd_sram__sram_sp_cell_opt1 read from current working directory
+Cell task5_4kb_sram_port_data read from current working directory
+Cell task5_4kb_sram_write_mask_and_array read from current working directory
+Cell task5_4kb_sram_pand2 read from current working directory
+Cell task5_4kb_sram_pnand2 read from current working directory
+Cell task5_4kb_sram_pdriver read from current working directory
+Cell task5_4kb_sram_pinv read from current working directory
+Cell task5_4kb_sram_write_driver_array read from current working directory
+Cell sky130_fd_bd_sram__openram_write_driver read from current working directory
+Cell task5_4kb_sram_sense_amp_array read from current working directory
+Cell sky130_fd_bd_sram__openram_sense_amp read from current working directory
+Cell task5_4kb_sram_precharge_array read from current working directory
+Cell task5_4kb_sram_precharge_0 read from current working directory
+Cell task5_4kb_sram_pmos_m1_w0_550_sli_dli read from current working directory
+Cell task5_4kb_sram_contact_21 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_21 geometry by factor of 2
+Cell task5_4kb_sram_column_mux_array read from current working directory
+Cell task5_4kb_sram_contact_25 read from current working directory
+Cell task5_4kb_sram_contact_24 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_24 geometry by factor of 2
+Cell task5_4kb_sram_contact_23 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_23 geometry by factor of 2
+Cell task5_4kb_sram_contact_22 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_22 geometry by factor of 2
+Cell task5_4kb_sram_column_mux read from current working directory
+Cell task5_4kb_sram_nmos_m1_w2_880_sli_dli read from current working directory
+Cell task5_4kb_sram_contact_14 read from current working directory
+Cell task5_4kb_sram_port_address read from current working directory
+Cell task5_4kb_sram_wordline_driver_array read from current working directory
+Cell task5_4kb_sram_wordline_driver read from current working directory
+Cell task5_4kb_sram_pinv_dec_0 read from current working directory
+Cell task5_4kb_sram_pmos_m1_w7_000_sli_dli_da_p read from current working directory
+Cell task5_4kb_sram_nmos_m1_w7_000_sli_dli_da_p read from current working directory
+Cell sky130_fd_bd_sram__openram_sp_nand2_dec read from current working directory
+Cell task5_4kb_sram_hierarchical_decoder read from current working directory
+Cell task5_4kb_sram_hierarchical_predecode3x8 read from current working directory
+Cell task5_4kb_sram_pinv_dec read from current working directory
+Cell task5_4kb_sram_contact_19 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_19 geometry by factor of 2
+Cell task5_4kb_sram_contact_18 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_18 geometry by factor of 2
+Cell task5_4kb_sram_contact_16 read from current working directory
+Scaled magic input cell task5_4kb_sram_contact_16 geometry by factor of 2
+Cell task5_4kb_sram_and3_dec read from current working directory
+Cell sky130_fd_bd_sram__openram_sp_nand3_dec read from current working directory
+Cell task5_4kb_sram_hierarchical_predecode2x4 read from current working directory
+Cell task5_4kb_sram_and2_dec read from current working directory
+Cell task5_4kb_sram_and2_dec_0 read from current working directory
+Cell task5_4kb_sram_column_decoder read from current working directory
+Cell task5_4kb_sram_hierarchical_predecode3x8_0 read from current working directory
+Cell task5_4kb_sram_pand3 read from current working directory
+Cell task5_4kb_sram_pdriver_0 read from current working directory
+Processing timestamp mismatches.
+Timestamp mismatches found in these cells: sky130_fd_bd_sram__sram_sp_rowenda, sky130_fd_bd_sram__sram_sp_rowend, sky130_fd_bd_sram__sram_sp_cornerb, sky130_fd_bd_sram__sram_sp_cornera, sky130_fd_bd_sram__sram_sp_corner, sky130_fd_bd_sram__openram_sp_rowenda_replica, sky130_fd_bd_sram__openram_sp_rowend_replica, sky130_fd_bd_sram__openram_sp_cell_opt1a_replica, sky130_fd_bd_sram__openram_sp_cell_opt1_replica, sky130_fd_bd_sram__openram_sp_cell_opt1a_dummy, sky130_fd_bd_sram__sram_sp_colend, sky130_fd_bd_sram__sram_sp_colend_p_cent, sky130_fd_bd_sram__sram_sp_colend_cent, sky130_fd_bd_sram__sram_sp_colenda, sky130_fd_bd_sram__sram_sp_colenda_p_cent, sky130_fd_bd_sram__sram_sp_colenda_cent, sky130_fd_bd_sram__sram_sp_wlstrap_p, sky130_fd_bd_sram__sram_sp_wlstrapa, sky130_fd_bd_sram__sram_sp_wlstrapa_p, sky130_fd_bd_sram__sram_sp_wlstrap, sky130_fd_bd_sram__sram_sp_cell_opt1a, sky130_fd_bd_sram__sram_sp_cell_opt1.
+Loading DRC CIF style.
+Total DRC errors found: 0
+R31B_AUTHORITATIVE_DRC_COMPLETE
