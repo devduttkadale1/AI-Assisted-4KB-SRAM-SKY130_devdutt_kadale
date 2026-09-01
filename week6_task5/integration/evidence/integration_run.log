@@ -1,0 +1,43 @@
+PASS MAPPING spare-row address bit tied low
+PASS MAPPING spare-column data bit tied low
+PASS READ addr=0 data=00000000
+PASS READ addr=1023 data=ffffffff
+PASS READ addr=7 data=aaaaaaaa
+PASS READ addr=8 data=55555555
+PASS READ addr=127 data=00000001
+PASS READ addr=128 data=80000000
+PASS READ addr=511 data=deadbeef
+PASS READ addr=512 data=12345678
+PASS READ addr=256 data=000000dd
+PASS READ addr=256 data=0000ccdd
+PASS READ addr=256 data=aabbccdd
+
+========================================
+INTEGRATION_PASS_COUNT=13
+INTEGRATION_FAIL_COUNT=0
+R109_LOGICAL_1024X32_INTEGRATION=PASS
+========================================
+integration/tb_task5_4kb_sram_1024x32_wrapper.v:178: $finish called at 469000 (1ps)
+	Command being timed: "vvp integration/build/task5_wrapper_tb.vvp"
+	User time (seconds): 0.00
+	System time (seconds): 0.00
+	Percent of CPU this job got: 57%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:00.00
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 7824
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 2
+	Minor (reclaiming a frame) page faults: 773
+	Voluntary context switches: 4
+	Involuntary context switches: 0
+	Swaps: 0
+	File system inputs: 3328
+	File system outputs: 8
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

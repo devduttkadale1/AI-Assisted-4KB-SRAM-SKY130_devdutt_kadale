@@ -33,3 +33,19 @@ dist/
 
 !week6_task5/verification/lvs/
 !week6_task5/verification/lvs/netgen.log
+# Week 6 Task 5 compact characterization/integration evidence
+# These are curated small logs required for final sign-off provenance.
+!week6_task5/characterization/r108_full_macro_feasibility/
+!week6_task5/characterization/r108_full_macro_feasibility/final_evidence/
+!week6_task5/characterization/r108_full_macro_feasibility/final_evidence/*.log
+
+!week6_task5/characterization/r109_targeted_c_path/
+!week6_task5/characterization/r109_targeted_c_path/bench/
+!week6_task5/characterization/r109_targeted_c_path/bench/*.log
+!week6_task5/characterization/r109_targeted_c_path/bench/ss_sen_sweep/
+!week6_task5/characterization/r109_targeted_c_path/bench/ss_sen_sweep/results/
+!week6_task5/characterization/r109_targeted_c_path/bench/ss_sen_sweep/results/*.log
+
+!week6_task5/integration/
+!week6_task5/integration/evidence/
+!week6_task5/integration/evidence/*.log

@@ -1,0 +1,18 @@
+Task 5 integrated SRAM timing signoff
+
+Timing method:
+  Constraint-based signoff directly from generated OpenRAM Liberty.
+  No OpenSTA/OpenROAD executable is installed on this machine.
+  The logical 1024x32 wrapper contains only direct wires and spare tie-offs,
+  therefore it adds no RTL logic delay and inherits macro timing constraints.
+
+Limiting corner: SS
+Maximum characterized safe period: 2.241000 ns
+Maximum characterized safe frequency: 446.229362 MHz
+Setup requirement: 0.103000 ns
+Hold requirement: -0.056000 ns
+Minimum pulse width: 1.120500 ns
+
+Important:
+  446.229 MHz is the maximum characterized Liberty limit, not a guard-banded operating recommendation.
+  External controller signals must meet the SRAM setup/hold constraints at the macro pins.

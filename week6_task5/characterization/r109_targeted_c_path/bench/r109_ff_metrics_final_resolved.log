@@ -1,0 +1,127 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * r109 tt targeted c-extracted functional transient
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        1.8
+sel                                        1.8
+din                                        1.8
+preb                                         0
+wen                                          0
+wl                                           0
+sen                                          0
+bc_n182                               0.711541
+bc_n104                               0.711541
+cell_br                                    1.8
+cell_bl                                    1.8
+io_br                                  1.79728
+io_bl                                  1.79728
+xpath.sa_a154                          1.79728
+dout                               2.38025e-06
+xpath.sa_a96                           1.79728
+xpath.sa_a184                          1.50492
+xpath.wd_a213                        0.0659778
+xpath.wd_a129                              1.8
+xpath.wd_a271                       3.5101e-06
+xpath.wd_a41                               1.8
+xpath.wd_a121                       3.5101e-06
+xpath.wd_a183                       3.5101e-06
+xpath.wd_a145                      1.63902e-09
+vsen#branch                                  0
+vwl#branch                                   0
+vwen#branch                                  0
+vpreb#branch                                 0
+vdin#branch                                  0
+vsel#branch                                  0
+vdd_src#branch                    -8.95303e-06
+
+ Reference value :  0.00000e+00 Reference value :  4.26500e-09 Reference value :  7.70500e-09 Reference value :  1.20550e-08 Reference value :  1.70070e-08 Reference value :  2.14650e-08
+No. of Data Rows : 2655
+
+  Measurements for Transient Analysis
+
+a_n104              =  1.80001e+00
+a_n182              =  5.25592e-06
+a_read_n104         =  1.79999e+00
+a_read_n182         =  6.10882e-05
+a_dout              =  1.80000e+00
+a_cell_bl           =  1.93815e+00
+a_cell_br           =  2.43244e-01
+b_n104              =  5.17530e-06
+b_n182              =  1.80003e+00
+b_read_n104         =  2.72939e-05
+b_read_n182         =  1.80000e+00
+b_dout              =  2.28652e-06
+b_cell_bl           =  2.01518e-01
+b_cell_br           =  1.88108e+00
+b_write_n104        =  2.76317e-11 targ=  1.50176e-08 trig=  1.49900e-08
+b_write_n182        =  6.06197e-11 targ=  1.50506e-08 trig=  1.49900e-08
+b_dout_before_sen   =  -5.51738e-05
+b_dout_after_sen    =  -3.73897e-05
+b_dout_valid        =  2.28652e-06
+leak_a_i_avg        =  -8.95597e-06 from=  7.50000e-09 to=  7.90500e-09
+leak_b_i_avg        =  -1.72625e-07 from=  1.95000e-08 to=  1.99050e-08
+write_a_iint        =   -6.94155e-14 from=  2.00000e-09 to=  6.00000e-09
+read_a_iint         =   -3.62050e-14 from=  8.00000e-09 to=  1.20000e-08
+write_b_iint        =   -4.31385e-14 from=  1.40000e-08 to=  1.80000e-08
+read_b_iint         =   -1.05428e-14 from=  2.00000e-08 to=  2.40000e-08
+ff_a_dout_at_850    =  9.25370e-03
+ff_a_dout_at_875    =  2.28186e-01
+ff_a_dout_before_sen=  9.84869e-01
+ff_a_dout_after_sen =  1.79977e+00
+ff_a_dout_valid     =  1.80000e+00
+ff_a_bl_before_sen  =  1.94120e+00
+ff_a_br_before_sen  =  3.19271e-01
+ff_a_wl_to_dout_50  =  3.92222e-10 targ=  8.88222e-09 trig=  8.49000e-09
+
+
+Total analysis time (seconds) = 0.204396
+
+Total elapsed time (seconds) = 5.404 
+
+Total DRAM available = 11959.648 MB.
+DRAM currently available = 10143.684 MB.
+Maximum ngspice program size =  207.969 MB.
+Current ngspice program size =  141.719 MB.
+
+Shared ngspice pages =   11.973 MB.
+Text (code) pages =    6.387 MB.
+Stack = 0 bytes.
+Library pages =  185.766 MB.
+
+	Command being timed: "ngspice -b bench/r109_ff_metrics_final_resolved.sp"
+	User time (seconds): 6.25
+	System time (seconds): 0.16
+	Percent of CPU this job got: 158%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:04.05
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162836
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 33
+	Minor (reclaiming a frame) page faults: 39404
+	Voluntary context switches: 443
+	Involuntary context switches: 51
+	Swaps: 0
+	File system inputs: 102400
+	File system outputs: 24
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

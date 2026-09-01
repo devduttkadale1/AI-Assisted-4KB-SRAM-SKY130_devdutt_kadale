@@ -1,0 +1,4 @@
+corner	read_delay_min_ns	read_delay_max_ns	setup_min_ns	setup_max_ns	hold_min_ns	hold_max_ns	min_pulse_width_ns	minimum_period_ns	fmax_mhz	cell_leakage_mw	cell_leakage_uw	time_unit	voltage_unit	current_unit	leakage_power_unit	power_unit	file
+TT	0.405	0.551	0.103	0.103	-0.056	-0.056	1.0185	2.037	490.9180166912126	0.033871	33.870999999999995	1ns	1V	1mA	1mW	MISSING	/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram_TT_1p8V_25C.lib
+SS	0.446	0.606	0.103	0.103	-0.056	-0.056	1.1205	2.241	446.2293618920125	0.033871	33.870999999999995	1ns	1V	1mA	1mW	MISSING	/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram_SS_1p8V_25C.lib
+FF	0.365	0.496	0.103	0.103	-0.056	-0.056	0.917	1.834	545.2562704471101	0.033871	33.870999999999995	1ns	1V	1mA	1mW	MISSING	/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram_FF_1p8V_25C.lib

@@ -1,0 +1,4 @@
+corner	write_worst_ps	read_metric	read_metric_ps	leak_avg_power_uW	write_avg_energy_fJ	read_avg_energy_fJ	note	source_log
+TT	77.9407	SEN50_to_DOUT50_transition	40.8805	3.8723319	95.04531	31.37364	B read is already valid low with SEN disabled; transition delay therefore measured on A read.	bench/r109_tt_metrics_final.log
+SS	117.096	SEN50_to_DOUT50_transition	71.8089	7.085295	177.78663	42.39837	Minimum tested passing B-read WL50-to-SEN50 delay is 1.00 ns; 0.75 ns failed, 1.00/1.25/1.50 ns passed.	bench/ss_sen_sweep/results/ss_sen_21p5n.log
+FF	60.6197	WL50_to_DOUT50	392.222	8.2157355	101.2986	42.07302	DOUT50 occurs 107.778 ps before SEN50; positive SEN50-to-DOUT50 delay does not exist.	bench/r109_ff_metrics_final_resolved.log

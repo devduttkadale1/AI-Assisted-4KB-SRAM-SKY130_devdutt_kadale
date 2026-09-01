@@ -1,0 +1,57 @@
+[
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram.v",
+    "bytes": 2473,
+    "sha256": "4c180c8f725c6b8f66d7b747fdc33d82a079a78822d52bdab0d849d4e381a97b"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram.lef",
+    "bytes": 17588,
+    "sha256": "50e201f62e0a1489c68532dafa252f1758ebc3cee8310a0f7249b0e75ece565b"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram_TT_1p8V_25C.lib",
+    "bytes": 11287,
+    "sha256": "128ace55197b5f0058588a634f99101ee3a2bc6c73428115d2c8b3c1ce00d1bc"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram_SS_1p8V_25C.lib",
+    "bytes": 11287,
+    "sha256": "d33983f0f10a6e53dae494434838c2ec3faaa777ecda417985cfc64fc42826e3"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram_FF_1p8V_25C.lib",
+    "bytes": 11285,
+    "sha256": "58a8f5df93601f6ff0d2d61c7a0e046a7bec557515e2fb3b0da16766384f72da"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/integration/task5_4kb_sram_1024x32_wrapper.v",
+    "bytes": 1179,
+    "sha256": "3ba240023fb2b285c711571cf4d2d22c45d54c0e8c24adf35ed9799c9ee5ce6e"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/integration/tb_task5_4kb_sram_1024x32_wrapper.v",
+    "bytes": 4954,
+    "sha256": "cabfd9ab7662fae47036720887e2d45e5fc9913015e958bf8e852e6235958c6c"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/integration/build/iverilog_compile.log",
+    "bytes": 228,
+    "sha256": "53ea7d62dba3576141366ccb8580009ba8f8e14d8d18f6851af84f20b0429917"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/integration/build/integration_run.log",
+    "bytes": 1460,
+    "sha256": "fa5a987c0744d4ed0acb384235dbb44da8a3d7b3233d001dd43020ab0e6c5758"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/integration/sta_signoff/task5_4kb_sram_timing_signoff.tsv",
+    "bytes": 307,
+    "sha256": "dcf8b79c3dc6a013b312d49aad661b5f2587bf2fbe05113e1e61eeba651e285f"
+  },
+  {
+    "path": "/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/integration/sta_signoff/task5_4kb_sram_timing_signoff.txt",
+    "bytes": 762,
+    "sha256": "7a822ceeb12781b7dda6f2f9440e06505de2f71a9a1debbe0e6fddab438916d2"
+  }
+]

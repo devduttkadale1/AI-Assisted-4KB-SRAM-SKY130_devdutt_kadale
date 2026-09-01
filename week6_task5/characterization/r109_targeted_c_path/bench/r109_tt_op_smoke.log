@@ -1,0 +1,50 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * r109 tt targeted c-extracted operating-point smoke test
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+R109_OP_RESULTS_BEGIN
+v(vdd) = 1.800000e+00
+v(wl) = 0.000000e+00
+v(cell_bl) = 1.800000e+00
+v(cell_br) = 1.800000e+00
+v(io_bl) = 1.799916e+00
+v(io_br) = 1.457813e+00
+v(dout) = 2.885262e-05
+v(bc_n104) = 1.800000e+00
+v(bc_n182) = 2.591444e-08
+i(vdd_src) = -2.14966e-08
+R109_OP_RESULTS_END
+ngspice-46+ done
+	Command being timed: "ngspice -b bench/r109_tt_op_smoke.sp"
+	User time (seconds): 4.72
+	System time (seconds): 0.17
+	Percent of CPU this job got: 128%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:03.81
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162644
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 33
+	Minor (reclaiming a frame) page faults: 39405
+	Voluntary context switches: 446
+	Involuntary context switches: 19
+	Swaps: 0
+	File system inputs: 100520
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

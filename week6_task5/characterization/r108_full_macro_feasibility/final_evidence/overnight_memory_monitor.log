@@ -1,0 +1,395 @@
+nohup: ignoring input
+========== 2026-08-30T18:19:20+00:00 ==========
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       114Mi       3.0Mi       233Mi       176Mi
+Swap:          8.0Gi       3.1Gi       4.9Gi
+   1064 S+      13:03:41  0.0  0.0  1440   2704 /usr/bin/time -v -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_time.txt ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+   1065 Rl+     13:03:41  101 90.8 11130496 14000948 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+ 143312 S          00:00  0.0  0.0  3536   4764 bash -c  while pgrep -f "ngspice.*tt_write_read_no_vgnd.sp" >/dev/null; do     echo "========== $(date -Is) =========="     free -h     ps -eo pid,stat,etime,%cpu,%mem,rss,vsz,cmd |         grep "[n]gspice.*tt_write_read_no_vgnd.sp" || true     echo     sleep 600 done echo "========== NGSPICE ENDED: $(date -Is) ==========" free -h 
+
+nohup: ignoring input
+========== 2026-08-30T18:22:10+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     13:06:26 13:14:24  101 91.0 11147684 14050844 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       108Mi       3.0Mi       230Mi       167Mi
+Swap:          8.0Gi       3.1Gi       4.9Gi
+--- C DRIVE ---
+C:\             183G  157G   27G  86% /mnt/c
+
+========== 2026-08-30T18:32:31+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     13:16:26 13:24:44  101 90.9 11143416 14151032 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        93Mi       3.0Mi       253Mi       175Mi
+Swap:          8.0Gi       3.2Gi       4.8Gi
+--- C DRIVE ---
+C:\             183G  157G   27G  86% /mnt/c
+
+========== 2026-08-30T18:42:52+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     13:26:26 13:35:05  101 91.2 11179620 14263760 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        96Mi       3.0Mi       209Mi       135Mi
+Swap:          8.0Gi       3.3Gi       4.7Gi
+--- C DRIVE ---
+C:\             183G  157G   27G  86% /mnt/c
+
+========== 2026-08-30T18:53:08+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     13:36:26 13:45:21  101 91.1 11166080 14366192 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       104Mi       3.0Mi       206Mi       139Mi
+Swap:          8.0Gi       3.4Gi       4.6Gi
+--- C DRIVE ---
+C:\             183G  157G   27G  86% /mnt/c
+
+========== 2026-08-30T19:03:22+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     13:46:26 13:55:35  101 91.4 11194700 14479052 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       102Mi       3.0Mi       180Mi       111Mi
+Swap:          8.0Gi       3.4Gi       4.6Gi
+--- C DRIVE ---
+C:\             183G  157G   27G  86% /mnt/c
+
+========== 2026-08-30T19:13:38+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     13:56:26 14:05:51  101 91.6 11227900 14574092 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        98Mi       3.0Mi       149Mi        77Mi
+Swap:          8.0Gi       3.5Gi       4.5Gi
+--- C DRIVE ---
+C:\             183G  157G   26G  86% /mnt/c
+
+========== 2026-08-30T19:23:55+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     14:06:26 14:16:08  101 91.5 11215916 14630852 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        96Mi       3.0Mi       164Mi        89Mi
+Swap:          8.0Gi       3.6Gi       4.4Gi
+--- C DRIVE ---
+C:\             183G  157G   26G  86% /mnt/c
+
+========== 2026-08-30T19:34:11+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     14:16:26 14:26:25  101 91.8 11253372 14770904 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        94Mi       3.0Mi       141Mi        64Mi
+Swap:          8.0Gi       3.7Gi       4.3Gi
+--- C DRIVE ---
+C:\             183G  157G   26G  86% /mnt/c
+
+========== 2026-08-30T19:44:27+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     14:26:26 14:36:40  101 91.7 11242440 14840996 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        93Mi       3.0Mi       155Mi        77Mi
+Swap:          8.0Gi       3.7Gi       4.3Gi
+--- C DRIVE ---
+C:\             183G  157G   26G  86% /mnt/c
+
+========== 2026-08-30T19:54:45+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     14:36:26 14:46:59  101 91.4 11202576 14891156 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        95Mi       3.0Mi       180Mi       104Mi
+Swap:          8.0Gi       3.8Gi       4.2Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  86% /mnt/c
+
+========== 2026-08-30T20:05:08+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     14:46:26 14:57:21  101 91.6 11229616 15041108 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        91Mi       3.0Mi       163Mi        83Mi
+Swap:          8.0Gi       3.9Gi       4.1Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  87% /mnt/c
+
+========== 2026-08-30T20:15:30+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     14:56:27 15:07:44  101 91.6 11230024 15108560 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        95Mi       3.0Mi       159Mi        83Mi
+Swap:          8.0Gi       4.0Gi       4.0Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  87% /mnt/c
+
+========== 2026-08-30T20:25:55+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     15:06:27 15:18:08  101 91.4 11197224 15156080 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        94Mi       3.0Mi       179Mi       103Mi
+Swap:          8.0Gi       4.1Gi       3.9Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  87% /mnt/c
+
+========== 2026-08-30T20:36:21+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     15:16:27 15:28:33  101 91.6 11218372 15285836 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        93Mi       3.0Mi       165Mi        88Mi
+Swap:          8.0Gi       4.2Gi       3.8Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  87% /mnt/c
+
+========== 2026-08-30T20:46:45+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     15:26:27 15:38:58  101 91.8 11252176 15367148 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        93Mi       3.0Mi       137Mi        61Mi
+Swap:          8.0Gi       4.2Gi       3.8Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  87% /mnt/c
+
+========== 2026-08-30T20:57:11+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     15:36:27 15:49:23  101 91.6 11228388 15415592 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        93Mi       3.0Mi       160Mi        83Mi
+Swap:          8.0Gi       4.3Gi       3.7Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  87% /mnt/c
+
+========== 2026-08-30T21:07:34+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     15:46:27 15:59:47  101 91.7 11234968 15456248 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        98Mi       3.0Mi       153Mi        80Mi
+Swap:          8.0Gi       4.3Gi       3.7Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  87% /mnt/c
+
+========== 2026-08-30T21:18:01+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     15:56:27 16:10:13  101 92.0 11268412 15597884 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        93Mi       3.0Mi       129Mi        57Mi
+Swap:          8.0Gi       4.4Gi       3.6Gi
+--- C DRIVE ---
+C:\             183G  158G   26G  87% /mnt/c
+
+========== 2026-08-30T21:28:27+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     16:06:27 16:20:41  101 91.8 11246372 15672464 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        94Mi       3.0Mi       148Mi        72Mi
+Swap:          8.0Gi       4.5Gi       3.5Gi
+--- C DRIVE ---
+C:\             183G  158G   25G  87% /mnt/c
+
+========== 2026-08-30T21:38:52+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     16:16:27 16:31:05  101 91.8 11254616 15720512 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        96Mi       3.0Mi       146Mi        71Mi
+Swap:          8.0Gi       4.5Gi       3.5Gi
+--- C DRIVE ---
+C:\             183G  158G   25G  87% /mnt/c
+
+========== 2026-08-30T21:49:17+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     16:26:27 16:41:30  101 91.9 11263076 15760772 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        93Mi       3.0Mi       140Mi        62Mi
+Swap:          8.0Gi       4.6Gi       3.4Gi
+--- C DRIVE ---
+C:\             183G  158G   25G  87% /mnt/c
+
+========== 2026-08-30T21:59:43+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     16:36:27 16:51:55  101 92.1 11283376 15865976 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       105Mi       3.0Mi       128Mi        69Mi
+Swap:          8.0Gi       4.7Gi       3.3Gi
+--- C DRIVE ---
+C:\             183G  158G   25G  87% /mnt/c
+
+========== 2026-08-30T22:10:07+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     16:46:27 17:02:19  101 92.1 11290332 15953492 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       100Mi       3.0Mi       134Mi        67Mi
+Swap:          8.0Gi       4.8Gi       3.2Gi
+--- C DRIVE ---
+C:\             183G  158G   25G  87% /mnt/c
+
+========== 2026-08-30T22:20:34+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     16:56:27 17:12:46  101 92.1 11288616 16011836 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        96Mi       3.0Mi       139Mi        65Mi
+Swap:          8.0Gi       4.8Gi       3.2Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T22:30:59+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     17:06:27 17:23:12  101 91.8 11246076 16057508 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       115Mi       3.0Mi       160Mi       104Mi
+Swap:          8.0Gi       4.9Gi       3.1Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T22:41:27+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     17:16:27 17:33:39  101 91.9 11259640 16094468 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       106Mi       3.0Mi       164Mi       100Mi
+Swap:          8.0Gi       4.9Gi       3.1Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T22:51:54+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     17:26:27 17:44:07  101 92.0 11272368 16173932 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi        92Mi       3.0Mi       162Mi        83Mi
+Swap:          8.0Gi       5.0Gi       3.0Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T23:02:22+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     17:36:27 17:54:35  101 91.5 11213748 16292864 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       132Mi       3.0Mi       191Mi       152Mi
+Swap:          8.0Gi       5.2Gi       2.8Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T23:12:46+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     17:46:27 18:04:59  101 91.7 11233840 16358732 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       110Mi       3.0Mi       189Mi       128Mi
+Swap:          8.0Gi       5.2Gi       2.8Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T23:23:13+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     17:56:27 18:15:25  101 91.7 11239052 16402556 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       104Mi       3.0Mi       186Mi       120Mi
+Swap:          8.0Gi       5.2Gi       2.8Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T23:33:42+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     18:06:27 18:25:54  101 91.7 11239852 16439120 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       108Mi       3.0Mi       181Mi       118Mi
+Swap:          8.0Gi       5.3Gi       2.7Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T23:44:11+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     18:16:27 18:36:23  101 91.6 11222592 16471724 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       103Mi       3.0Mi       194Mi       126Mi
+Swap:          8.0Gi       5.3Gi       2.7Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-30T23:54:39+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     18:26:27 18:46:50  101 91.7 11239456 16606100 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       107Mi       3.0Mi       181Mi       118Mi
+Swap:          8.0Gi       5.4Gi       2.6Gi
+--- C DRIVE ---
+C:\             183G  159G   25G  87% /mnt/c
+
+========== 2026-08-31T00:05:07+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     18:36:27 18:57:19  101 91.7 11239808 16680812 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       107Mi       3.0Mi       176Mi       113Mi
+Swap:          8.0Gi       5.5Gi       2.5Gi
+--- C DRIVE ---
+C:\             183G  159G   24G  87% /mnt/c
+
+========== 2026-08-31T00:15:38+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     18:46:27 19:07:49  101 91.4 11196064 16728464 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       108Mi       3.0Mi       213Mi       147Mi
+Swap:          8.0Gi       5.6Gi       2.4Gi
+--- C DRIVE ---
+C:\             183G  159G   24G  87% /mnt/c
+
+========== 2026-08-31T00:26:08+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     18:56:27 19:18:20  101 91.5 11207600 16764500 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       109Mi       3.0Mi       207Mi       141Mi
+Swap:          8.0Gi       5.6Gi       2.4Gi
+--- C DRIVE ---
+C:\             183G  159G   24G  87% /mnt/c
+
+========== 2026-08-31T00:36:42+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     19:06:27 19:28:53  101 91.6 11220920 16796180 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       103Mi       3.0Mi       200Mi       128Mi
+Swap:          8.0Gi       5.6Gi       2.4Gi
+--- C DRIVE ---
+C:\             183G  159G   24G  87% /mnt/c
+
+========== 2026-08-31T00:47:13+00:00 ==========
+--- NGSPICE ---
+   1065 Rl+     19:16:27 19:39:25  101 91.4 11194520 16825484 ngspice -b -o /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+--- MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi        11Gi       112Mi       3.0Mi       208Mi       146Mi
+Swap:          8.0Gi       5.7Gi       2.3Gi
+--- C DRIVE ---
+C:\             183G  159G   24G  87% /mnt/c
+
+========== NGSPICE ENDED: 2026-08-31T01:10:05+00:00 ==========
+               total        used        free      shared  buff/cache   available
+Mem:            11Gi       879Mi        10Gi       3.0Mi       272Mi        10Gi
+Swap:          8.0Gi       600Mi       7.4Gi
+C:\             183G  159G   24G  88% /mnt/c

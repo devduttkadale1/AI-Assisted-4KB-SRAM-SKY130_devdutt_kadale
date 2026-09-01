@@ -1,0 +1,4 @@
+corner	read_max_ns	setup_ns	hold_ns	min_pulse_width_ns	minimum_period_ns	fmax_mhz	half_period_ns	pulse_margin_ns
+TT	0.551	0.103	-0.056	1.0185	2.037	490.9180166912126	1.0185	0.0
+SS	0.606	0.103	-0.056	1.1205	2.241	446.2293618920125	1.1205	0.0
+FF	0.496	0.103	-0.056	0.917	1.834	545.2562704471101	0.917	0.0

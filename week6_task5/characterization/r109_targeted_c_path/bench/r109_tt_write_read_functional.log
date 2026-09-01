@@ -1,0 +1,108 @@
+Warning: m=xx on .subckt line will override multiplier m hierarchy!
+
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * r109 tt targeted c-extracted functional transient
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Using SPARSE 1.3 as Direct Linear Solver
+
+Initial Transient Solution
+--------------------------
+
+Node                                   Voltage
+----                                   -------
+vdd                                        1.8
+sel                                        1.8
+din                                        1.8
+preb                                         0
+wen                                          0
+wl                                           0
+sen                                          0
+bc_n182                               0.742346
+bc_n104                               0.742346
+cell_br                                    1.8
+cell_bl                                    1.8
+io_br                                  1.72309
+io_bl                                  1.72308
+xpath.sa_a154                          1.72309
+dout                               2.97854e-07
+xpath.sa_a96                           1.72308
+xpath.sa_a184                          1.34883
+xpath.wd_a213                        0.0183872
+xpath.wd_a129                              1.8
+xpath.wd_a271                      1.17409e-07
+xpath.wd_a41                               1.8
+xpath.wd_a121                      1.17409e-07
+xpath.wd_a183                      1.17409e-07
+xpath.wd_a145                      1.08328e-10
+vsen#branch                                  0
+vwl#branch                                   0
+vwen#branch                                  0
+vpreb#branch                                 0
+vdin#branch                                  0
+vsel#branch                                  0
+vdd_src#branch                     -2.3669e-06
+
+ Reference value :  0.00000e+00 Reference value :  3.96500e-09 Reference value :  8.59500e-09 Reference value :  1.21450e-08 Reference value :  1.66750e-08 Reference value :  2.16950e-08 Reference value :  2.47450e-08
+No. of Data Rows : 2655
+
+  Measurements for Transient Analysis
+
+a_n104              =  1.80001e+00
+a_n182              =  7.54089e-06
+a_read_n104         =  1.80000e+00
+a_read_n182         =  1.42593e-05
+a_dout              =  1.80000e+00
+a_cell_bl           =  1.94548e+00
+a_cell_br           =  2.88881e-01
+b_n104              =  9.83740e-06
+b_n182              =  1.80007e+00
+b_read_n104         =  8.03789e-06
+b_read_n182         =  1.80000e+00
+b_dout              =  3.92572e-08
+b_cell_bl           =  2.57233e-01
+b_cell_br           =  1.89013e+00
+
+
+Total analysis time (seconds) = 0.229432
+
+Total elapsed time (seconds) = 6.004 
+
+Total DRAM available = 11959.648 MB.
+DRAM currently available = 10203.270 MB.
+Maximum ngspice program size =  207.934 MB.
+Current ngspice program size =  141.652 MB.
+
+Shared ngspice pages =   11.945 MB.
+Text (code) pages =    6.387 MB.
+Stack = 0 bytes.
+Library pages =  185.730 MB.
+
+	Command being timed: "ngspice -b bench/r109_tt_write_read_functional.sp"
+	User time (seconds): 6.94
+	System time (seconds): 0.24
+	Percent of CPU this job got: 118%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 0:06.04
+	Average shared text size (kbytes): 0
+	Average unshared data size (kbytes): 0
+	Average stack size (kbytes): 0
+	Average total size (kbytes): 0
+	Maximum resident set size (kbytes): 162828
+	Average resident set size (kbytes): 0
+	Major (requiring I/O) page faults: 38
+	Minor (reclaiming a frame) page faults: 39407
+	Voluntary context switches: 447
+	Involuntary context switches: 34
+	Swaps: 0
+	File system inputs: 102976
+	File system outputs: 16
+	Socket messages sent: 0
+	Socket messages received: 0
+	Signals delivered: 0
+	Page size (bytes): 4096
+	Exit status: 0

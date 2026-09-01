@@ -1,0 +1,35 @@
+[
+  {
+    "corner": "TT",
+    "write_worst_ps": 77.94069999999999,
+    "read_metric": "SEN50_to_DOUT50_transition",
+    "read_metric_ps": 40.880500000000005,
+    "leak_avg_power_uW": 3.8723319000000007,
+    "write_avg_energy_fJ": 95.04531,
+    "read_avg_energy_fJ": 31.37364,
+    "note": "B read is already valid low with SEN disabled; transition delay therefore measured on A read.",
+    "source_log": "bench/r109_tt_metrics_final.log"
+  },
+  {
+    "corner": "SS",
+    "write_worst_ps": 117.096,
+    "read_metric": "SEN50_to_DOUT50_transition",
+    "read_metric_ps": 71.8089,
+    "leak_avg_power_uW": 7.085295,
+    "write_avg_energy_fJ": 177.78663,
+    "read_avg_energy_fJ": 42.39837,
+    "note": "Minimum tested passing B-read WL50-to-SEN50 delay is 1.00 ns; 0.75 ns failed, 1.00/1.25/1.50 ns passed.",
+    "source_log": "bench/ss_sen_sweep/results/ss_sen_21p5n.log"
+  },
+  {
+    "corner": "FF",
+    "write_worst_ps": 60.6197,
+    "read_metric": "WL50_to_DOUT50",
+    "read_metric_ps": 392.222,
+    "leak_avg_power_uW": 8.215735500000001,
+    "write_avg_energy_fJ": 101.29860000000001,
+    "read_avg_energy_fJ": 42.07302000000001,
+    "note": "DOUT50 occurs 107.778 ps before SEN50; positive SEN50-to-DOUT50 delay does not exist.",
+    "source_log": "bench/r109_ff_metrics_final_resolved.log"
+  }
+]

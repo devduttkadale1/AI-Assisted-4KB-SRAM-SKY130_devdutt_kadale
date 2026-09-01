@@ -1,0 +1,2 @@
+/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram.v:6: warning: timescale for task5_4kb_sram inherited from another file.
+integration/tb_task5_4kb_sram_1024x32_wrapper.v:1: ...: The inherited timescale is here.

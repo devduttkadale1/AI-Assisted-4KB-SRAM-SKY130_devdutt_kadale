@@ -1,0 +1,47 @@
+WEEK 6 TASK 5 - R108 FULL C-EXTRACTED TT RUN EVIDENCE
+=======================================================
+
+RUN_VERDICT=COMPUTATIONALLY_IMPRACTICAL_MANUALLY_TERMINATED
+FUNCTIONAL_PASS_NOT_CLAIMED=True
+NGSPICE_WRAPPER_STATUS=143
+TERMINATION_SIGNAL=SIGTERM_15
+START_TIME=2026-08-30T05:07:42+00:00
+END_TIME=2026-08-31T00:53:52+00:00
+ELAPSED_WALL_TIME=19:46:09
+MAX_RSS_KB=11325148
+MAX_OBSERVED_SWAP_USED_GIB=5.7
+REACHED_NUMERICAL_ANALYSIS=True
+SOLVER=SPARSE_1.3
+OUTPUT_MEASUREMENT_COUNT=0
+DATA_ROWS_REPORTED=False
+FATAL_MODEL_OR_CONVERGENCE_ERROR_BEFORE_TERMINATION=False
+
+ANALYSIS_EVIDENCE:
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+Using SPARSE 1.3 as Direct Linear Solver
+
+RESOURCE_EVIDENCE:
+Command terminated by signal 15
+	Percent of CPU this job got: 99%
+	Elapsed (wall clock) time (h:mm:ss or m:ss): 19:46:09
+	Maximum resident set size (kbytes): 11325148
+
+INPUTS:
+BENCH_SIZE_BYTES=5687
+41f685a2c3e07a8c17c7e80ced4308c6c0ba1f2f17b78aa76021e5b15fd1bc9b  /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r104_tt_no_redundant_vgnd_v1/tt_write_read_no_vgnd.sp
+CNET_SIZE_BYTES=180150356
+b9887aafdad8c66790d98cbe6fb9e09285c765a0e1b2f8646b6ff65e91d0d225  /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r100_all_primitive_unit_normalized_cnet/task5_4kb_sram.all_sim_units.spice
+
+R108_SMALL_EVIDENCE_SHA256:
+a6a9ed5113c55407986b7e6fe76dce13568c61409646a20eb68c0d8988a5ec6d  /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_tt.log
+32eab9b0466cfffa8dbc59c646bb9f81d95f12d64d8d5977802932da4aee5c58  /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_time.txt
+9d9b18720961e9b4689fd763b85e7b6f36160ccd3a8a1c9ddc5103bb0f66c396  /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/ngspice_status.txt
+bb3e734227a8392a838c5df15185a47b7797e2d56965ebd119cb3a44a1fcc362  /home/devdutt/VLSI/Tools/OpenRAM/week6_task5/characterization/r108_tt_corrected_full_run_v1/overnight_memory_monitor.log
+
+NOTE:
+The ~180 MB simulation-only normalized C-extracted netlist is referenced by
+path, size, and SHA256; it is intentionally not duplicated into this bundle.
+R108 reached numerical analysis but produced no completed data rows or output
+measurements before manual SIGTERM after 19h46m. This is not a functional PASS
+or functional FAIL; it demonstrates that this full-macro transient was
+computationally impractical on the available laptop resources.

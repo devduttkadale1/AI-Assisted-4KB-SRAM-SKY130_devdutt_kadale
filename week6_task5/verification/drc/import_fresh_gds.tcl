@@ -4,7 +4,21 @@ gds polygon subcell true
 gds warning default
 gds ordering true
 
-gds read {/home/devdutt/VLSI/Tools/OpenRAM/week6_task5/output/task5_4kb_sram.gds}
+set script_dir [file dirname [file normalize [info script]]]
+
+if {[info exists ::env(TASK5_GDS)]} {
+    set task5_gds [file normalize $::env(TASK5_GDS)]
+} else {
+    set task5_gds [file normalize [file join $script_dir .. .. generated task5_4kb_sram.gds]]
+}
+
+if {![file exists $task5_gds]} {
+    puts stderr "ERROR: Task 5 GDS not found: $task5_gds"
+    exit 2
+}
+
+puts "TASK5_GDS=$task5_gds"
+gds read $task5_gds
 
 puts "R31B_FRESH_GDS_READ_COMPLETE"
 
