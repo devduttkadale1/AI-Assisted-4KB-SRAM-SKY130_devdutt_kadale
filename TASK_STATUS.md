@@ -84,44 +84,49 @@ Remaining:
 - Documented OpenRAM compiler limitations
 - Updated repository documentation
 
-
 ### Task 5 - Week 6
-Status: In Progress — core SRAM generation and physical sign-off complete
+Status: ✅ Complete — final 1024 × 32 single-port 4 KB SRAM sign-off closed
 
 Requirement:
-Generate and validate a 1024-word × 32-bit single-port SRAM (4 KB) using OpenRAM on SKY130, including generated views, automated functional regression, physical verification, extraction, characterization, integration, and reproducibility evidence.
+Generate and validate a 1024-word × 32-bit single-port SRAM (4 KB) using OpenRAM on SKY130, including generated views, automated functional regression, physical verification, extraction, characterization, integration, static timing analysis, reproducibility, AI evidence, and final documentation.
 
 Completed:
-- Generated authoritative 1024 × 32 single-port SRAM using OpenRAM v1.2.49
+- Generated authoritative 1024 × 32 single-port 4 KB SRAM using OpenRAM v1.2.49
 - Generated GDS, LEF, Verilog, SPICE, and TT/SS/FF Liberty views
-- Completed automated functional regression
-- Functional result: 144 PASS / 0 FAIL
-- Covered first/last and representative boundary addresses
-- Covered all-zero, all-one, alternating, walking-1, walking-0, and deterministic pseudorandom patterns
-- Completed authoritative Magic DRC
-- Magic DRC result: 0 errors
-- Completed corrected full Magic extraction
-- Generated extracted top-level SPICE
-- Completed final Netgen LVS
-- Final LVS device count: 270248 vs 270248
-- Final LVS net count: 69617 vs 69617
-- Final LVS result: Circuits match uniquely.
-- Final LVS property error count: 0
-- Packaged authoritative configuration, generated views, regression evidence, DRC evidence, extraction evidence, LVS evidence, and SHA-256 manifest under week6_task5/
+- Automated functional regression: 144 PASS / 0 FAIL
+- Magic DRC: 0 violations
+- Corrected full Magic extraction completed
+- Final Netgen LVS: Circuits match uniquely
+- Final LVS devices: 270248 vs 270248
+- Final LVS nets: 69617 vs 69617
+- Final LVS property errors: 0
+- Targeted C-extracted TT/SS/FF characterization completed
+- Liberty timing comparison completed
+- Logical 1024 × 32 wrapper integration regression: 13 PASS / 0 FAIL
+- OpenSTA 3.1.0 external SS-corner STA completed with 0 warnings/errors/violations
+- SS setup slack: +2.138 ns
+- SS hold slack: +0.056 ns
+- SS minimum characterized period: 2.241 ns
+- Maximum characterized SS model frequency: 446.229362 MHz
+- Clock-to-DOUT characterized-point checks reproduced 0.446 / 0.478 / 0.606 ns
+- Clean-clone reproducibility completed and GDS nondeterminism documented
+- Week 6 Task 5 AI prompt record and errors/fixes documentation completed
+- Final artifact manifest validated: 40 artifacts
 
-Remaining:
-- Complete characterization summary for TT / SS / FF
-- Report read access time, write time, leakage power, read energy, and write energy where computationally practical
-- Compare measured/derived timing against OpenRAM Liberty data
-- Complete integration / STA evidence
-- Determine maximum safe operating frequency
-- Complete clean-clone reproducibility check
-- Finish Task 5 documentation and final repository checkpoint
+Important scope notes:
+- Extracted characterization is C-extracted, not RC-extracted
+- 446.229362 MHz is the characterized Liberty-model boundary, not a guard-banded operating recommendation
+- Exact fresh-clone GDS bitwise/geometry identity is not claimed; authoritative signed-off GDS remains preserved
 
 Evidence:
 - week6_task5/config/
 - week6_task5/generated/
 - week6_task5/regression/
 - week6_task5/verification/
-- week6_task5/SHA256SUMS
-- week6_task5/docs/signoff_checkpoint.md
+- week6_task5/characterization/
+- week6_task5/integration/
+- week6_task5/reproducibility/
+- week6_task5/ai/
+- week6_task5/docs/final_signoff.md
+- week6_task5/docs/final_artifact_manifest.tsv
+- week6_task5/integration/sta_signoff/task5_4kb_sram_opensta_summary.md
