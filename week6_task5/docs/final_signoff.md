@@ -192,7 +192,7 @@ The wrapper preserves the logical 1024 × 32 interface and disables spare addres
 
 ## 10. Timing-model signoff
 
-No OpenSTA/OpenROAD executable was available.
+OpenSTA 3.1.0 was subsequently built from source and used for external SS-corner static timing analysis.
 
 Therefore timing signoff was performed directly from the generated OpenRAM Liberty constraints together with the timing-transparent wrapper.
 
@@ -206,7 +206,7 @@ Limiting characterized corner:
 
 This value is the **maximum characterized Liberty-model limit**, not a guard-banded recommended system frequency.
 
-No claim is made that a separate external STA engine passed.
+External OpenSTA 3.1.0 STA passed at SS with +2.138 ns setup slack, +0.056 ns hold slack, zero pulse-width/minimum-period margin at the 2.241 ns characterized boundary, and zero warnings/errors.
 
 ## 11. Clean-clone reproducibility
 
@@ -289,7 +289,7 @@ Clean-clone result:
 | Integration regression | PASS — 13/13 |
 | Timing-model constraint analysis | PASS |
 | Maximum characterized model frequency | 446.229362 MHz at SS |
-| External STA engine | NOT AVAILABLE / NOT CLAIMED |
+| External STA engine | OpenSTA 3.1.0 PASS at SS |
 | Clean-clone regeneration | PASS |
 | Exact GDS reproducibility | NOT CLAIMED |
 | Final documentation | PASS |

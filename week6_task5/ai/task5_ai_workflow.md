@@ -79,11 +79,11 @@ No guard-band is implied.
 
 ### Timing signoff
 
-OpenSTA/OpenROAD was not available.
+OpenSTA 3.1.0 was later built from source and used for SS-corner static timing analysis.
 
 Timing constraints were therefore evaluated directly from generated OpenRAM Liberty and a timing-transparent wrapper.
 
-Do not claim a separate external STA engine passed.
+External OpenSTA 3.1.0 STA passed; retain the distinction between the 446.229362 MHz characterized boundary and a guard-banded operating recommendation.
 
 ### Clean-clone reproducibility
 

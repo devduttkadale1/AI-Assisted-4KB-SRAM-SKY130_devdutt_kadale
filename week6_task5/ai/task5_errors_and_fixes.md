@@ -333,3 +333,89 @@ Exact GDS bitwise or physical identity is not claimed.
 The clean-clone result is classified as successful generation with logical/electrical/abstract equivalence and documented top-level GDS nondeterminism.
 
 The already signed-off committed GDS remains the authoritative physical artifact.
+
+## OpenSTA External STA Closure
+
+The original timing sign-off used direct OpenRAM Liberty constraints because
+OpenSTA/OpenROAD were not initially installed. To satisfy the explicit STA
+requirement, OpenSTA 3.1.0 was subsequently built and used for SS-corner
+static timing analysis.
+
+### Issue: OpenSTA unavailable from the installed Ubuntu packages
+
+Ubuntu 24.04 did not provide an `opensta` package candidate in the configured
+repositories.
+
+**Fix:** Build OpenSTA from source. SWIG was installed from Ubuntu packages,
+and CUDD 3.0.0 was built locally.
+
+### Issue: CUDD 3.0.0 build requested obsolete `aclocal-1.14`
+
+The imported CUDD source contained generated autotools metadata that attempted
+to invoke `aclocal-1.14`, which is not provided by the current Ubuntu
+Automake installation.
+
+**Fix:** Run `autoreconf -fi` with the installed modern autotools, reconfigure
+CUDD, then rebuild and install it locally. The final CUDD build/install gate
+passed with `cudd.h` and `libcudd.a` present.
+
+### Issue: OpenSTA could not parse the functional wrapper parameter override
+
+The functional wrapper instantiated the behavioral OpenRAM Verilog model with
+`.VERBOSE(0)`. OpenSTA's structural Verilog reader rejected that parameter
+override.
+
+**Fix:** Preserve the functional wrapper unchanged and create a separate
+STA-only structural wrapper.
+
+### Issue: raw physical interface did not exactly match Liberty
+
+Raw Verilog/LEF expose 33 data bits and `spare_wen0`, while Liberty
+characterizes 32 data bits and omits `spare_wen0`.
+
+**Fix:** Use an STA abstraction matching the characterized Liberty contract:
+32-bit DIN/DOUT, 11-bit macro address with address bit 10 tied low, four
+write-mask bits, and normal clock/control pins. The resulting OpenSTA link
+completed with zero warnings and zero errors.
+
+### Issue: `report_clocks` unsupported in OpenSTA 3.1.0
+
+The initial STA script stopped because `report_clocks` was not a supported
+command in this build.
+
+**Fix:** Replace it with a portable `get_clocks` object audit. The real SS STA
+then completed with zero warnings, zero errors and zero reported violations.
+
+### Issue: initial clock-to-DOUT report found no path
+
+The original query started from the top-level clock port rather than the
+OpenSTA clock object / macro clock timing arc.
+
+**Fix:** Query from `[get_clocks clk]` or `u_sram/clk0`. OpenSTA then found the
+Liberty falling-edge clock-to-DOUT arc.
+
+### Issue: unconstrained electrical defaults produced 0.435333 ns DOUT delay
+
+This value was outside the intended characterized load-point interpretation
+and was not accepted as the signed-off read delay.
+
+**Fix:** Apply the three Liberty-characterized output loads explicitly.
+OpenSTA reproduced the Liberty values exactly:
+
+- 0.0017225 pF -> 0.446 ns
+- 0.0068900 pF -> 0.478 ns
+- 0.0275600 pF -> 0.606 ns
+
+Final SS OpenSTA results:
+
+- setup slack: +2.138 ns
+- hold slack: +0.056 ns
+- high pulse-width slack: 0.000 ns, MET at boundary
+- low pulse-width slack: 0.000 ns, MET at boundary
+- minimum-period slack: 0.000 ns at 2.241 ns
+- maximum characterized model frequency: 446.229362 MHz
+- OpenSTA warnings/errors: 0 / 0
+- reported timing violations: 0
+
+The 446.229362 MHz value is the characterized Liberty-model boundary, not a
+guard-banded operating recommendation.

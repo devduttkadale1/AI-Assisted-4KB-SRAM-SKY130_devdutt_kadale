@@ -1,0 +1,19 @@
+===== CHARACTERIZED POINT =====
+CLOCK_INPUT_TRANSITION_NS=0.005
+DOUT0_LOAD_PF=0.02756
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[0] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.606000    1.726500 ^ u_sram/dout0[0] (task5_4kb_sram)
+   0.000000    1.726500 ^ dout[0] (out)
+               1.726500   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+OPENSTA_DOUT_CHARPOINT_REACHED=PASS

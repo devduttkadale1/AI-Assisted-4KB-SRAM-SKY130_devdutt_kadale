@@ -1,0 +1,367 @@
+===== CLOCK OBJECT TO DOUT =====
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[0] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[0] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[0] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[10] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[10] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[10] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[11] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[11] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[11] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[12] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[12] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[12] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[13] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[13] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[13] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[14] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[14] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[14] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[15] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[15] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[15] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[16] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[16] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[16] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===== ANY MAX PATH TO DOUT =====
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[0] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[0] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[0] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[10] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[10] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[10] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[11] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[11] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[11] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[12] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[12] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[12] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[13] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[13] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[13] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[14] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[14] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[14] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[15] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[15] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[15] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[16] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[16] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[16] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+===== MACRO CLOCK PIN TO DOUT =====
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[0] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[0] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[0] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[10] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[10] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[10] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[11] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[11] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[11] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[12] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[12] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[12] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[13] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[13] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[13] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[14] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[14] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[14] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[15] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[15] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[15] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+Startpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Endpoint: dout[16] (output port)
+Path Group: unconstrained
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    1.120500 v u_sram/clk0 (task5_4kb_sram)
+   0.435333    1.555833 ^ u_sram/dout0[16] (task5_4kb_sram)
+   0.000000    1.555833 ^ dout[16] (out)
+               1.555833   data arrival time
+-----------------------------------------------------------------
+(Path is unconstrained)
+
+
+
+OPENSTA_DOUT_PROBE_REACHED=PASS

@@ -26,7 +26,7 @@ For the complete final report, see:
 | RTL wrapper integration | PASS — 13/13 |
 | Timing-model constraint analysis | PASS |
 | Limiting characterized model frequency | 446.229362 MHz at SS |
-| External STA engine | Not available / not claimed |
+| External STA engine | OpenSTA 3.1.0 PASS at SS; 0 warnings, 0 errors, 0 reported violations |
 | Clean-clone regeneration | PASS with GDS caveat |
 | Exact GDS physical reproducibility | Not claimed |
 | Final repository documentation | PASS |

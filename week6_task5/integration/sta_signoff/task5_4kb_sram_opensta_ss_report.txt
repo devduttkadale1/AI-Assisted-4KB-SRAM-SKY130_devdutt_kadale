@@ -1,0 +1,681 @@
+===== TASK 5 OPENSTA SS SIGNOFF =====
+LIBERTY=/home/devdutt/AI-Assisted-4KB-SRAM-SKY130/week6_task5/generated/task5_4kb_sram_SS_1p8V_25C.lib
+WRAPPER=/home/devdutt/AI-Assisted-4KB-SRAM-SKY130/week6_task5/integration/sta_signoff/task5_4kb_sram_sta_wrapper.v
+SDC=/home/devdutt/AI-Assisted-4KB-SRAM-SKY130/week6_task5/integration/sta_signoff/task5_4kb_sram_opensta_ss.sdc
+
+===== UNITS =====
+ time 1ns
+ capacitance 1pF
+ resistance 1kohm
+ voltage 1v
+ current 1mA
+ power 1mW
+ distance 1um
+
+===== CLOCKS =====
+CLOCK_COUNT=1
+CLOCK_OBJECTS=_5058f1e424630000_p_Clock
+
+===== SETUP / MAX CHECKS =====
+Startpoint: addr[0] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[0] (in)
+   0.000000    0.000000 ^ u_sram/addr0[0] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+
+===== HOLD / MIN CHECKS =====
+Startpoint: addr[0] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[0] (in)
+   0.000000    0.000000 ^ u_sram/addr0[0] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+
+===== MINIMUM PULSE WIDTH =====
+Pin: u_sram/clk0
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   u_sram/clk0
+               0.000000   open edge arrival time
+
+   1.120500    1.120500   clock clk (fall edge)
+   0.000000    1.120500   clock network delay (ideal)
+   0.000000    1.120500   u_sram/clk0
+   0.000000    1.120500   clock reconvergence pessimism
+               1.120500   close edge arrival time
+-----------------------------------------------------------------
+               1.120500   required pulse width (high)
+               1.120500   actual pulse width
+-----------------------------------------------------------------
+               0.000000   slack (MET)
+
+Pin: u_sram/clk0
+Check: sequential_clock_pulse_width
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   1.120500    1.120500   clock clk (fall edge)
+   0.000000    1.120500   clock network delay (ideal)
+   0.000000    1.120500   u_sram/clk0
+               1.120500   open edge arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   u_sram/clk0
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000   close edge arrival time
+-----------------------------------------------------------------
+               1.120500   required pulse width (low)
+               1.120500   actual pulse width
+-----------------------------------------------------------------
+               0.000000   slack (MET)
+
+
+
+===== MINIMUM PERIOD =====
+Pin: u_sram/clk0
+               2.241000   period
+              -2.241000   min period
+-----------------------------------------------------------------
+               0.000000   slack (MET)
+
+
+
+===== CLOCK MINIMUM PERIOD / FMAX =====
+clk period_min = 0.00 fmax = inf
+
+===== WORST SETUP PATHS =====
+Startpoint: addr[0] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[0] (in)
+   0.000000    0.000000 ^ u_sram/addr0[0] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[1] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[1] (in)
+   0.000000    0.000000 ^ u_sram/addr0[1] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[2] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[2] (in)
+   0.000000    0.000000 ^ u_sram/addr0[2] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[3] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[3] (in)
+   0.000000    0.000000 ^ u_sram/addr0[3] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[4] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[4] (in)
+   0.000000    0.000000 ^ u_sram/addr0[4] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[5] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[5] (in)
+   0.000000    0.000000 ^ u_sram/addr0[5] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[6] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[6] (in)
+   0.000000    0.000000 ^ u_sram/addr0[6] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[7] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[7] (in)
+   0.000000    0.000000 ^ u_sram/addr0[7] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[8] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[8] (in)
+   0.000000    0.000000 ^ u_sram/addr0[8] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+Startpoint: addr[9] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: max
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[9] (in)
+   0.000000    0.000000 ^ u_sram/addr0[9] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   2.241000    2.241000   clock clk (rise edge)
+   0.000000    2.241000   clock network delay (ideal)
+   0.000000    2.241000   clock reconvergence pessimism
+               2.241000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.103000    2.138000   library setup time
+               2.138000   data required time
+-----------------------------------------------------------------
+               2.138000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               2.138000   slack (MET)
+
+
+
+===== WORST HOLD PATHS =====
+Startpoint: addr[0] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[0] (in)
+   0.000000    0.000000 ^ u_sram/addr0[0] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[1] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[1] (in)
+   0.000000    0.000000 ^ u_sram/addr0[1] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[2] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[2] (in)
+   0.000000    0.000000 ^ u_sram/addr0[2] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[3] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[3] (in)
+   0.000000    0.000000 ^ u_sram/addr0[3] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[4] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[4] (in)
+   0.000000    0.000000 ^ u_sram/addr0[4] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[5] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[5] (in)
+   0.000000    0.000000 ^ u_sram/addr0[5] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[6] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[6] (in)
+   0.000000    0.000000 ^ u_sram/addr0[6] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[7] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[7] (in)
+   0.000000    0.000000 ^ u_sram/addr0[7] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[8] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[8] (in)
+   0.000000    0.000000 ^ u_sram/addr0[8] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+Startpoint: addr[9] (input port clocked by clk)
+Endpoint: u_sram (falling edge-triggered flip-flop clocked by clk)
+Path Group: clk
+Path Type: min
+
+      Delay        Time   Description
+-----------------------------------------------------------------
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000 ^ input external delay
+   0.000000    0.000000 ^ addr[9] (in)
+   0.000000    0.000000 ^ u_sram/addr0[9] (task5_4kb_sram)
+               0.000000   data arrival time
+
+   0.000000    0.000000   clock clk (rise edge)
+   0.000000    0.000000   clock network delay (ideal)
+   0.000000    0.000000   clock reconvergence pessimism
+               0.000000 ^ u_sram/clk0 (task5_4kb_sram)
+  -0.056000   -0.056000   library hold time
+              -0.056000   data required time
+-----------------------------------------------------------------
+              -0.056000   data required time
+              -0.000000   data arrival time
+-----------------------------------------------------------------
+               0.056000   slack (MET)
+
+
+
+===== CLOCK TO DOUT INTERFACE PATH =====
+No paths found.
+
+OPENSTA_SS_ANALYSIS_REACHED=PASS

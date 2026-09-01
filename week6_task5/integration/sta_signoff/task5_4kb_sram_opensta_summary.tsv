@@ -1,0 +1,17 @@
+metric	value	status
+opensta_version	3.1.0	PASS
+opensta_source_commit	737b52f33b66e4c2ccc3e3ef22c3adfe9aec8d09	PASS
+corner	SS_1p8V_25C	PASS
+clock_period_ns	2.241000	PASS
+model_ceiling_mhz	446.229362	PASS
+setup_slack_ns	2.138000	PASS
+hold_slack_ns	0.056000	PASS
+high_pulse_width_slack_ns	0.000000	PASS_BOUNDARY
+low_pulse_width_slack_ns	0.000000	PASS_BOUNDARY
+minimum_period_slack_ns	0.000000	PASS_BOUNDARY
+dout_delay_min_load_ns	0.446000	PASS
+dout_delay_mid_load_ns	0.478000	PASS
+dout_delay_max_load_ns	0.606000	PASS
+opensta_warning_count	0	PASS
+opensta_error_count	0	PASS
+opensta_reported_violation_count	0	PASS
