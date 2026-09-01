@@ -1,0 +1,59 @@
+|==============================================================================|
+|=========                      OpenRAM v1.2.49                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 09/01/2026 03:17:40
+Technology: sky130
+Total size: 32768 bits
+Word size: 32
+Words: 1024
+Banks: 1
+Write size: 8
+RW ports: 1
+R-only ports: 0
+W-only ports: 0
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+Words per row: 8
+Output files are: 
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lvs
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.sp
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.v
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lib
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.py
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.html
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.log
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lef
+/tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.gds
+** Submodules: 1566.2 seconds
+** Placement: 0.0 seconds
+** Routing: 3093.6 seconds
+** Verification: 0.0 seconds
+** SRAM creation: 4659.9 seconds
+SP: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.sp
+** Spice writing: 0.5 seconds
+DELAY: Writing stimulus...
+** DELAY: 3.6 seconds
+GDS: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.gds
+** GDS: 1.5 seconds
+LEF: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lef
+** LEF: 0.0 seconds
+LVS: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lvs.sp
+** LVS writing: 0.4 seconds
+LIB: Characterizing... 
+** Characterization: 8.6 seconds
+Config: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.py
+** Config: 0.0 seconds
+Datasheet: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.html
+** Datasheet: 0.0 seconds
+Verilog: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.v
+** Verilog: 0.0 seconds
+** End: 4674.9 seconds

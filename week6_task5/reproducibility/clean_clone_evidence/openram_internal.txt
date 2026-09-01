@@ -1,0 +1,59 @@
+[2026-09-01 03:17:40.142161] |==============================================================================|
+[2026-09-01 03:17:40.142320] |=========                      OpenRAM v1.2.49                       =========|
+[2026-09-01 03:17:40.142360] |=========                                                            =========|
+[2026-09-01 03:17:40.142382] |=========               VLSI Design and Automation Lab               =========|
+[2026-09-01 03:17:40.142400] |=========        Computer Science and Engineering Department         =========|
+[2026-09-01 03:17:40.142416] |=========            University of California Santa Cruz             =========|
+[2026-09-01 03:17:40.142431] |=========                                                            =========|
+[2026-09-01 03:17:40.142446] |=========          Usage help: openram-user-group@ucsc.edu           =========|
+[2026-09-01 03:17:40.142460] |=========        Development help: openram-dev-group@ucsc.edu        =========|
+[2026-09-01 03:17:40.142474] |=========                See LICENSE for license info                =========|
+[2026-09-01 03:17:40.142487] |==============================================================================|
+[2026-09-01 03:17:40.142508] ** Start: 09/01/2026 03:17:40
+[2026-09-01 03:17:40.142529] Technology: sky130
+[2026-09-01 03:17:40.142586] Total size: 32768 bits
+[2026-09-01 03:17:40.142613] Word size: 32
+Words: 1024
+Banks: 1
+[2026-09-01 03:17:40.142632] Write size: 8
+[2026-09-01 03:17:40.142647] RW ports: 1
+R-only ports: 0
+W-only ports: 0
+[2026-09-01 03:17:40.142662] DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+[2026-09-01 03:17:40.142676] DRC/LVS/PEX is disabled (check_lvsdrc=True to enable).
+[2026-09-01 03:17:40.142689] Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+[2026-09-01 03:17:40.142704] Words per row: 8
+[2026-09-01 03:17:40.142723] Output files are: 
+[2026-09-01 03:17:40.142738] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lvs
+[2026-09-01 03:17:40.142752] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.sp
+[2026-09-01 03:17:40.142765] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.v
+[2026-09-01 03:17:40.142778] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lib
+[2026-09-01 03:17:40.142791] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.py
+[2026-09-01 03:17:40.142804] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.html
+[2026-09-01 03:17:40.142817] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.log
+[2026-09-01 03:17:40.142829] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lef
+[2026-09-01 03:17:40.142842] /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.gds
+[2026-09-01 03:43:46.405106] ** Submodules: 1566.2 seconds
+[2026-09-01 03:43:46.430505] ** Placement: 0.0 seconds
+[2026-09-01 04:35:20.023292] ** Routing: 3093.6 seconds
+[2026-09-01 04:35:20.070003] ** Verification: 0.0 seconds
+[2026-09-01 04:35:20.070192] ** SRAM creation: 4659.9 seconds
+[2026-09-01 04:35:20.070295] SP: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.sp
+[2026-09-01 04:35:20.577569] ** Spice writing: 0.5 seconds
+[2026-09-01 04:35:20.577706] DELAY: Writing stimulus...
+[2026-09-01 04:35:24.200353] ** DELAY: 3.6 seconds
+[2026-09-01 04:35:24.575199] GDS: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.gds
+[2026-09-01 04:35:26.025560] ** GDS: 1.5 seconds
+[2026-09-01 04:35:26.025668] LEF: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lef
+[2026-09-01 04:35:26.039139] ** LEF: 0.0 seconds
+[2026-09-01 04:35:26.039237] LVS: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.lvs.sp
+[2026-09-01 04:35:26.427121] ** LVS writing: 0.4 seconds
+[2026-09-01 04:35:26.427206] LIB: Characterizing... 
+[2026-09-01 04:35:35.035694] ** Characterization: 8.6 seconds
+[2026-09-01 04:35:35.037105] Config: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.py
+[2026-09-01 04:35:35.037210] ** Config: 0.0 seconds
+[2026-09-01 04:35:35.047302] Datasheet: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.html
+[2026-09-01 04:35:35.051030] ** Datasheet: 0.0 seconds
+[2026-09-01 04:35:35.051096] Verilog: Writing to /tmp/task5_4kb_sram_cleanclone_repro/generated/task5_4kb_sram.v
+[2026-09-01 04:35:35.051245] ** Verilog: 0.0 seconds
+[2026-09-01 04:35:35.061674] ** End: 4674.9 seconds

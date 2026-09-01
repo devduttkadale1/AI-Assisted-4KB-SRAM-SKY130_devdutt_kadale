@@ -1,0 +1,25 @@
+TASK5 GDS REPRODUCIBILITY NOTE
+
+The clean-clone OpenRAM regeneration completed successfully and emitted a GDS
+with the same macro dimensions and the same set of 194 structure names.
+
+Comparison against the committed signed-off GDS found:
+- 193 child structures identical after excluding GDS timestamps.
+- Only the top-level structure task5_4kb_sram differed.
+- Exact flattened/hierarchical geometry equality was NOT established.
+- Therefore bit-for-bit or exact physical-layout reproducibility is NOT claimed.
+
+Independent clean-clone checks established:
+- Verilog: byte-identical.
+- TT/SS/FF Liberty: byte-identical.
+- LEF: identical macro size, 87-pin set, pin attributes, pin geometry, and OBS.
+- SPICE: identical 103-subcircuit names, ports, bodies, and global statements.
+- Functional regression on the fresh generated Verilog: 144 PASS / 0 FAIL.
+
+The previously signed-off committed GDS retains its existing Magic DRC=0 and
+clean Netgen LVS evidence. Those expensive sign-off runs were not repeated
+solely because the clean-clone generator produced a different top-level
+physical realization.
+
+Reproducibility is therefore claimed for successful generation and the
+logical/electrical/abstract macro contract, not exact GDS physical identity.

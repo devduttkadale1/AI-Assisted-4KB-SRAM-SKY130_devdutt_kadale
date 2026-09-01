@@ -139,8 +139,8 @@ iverilog \
     -g2012 \
     -s task5_4kb_regression_tb \
     -o "$WORK_DIR/task5_4kb_regression.vvp" \
-    "$OUT_DIR/task5_4kb_sram.v" \
     "$TB_SRC" \
+    "$OUT_DIR/task5_4kb_sram.v" \
     >"$COMPILE_LOG" 2>&1
 
 vvp "$WORK_DIR/task5_4kb_regression.vvp" >"$REG_LOG" 2>&1
