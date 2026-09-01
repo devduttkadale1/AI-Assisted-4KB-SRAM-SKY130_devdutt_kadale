@@ -1,6 +1,6 @@
-# Week 6 Task 5 - Clean-Clone Reproducibility
+# Week 6 Task 5 — Clean-Clone Reproducibility
 
-This flow regenerates and verifies the 1024-word x 32-bit single-port SKY130 SRAM from a fresh clone.
+This flow regenerates and verifies the 1024-word × 32-bit single-port SKY130 SRAM from a fresh repository clone.
 
 ## Requirements
 
@@ -31,23 +31,65 @@ Override with:
 
 `export TASK5_REPRO_OUT=/some/writable/path`
 
-## Required fresh outputs
+## Required generated outputs
 
-The flow checks non-empty GDS, LEF, Verilog, SPICE, and TT/SS/FF Liberty files.
+The flow requires non-empty:
 
-It also checks the generated OpenRAM interface and runs the existing functional regression directly against the freshly generated Verilog model.
+- GDS
+- LEF
+- Verilog
+- SPICE
+- TT Liberty
+- SS Liberty
+- FF Liberty
+
+It verifies the raw OpenRAM interface and runs the functional regression against the freshly generated Verilog.
 
 Required regression result:
 
-`TOTAL_PASS = 144`
-`TOTAL_FAIL = 0`
-`TASK5_FUNCTIONAL_REGRESSION = PASS`
+- `TOTAL_PASS = 144`
+- `TOTAL_FAIL = 0`
+- `TASK5_FUNCTIONAL_REGRESSION = PASS`
 
-Required final gates:
+## Icarus source ordering
 
-`FRESH_GENERATED_VIEW_GATE=PASS`
-`FRESH_INTERFACE_GATE=PASS`
-`FRESH_FUNCTIONAL_REGRESSION_GATE=PASS`
-`TASK5_CLEAN_CLONE_REPRODUCIBILITY=PASS`
+The testbench must be compiled before the generated OpenRAM Verilog model.
 
-The clean-clone flow does not rerun final Magic DRC, Netgen LVS, extraction, or the previously documented full-macro C-extracted transient.
+The clean-clone investigation proved that compiling the model first caused a timescale/source-order issue and produced `x` read data for all 144 checks.
+
+The reproducibility script therefore compiles:
+
+1. regression testbench
+2. generated OpenRAM Verilog
+
+Corrected result:
+
+- 144 PASS
+- 0 FAIL
+
+## Reproducibility scope
+
+The successful clean-clone run established:
+
+- Verilog byte identity
+- TT/SS/FF Liberty byte identity
+- LEF semantic equivalence
+- SPICE semantic equivalence
+- fresh functional regression PASS
+
+Exact GDS bitwise or physical-layout reproducibility is **not claimed**.
+
+The fresh GDS had the same set of 194 structure names, but the top-level macro structure differed while 193 child structures matched.
+
+The committed authoritative GDS retains its existing:
+
+- Magic DRC = 0
+- clean Netgen LVS
+
+The clean-clone flow intentionally does not rerun final Magic DRC, Netgen LVS, extraction, R108 full-macro transient, or R109 characterization.
+
+See:
+
+`clean_clone_evidence/`
+
+for the preserved evidence and GDS reproducibility note.

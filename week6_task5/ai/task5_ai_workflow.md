@@ -2,133 +2,104 @@
 
 ## Objective
 
-Generate and sign off a 1024-word × 32-bit single-port 4 KB SRAM using OpenRAM v1.2.49 on SKY130.
+Generate and sign off a 1024-word × 32-bit single-port 4 KB SRAM using OpenRAM/SKY130.
 
-The workflow used AI assistance for configuration review, controlled debugging, functional regression planning, DRC/LVS diagnosis, extraction analysis, evidence packaging, and repository documentation.
+## Engineering rules
 
-## Engineering rules used during Task 5
+The workflow used the following controls:
 
-- Do not advance while the current verification stage has an unresolved blocker.
-- Diagnose failures using read-only or targeted evidence before modifying source.
-- Warn before computationally expensive OpenRAM, Magic, extraction, or Netgen operations.
-- Preserve authoritative generated artifacts and hashes.
-- Do not manually waive DRC or LVS violations.
-- Do not manually rename, join, or force-connect unexplained nets to obtain an LVS match.
-- Prove a suspected root cause at the smallest useful hierarchy before applying a broader correction.
-- Keep failed forensic experiments separate from the final sign-off recipe.
-- Treat Netgen execution success separately from LVS electrical equivalence.
-- Treat intermediate hierarchical mismatches separately from the final top-level LVS verdict.
+- do not advance while a current-stage blocker remains unresolved
+- use read-only diagnostics before destructive or expensive reruns
+- explicitly identify heavy runs before execution
+- do not waive Magic DRC violations
+- do not accept LVS property mismatches as clean LVS
+- do not manually join or rename unexplained nets to force LVS
+- preserve authoritative source/design artifacts
+- separate forensic experiments from final sign-off evidence
+- distinguish C-extracted from RC-extracted results
+- do not fabricate timing when a measured transition precedes the selected trigger
+- avoid repeating computationally expensive work without contradictory evidence
 
-## Final SRAM configuration
+## Completed workflow
 
-Authoritative configuration:
+1. Finalize OpenRAM 1024 × 32 SKY130 configuration.
+2. Generate GDS, LEF, Verilog, SPICE, and Liberty views.
+3. Verify logical and spare-aware raw interface.
+4. Run automated 144-vector functional regression.
+5. Reach true Magic DRC = 0.
+6. Correct extraction hierarchy issues without manual electrical forcing.
+7. Reach final Netgen LVS unique match with property errors = 0.
+8. Produce corrected C-extracted hierarchy.
+9. Evaluate full-macro extracted transient feasibility.
+10. Build and validate targeted extracted characterization path.
+11. Characterize TT, SS, and FF timing/leakage/energy.
+12. Compare targeted results with generated Liberty timing.
+13. Build logical 1024 × 32 wrapper around spare-aware raw macro.
+14. Run 13-case integration regression.
+15. Evaluate timing constraints directly from OpenRAM Liberty.
+16. Package compact evidence and manifests.
+17. Audit OpenRAM Liberty-corner provenance.
+18. Make runnable scripts portable.
+19. Perform genuine clean-clone OpenRAM regeneration.
+20. Diagnose Icarus source-order/timescale issue in fresh regression.
+21. Correct reproducibility script and prove fresh regression = 144/144.
+22. Audit fresh Verilog/Liberty byte identity, LEF semantic identity, SPICE semantic identity, and GDS nondeterminism.
+23. Produce final documentation and sign-off summary.
 
-`../config/task5_4kb_sram.py`
+## Important final interpretations
 
-Key organization:
+### Extraction
 
-- 1024 words
-- 32 logical data bits
-- 4 KB logical capacity
-- single-port 1RW
-- words_per_row = 8
-- one spare row
-- one spare column
-- SKY130
-- 1.8 V
-- 25 C
+The final extracted hierarchy contains capacitances but no extracted resistors.
 
-## Generated implementation views
+Use the term:
 
-The final OpenRAM generation produced:
+**C-extracted**
 
-- GDS
-- LEF
-- Verilog
-- SPICE
-- TT Liberty
-- SS Liberty
-- FF Liberty
+Do not call it RC-extracted.
 
-Repository location:
+### Full-macro simulation
 
-`../generated/`
+The full C-extracted macro transient was computationally impractical in the available WSL environment.
 
-## Functional regression
+This is a feasibility result, not a functional SRAM failure.
 
-The automated regression verifies:
+### Targeted characterization
 
-- first address
-- last address
-- representative row/column boundary addresses
-- all-zero data
-- all-one data
-- alternating data patterns
-- walking-1
-- walking-0
-- deterministic pseudorandom patterns
+R109 is a deliberately reduced extracted signal path. It is appropriate for practical TT/SS/FF measurements but is not equivalent to a complete full-macro extracted characterization.
 
-Final result:
+### Liberty timing
 
-- TOTAL_PASS = 144
-- TOTAL_FAIL = 0
-- TASK5_FUNCTIONAL_REGRESSION = PASS
+The limiting generated Liberty model is SS:
 
-Evidence:
+- minimum period = 2.241 ns
+- model frequency ceiling = 446.229362 MHz
 
-`../regression/`
+No guard-band is implied.
 
-## Physical sign-off workflow
+### Timing signoff
 
-### Magic DRC
+OpenSTA/OpenROAD was not available.
 
-The authoritative production GDS completed Magic DRC with:
+Timing constraints were therefore evaluated directly from generated OpenRAM Liberty and a timing-transparent wrapper.
 
-- Total DRC errors found: 0
+Do not claim a separate external STA engine passed.
 
-Evidence:
+### Clean-clone reproducibility
 
-`../verification/drc/`
+Fresh generation succeeded and fresh Verilog regression passed 144/144 after correcting the Icarus compile order.
 
-### Magic extraction
+Logical/electrical/abstract equivalence was proven.
 
-The corrected extraction flow generated the final hierarchical top-level extracted SPICE:
+Exact GDS physical identity was not proven and is not claimed.
 
-`../verification/extraction/task5_4kb_sram_extracted.spice`
+## Evidence locations
 
-SHA-256:
-
-`35574eb6b6027fdb89d84d7d78f1e77d4130391c574c6e92cebbfc005a1b3a5b`
-
-### Netgen LVS
-
-Final top-level result:
-
-- Layout devices: 270248
-- Reference devices: 270248
-- Layout nets: 69617
-- Reference nets: 69617
-- Property errors: 0
-- Final result: Circuits match uniquely.
-
-Evidence:
-
-`../verification/lvs/`
-
-## Remaining Task 5 workflow
-
-The following stages remain after this repository checkpoint:
-
-1. Targeted extracted simulations
-2. TT / SS / FF characterization summary
-3. Read access timing
-4. Write timing
-5. Leakage power
-6. Read energy
-7. Write energy
-8. Comparison with OpenRAM Liberty
-9. Hard-macro controller integration
-10. STA
-11. Maximum safe operating frequency
-12. Clean-clone reproducibility
-13. Final project documentation
+- configuration: `../config/`
+- generated views: `../generated/`
+- regression: `../regression/`
+- physical verification: `../verification/`
+- characterization: `../characterization/`
+- integration: `../integration/`
+- reproducibility: `../reproducibility/`
+- final signoff: `../docs/final_signoff.md`

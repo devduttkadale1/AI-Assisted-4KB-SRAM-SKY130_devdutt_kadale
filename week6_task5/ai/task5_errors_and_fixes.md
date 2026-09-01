@@ -234,3 +234,102 @@ The final result does not depend on:
 - artificial supply ties
 - rejected custom replica-column flattening
 - modification of the production GDS to force verification success
+
+
+---
+
+## 10. Full-macro C-extracted transient computational limit
+
+### Symptom
+
+The full-macro R108 transient did not complete within practical WSL resource limits.
+
+### Evidence
+
+The run was manually terminated after approximately 19 h 46 min with very high memory and swap usage.
+
+### Resolution
+
+The result was classified as a computational feasibility limit rather than an SRAM functional failure.
+
+The unchanged full-macro run was not repeated.
+
+A smaller physically extracted signal path was used for practical characterization.
+
+---
+
+## 11. Targeted characterization semantics
+
+### Issue
+
+The reduced extracted path does not contain the complete macro wordline driver and all full-macro loading.
+
+### Resolution
+
+Results are explicitly labeled targeted **C-extracted** measurements.
+
+No claim is made that they are full-macro RC-extracted values.
+
+For FF, DOUT crossed 50% before SEN crossed 50%.
+
+Therefore SEN50→DOUT50 was not reported as an artificial zero delay; WL50→DOUT50 and the pre-resolution timing relationship were reported instead.
+
+---
+
+## 12. Clean-clone Icarus regression failure
+
+### Symptom
+
+Fresh OpenRAM generation completed successfully, but the first scripted clean-clone regression reported:
+
+- 0 PASS
+- 144 FAIL
+- read data = `x`
+
+### Root cause
+
+The reproducibility script compiled the generated OpenRAM model before the SystemVerilog testbench.
+
+The generated model does not provide the same explicit timescale context as the testbench, and Icarus emitted a mixed-timescale warning.
+
+### Proof
+
+The freshly generated Verilog was byte-identical to both the committed generated model and the regression model.
+
+Recompiling the same fresh Verilog with the testbench first produced:
+
+- 144 PASS
+- 0 FAIL
+
+### Resolution
+
+The reproducibility script was changed to compile the testbench before the generated model.
+
+No OpenRAM regeneration rerun was required.
+
+---
+
+## 13. Clean-clone GDS nondeterminism
+
+### Symptom
+
+Fresh and committed GDS hashes differed.
+
+### Investigation
+
+- both contained 194 structure names
+- 193 child structures matched
+- only top-level `task5_4kb_sram` differed
+- exact flattened/hierarchical top-level geometry identity was not established
+- Verilog and TT/SS/FF Liberty were byte-identical
+- LEF macro contract was semantically identical
+- SPICE hierarchy/topology was semantically identical
+- fresh functional regression passed 144/144
+
+### Resolution
+
+Exact GDS bitwise or physical identity is not claimed.
+
+The clean-clone result is classified as successful generation with logical/electrical/abstract equivalence and documented top-level GDS nondeterminism.
+
+The already signed-off committed GDS remains the authoritative physical artifact.
