@@ -917,8 +917,8 @@ The internship project progressed through three major phases.
 Clone the repository.
 
 ```bash
-git clone https://github.com/your-username/AI-Assisted-4KB-SRAM-SKY130.git
-cd AI-Assisted-4KB-SRAM-SKY130
+git clone https://github.com/devduttkadale1/AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale.git
+cd AI-Assisted-4KB-SRAM-SKY130_devdutt_kadale
 ```
 
 ### Explore the Repository
