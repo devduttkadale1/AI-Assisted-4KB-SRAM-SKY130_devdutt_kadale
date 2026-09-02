@@ -27,6 +27,18 @@
 > - **Current Status:** **Task 5 complete — generation, functional regression, physical sign-off, C-extracted TT/SS/FF characterization, RTL integration, OpenSTA STA, reproducibility, and final documentation closed**
 > - **Focus:** AI-assisted SRAM design, verification, physical validation, and documentation
 
+## ♻️ Reproduce This Project
+
+Want to clone, regenerate, and verify the final Week 6 Task 5 SRAM?
+
+➡️ **[Step-by-step clone and reproducibility guide](week6_task5/reproducibility/README.md)**
+
+The guide covers environment setup, OpenRAM/SKY130 paths, SRAM regeneration,
+the 144-test functional regression, physical-signoff evidence,
+characterization, integration, OpenSTA STA, and reproducibility limitations.
+
+---
+
 ## Task 5 — 1024 × 32 SRAM Sign-off Checkpoint
 
 The Week 6 Task 5 target is a **1024-word × 32-bit single-port SRAM (4 KB)** generated with **OpenRAM v1.2.49** using **SKY130**.
