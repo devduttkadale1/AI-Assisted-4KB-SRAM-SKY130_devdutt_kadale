@@ -1,0 +1,158 @@
+===== WEEK 5 TASK 4 — GOAL B SOURCE EVIDENCE =====
+captured_at=2026-09-03T15:30:48+00:00
+project_branch=week5-task4-goal-b
+project_head=6babbf0e79678ff881ad7132f72dbd313c4be219
+week6_task5_final=6babbf0e79678ff881ad7132f72dbd313c4be219
+openram_version=1.2.49
+openram_head=9e0b05ad971085bef64cec2a7dc50bef535874a8
+
+===== PRISTINE DEFAULT DECODER =====
+   211	    # These are the default modules that can be over-riden
+   212	    bank_select = "bank_select"
+   213	    bitcell_array = "bitcell_array"
+   214	    bitcell = "bitcell"
+   215	    buf_dec = "pbuf"
+   216	    column_decoder = "column_decoder"
+   217	    column_mux_array = "column_mux_array"
+   218	    control_logic = "control_logic"
+   219	    decoder = "hierarchical_decoder"
+   220	    delay_chain = "delay_chain"
+   221	    dff_array = "dff_array"
+
+===== PRISTINE MINIMUM-ROW HEURISTIC =====
+   166	    def amend_words_per_row(self, tentative_num_rows, words_per_row):
+   167	        """
+   168	        This picks the number of words per row more accurately by limiting
+   169	        it to a minimum and maximum.
+   170	        """
+   171	        # Recompute the words per row given a hard max
+   172	        if(not OPTS.is_unit_test and tentative_num_rows > 512):
+   173	            debug.check(tentative_num_rows * words_per_row <= 4096,
+   174	                        "Number of words exceeds 2048")
+   175	            return int(words_per_row * tentative_num_rows / 512)
+   176
+   177	        # Recompute the words per row given a hard min
+   178	        if (not OPTS.is_unit_test and tentative_num_rows < 16):
+   179	            debug.check(tentative_num_rows * words_per_row >= 16,
+   180	                        "Minimum number of rows is 16, but given {0}".format(tentative_num_rows))
+   181	            return int(words_per_row * tentative_num_rows / 16)
+   182
+   183	        return words_per_row
+
+===== PRISTINE PORT ADDRESS DECODER INSTANTIATION =====
+   159	    def add_modules(self):
+   160
+   161	        self.row_decoder = factory.create(module_type="decoder",
+   162	                                          num_outputs=self.num_rows)
+   163
+   164	        self.wordline_driver_array = factory.create(module_type="wordline_driver_array",
+   165	                                                    rows=self.num_rows,
+   166	                                                    cols=self.num_cols)
+   191	    def create_row_decoder(self):
+   192	        """  Create the hierarchical row decoder  """
+   193
+   194	        self.row_decoder_inst = self.add_inst(name="row_decoder",
+   195	                                              mod=self.row_decoder)
+   196
+   197	        temp = []
+   198	        for bit in range(self.addr_size):
+   199	            temp.append("addr_{0}".format(bit))
+   200	        for row in range(self.num_rows):
+   201	            temp.append("dec_out_{0}".format(row))
+   202	        temp.extend(["vdd", "gnd"])
+   203	        self.connect_inst(temp)
+
+===== PRISTINE HIERARCHICAL DECODER LIMIT =====
+    93	    def determine_predecodes(self, num_inputs):
+    94	        """
+    95	        Determines the number of 2:4, 3:8 and 4:16 pre-decoders
+    96	        needed based on the number of inputs
+    97	        """
+    98	        if (num_inputs == 2):
+    99	            return (1, 0, 0)
+   100	        elif (num_inputs == 3):
+   101	            return(0, 1, 0)
+   102	        elif (num_inputs == 4):
+   103	            return(2, 0, 0)
+   104	        elif (num_inputs == 5):
+   105	            return(1, 1, 0)
+   106	        elif (num_inputs == 6):
+   107	            return(3, 0, 0)
+   108	        elif (num_inputs == 7):
+   109	            return(2, 1, 0)
+   110	        elif (num_inputs == 8):
+   111	            return(1, 2, 0)
+   112	        elif (num_inputs == 9):
+   113	            return(0, 3, 0)
+   114	        elif (num_inputs == 10):
+   115	            return(0, 2, 1)
+   116	        elif (num_inputs == 11):
+   117	            return(0, 1, 2)
+   118	        elif (num_inputs == 12):
+   119	            return(0, 0, 3)
+   120	        else:
+   121	            debug.error("Invalid number of inputs for hierarchical decoder", -1)
+   122
+   153	    def setup_layout_constants(self):
+   154	        """ Calculate the overall dimensions of the hierarchical decoder """
+   155
+   156	        # If we have 4 or fewer rows, the predecoder is the decoder itself
+   157	        if self.num_inputs>=4:
+   158	            self.total_number_of_predecoder_outputs = 4 * self.no_of_pre2x4 + 8 * self.no_of_pre3x8 + 16 * self.no_of_pre4x16
+   159	        else:
+   160	            self.total_number_of_predecoder_outputs = 0
+   161	            debug.error("Not enough rows ({}) for a hierarchical decoder. Non-hierarchical not supported yet.".format(self.num_inputs),
+   162	                        -1)
+   163
+
+===== ORIGINAL TRACKED EXACT-2-WORD CONFIG =====
+     1	# -----------------------------
+     2	# Task 4 OpenRAM Configuration
+     3	# -----------------------------
+     4
+     5	word_size = 16
+     6	num_words = 2
+     7
+     8	tech_name = "sky130"
+     9
+    10	process_corners = ["TT"]
+    11	supply_voltages = [1.8]
+    12	temperatures = [25]
+    13
+    14	output_path = "task4/results"
+    15
+    16	output_name = "task4_sram_2x16"
+    17
+    18	route_supplies = True
+    19
+    20	check_lvsdrc = False
+
+===== CURRENT HISTORICAL INVALID TINY CONFIG =====
+1:word_size = 16
+2:num_words = 2
+5:words_per_row = 8
+10:check_lvsdrc = False
+12:output_name = "sram_2wordx16"
+
+===== MISLEADING GOLDEN TEST IDENTITY =====
+**************************************************
+* OpenRAM generated memory.
+* Words: 16
+* Data bits: 2
+* Banks: 1
+* Column mux: 1:1
+* Trimmed: False
+* LVS: False
+**************************************************
+
+===== HISTORICAL task4_sram_2x16 TRUE IDENTITY =====
+5:word_size = 16
+6:num_words = 16
+7:words_per_row = 2
+9:num_spare_rows = 1
+10:num_spare_cols = 1
+20:output_name = "task4_sram_2x16"
+3:* Words: 16
+4:* Data bits: 16
+5:* Banks: 1
+6:* Column mux: 2:1

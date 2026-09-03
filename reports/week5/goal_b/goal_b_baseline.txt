@@ -1,0 +1,23 @@
+===== WEEK 5 TASK 4 GOAL-B BASELINE =====
+DATE=2026-09-03T15:13:25+00:00
+BRANCH=week5-task4-goal-b
+HEAD=6babbf0e79678ff881ad7132f72dbd313c4be219
+FINAL_TASK5_TAG=6babbf0e79678ff881ad7132f72dbd313c4be219
+
+===== WORKTREE =====
+?? reports/week5/goal_b/
+
+===== TASK4 CONFIGS =====
+openram/configs/myconfig_task4.py:5:word_size = 16
+openram/configs/myconfig_task4.py:6:num_words = 16
+openram/configs/myconfig_task4.py:20:check_lvsdrc = False
+openram/archive_2x16/task4_sram_2x16.py:5:word_size = 16
+openram/archive_2x16/task4_sram_2x16.py:6:num_words = 16
+openram/archive_2x16/task4_sram_2x16.py:7:words_per_row = 2
+openram/archive_2x16/task4_sram_2x16.py:24:check_lvsdrc = False
+
+===== CURRENT REGRESSION =====
+11:FAIL Expected=00 Got=xx
+18:FAIL Expected=11 Got=xx
+57:PASS = 0
+58:FAIL = 2
