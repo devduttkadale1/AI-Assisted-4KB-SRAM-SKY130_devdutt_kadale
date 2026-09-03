@@ -87,6 +87,22 @@ implementation and its major verification milestones.
 **Final OpenRAM-generated 1024 × 32 single-port SRAM macro (4 KB) viewed in KLayout.**
 The committed GDS is the authoritative physical implementation used for Task 5 sign-off.
 
+
+### 1B. Physical Layout Detail — Bitcell Array & Peripheral Interface
+
+<p align="center">
+  <img src="week6_task5/docs/screenshots/01b_task5_4kb_klayout_array_periphery_zoom.png" width="900" alt="Task 5 4 KB SRAM KLayout Array and Peripheral Circuitry Zoom">
+</p>
+
+**Zoomed physical-layout view of the 4 KB SRAM showing the interface between the dense bitcell array and the surrounding peripheral circuitry.**
+
+This view highlights the regular memory-array structure together with the adjacent
+row/column peripheral circuitry and routing used to support the compiled SRAM macro.
+
+> This image is a physical-layout detail view of the same signed-off GDS and does not
+> represent an additional DRC, LVS, extraction, or timing run.
+
+
 ---
 
 ### 2. Automated Functional Regression
