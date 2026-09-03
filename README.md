@@ -275,8 +275,8 @@ The repository documents the complete development flow of the internship project
 | Integrated 1-Bit SRAM Verification | ✅ Complete |
 | OpenRAM Environment Setup | ✅ Complete |
 | Task 4 — OpenRAM Investigation | ✅ Complete |
-| Task 4 — 16 × 16 Intermediate Macro | ✅ Generated / Validated |
-| Task 4 — 2 × 16 Normal-Flow Limitation | ✅ Documented |
+| Task 4 — 16 × 16 Intermediate Macro | ✅ Generated / Inspected (historical) |
+| Task 4 — 2 × 16 Normal-Flow Limitation | ✅ Closed — `INFEASIBLE_IN_NORMAL_OPENRAM_FLOW` |
 | Task 5 — 1024 × 32 Architecture | ✅ Established |
 | Task 5 — Configuration | ✅ Complete |
 | Task 5 — 1024 × 32 Compilation | ✅ Complete |
@@ -288,6 +288,15 @@ The repository documents the complete development flow of the internship project
 | Task 5 — Final Documentation / AI Evidence | ✅ Complete |
 | Current Validated Macro | **1024 × 32 SRAM Macro (4 KB)** |
 | Final Project Target | **1024 × 32 SRAM Macro (4 KB)** |
+
+> **Week 5 / Task 4 closure:** The literal exact **2-word × 16-bit**
+> single-port target was proven infeasible in the normal unmodified
+> OpenRAM v1.2.49/SKY130 flow because the default hierarchical decoder
+> does not support the required tiny row-decoder organization. Task 4 is
+> therefore closed as **`INFEASIBLE_IN_NORMAL_OPENRAM_FLOW`**. The
+> historical 16 × 16 macro is retained only as intermediate engineering
+> evidence and is not represented as the requested exact 2 × 16 design.
+
 
 > **Current Scope**
 >
