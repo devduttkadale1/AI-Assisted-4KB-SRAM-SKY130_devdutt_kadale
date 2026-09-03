@@ -70,19 +70,37 @@ Remaining:
 
 ## Task 4 – Week 5
 
-**Status:** ✅ Completed
+**Status:** ✅ Engineering closure complete
+
+**Final Outcome:** `INFEASIBLE_IN_NORMAL_OPENRAM_FLOW`
+
+The literal Task 4 / Goal-B target was an exact **2-word × 16-bit,
+single-port SKY130 SRAM** using the normal unmodified OpenRAM v1.2.49
+flow.
+
+A dedicated source-level feasibility investigation proved that the
+required tiny row-decoder organization is unsupported by the normal
+OpenRAM hierarchical decoder path. The exact requested 2 × 16 macro
+was therefore **not generated**, and no different SRAM organization is
+represented as satisfying that literal target.
 
 ### Completed Activities
 
-- Installed OpenRAM v1.2.49
-- Configured SKY130A PDK
-- Generated SRAM macro
-- Inspected generated GDS in Magic
-- Executed DRC workflow
-- Executed LVS workflow
-- Generated GDS, LEF, SPICE, Verilog, Liberty, HTML reports
-- Documented OpenRAM compiler limitations
-- Updated repository documentation
+- Installed and configured OpenRAM v1.2.49 with SKY130A.
+- Generated and inspected a historical 16-word × 16-bit intermediate macro.
+- Preserved its GDS, LEF, SPICE, Verilog, Liberty, HTML, configuration and logs.
+- Executed historical Magic DRC and Netgen LVS workflows.
+- Documented that the historical macro was **not DRC clean** and did **not** achieve clean macro-level LVS.
+- Audited misleading historical `2x16` artifact names and established their true organizations.
+- Investigated the literal exact 2-word × 16-bit target using pristine OpenRAM source.
+- Proved the normal-flow tiny-decoder architectural limitation.
+- Preserved the source evidence and final engineering conclusion under `reports/week5/goal_b/`.
+- Closed Goal B as `INFEASIBLE_IN_NORMAL_OPENRAM_FLOW`.
+
+Stages B2 through B9 for the literal exact target were intentionally
+not executed after the B1 feasibility gate proved that a legitimate
+exact macro cannot be produced without modifying the OpenRAM
+architecture.
 
 ### Task 5 - Week 6
 Status: ✅ Complete — final 1024 × 32 single-port 4 KB SRAM sign-off closed

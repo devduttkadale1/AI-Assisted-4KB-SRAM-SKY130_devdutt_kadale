@@ -22,7 +22,7 @@
 > - **Internship:** VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
 > - **Technology:** SKY130A Open-Source PDK
 > - **Design Flow:** **Xschem → NGSpice → Magic VLSI → Netgen LVS → OpenRAM**
-> - **Validated Intermediate Macro:** **16 × 16 SRAM Macro (256-bit)**
+> - **Historical Intermediate Macro:** **16 × 16 SRAM Macro (256-bit, generated/inspected)**
 > - **Current Target:** **1024 × 32 SRAM Macro (4 KB) — Task 5 / Week 6**
 > - **Current Status:** **Task 5 complete — generation, functional regression, physical sign-off, C-extracted TT/SS/FF characterization, RTL integration, OpenSTA STA, reproducibility, and final documentation closed**
 > - **Focus:** AI-assisted SRAM design, verification, physical validation, and documentation
@@ -210,7 +210,7 @@ boundary-address accesses, representative data patterns, and byte-write masking.
 | Category | Details |
 |-----------|---------|
 | 🎯 Project Goal | AI-Assisted 4KB SRAM Design using SKY130 PDK and OpenRAM |
-| 🧪 Validated Intermediate Macro | 16 × 16 SRAM Macro (256-bit) |
+| 🧪 Historical Intermediate Macro | 16 × 16 SRAM Macro (256-bit, generated/inspected) |
 | 🎯 Final Target | 1024 × 32 SRAM Macro (4 KB) |
 | 📌 Current Phase | **Task 5 COMPLETE — full 1024 × 32 SRAM sign-off, characterization, integration, OpenSTA STA, and reproducibility closed** |
 | 🛠 EDA Tools | Xschem, NGSpice, Magic VLSI, Netgen, OpenRAM |
@@ -301,7 +301,7 @@ The repository documents the complete development flow of the internship project
 > **Current Scope**
 >
 > The repository currently contains the completed circuit-level design and
-> verification work, the validated 16 × 16 OpenRAM intermediate macro from
+> verification work, the historical generated/inspected 16 × 16 OpenRAM intermediate macro from
 > Task 4, and the documented investigation of the requested 2 × 16
 > organization.
 >
@@ -348,7 +348,7 @@ The custom SRAM bitcell layout and the generated OpenRAM SRAM macro were inspect
 
 ## OpenRAM SRAM Generation
 
-The OpenRAM compiler was configured with the SKY130A technology to generate and validate an intermediate **16 × 16 SRAM macro** during Task 4.
+The OpenRAM compiler was configured with the SKY130A technology to generate and inspect an intermediate **16 × 16 SRAM macro** during Task 4.
 
 - ✅ Installed and configured OpenRAM v1.2.49 with the SKY130A technology.
 - ✅ Generated the **16 × 16 SRAM macro** during Task 4.
@@ -391,7 +391,7 @@ The integrated verification demonstrates correct interaction between the SRAM bi
 
 ![Final 16 × 16 SRAM Macro](reports/week5/screenshots/outputs/task4_sram_16x16_gds_layout_magic.png)
 
-The image above shows the validated **16 × 16 Task 4 intermediate macro**. The final Task 5 deliverable is the **1024 × 32 single-port 4 KB SRAM**, with authoritative generated views and sign-off evidence under [`week6_task5/`](week6_task5/).
+The image above shows the historical generated/inspected **16 × 16 Task 4 intermediate macro**. The final Task 5 deliverable is the **1024 × 32 single-port 4 KB SRAM**, with authoritative generated views and sign-off evidence under [`week6_task5/`](week6_task5/).
 
 > **Note**
 >
@@ -429,7 +429,7 @@ N --> O[GDSII • LEF • SPICE • Verilog • Liberty]
 
 # SRAM Architecture
 
-The target and final compiler-generated deliverable of this project is a **1024 × 32 single-port 4 KB Static Random Access Memory (SRAM)** using the **SKY130A Open-Source PDK**. The validated **16 × 16 SRAM macro** is retained as the Task 4 intermediate milestone.
+The target and final compiler-generated deliverable of this project is a **1024 × 32 single-port 4 KB Static Random Access Memory (SRAM)** using the **SKY130A Open-Source PDK**. The historical **16 × 16 SRAM macro** is retained as a generated/inspected Task 4 intermediate milestone, not as clean macro-level DRC/LVS sign-off.
 
 <p align="center">
   <img src="assets/images/sram_architecture.png" width="900" alt="SRAM Architecture">
@@ -893,7 +893,7 @@ The following open-source tools, technologies, documentation, and educational re
 
 | Tool | Purpose |
 |------|---------|
-| **OpenRAM v1.2.49** | SRAM compiler used for the validated Task 4 16 × 16 intermediate macro and final Task 5 1024 × 32 4 KB SRAM deliverable. |
+| **OpenRAM v1.2.49** | SRAM compiler used for the historical generated/inspected Task 4 16 × 16 intermediate macro and final Task 5 1024 × 32 4 KB SRAM deliverable. |
 | **Xschem** | Schematic capture and transistor-level circuit design. |
 | **NGSpice** | Circuit simulation, waveform analysis, and functional verification. |
 | **Magic VLSI** | Physical layout inspection and DRC verification. |
