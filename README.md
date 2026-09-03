@@ -73,6 +73,122 @@ The authoritative checkpoint artifacts and verification evidence are stored unde
 
 ---
 
+## 🖼️ Week 6 Task 5 — 4 KB SRAM Final Implementation & Sign-off
+
+The following screenshots document the final **1024 × 32 single-port 4 KB SRAM**
+implementation and its major verification milestones.
+
+### 1. Final 1024 × 32 / 4 KB SRAM Physical Layout
+
+<p align="center">
+  <img src="week6_task5/docs/screenshots/01_task5_4kb_klayout_layout.png" width="900" alt="Week 6 Task 5 4 KB SRAM KLayout Layout">
+</p>
+
+**Final OpenRAM-generated 1024 × 32 single-port SRAM macro (4 KB) viewed in KLayout.**
+The committed GDS is the authoritative physical implementation used for Task 5 sign-off.
+
+---
+
+### 2. Automated Functional Regression
+
+<p align="center">
+  <img src="week6_task5/docs/screenshots/02_task5_functional_regression_144_pass.png" width="900" alt="Task 5 Functional Regression 144 PASS">
+</p>
+
+**Functional regression result: 144 PASS / 0 FAIL.**
+
+The regression covered representative first, last, and boundary addresses using
+all-zero, all-one, alternating, walking-one, walking-zero, and deterministic
+pseudo-random data patterns.
+
+---
+
+### 3. Magic DRC Physical Sign-off
+
+<p align="center">
+  <img src="week6_task5/docs/screenshots/03_task5_magic_drc_zero.png" width="900" alt="Task 5 Magic DRC Zero Violations">
+</p>
+
+**Final authoritative Magic DRC result: 0 violations.**
+
+This confirms that the signed-off physical layout passes the final design-rule check.
+
+---
+
+### 4. Netgen LVS Sign-off
+
+<p align="center">
+  <img src="week6_task5/docs/screenshots/04_task5_netgen_lvs_clean.png" width="900" alt="Task 5 Netgen LVS Clean Match">
+</p>
+
+**Final Netgen LVS result: Circuits match uniquely.**
+
+- Devices: **270248 / 270248**
+- Nets: **69617 / 69617**
+- Property errors: **0**
+
+---
+
+### 5. C-Extracted TT / SS / FF Characterization
+
+<p align="center">
+  <img src="week6_task5/docs/screenshots/05_task5_characterization_tt_ss_ff.png" width="900" alt="Task 5 TT SS FF Characterization">
+</p>
+
+**Targeted C-extracted characterization completed at TT, SS, and FF corners.**
+
+The characterization includes read timing, write timing, leakage power,
+read energy, and write energy for the targeted physically extracted SRAM path.
+
+> The characterization is **C-extracted**, not RC-extracted.
+
+---
+
+### 6. OpenSTA 3.1.0 SS-Corner Timing Sign-off
+
+<p align="center">
+  <img src="week6_task5/docs/screenshots/06_task5_opensta_ss_timing.png" width="900" alt="Task 5 OpenSTA SS Timing Signoff">
+</p>
+
+**External OpenSTA SS-corner timing analysis: PASS.**
+
+- Setup slack: **+2.138 ns**
+- Hold slack: **+0.056 ns**
+- Minimum-period slack: **0.000 ns**
+- Minimum characterized period: **2.241 ns**
+- Maximum characterized timing-model boundary: **446.229362 MHz**
+- Reported violations: **0**
+
+> **446.229362 MHz is the characterized Liberty-model boundary, not a guard-banded operating-frequency recommendation.**
+
+---
+
+### 7. Logical 1024 × 32 RTL Integration
+
+<p align="center">
+  <img src="week6_task5/docs/screenshots/07_task5_integration_13_pass.png" width="900" alt="Task 5 RTL Integration 13 PASS">
+</p>
+
+**Logical 1024 × 32 SRAM wrapper integration regression: 13 PASS / 0 FAIL.**
+
+The integration verifies logical address/data mapping, spare-resource disabling,
+boundary-address accesses, representative data patterns, and byte-write masking.
+
+---
+
+### Week 6 Task 5 Visual Sign-off Summary
+
+| Verification Stage | Result |
+|---|---|
+| Final 4 KB physical macro | ✅ Generated and inspected |
+| Functional regression | ✅ 144 PASS / 0 FAIL |
+| Magic DRC | ✅ 0 violations |
+| Netgen LVS | ✅ Circuits match uniquely |
+| C-extracted TT/SS/FF characterization | ✅ Complete |
+| OpenSTA SS timing analysis | ✅ PASS |
+| RTL integration regression | ✅ 13 PASS / 0 FAIL |
+
+
 ## 📊 Repository at a Glance
 
 | Category | Details |
