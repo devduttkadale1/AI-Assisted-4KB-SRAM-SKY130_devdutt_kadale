@@ -986,3 +986,32 @@ Developed as part of the
 VSD AI-Assisted Analog, Mixed-Signal & FPGA Internship
 
 </p>
+
+---
+
+## Post-Layout SRAM Specifications
+
+Final verified 4 KB SRAM: **1024 × 32**, single-port 1RW, SKY130, 1.8 V.
+
+| Parameter | Result |
+|---|---:|
+| Capacity | 4 KB |
+| Organization | 1024 × 32 |
+| Macro size | 808.845 µm × 351.29 µm |
+| Macro area | 284,139.16 µm² |
+| Magic DRC | **0 violations** |
+| Netgen LVS | **PASS — unique match** |
+| Functional regression | **144 PASS / 0 FAIL** |
+| Extraction | **C-extracted** |
+| Worst SS write time | **117.096 ps** |
+| SS read access SEN50→DOUT50 | **71.8089 ps** |
+| SS leakage power | **7.0853 µW** |
+| SS read energy | **42.3984 fJ** |
+| SS write energy | **177.7866 fJ** |
+
+### Detailed Results
+
+- [Post-layout specification tables](week6_task5/docs/postlayout_datasheet.md)
+- [Post-layout SRAM datasheet PDF](week6_task5/docs/Task5_4KB_SRAM_PostLayout_Datasheet.pdf)
+
+> **Note:** 446.229362 MHz is the characterized Liberty-model boundary, not a guard-banded system operating frequency.
